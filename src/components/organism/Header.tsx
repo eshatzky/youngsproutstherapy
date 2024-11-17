@@ -334,7 +334,7 @@ export function Header() {
             </DropdownMenu>
           </ul>
         </div>
-        <Link href={"/"}>
+        <Link href={"/contact-us"}>
           <Text type="p" size="medium" className="">
             Contact Us
           </Text>
