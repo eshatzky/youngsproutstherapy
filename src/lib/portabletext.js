@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PortableText as PortableTextComponent } from "@portabletext/react";
-import { urlForImage } from "../../sanity/image";
 import Iframe from "react-iframe";
 import getVideoId from "get-video-id";
-import { cn } from "../../utils";
 
 import Refractor from "react-refractor";
 import js from "refractor/lang/javascript";
@@ -12,6 +10,8 @@ import jsx from "refractor/lang/jsx";
 import html from "refractor/lang/markup";
 import css from "refractor/lang/css";
 import bash from "refractor/lang/bash";
+import { urlForImage } from "./image";
+import { cn } from "./utils";
 
 Refractor.registerLanguage(js);
 Refractor.registerLanguage(jsx);
