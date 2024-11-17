@@ -8,6 +8,7 @@ import { WhyChooseUs } from './WhyChooseUs';
 import { InsuranceCoverage } from './InsuranceCoverage';
 import { PositiveOutcomes } from './PositiveOutcomes';
 import { BookingConsultation } from './BookingConsultation';
+import { MapBox } from '../contact-us/MapBox';
 
 export {
   HeroSection,
@@ -20,4 +21,5 @@ export {
   InsuranceCoverage,
   PositiveOutcomes,
   BookingConsultation,
+  MapBox,
 };
