@@ -2,6 +2,7 @@ import Text from "@/components/atom/Text";
 import Title from "@/components/atom/Title";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -41,9 +42,11 @@ export function HeroSection() {
             <Button variant={"default"} className="lg:max-w-[260px] w-full">
               Get Started
             </Button>
-            <Button variant={"outline"} className="lg:max-w-[260px] w-full">
-              Schedule a Free Consult
-            </Button>
+            <Link href={"/#book-consultation"}>
+              <Button variant={"outline"} className="lg:max-w-[260px] w-full">
+                Schedule a Free Consult
+              </Button>
+            </Link>
           </div>
           <Image
             src={"/svg/wave.svg"}

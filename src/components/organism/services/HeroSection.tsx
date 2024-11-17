@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 
 import HeroImage from "/public/services/Parenting Counselling.webp";
+import Link from "next/link";
 
 type props = {
   image: StaticImageData | string;
@@ -40,18 +41,26 @@ export function HeroSection({ props }: PropType) {
           ) : null}
         </header>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
-          <Button
-            variant={"default"}
-            className="bg-white text-primary hover:bg-primary hover:text-white max-w-[270px] w-full"
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
           >
-            Book a Free Consult
-          </Button>
-          <Button
-            variant={"outline"}
-            className="border border-white hover:border-primary text-white  max-w-[270px] w-full"
-          >
-            Call Now -(647)370-7622
-          </Button>
+            <Button
+              variant={"default"}
+              className="bg-white text-primary hover:bg-primary hover:text-white max-w-[270px] w-full"
+            >
+              Book a Free Consult
+            </Button>
+          </Link>
+
+          <Link href={`tel:(647)370-7622`}>
+            <Button
+              variant={"outline"}
+              className="border border-white hover:border-primary text-white  max-w-[270px] w-full"
+            >
+              Call Now -(647)370-7622
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

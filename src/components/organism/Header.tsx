@@ -366,9 +366,12 @@ export function Header() {
           </Text>
         </Link>
       </nav>
-      <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base w-fit">
-        Book a Free Consult
-      </Button>
+
+      <Link href={"/#book-consultation"}>
+        <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base w-fit">
+          Book a Free Consult
+        </Button>
+      </Link>
     </header>
   );
 }

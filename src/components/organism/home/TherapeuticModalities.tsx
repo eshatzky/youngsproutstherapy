@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function TherapeuticModalities() {
   return (
@@ -24,12 +25,14 @@ export function TherapeuticModalities() {
             Therapy, each tailored to help clients address emotional and
             psychological issues for healing and growth.
           </p>
-          <Button
-            variant={"outline"}
-            className="border border-white text-white max-w-[260px] w-full lg:mt-[43px]"
-          >
-            Learn More +
-          </Button>
+          <Link href={"/services/approach-and-specialties"}>
+            <Button
+              variant={"outline"}
+              className="border border-white text-white max-w-[260px] w-full lg:mt-[43px]"
+            >
+              Learn More +
+            </Button>
+          </Link>
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {modalities.map((item, index) => (
