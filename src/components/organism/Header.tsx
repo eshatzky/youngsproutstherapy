@@ -22,11 +22,32 @@ import { MobileNav } from "./MobileNav";
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAbout, setIsOpenAbout] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (
     <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/10 ">
       <div className="flex items-center gap-3.5">
         <div className="lg:hidden mt-2">
-          <MobileNav />
+          <span onClick={() => setMobileNavOpen(true)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3 12H15M3 6H21M3 18H21"
+                stroke="#333333"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+          <MobileNav
+            isMenuOpen={mobileNavOpen}
+            setIsMenuOpen={setMobileNavOpen}
+          />
         </div>
         <Link href={"/"}>
           <Image
