@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
 export default async function TherapyTypePage({
   params: { slug },
 }: TherapyTypeProps) {
-  let content = null;
+  let content: React.ReactNode | null = null;
 
   switch (slug) {
     case "parenting-counselling":

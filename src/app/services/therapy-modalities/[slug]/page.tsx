@@ -41,7 +41,7 @@ export async function generateMetadata({
 export default async function ConditionsWeSupportPage({
   params: { slug },
 }: ContidionsWeSupportTypeProps) {
-  let content = null;
+  let content: React.ReactNode | null = null;
 
   switch (slug) {
     case "art-therapy":

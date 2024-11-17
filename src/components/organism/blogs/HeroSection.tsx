@@ -18,7 +18,7 @@ export function HeroSection() {
             <h3 className="text-center ~text-sm/2xl font-medium text-white">
               Young Sprouts
             </h3>
-            <h1 className="text-center w-full max-w-[820px] mx-auto text-white ~text-base/4xl font-bold">
+            <h1 className="text-center w-full max-w-[820px] mx-auto text-white ~text-2xl/5xl font-bold">
               Blog
             </h1>
           </header>
