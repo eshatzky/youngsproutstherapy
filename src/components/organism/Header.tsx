@@ -341,7 +341,6 @@ export function Header() {
                   </svg>
                 </Text>
               </DropdownMenuTrigger>
-
               <DropdownMenuContent className=' absolute left-0 -ml-8'>
                 <DropdownMenuItem className='cursor-pointer'>
                   <Link href={'/team'}>Team</Link>
