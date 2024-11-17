@@ -6,6 +6,9 @@ import {
   TherapeuticModalities,
   TherapistInVaughan,
   WhyChooseUs,
+  BookingConsultation,
+  InsuranceCoverage,
+  PositiveOutcomes,
 } from '@/components/organism/home';
 
 export function Home() {
@@ -18,6 +21,9 @@ export function Home() {
       <TherapeuticModalities />
       <HowTherapyWorks />
       <WhyChooseUs />
+      <InsuranceCoverage />
+      <PositiveOutcomes />
+      <BookingConsultation />
     </section>
   );
 }
