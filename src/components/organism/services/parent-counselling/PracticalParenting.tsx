@@ -45,7 +45,7 @@ export function PracticalParenting() {
             x2="3.99999"
             y2="142"
             stroke="#B0DEE6"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle cx="4" cy="4" r="4" fill="#0196AF" />
           <circle cx="4" cy="140" r="4" fill="#0196AF" />
@@ -64,7 +64,7 @@ export function PracticalParenting() {
             x2="4.49999"
             y2="226"
             stroke="#B0DEE6"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle cx="4.5" cy="4" r="4" fill="#0196AF" />
           <circle cx="4.5" cy="223" r="4" fill="#0196AF" />
