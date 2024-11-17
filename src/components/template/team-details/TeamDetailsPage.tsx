@@ -44,42 +44,48 @@ export function TeamDetailsPage({ team }: Props) {
         <div className="p-4 flex flex-col justify-between gap-8">
           <p className="leading-6 text-[#000]">{team.description}</p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="flex flex-col gap-5">
-              <h3 className="text-xl font-medium text-gray-500">
-                Specialities:
-              </h3>
-              <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
-                {team.specialities.map((item, key) => (
-                  <li key={key} className="ml-6">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col gap-5">
-              <h3 className="text-xl font-medium text-gray-500">
-                Client Focus:
-              </h3>
-              <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
-                {team.clientFocus.map((item, key) => (
-                  <li key={key} className="ml-6">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col gap-5">
-              <h3 className="text-xl font-medium text-gray-500">
-                Therapy Formats:
-              </h3>
-              <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
-                {team.therapyFormats.map((item, key) => (
-                  <li key={key} className="ml-6">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {team.specialities && (
+              <div className="flex flex-col gap-5">
+                <h3 className="text-xl font-medium text-gray-500">
+                  Specialities:
+                </h3>
+                <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
+                  {team.specialities.map((item, key) => (
+                    <li key={key} className="ml-6">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {team.clientFocus && (
+              <div className="flex flex-col gap-5">
+                <h3 className="text-xl font-medium text-gray-500">
+                  Client Focus:
+                </h3>
+                <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
+                  {team.clientFocus.map((item, key) => (
+                    <li key={key} className="ml-6">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {team.therapyFormats && (
+              <div className="flex flex-col gap-5">
+                <h3 className="text-xl font-medium text-gray-500">
+                  Therapy Formats:
+                </h3>
+                <ul className="list-disc text-primary font-medium accent-primary flex flex-col gap-4">
+                  {team.therapyFormats.map((item, key) => (
+                    <li key={key} className="ml-6">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </Card>
