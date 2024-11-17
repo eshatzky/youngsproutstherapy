@@ -343,13 +343,13 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent className=' absolute left-0 -ml-8'>
                 <DropdownMenuItem className='cursor-pointer'>
-                  Team
+                  <Link href={'/team'}>Team</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className='cursor-pointer'>
-                  Fees
+                  <Link href={'/fees'}>Fees</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className='cursor-pointer'>
-                  Faq
+                  <Link href={'/faq'}>Faq</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

@@ -68,3 +68,32 @@ export interface MarkDef {
 export interface BlogPosts {
   posts: Post[];
 }
+
+export interface Team {
+  _id: string;
+  name: string;
+  position: string;
+  description: string;
+  languages: string[];
+  isFeatured: boolean;
+  mainImage: {
+    _type: string;
+    alt: string;
+    asset: {
+      _ref: string;
+      _type: string;
+    };
+    blurDataURL: string;
+  };
+  ImageColor: string;
+  slug: string;
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  therapyFormats: string[];
+  clientFocus: string[];
+  therapyAreasOfSupport: string[];
+  specialities: string[];
+  appointmentLink: string;
+  order: number;
+}
