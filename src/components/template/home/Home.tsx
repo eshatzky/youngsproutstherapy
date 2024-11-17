@@ -9,6 +9,7 @@ import {
   BookingConsultation,
   InsuranceCoverage,
   PositiveOutcomes,
+  MapBox,
 } from '@/components/organism/home';
 
 export function Home() {
@@ -24,6 +25,9 @@ export function Home() {
       <InsuranceCoverage />
       <PositiveOutcomes />
       <BookingConsultation />
+      <div className='~pb-8/16'>
+        <MapBox />
+      </div>
     </section>
   );
 }
