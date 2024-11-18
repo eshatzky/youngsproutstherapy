@@ -3,7 +3,7 @@ import { PsychotherapyData } from "@/components/types";
 
 export function HowPsychotherapyCanHelp() {
   return (
-    <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-8/16 flex flex-col gap-14 ">
+    <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-8/16 flex flex-col gap-14 z-10 ">
       <h2 className="~text-xl/5xl font-semibold text-center">
         How{" "}
         <span className="text-primary relative before:absolute before:-bottom-8 before:content-[url('/svg/psychotherapy.svg')] max-lg:before:w-[50%] before:w-[213px] before:h-full before:bg-no-repeat before:bg-center before:bg-cover ">

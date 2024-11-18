@@ -225,6 +225,7 @@ export const teamListShort = groq`
   *[_type == "teams" && isFeatured == true] | order(order asc) {
     name,
     'slug': slug.current,
+    position,
    mainImage {
     ...,
     "blurDataURL":asset->metadata.lqip,
