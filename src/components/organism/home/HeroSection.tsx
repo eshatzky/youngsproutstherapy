@@ -12,6 +12,9 @@ export function HeroSection() {
           src={"/images/homebg.webp"}
           layout="fill"
           objectFit="cover"
+          priority={true}
+          decoding="async"
+          quality={85}
           objectPosition="center"
           alt="hero_bg"
         />

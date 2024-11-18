@@ -1,21 +1,9 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import { Footer, Header } from "@/components/organism";
 import MotionWrapper from "@/components/molecules/MotionWrapper";
 import { AlertBar } from "@/components/molecules/AlertBar";
 import { Toaster } from "@/components/ui/sonner";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export async function generateMetadata() {
   return processMetadata();
@@ -71,9 +59,7 @@ export default async function RootLayout({
         <GoogleAnalytics gaId="G-7SPHMHP3YC" />
         <GoogleTagManager gtmId="GTM-KZHGKVZ" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} text-[#5c5c5c] antialiased`}
-      >
+      <body className={` text-[#5c5c5c] antialiased`}>
         <AlertBar />
         <Header />
         <MotionWrapper>

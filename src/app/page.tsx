@@ -2,7 +2,7 @@ import { Home } from "@/components/pages/home";
 
 export default function HomePage() {
   return (
-    <section>
+    <section className="min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
