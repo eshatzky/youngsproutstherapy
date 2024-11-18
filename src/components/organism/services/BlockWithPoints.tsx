@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type ListType = {
   title: string;
@@ -48,9 +49,17 @@ export function BlockWithPoints({ data }: Props) {
       {data?.subTitle && <p className="leading-6">{data?.subTitle}</p>}
 
       <div className="flex-col flex lg:flex-row lg:flex-wrap gap-6 items-center w-full mt-6">
-        <Button className="lg:max-w-[270px] w-full">Book a Free Consult</Button>
-        <Button variant={"outline"} className="lg:max-w-[270px] w-full">
-          Call Now -(647)370-7622
+        <Button asChild variant={"default"} className="max-w-[270px] w-full">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book a Free Consult
+          </Link>
+        </Button>
+
+        <Button asChild variant={"outline"} className="max-w-[270px] w-full">
+          <Link href={`tel:(647)370-7622`}>Call Now -(647)370-7622</Link>
         </Button>
       </div>
     </article>

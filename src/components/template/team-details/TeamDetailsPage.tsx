@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { urlForImage } from "@/lib/image";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   team: Team;
@@ -36,8 +37,18 @@ export function TeamDetailsPage({ team }: Props) {
             <p className="text-primary font-medium ~text-lg/2xl">
               {team.position}
             </p>
-            <Button className="!w-full rounded-lg lg:!w-full lg:max-w-full">
-              Book Free Consultating
+            <Button
+              asChild
+              className="!w-full rounded-lg lg:!w-full lg:max-w-full"
+            >
+              <Link
+                href={
+                  "https://calendly.com/youngsproutstherapy/15-minute-consult"
+                }
+                target="_blank"
+              >
+                Book Free Consultating
+              </Link>
             </Button>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 
+import Link from "next/link";
+
 type About = {
   title: string;
   subtitle: string;
@@ -26,8 +28,13 @@ export function AboutSection({ props }: PropsType) {
         </h2>
         <p className="leading-6 ">{props?.subDescription}</p>
       </article>
-      <Button className="sm:w-fit text-sm lg:text-base ~px-10/16">
-        Book a Free Consult
+      <Button asChild className="sm:w-fit text-sm lg:text-base ~px-10/16">
+        <Link
+          href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+          target="_blank"
+        >
+          Book a Free Consult
+        </Link>
       </Button>
     </section>
   );

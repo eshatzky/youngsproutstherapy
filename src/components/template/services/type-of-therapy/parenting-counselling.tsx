@@ -15,7 +15,7 @@ import PracticalParentingImage from "/public/services/parent-session.webp";
 
 export function ParentingCounselling() {
   return (
-    <section className="max-w-[1440px] w-full mx-auto ~px-4/16 ~pb-16/20 pt-6 lg:pt-2.5">
+    <section className="max-w-[1440px] w-full mx-auto ~px-4/16  pt-6 lg:pt-2.5">
       <HeroSection props={HeroSectionData} />
       <div className="~py-5/28">
         <TwoGridSection

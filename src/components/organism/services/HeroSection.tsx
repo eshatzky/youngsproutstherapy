@@ -41,26 +41,28 @@ export function HeroSection({ props }: PropType) {
           ) : null}
         </header>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
-          <Link
-            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
-            target="_blank"
+          <Button
+            asChild
+            variant={"default"}
+            className="bg-white text-primary hover:bg-primary hover:text-white "
           >
-            <Button
-              variant={"default"}
-              className="bg-white text-primary hover:bg-primary hover:text-white max-w-[270px] w-full"
+            <Link
+              href={
+                "https://calendly.com/youngsproutstherapy/15-minute-consult"
+              }
+              target="_blank"
             >
               Book a Free Consult
-            </Button>
-          </Link>
+            </Link>
+          </Button>
 
-          <Link href={`tel:(647)370-7622`}>
-            <Button
-              variant={"outline"}
-              className="border border-white hover:border-primary text-white  max-w-[270px] w-full"
-            >
-              Call Now -(647)370-7622
-            </Button>
-          </Link>
+          <Button
+            asChild
+            variant={"outline"}
+            className="border border-white hover:border-primary text-white "
+          >
+            <Link href={`tel:(647)370-7622`}>Call Now -(647)370-7622</Link>
+          </Button>
         </div>
       </div>
     </section>

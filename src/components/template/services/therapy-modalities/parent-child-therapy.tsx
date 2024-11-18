@@ -47,7 +47,7 @@ export function ParentChildTherapy() {
         />
       </div>
 
-      <div className="w-full bg-[#E6F5F7] -z-10">
+      <div className="w-full bg-[#E6F5F7]  z-40 ">
         <div className="~py-12/16 max-w-[1440px] mx-auto w-full ~px-5/10 z-10">
           <Banner data={BannerData} />
         </div>

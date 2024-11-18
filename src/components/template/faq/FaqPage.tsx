@@ -19,10 +19,10 @@ export function FaqPage() {
             value="item-1"
             className="border rounded-lg bg-[#f8fffc]"
           >
-            <AccordionTrigger className="px-4 hover:no-underline [&[data-state=open]>div>span]:rotate-180">
+            <AccordionTrigger className="px-4 hover:no-underline">
               <div className="flex items-center gap-4 text-left">
                 <span className="text-sm font-medium text-muted-foreground">
-                  01
+                  1
                 </span>
                 <h3 className="font-medium">
                   Are your services covered by insurance?
@@ -40,10 +40,10 @@ export function FaqPage() {
             value="item-2"
             className="border rounded-lg bg-[#f8fffc]"
           >
-            <AccordionTrigger className="px-4 hover:no-underline [&[data-state=open]>div>span]:rotate-180">
+            <AccordionTrigger className="px-4 hover:no-underline">
               <div className="flex items-center gap-4 text-left">
                 <span className="text-sm font-medium text-muted-foreground">
-                  02
+                  2
                 </span>
                 <h3 className="font-medium">
                   What is the therapy process like?
@@ -60,10 +60,10 @@ export function FaqPage() {
             value="item-3"
             className="border rounded-lg bg-[#f8fffc]"
           >
-            <AccordionTrigger className="px-4 hover:no-underline [&[data-state=open]>div>span]:rotate-180">
+            <AccordionTrigger className="px-4 hover:no-underline ">
               <div className="flex items-center gap-4 text-left">
                 <span className="text-sm font-medium text-muted-foreground">
-                  03
+                  3
                 </span>
                 <h3 className="font-medium">
                   What is your therapeutic method?
@@ -72,7 +72,7 @@ export function FaqPage() {
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 pt-1 text-muted-foreground">
               We use a variety of evidence-based approaches tailored to each
-              individual's needs.
+              individual&apos;s needs.
             </AccordionContent>
           </AccordionItem>
 
@@ -80,10 +80,10 @@ export function FaqPage() {
             value="item-4"
             className="border rounded-lg bg-[#f8fffc]"
           >
-            <AccordionTrigger className="px-4 hover:no-underline [&[data-state=open]>div>span]:rotate-180">
+            <AccordionTrigger className="px-4 hover:no-underline ">
               <div className="flex items-center gap-4 text-left">
                 <span className="text-sm font-medium text-muted-foreground">
-                  04
+                  4
                 </span>
                 <h3 className="font-medium">
                   How long does the therapy process take?
@@ -91,8 +91,8 @@ export function FaqPage() {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 pt-1 text-muted-foreground">
-              The length of therapy varies depending on the individual's needs
-              and goals.
+              The length of therapy varies depending on the individual&&apos;s
+              needs and goals.
             </AccordionContent>
           </AccordionItem>
 
@@ -100,10 +100,10 @@ export function FaqPage() {
             value="item-5"
             className="border rounded-lg bg-[#f8fffc]"
           >
-            <AccordionTrigger className="px-4 hover:no-underline [&[data-state=open]>div>span]:rotate-180">
+            <AccordionTrigger className="px-4 hover:no-underline">
               <div className="flex items-center gap-4 text-left">
                 <span className="text-sm font-medium text-muted-foreground">
-                  05
+                  5
                 </span>
                 <h3 className="font-medium">
                   What is your cancellation policy?
@@ -118,10 +118,10 @@ export function FaqPage() {
         </Accordion>
 
         <p className="text-center mt-8 text-muted-foreground">
-          Don't see your question here? Send us a message through our{" "}
-          <Link href="/contact" className="text-primary hover:underline">
+          Don&apos;t see your question here? Send us a message through our
+          <Link href="/contact-us" className="text-primary hover:underline">
             Contact
-          </Link>{" "}
+          </Link>
           page, or e-mail us at{" "}
           <Link
             href="mailto:info@youngsproutstherapy.com"

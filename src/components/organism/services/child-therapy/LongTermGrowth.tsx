@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function LongTermGrowth() {
   return (
@@ -25,9 +26,20 @@ export function LongTermGrowth() {
         free consultation to get started.
       </p>
       <div className="flex flex-col max-lg:items-center lg:flex-row gap-6 mt-4 lg:mt-8 w-full">
-        <Button className="max-w-[270px] w-full">Book a Free Consult</Button>
-        <Button variant={"outline"} className="max-w-[270px] w-full">
-          Call Now -(647)370-7622
+        <Button asChild className="max-w-[270px] w-full py-3">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book a Free Consult
+          </Link>
+        </Button>
+        <Button
+          asChild
+          variant={"outline"}
+          className="max-w-[270px] w-full py-3"
+        >
+          <Link href="tel:+(647)370-7622">Call Now -(647)370-7622</Link>
         </Button>
       </div>
     </section>

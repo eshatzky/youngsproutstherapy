@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function AboutSection() {
   return (
@@ -25,7 +26,14 @@ export function AboutSection() {
       </div>
 
       <div className="flex-col flex lg:flex-row gap-6 w-full mt-6">
-        <Button className="lg:max-w-[270px] w-full">Book a Free Consult</Button>
+        <Button asChild variant={"default"} className="sm:max-w-[270px] w-full">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book a Free Consult
+          </Link>
+        </Button>
       </div>
     </article>
   );

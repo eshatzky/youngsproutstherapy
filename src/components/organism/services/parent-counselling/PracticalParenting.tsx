@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function PracticalParenting() {
   return (
@@ -79,11 +80,20 @@ export function PracticalParenting() {
         started.
       </p>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-        <Button className="max-w-[270px] w-full py-3">
-          Book a Free Consult
+        <Button asChild className="max-w-[270px] w-full py-3">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book a Free Consult
+          </Link>
         </Button>
-        <Button variant={"outline"} className="max-w-[270px] w-full py-3">
-          Call Now -(647)370-7622
+        <Button
+          asChild
+          variant={"outline"}
+          className="max-w-[270px] w-full py-3"
+        >
+          <Link href="tel:+(647)370-7622">Call Now -(647)370-7622</Link>
         </Button>
       </div>
     </article>

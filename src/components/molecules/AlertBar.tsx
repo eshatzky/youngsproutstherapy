@@ -7,7 +7,11 @@ export function AlertBar() {
         <div className="hidden lg:block">
           <p className="text-sm text-white opacity-0">(289) 579-4769 (GROW)</p>
         </div>
-        <Link href={"/#"} target="_blank" className="text-sm">
+        <Link
+          href={"https://youngsproutstherapy.janeapp.com/"}
+          target="_blank"
+          className="text-sm"
+        >
           Ready to schedule an appointment ?{" "}
           <span className="underline font-medium">Click Here</span>
         </Link>
@@ -31,9 +35,12 @@ export function AlertBar() {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="text-sm text-white font-medium">
+          <Link
+            href="tel:+12895794769"
+            className="text-sm text-white font-medium"
+          >
             (289) 579-4769 (GROW)
-          </p>
+          </Link>
         </div>
       </div>
     </div>

@@ -49,8 +49,13 @@ export function TeamCard({ item }: Props) {
             Learn more
           </Link>
         </div>
-        <Button className="w-full text-sm leading-6 rounded-lg">
-          Book Free Consultating
+        <Button asChild className="w-full text-sm leading-6 rounded-lg">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book Free Consultating
+          </Link>
         </Button>
       </div>
     </Card>

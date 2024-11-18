@@ -19,7 +19,7 @@ import childtherapylongtermgrowth from "/public/services/childtherapylongtermgro
 
 export function ChildTherapy() {
   return (
-    <section className="~pb-16/20">
+    <section className="">
       <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
         <HeroSection props={HeroSectionData} />
       </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function GroupTherapyforTeens() {
   return (
@@ -68,7 +69,14 @@ export function GroupTherapyforTeens() {
           Stay tuned for updates on upcoming workshops or contact us to learn
           more about our parent education programs.
         </p>
-        <Button className="lg:max-w-[270px] w-full">Book a Free Consult</Button>
+        <Button asChild className="sm:max-w-[270px] w-full py-3">
+          <Link
+            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            target="_blank"
+          >
+            Book a Free Consult
+          </Link>
+        </Button>
       </div>
     </article>
   );

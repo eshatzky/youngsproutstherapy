@@ -23,7 +23,7 @@ import localcouplestherapy from "/public/services/localcouplestherapy.webp";
 
 export function CouplesTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
         <HeroSection props={HeroSectionData} />
       </div>
@@ -68,10 +68,10 @@ export function CouplesTherapy() {
               cover topics such as:
             </p>
           </div>
-          <div className="">
+          <div className="z-10">
             <TimeLine props={TimeLineSectionData} />
           </div>
-          <p className="text-center leading-6">
+          <p className="text-center leading-6 z-30">
             Workshops are available both in-person and online, and are open to
             couples at any stage of their relationship. Contact us for more
             information on upcoming workshops.
