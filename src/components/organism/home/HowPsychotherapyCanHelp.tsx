@@ -1,22 +1,36 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { HowPsychotherapyCanHelpCard } from "@/components/molecules/home";
 import { PsychotherapyData } from "@/components/types";
 
 export function HowPsychotherapyCanHelp() {
   return (
-    <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-8/16 flex flex-col gap-14 z-10 ">
-      <h2 className="~text-xl/5xl font-semibold text-center">
-        How{" "}
-        <span className="text-primary relative before:absolute before:-bottom-8 before:content-[url('/svg/psychotherapy.svg')] max-lg:before:w-[50%] before:w-[213px] before:h-full before:bg-no-repeat before:bg-center before:bg-cover ">
-          Psychotherapy
-        </span>{" "}
-        Can Help
-      </h2>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        {items.map((item, index) => (
-          <HowPsychotherapyCanHelpCard item={item} key={index} />
-        ))}
-      </ul>
-    </section>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-8/16 flex flex-col gap-14 z-10 ">
+        <h2 className="~text-xl/5xl font-semibold text-center">
+          How{" "}
+          <span className="text-primary relative before:absolute before:-bottom-8 before:content-[url('/svg/psychotherapy.svg')] max-lg:before:w-[50%] before:w-[213px] before:h-full before:bg-no-repeat before:bg-center before:bg-cover ">
+            Psychotherapy
+          </span>{" "}
+          Can Help
+        </h2>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          {items.map((item, index) => (
+            <HowPsychotherapyCanHelpCard
+              item={item}
+              key={index}
+              index={index}
+            />
+          ))}
+        </ul>
+      </section>
+    </motion.div>
   );
 }
 

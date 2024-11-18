@@ -1,10 +1,18 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function TherapeuticModalities() {
   return (
-    <section className="relative w-full h-full lg:h-[878px] z-0">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="relative w-full h-full lg:h-[878px] z-0"
+    >
       <Image
         src={"/images/TherapeuticModalities.webp"}
         alt="therapeutic modalities"
@@ -36,7 +44,11 @@ export function TherapeuticModalities() {
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {modalities.map((item, index) => (
-            <li
+            <motion.li
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: item.isDummy ? 0 : 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
               key={index}
               className={`bg-[#E6F5F7] rounded-xl shadow flex items-center justify-center flex-col gap-2.5 p-4 ${
                 item.isDummy ? "opacity-0 max-lg:hidden " : ""
@@ -52,11 +64,11 @@ export function TherapeuticModalities() {
               <p className="text-base leading-6 text-center text-black">
                 {item.title}
               </p>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
