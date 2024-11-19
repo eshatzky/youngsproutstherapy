@@ -46,7 +46,10 @@ export function HeroSection() {
               </Text>
             </div>
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-5 w-full z-20">
-              <Button variant={"default"} className="lg:max-w-[260px] w-full">
+              <Button
+                variant={"default"}
+                className="lg:max-w-[260px] w-full border-primary border hover:border-white"
+              >
                 Get Started
               </Button>
               <Link href={"/#book-consultation"}>

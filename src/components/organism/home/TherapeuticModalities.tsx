@@ -36,7 +36,7 @@ export function TherapeuticModalities() {
           <Link href={"/services/approach-and-specialties"}>
             <Button
               variant={"outline"}
-              className="border border-white text-white max-w-[260px] w-full lg:mt-[43px]"
+              className="border border-white text-white sm:max-w-[260px] w-full lg:mt-[43px]"
             >
               Learn More +
             </Button>
