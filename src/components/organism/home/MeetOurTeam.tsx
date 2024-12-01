@@ -1,11 +1,13 @@
 import { TeamCarousel } from "@/components/molecules/home";
+import { Button } from "@/components/ui/button";
 import { getShortTeamList } from "@/lib/client";
+import Link from "next/link";
 
 export async function MeetOurTeam() {
   const teams = await getShortTeamList();
   return (
     <>
-      <section className="w-full relative overflow-hidden  pb-14">
+      <section className="w-full relative overflow-hidden  pb-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1920"
@@ -27,8 +29,8 @@ export async function MeetOurTeam() {
               y2="1176"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#0196AF" stop-opacity="0.1" />
-              <stop offset="1" stop-color="#0196AF" stop-opacity="0" />
+              <stop stop-color="#f7f0f0" stop-opacity="0.1" />
+              <stop offset="1" stop-color="#f7f0f0" stop-opacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -59,6 +61,11 @@ export async function MeetOurTeam() {
             </p>
           </div>
           <TeamCarousel teams={teams} />
+          <div className="w-full flex items-center justify-center mt-4">
+            <Button asChild className="w-fit" variant={"default"}>
+              <Link href={"/team"}>Meet the all team member</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>

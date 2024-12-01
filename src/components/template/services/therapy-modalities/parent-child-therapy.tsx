@@ -17,7 +17,7 @@ import pcitbannerimage from "/public/services/pcitbannerimage.png";
 export function ParentChildTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
@@ -29,7 +29,7 @@ export function ParentChildTherapy() {
         />
       </div>
 
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={PcitForBehavioralData} />
@@ -38,7 +38,7 @@ export function ParentChildTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={StrengtheningTheParentData} />
@@ -48,11 +48,11 @@ export function ParentChildTherapy() {
       </div>
 
       <div className="w-full bg-[#E6F5F7]  z-40 ">
-        <div className="~py-12/16 max-w-[1440px] mx-auto w-full ~px-5/10 z-10">
+        <div className="~py-12/16 max-w-[1440px] mx-auto w-full ~px-4/10 z-10">
           <Banner data={BannerData} />
         </div>
       </div>
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-5/10 pt-10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10 pt-10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             Benefits of Parent-Child Interaction Therapy (PCIT)
@@ -65,7 +65,7 @@ export function ParentChildTherapy() {
         <TimeLine props={TimeLineSectionData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

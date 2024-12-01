@@ -19,7 +19,8 @@ const config = {
     fontSize,
     extend: {
       colors: {
-        primary: "#0196AF",
+        primary: "#ab6969",
+        secondary: "#0196AF",
         text_gray: "#5C5C5C",
         background: "var(--background)",
         foreground: "var(--foreground)",

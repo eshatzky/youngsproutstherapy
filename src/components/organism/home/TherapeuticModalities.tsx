@@ -22,7 +22,7 @@ export function TherapeuticModalities() {
         className="-z-10"
       />
 
-      <div className="max-w-[1440px] mx-auto ~px-5/10 py-10 grid grid-cols-1 lg:grid-cols-2 gap-4 z-40 h-full">
+      <div className="max-w-[1440px] mx-auto ~px-4/10 py-10 grid grid-cols-1 lg:grid-cols-2 gap-4 z-40 h-full">
         <div className="flex flex-col justify-center h-full gap-4">
           <h2 className="max-w-[721px] ~text-xl/5xl lg:text-6xl font-medium leading-[129.3%] text-white">
             Therapeutic Modalities Used in Counselling

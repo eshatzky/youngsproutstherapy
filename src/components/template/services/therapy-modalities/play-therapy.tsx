@@ -17,11 +17,11 @@ import parentchildplaytherapyimage from "/public/services/parentchildplaytherapy
 export function PlayTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsPlayTherapy} />
       </div>
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             How Play Therapy Works
@@ -42,7 +42,7 @@ export function PlayTherapy() {
       <div className="pt-10 ~pb-6/8">
         <WhyChooseUs data={WhyChooseUsData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={PlaytherapyForChildren} />
@@ -51,7 +51,7 @@ export function PlayTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={FamilyCenteredPlayData} />
@@ -69,14 +69,14 @@ export function PlayTherapy() {
         />
       </div>
 
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={WhatisTheraplayData} />}
           image={whatistheraplay}
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={ParentChildPlayTherapyData} />
@@ -88,7 +88,7 @@ export function PlayTherapy() {
         <WhyChooseUs data={BenefitsofPlayTherapy} showBg={true} row={3} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

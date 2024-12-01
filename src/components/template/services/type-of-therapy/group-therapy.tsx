@@ -32,18 +32,18 @@ export function GroupTherapy() {
       <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
         <HeroSection props={HeroSectionData} />
       </div>
-      <div className="max-w-[1440px] mx-auto  ~px-5/10 ">
+      <div className="max-w-[1440px] mx-auto  ~px-4/10 ">
         <TwoGridSection
           renderComponent={() => <AboutSection />}
           image={groupAboutImage}
         />
       </div>
-      <div className="~py-12/24  max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="~py-12/24  max-w-[1440px] w-full mx-auto ~px-4/10">
         <SubscriptionBanner data={SubscriptionData} />
       </div>
       <SpecificChallenges />
 
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="max-w-[1440px] mx-auto w-full ">
           <TwoGridSection
             renderComponent={() => <GroupSettings />}

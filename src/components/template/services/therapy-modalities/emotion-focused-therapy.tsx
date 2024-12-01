@@ -17,7 +17,7 @@ import integratingEftImage from "/public/services/integratingEftImage.png";
 export function EmotionFocusedTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsEmotionFocusedTherapy} />
       </div>
@@ -30,7 +30,7 @@ export function EmotionFocusedTherapy() {
           "Through this process, EFT helps clients create secure emotional connections with themselves and their loved ones, leading to stronger relationships and better mental health."
         }
       />
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={EftForCouples} />}
           image={eftforcouples}
@@ -39,7 +39,7 @@ export function EmotionFocusedTherapy() {
       <div className="py-6">
         <WhyChooseUs data={WhyChooseUsData} row={3} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={FamilyinvolvementData} />
@@ -48,13 +48,13 @@ export function EmotionFocusedTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={IntegratingEftData} />}
           image={integratingEftImage}
         />
       </div>
-      <div className="flex flex-col gap-8 pt-6  overflow-hidden max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="flex flex-col gap-8 pt-6  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             Benefits of Emotion Focused Therapy (EFT)
@@ -67,7 +67,7 @@ export function EmotionFocusedTherapy() {
         <TimeLine props={TimeLineSectionData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

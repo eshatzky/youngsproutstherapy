@@ -59,7 +59,7 @@ export default async function RootLayout({
         <GoogleAnalytics gaId="G-7SPHMHP3YC" />
         <GoogleTagManager gtmId="GTM-KZHGKVZ" />
       </head>
-      <body className={` text-[#5c5c5c] antialiased`}>
+      <body className={` text-[#5c5c5c] bg-white antialiased`}>
         <AlertBar />
         <Header />
         <MotionWrapper>

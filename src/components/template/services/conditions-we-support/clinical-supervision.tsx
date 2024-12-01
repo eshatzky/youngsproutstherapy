@@ -16,11 +16,11 @@ import ourApproachtoclinical from "/public/services/ourApproachtoclinical.webp";
 export function ClinicalTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsClinicalTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={BenefitsofClinicalTherapyData} />
@@ -31,7 +31,7 @@ export function ClinicalTherapy() {
       <div className="pt-4">
         <WhyChooseUs data={SocialSkillsDevelopment} row={3} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={ourApproachtoClinical} />
@@ -39,7 +39,7 @@ export function ClinicalTherapy() {
           image={ourApproachtoclinical}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={SupervisionForPsychotherapy} />
@@ -49,7 +49,7 @@ export function ClinicalTherapy() {
         />
       </div>
 
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-5/10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             Clinical Supervision for Social Workers
@@ -62,7 +62,7 @@ export function ClinicalTherapy() {
         <TimeLine props={TimeLineSectionData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

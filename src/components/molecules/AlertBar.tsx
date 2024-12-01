@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function AlertBar() {
   return (
-    <div className="bg-primary text-white text-center w-full ">
-      <div className="max-w-[1440px] mx-auto w-full ~px-5/10 py-4 lg:py-2.5 flex flex-col lg:flex-row items-center justify-between gap-2">
+    <div className="bg-secondary text-white text-center w-full ">
+      <div className="max-w-[1440px] mx-auto w-full ~px-4/10 py-4 lg:py-2.5 flex flex-col lg:flex-row items-center justify-between gap-2">
         <div className="hidden lg:block">
           <p className="text-sm text-white opacity-0">(289) 579-4769 (GROW)</p>
         </div>

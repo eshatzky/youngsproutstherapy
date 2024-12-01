@@ -8,7 +8,7 @@ export function HowTherapyWorks() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="~py-16/28 max-w-[1440px] mx-auto ~px-5/10 flex flex-col gap-14 lg:gap-12 overflow-hidden"
+      className="~py-16/28 max-w-[1440px] mx-auto ~px-4/10 flex flex-col gap-14 lg:gap-12 overflow-hidden"
     >
       <div className="flex flex-col gap-[22px]">
         <h2 className="~text-xl/3xl font-medium text-center text-primary">
@@ -29,7 +29,7 @@ export function HowTherapyWorks() {
           className="z-20 h-full"
         >
           <Card className="flex flex-col gap-2 px-4 py-11 z-20">
-            <h3 className="text-2xl font-medium text-primary text-center">
+            <h3 className="text-2xl font-medium text-secondary text-center">
               Free Phone Consultation
             </h3>
             <p className="text-base leading-6 text-center">
@@ -47,7 +47,7 @@ export function HowTherapyWorks() {
           className="z-20 h-full"
         >
           <Card className="flex flex-col gap-2 px-4 py-11 z-20">
-            <h3 className="text-2xl font-medium text-primary text-center">
+            <h3 className="text-2xl font-medium text-secondary text-center">
               Intake Appointment
             </h3>
             <p className="text-base leading-6 text-center">
@@ -65,7 +65,7 @@ export function HowTherapyWorks() {
           className="z-20 h-full"
         >
           <Card className="flex flex-col gap-2 px-4 py-11 z-20">
-            <h3 className="text-2xl font-medium text-primary text-center">
+            <h3 className="text-2xl font-medium text-secondary text-center">
               Personalized Treatment Plan
             </h3>
             <p className="text-base leading-6 text-center">

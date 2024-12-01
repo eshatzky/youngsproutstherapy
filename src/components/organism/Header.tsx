@@ -23,8 +23,9 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAbout, setIsOpenAbout] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
   return (
-    <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/10 ">
+    <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
       <div className="flex items-center gap-3.5">
         <div className="lg:hidden mt-2">
           <span onClick={() => setMobileNavOpen(true)}>
@@ -102,29 +103,29 @@ export function Header() {
                   </DropdownMenuSubTrigger>
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={"/services/therapy-type/parenting-counselling"}
                         >
                           Parenting
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link href={"/services/therapy-type/child-therapy"}>
                           Child Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link href={"/services/therapy-type/teen-therapy"}>
                           Teen Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link href={"/services/therapy-type/couples-therapy"}>
                           Couples Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link href={"/services/therapy-type/group-therapy"}>
                           Group Therapy
                         </Link>
@@ -138,14 +139,14 @@ export function Header() {
                   </DropdownMenuSubTrigger>
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={"/services/conditions-we-support/adhd-therapy"}
                         >
                           ADHD Coaching & Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/anxiety-therapy"
@@ -154,7 +155,7 @@ export function Header() {
                           Anxiety Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/burnout-therapy"
@@ -163,7 +164,7 @@ export function Header() {
                           Burnout Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/behavioral-therapy"
@@ -172,7 +173,7 @@ export function Header() {
                           Behavioral Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/depression-therapy"
@@ -181,14 +182,14 @@ export function Header() {
                           Depression Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={"/services/conditions-we-support/grief-therapy"}
                         >
                           Grief Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/trauma-therapy"
@@ -197,7 +198,7 @@ export function Header() {
                           Trauma Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/autism-therapy"
@@ -206,7 +207,7 @@ export function Header() {
                           Autism Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/conditions-we-support/clinical-supervision"
@@ -224,12 +225,12 @@ export function Header() {
                   </DropdownMenuSubTrigger>
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link href={"/services/therapy-modalities/art-therapy"}>
                           Art Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/Acceptance-commitment-therapy"
@@ -238,7 +239,7 @@ export function Header() {
                           Acceptance and Commitment Therapy (ACT)
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/cognitive-behavioral-therapy"
@@ -247,7 +248,7 @@ export function Header() {
                           Cognitive Behavioral Therapy (CBT)
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/dialectical-behavioral-therapy"
@@ -256,7 +257,7 @@ export function Header() {
                           Dialectical Behavioral Therapy (DBT)
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/emotion-focused-therapy"
@@ -265,7 +266,7 @@ export function Header() {
                           Emotion Focused Therapy (EFT)
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/narrative-therapy"
@@ -274,14 +275,14 @@ export function Header() {
                           Narrative Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={"/services/therapy-modalities/play-therapy"}
                         >
                           Play Therapy
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/parent-child-therapy"
@@ -290,7 +291,7 @@ export function Header() {
                           Parent-Child Interaction Therapy (PCIT)
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>
+                      <DropdownMenuItem asChild>
                         <Link
                           href={
                             "/services/therapy-modalities/solution-focused-therapy"
@@ -302,7 +303,7 @@ export function Header() {
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>
                 </DropdownMenuSub>
-                <DropdownMenuItem className="cursor-pointer">
+                <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href={"/services/approach-and-specialties"}>
                     Approach & Specialties
                   </Link>
@@ -342,13 +343,13 @@ export function Header() {
                 </Text>
               </DropdownMenuTrigger>
               <DropdownMenuContent className=" absolute left-0 -ml-8">
-                <DropdownMenuItem className="cursor-pointer">
+                <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href={"/team"}>Team</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
+                <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href={"/fees"}>Fees</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
+                <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href={"/faq"}>Faq</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>

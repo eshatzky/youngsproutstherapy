@@ -28,7 +28,7 @@ export function MindFulness() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">
+          <p className="text-secondary font-medium">
             Building Emotional Resilience through Mindfulness
           </p>
         </div>

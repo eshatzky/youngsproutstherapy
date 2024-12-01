@@ -66,7 +66,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       <div className="bg-primary text-white text-center w-full ">
-        <div className="max-w-[1440px] mx-auto w-full ~px-5/10 pb-4  flex flex-col lg:flex-row items-center justify-between gap-2">
+        <div className="max-w-[1440px] mx-auto w-full ~px-4/10 pb-4  flex flex-col lg:flex-row items-center justify-between gap-2">
           <div className="hidden lg:block">
             <p className="text-sm text-white opacity-0">
               (289) 579-4769 (GROW)

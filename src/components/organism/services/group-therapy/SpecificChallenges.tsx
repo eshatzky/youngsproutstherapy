@@ -18,7 +18,7 @@ export function SpecificChallenges() {
         {ChallengesData.map((item, index) => (
           <Card
             key={index}
-            className="p-6 flex flex-col gap-6 bg-primary rounded-lg"
+            className="p-6 flex flex-col gap-6 bg-secondary rounded-lg"
           >
             <h3 className="text-white font-medium text-xl">{item.title}</h3>
             <p className="text-white leading-6">{item.description}</p>

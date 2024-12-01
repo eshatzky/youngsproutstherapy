@@ -21,7 +21,7 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-7">
-          <h3 className="text-primary font-bold leading-5 whitespace-nowrap max-sm:text-center">
+          <h3 className="text-secondary font-bold leading-5 whitespace-nowrap max-sm:text-center">
             Get in Touch
           </h3>
           <ul className="flex flex-col gap-5 max-sm:items-center max-sm:justify-center">
@@ -82,7 +82,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="sm:flex flex-col gap-7 hidden ">
-          <h3 className="text-primary font-bold leading-5 whitespace-nowrap">
+          <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
             Quick link
           </h3>
           <ul className="flex flex-col gap-2">
@@ -107,7 +107,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="sm:flex flex-col gap-7 hidden">
-          <h3 className="text-primary font-bold leading-5 whitespace-nowrap">
+          <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
             Date & Time
           </h3>
           <ul className="flex flex-col gap-2">
@@ -150,7 +150,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="flex flex-col gap-7 sm:hidden">
-            <h3 className="text-primary font-bold leading-5 whitespace-nowrap">
+            <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
               Date & Time
             </h3>
             <ul className="flex flex-col gap-2">
@@ -168,7 +168,7 @@ export function Footer() {
           </div>
         </div>
       </section>
-      <div className="py-6 ~px-5/10">
+      <div className="py-6 ~px-4/10">
         <p className="leading-6 text-center text-[#333]">
           © {currentYear} Young Sprouts Therapy. All Rights Reserved.
         </p>

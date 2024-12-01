@@ -14,11 +14,11 @@ import burnouttherapyaboutiamge from "/public/services/burnouttherapyaboutiamge.
 export function BurnOutTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsBurnOutTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={BurnOutTherapyData} />}
           image={burnouttherapyaboutiamge}
@@ -31,7 +31,7 @@ export function BurnOutTherapy() {
         description="Burnout commonly affects professionals who constantly push themselves to meet demanding goals. Over time, this results in emotional fatigue, reduced productivity, and a loss of interest in both personal and professional responsibilities. Our burnout therapy for professionals helps individuals:"
       />
 
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-5/10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             How Burnout Therapy Can Help
@@ -43,7 +43,7 @@ export function BurnOutTherapy() {
         <TimeLine props={TimeLineSectionData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

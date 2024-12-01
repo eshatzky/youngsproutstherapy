@@ -7,7 +7,7 @@ import React from "react";
 export function TherapistInVaughan() {
   return (
     <FadeIn>
-      <section className="grid grid-cols-1 pb-18 lg:grid-cols-2 gap-[22px] lg:gap-24 w-full h-full max-w-[1440px] mx-auto ~px-5/10 py-12 ;g:py-[79px]">
+      <section className="grid grid-cols-1 pb-18 lg:grid-cols-2 gap-[22px] lg:gap-24 w-full h-full max-w-[1440px] mx-auto ~px-4/10 py-6 ;g:py-[79px]">
         <div className="relative h-full hidden lg:block">
           <Image
             src={"/images/group.webp"}

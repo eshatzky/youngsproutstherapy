@@ -15,11 +15,11 @@ import howdepressiontherapycanhelp from "/public/services/howdepressiontherapyca
 export function DepressionTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsDepressionTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={BurnOutTherapyData} />}
           image={depressiontherapyaboutimage}
@@ -34,7 +34,7 @@ export function DepressionTherapy() {
       <div className="py-16">
         <WhyChooseUs data={WhyChooseUsData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~pt-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~pt-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={HowDepressionTherapyCanHelpData} />
@@ -42,7 +42,7 @@ export function DepressionTherapy() {
           image={howdepressiontherapycanhelp}
         />
       </div>
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

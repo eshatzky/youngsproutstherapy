@@ -13,7 +13,7 @@ export function PracticalParenting() {
 
       <div className="flex flex-col gap-4 relative">
         <div className="ml-6">
-          <h3 className="text-primary">Real-Life Parenting Tools</h3>
+          <h3 className="text-secondary">Real-Life Parenting Tools</h3>
           <p className="leading-6">
             During your sessions, we will explore tailored strategies for
             improving parent-child communication, setting boundaries, and
@@ -23,7 +23,7 @@ export function PracticalParenting() {
           </p>
         </div>
         <div className="ml-6">
-          <h3 className="text-primary">Continued Growth</h3>
+          <h3 className="text-secondary">Continued Growth</h3>
           <p className="leading-6">
             We emphasize the importance of ongoing growth as a parent. By
             attending regular counselling sessions, you’ll continue to develop

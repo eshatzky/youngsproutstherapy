@@ -26,7 +26,7 @@ export function BenefitsofCoupleTherapy() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">Improved Communication</p>
+          <p className="text-secondary font-medium">Improved Communication</p>
         </div>
         <p className="leading-6">
           Therapy provides tools to help couples communicate more effectively,
@@ -40,7 +40,7 @@ export function BenefitsofCoupleTherapy() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">
+          <p className="text-secondary font-medium">
             Restored Trust and Intimacy
           </p>
         </div>
@@ -58,7 +58,9 @@ export function BenefitsofCoupleTherapy() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">Conflict Resolution Skills</p>
+          <p className="text-secondary font-medium">
+            Conflict Resolution Skills
+          </p>
         </div>
         <p className="leading-6">
           Therapy teaches couples how to resolve conflicts in a healthy,

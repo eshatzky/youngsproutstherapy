@@ -27,7 +27,7 @@ export function WorkShopForParents() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">
+          <p className="text-secondary font-medium">
             Effective communication with your child
           </p>
         </div>
@@ -47,7 +47,7 @@ export function WorkShopForParents() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">
+          <p className="text-secondary font-medium">
             Supporting emotional regulation
           </p>
         </div>
@@ -62,7 +62,7 @@ export function WorkShopForParents() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">
+          <p className="text-secondary font-medium">
             Workshops are available both in-person and virtually, making them
             accessible to families across Ontario.
           </p>

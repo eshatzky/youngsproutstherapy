@@ -19,12 +19,12 @@ import grouparttherapybannerimage from "/public/services/grouparttherapybannerim
 export function ArtTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsArtTherapy} />
         <WhatIsSection data={WhatIsArtTherapySubSection} className="!pt-4" />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={BenefitsofArtTherapy} />
@@ -33,14 +33,14 @@ export function ArtTherapy() {
         />
       </div>
       <WhyChooseUs data={WhyChooseUsData} showBg={true} />
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={UsingArtTherapy} />}
           image={useArtThreapy}
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={IntegratingArtTherapy} />
@@ -48,7 +48,7 @@ export function ArtTherapy() {
           image={integratingarttherapy}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={mindfullnessandarttherapyData} />
@@ -57,7 +57,7 @@ export function ArtTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={GroupArtTherapyForKids} />
@@ -65,10 +65,10 @@ export function ArtTherapy() {
           image={groupArttherapy}
         />
       </div>
-      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-5/10">
+      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-4/10">
         <Banner data={BannerData} />
       </div>
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

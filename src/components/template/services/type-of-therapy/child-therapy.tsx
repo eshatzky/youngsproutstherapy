@@ -20,10 +20,10 @@ import childtherapylongtermgrowth from "/public/services/childtherapylongtermgro
 export function ChildTherapy() {
   return (
     <section className="">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
       </div>
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
         <TwoGridSection
           renderComponent={() => <AboutSection props={AboutSectionData} />}
           image={childtherapyAboutImage}
@@ -35,7 +35,7 @@ export function ChildTherapy() {
         title="Our Child Therapy Approach"
         description="Our therapy approach is personalized for each child, integrating a range of modalities based on their individual needs. We use a blend of traditional and creative therapeutic approaches to engage children in a way that resonates with them."
       />
-      <div className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-8/28">
+      <div className="max-w-[1440px] mx-auto w-full ~px-4/10 ~py-8/28">
         <TwoRowGridWithSvg
           renderComponent={() => (
             <EmphasisSection props={EmphasisSectionData} />
@@ -43,7 +43,7 @@ export function ChildTherapy() {
           image={childtherapyemphasis}
         />
       </div>
-      <div className="space-y-8 ~py-8/16 lg:overflow-hidden max-w-[1310px] mx-auto ~px-5/10">
+      <div className="space-y-8 ~py-8/16 lg:overflow-hidden max-w-[1310px] mx-auto ~px-4/10">
         <div className="flex flex-col gap-[22px] ">
           <h2 className="text-center font-medium ~text-2xl/3xl text-primary">
             How We Help with Specific Challenges
@@ -55,7 +55,7 @@ export function ChildTherapy() {
         </div>
         <TimeLine props={TimeLineSectionData} />
       </div>
-      <div className="max-w-[1360px] mx-auto ~px-5/10 ~py-8/16">
+      <div className="max-w-[1360px] mx-auto ~px-4/10 ~py-8/16">
         <TwoGridSection
           renderComponent={() => <LongTermGrowth />}
           image={childtherapylongtermgrowth}

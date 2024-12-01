@@ -27,7 +27,7 @@ export function CouplesTherapy() {
       <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
         <HeroSection props={HeroSectionData} />
       </div>
-      <div className="max-w-[1440px] mx-auto ~px-5/10">
+      <div className="max-w-[1440px] mx-auto ~px-4/10">
         <TwoGridSection
           renderComponent={() => <AboutSection />}
           image={coupletherapyaboutimage}
@@ -39,7 +39,7 @@ export function CouplesTherapy() {
         title="Our Couples Therapy Approach"
         description="We understand that every relationship is unique, which is why our approach is tailored to your specific needs. Our therapists use a blend of evidence-based modalities to help you and your partner address your concerns and rebuild a stronger, more resilient relationship."
       />
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="max-w-[1440px] mx-auto w-full ">
           <TwoRowGridWithSvg
             renderComponent={() => <IssuesWeHelpCouples />}

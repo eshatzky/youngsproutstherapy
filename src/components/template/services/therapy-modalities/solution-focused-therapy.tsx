@@ -15,7 +15,7 @@ import techniqueUsedimage from "/public/services/techniqueUsedimage.png";
 export function SolutionFocusedTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
@@ -32,7 +32,7 @@ export function SolutionFocusedTherapy() {
         title="Who Can Benefit from Solution-Focused Therapy?"
         description="Solution-Focused Therapy is effective for a wide range of mental health challenges and life situations. At Young Sprouts Therapy, we provide SFT for:"
       />
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={TechniquesForSolutionFocusedTherapy} />
@@ -42,7 +42,7 @@ export function SolutionFocusedTherapy() {
       </div>
       <WhyChooseUs data={IntegratingSFT} showBg={true} />
      
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-5/10 pt-10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10 pt-10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
           Benefits of Solution-Focused Therapy
@@ -54,7 +54,7 @@ export function SolutionFocusedTherapy() {
         <TimeLine props={TimeLineSectionData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

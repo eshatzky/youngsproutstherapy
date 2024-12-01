@@ -38,7 +38,7 @@ export function BlockWithPoints({ data }: Props) {
                 height={45}
                 className="w-3 h-3 aspect-auto"
               />
-              <p className="text-primary font-medium">{item.title}</p>
+              <p className="text-secondary font-medium">{item.title}</p>
             </div>
             {item.description && (
               <p className="leading-6">{item?.description}</p>

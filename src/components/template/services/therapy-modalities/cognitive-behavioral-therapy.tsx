@@ -17,11 +17,11 @@ import cbtbannerimage from "/public/services/cbtbannerimage.png";
 export function CognitiveTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsCognitiveTherapy} />
       </div>
-      <div className="flex flex-col gap-8  ~pb-10/16 overflow-hidden max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="flex flex-col gap-8  ~pb-10/16 overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             How Does CBT Work?
@@ -43,18 +43,18 @@ export function CognitiveTherapy() {
       <div className="pt-10">
         <WhyChooseUs data={WhyChooseUsData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={GroupCBTData} />}
           image={groupCBTImage}
         />
       </div>
       <WhyChooseUs data={benefitsofCBT} row={3} />
-      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-5/10">
+      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-4/10">
         <Banner data={BannerData} />
       </div>
 
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

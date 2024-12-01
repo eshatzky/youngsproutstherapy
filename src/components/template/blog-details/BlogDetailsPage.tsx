@@ -25,7 +25,7 @@ export function BlogDetailsPage({ post }: Props) {
     : null;
 
   return (
-    <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~pt-16/28 pb-16 flex flex-col gap-10">
+    <section className="max-w-[1440px] mx-auto w-full ~px-4/10 ~pt-16/28 pb-16 flex flex-col gap-10">
       <article className="">
         <div className="flex flex-col gap-3">
           <h1 className="text-[#232536] font-medium ~text-2xl/4xl ">

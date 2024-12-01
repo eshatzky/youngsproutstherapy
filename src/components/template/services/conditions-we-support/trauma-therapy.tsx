@@ -15,11 +15,11 @@ import howtraumatherapycanhelp from "/public/services/howtraumatherapycanhelp.we
 export function TraumaTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
         <WhatIsSection data={WhatIsTraumaTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={TraumaTherapyData} />}
           image={griftherapyaboutimage}
@@ -31,7 +31,7 @@ export function TraumaTherapy() {
         title="Trauma Therapy for Adults"
         description="Trauma can have long-lasting effects on adults, affecting their mental health, relationships, and everyday functioning. Our trauma therapy for adults focuses on:"
       />
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-5/10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~pt-10/16 ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             Types of Trauma We Treat
@@ -42,7 +42,7 @@ export function TraumaTherapy() {
         </div>
         <TimeLine props={TimeLineSectionData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~pt-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~pt-10/16">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={HowTraumaTherapyCanHelpData} />
@@ -50,7 +50,7 @@ export function TraumaTherapy() {
           image={howtraumatherapycanhelp}
         />
       </div>
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
         <Faq data={FaqData} />
       </div>
     </section>

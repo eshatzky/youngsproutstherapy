@@ -3,7 +3,7 @@ import Image from "next/image";
 export function GetTheSupport() {
   return (
     <section className="flex flex-col gap-7 w-full bg-[#F4FDFF]">
-      <h2 className="font-medium text-center ~text-2xl/3xl text-primary">
+      <h2 className="font-medium text-center ~text-2xl/3xl text-secondary">
         Get the support you need to:
       </h2>
       <ul className="grid grid-cols-1  lg:grid-cols-3 gap-9 max-w-[1000px] mx-auto ">

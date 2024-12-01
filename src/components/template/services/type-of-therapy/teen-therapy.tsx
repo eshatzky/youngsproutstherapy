@@ -32,7 +32,7 @@ export function TeenTherapy() {
         title="Our Teen Therapy Approach"
         description="Every teen’s journey is different. At Young Sprouts Therapy, we tailor our therapeutic approach to the individual needs of each teen. Our therapists integrate a variety of evidence-based modalities to help teens navigate emotional challenges, behavioural issues, and peer or academic stress."
       />
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-5/10">
+      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
         <TwoGridSection
           renderComponent={() => <GroupTherapyforTeens />}
           image={TeenTherapyAboutImage}

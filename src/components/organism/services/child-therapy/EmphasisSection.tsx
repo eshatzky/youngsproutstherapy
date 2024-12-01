@@ -26,7 +26,7 @@ export function EmphasisSection({ props }: PropsType) {
         <p className="leading-6">{props.description}</p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="~text-2xl/3xl font-medium text-primary">
+        <h2 className="~text-2xl/3xl font-medium text-secondary">
           {props.subTitle}
         </h2>
         <p className="leading-6">{props.subDescription}</p>
@@ -34,7 +34,7 @@ export function EmphasisSection({ props }: PropsType) {
       <ul className="flex flex-col gap-4">
         {props.list.map((item, key) => (
           <li key={key} className="flex flex-col gap-4">
-            <h3 className="text-primary text-lg flex gap-2.5 items-center">
+            <h3 className="text-secondary text-lg flex gap-2.5 items-center">
               <Image
                 src={"/svg/magicicon.svg"}
                 width={10}

@@ -4,8 +4,8 @@ import { GetTheSupport } from "@/components/organism/services/approach-and-speci
 export function ApproachPage() {
   return (
     <section className="w-full ~py-16/20 flex flex-col gap-[42px] lg:gap-16">
-      <div className="flex flex-col gap-6 ~px-5/10">
-        <h1 className="font-medium ~text-2xl/3xl text-primary text-center">
+      <div className="flex flex-col gap-6 ~px-4/10">
+        <h1 className="font-medium ~text-2xl/3xl text-secondary text-center">
           Our Approach and Specialties
         </h1>
         <p className="text-center leading-6 max-w-[1112px] mx-auto w-full">
@@ -28,14 +28,14 @@ export function ApproachPage() {
         </p>
       </div>
       <div className="bg-[#F4FDFF] w-full">
-        <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-16/20 flex flex-col gap-[42px] lg:gap-16">
+        <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-16/20 flex flex-col gap-[42px] lg:gap-16">
           <GetTheSupport />
-          <article className="max-w-[690px] w-full mx-auto mt-6">
+          <article className=" w-full mx-auto mt-6">
             <VerticalTimeLine data={OurApproachData} />
           </article>
         </div>
       </div>
-      <div className=" max-w-[1440px] w-full mx-auto ~px-5/10 -mt-10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10 -mt-20">
         <Faq showButtons={false} title="Specialties" data={FaqData} />
       </div>
     </section>

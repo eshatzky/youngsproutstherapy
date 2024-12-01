@@ -44,7 +44,7 @@ export function HeroSection({ props }: PropType) {
           <Button
             asChild
             variant={"default"}
-            className="bg-white text-primary hover:bg-primary hover:text-white "
+            className="bg-white text-secondary hover:bg-primary hover:text-white border-white hover:border-primary "
           >
             <Link
               href={

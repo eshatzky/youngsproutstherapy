@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export function FeesPage() {
   return (
-    <section className="max-w-[1440px] mx-auto w-full ~px-5/10 ~py-16/24">
+    <section className="max-w-[1440px] mx-auto w-full ~px-4/10 ~py-16/24">
       <div className="">
         <h1 className="text-center text-4xl font-bold tracking-tight text-[#1a365d] mb-6">
           Child and Family Therapy Fees

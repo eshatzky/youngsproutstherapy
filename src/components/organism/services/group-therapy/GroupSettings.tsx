@@ -29,7 +29,7 @@ export function GroupSettings() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p className="text-primary font-medium">Benefits of Art Therapy</p>
+          <p className="text-secondary font-medium">Benefits of Art Therapy</p>
         </div>
         <p className="leading-6">
           By participating in art-based group therapy, kids and teens can

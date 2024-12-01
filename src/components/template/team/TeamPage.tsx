@@ -7,7 +7,7 @@ type Props = {
 
 export function TeamPage({ teams }: Props) {
   return (
-    <section className="min-h-screen max-w-[1440px] mx-auto w-full ~px-5/10 py-16 flex flex-col gap-6 @container/team">
+    <section className="min-h-screen max-w-[1440px] mx-auto w-full ~px-4/10 py-16 flex flex-col gap-6 @container/team">
       <div className="flex flex-col gap-6">
         <h1 className="text-4xl text-center font-medium">Our Team</h1>
         <p className="text-center leading-7 text-lg ">

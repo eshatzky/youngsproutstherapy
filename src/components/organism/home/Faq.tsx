@@ -61,10 +61,10 @@ export const FAQItem = ({
         aria-expanded={isOpen}
       >
         <div className="flex flex-col lg:flex-row gap-2.5 lg:gap-4">
-          <span className="text-[#3C3C4380] text-[32px] lg:text-4xl font-medium">
+          <span className="text-secondary text-[32px] lg:text-4xl font-medium">
             {item.number}
           </span>
-          <span className="text-primary font-medium text-[22px] lg:text-2xl">
+          <span className="text-secondary font-medium text-[22px] lg:text-2xl">
             {item.question}
           </span>
         </div>

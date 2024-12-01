@@ -34,7 +34,7 @@ export function Banner({ data }: Props) {
         <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-6 z-30">
           <Button
             asChild
-            className="max-w-[270px] w-full bg-white  text-primary font-semibold"
+            className="max-w-[270px] w-full bg-white  text-primary hover:text-white font-semibold"
           >
             <Link
               href={

@@ -25,3 +25,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 640px) {
+  .homeGradient {
+    border-radius: 6px;
+    background: linear-gradient(
+      286deg,
+      rgba(255, 255, 255, 0) 1.39%,
+      rgba(1, 150, 175, 0.7) 38.22%
+    );
+  }
+}
