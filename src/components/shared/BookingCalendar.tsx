@@ -18,12 +18,12 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
       <p className="text-center text-gray-600">
         See how our therapy services can help your child and family.
       </p>
-      <div className="flex justify-center">
+      <div className="flex justify-center h-full bg-transparent">
         <iframe
           src="https://calendly.com/youngsproutstherapy/15-minute-consult?month=2024-07"
           width="100%"
           frameBorder="0"
-          className="min-h-[80vh] border-0 rounded-lg bg-white"
+          className="min-h-[80vh] border-0 rounded-lg w-full max-w-[1160px]"
           allowFullScreen
         ></iframe>
       </div>

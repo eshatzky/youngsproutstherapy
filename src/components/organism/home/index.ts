@@ -11,6 +11,8 @@ import { BookingConsultation } from "./BookingConsultation";
 import { MapBox } from "../contact-us/MapBox";
 import { LatestBlogPosts } from "./LatestBlogPosts";
 import { HomepageFaq } from "./Faq";
+import { PersonalizedTherapy } from "./personalized-therapy";
+import { ConvenientLocation } from "./convenient-location";
 
 export {
   LatestBlogPosts,
@@ -26,4 +28,6 @@ export {
   BookingConsultation,
   MapBox,
   HomepageFaq,
+  PersonalizedTherapy,
+  ConvenientLocation,
 };

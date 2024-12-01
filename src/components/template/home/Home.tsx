@@ -12,7 +12,10 @@ import {
   MapBox,
   LatestBlogPosts,
   HomepageFaq,
+  PersonalizedTherapy,
+  ConvenientLocation,
 } from "@/components/organism/home";
+import Image from "next/image";
 
 export function Home() {
   return (
@@ -24,10 +27,22 @@ export function Home() {
       <TherapeuticModalities />
       <HowTherapyWorks />
       <WhyChooseUs />
+      <PersonalizedTherapy />
+      <ConvenientLocation />
       <InsuranceCoverage />
-      <PositiveOutcomes />
-      <BookingConsultation />
-      <HomepageFaq />
+      <div className="relative">
+        <Image
+          src={"/svg/rectangle.svg"}
+          alt="svg"
+          layout="fill"
+          objectPosition="center"
+          objectFit="cover"
+          className="-z-20"
+        />
+        <PositiveOutcomes />
+        <BookingConsultation />
+        <HomepageFaq />
+      </div>
       <LatestBlogPosts />
       <div className="~pb-8/16">
         <MapBox />
