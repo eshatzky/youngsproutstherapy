@@ -83,7 +83,7 @@ export function TeamCarousel({ teams }: Props) {
                 className="flex-[0_0_100%] min-w-0 pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
               >
                 <Card className="h-full relative">
-                  <div className=" h-[454px] relative overflow-hidden rounded-t-lg">
+                  <div className=" h-[454px] relative  ">
                     {imageProps && (
                       <Image
                         src={imageProps.src}
@@ -95,13 +95,14 @@ export function TeamCarousel({ teams }: Props) {
                         loading="lazy"
                         decoding="async"
                         layout="fill"
-                        objectFit="cover"
-                        className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+                        objectFit="contain"
+                        objectPosition="top"
+                        className="object-cover w-full h-full transition-transform duration-300 "
                       />
                     )}
                   </div>
 
-                  <CardContent className="p-7 rounded-t-xl flex flex-col gap-1 max-w-[310px] w-full mx-auto absolute bottom-0 left-0 right-0 bg-white">
+                  <CardContent className="p-7 rounded-t-xl flex flex-col gap-1  w-full mx-auto absolute bottom-0 left-0 right-0 bg-white">
                     <h3 className="text-lg font-medium text-[#293B46]">
                       {member.name}
                     </h3>

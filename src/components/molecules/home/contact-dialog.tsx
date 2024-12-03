@@ -64,7 +64,9 @@ export function ContactDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="default">Get Started</Button>
+        <Button variant="default" className="max-w-[260px]">
+          Get Started
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[690px] w-full bg-white">
         <DialogHeader>
@@ -76,7 +78,7 @@ export function ContactDialog() {
           Send us a message, and we&apos;ll be in touch shortly.
         </div>
         <form
-          className=" grid grid-cols-1 sm:grid-cols-2 gap-6"
+          className=" grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 overflow-y-auto"
           onSubmit={handleSubmit}
           ref={form}
         >

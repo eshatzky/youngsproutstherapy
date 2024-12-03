@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Sheet,
@@ -6,15 +6,15 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import Link from 'next/link';
+} from "@/components/ui/accordion";
+import Link from "next/link";
 
 type MobileNavProps = {
   isMenuOpen: boolean;
@@ -25,151 +25,151 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
   return (
     <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
       <SheetContent
-        side={'left'}
-        className='w-full bg-primary overflow-y-scroll'
+        side={"left"}
+        className="w-full bg-secondary overflow-y-scroll max-h-fit pb-[52px]  "
       >
         <SheetHeader>
-          <SheetDescription className='text-white mt-20 z-10'>
-            <Accordion type='single' collapsible className='z-20'>
+          <SheetDescription className="text-white mt-20 z-10">
+            <Accordion type="single" collapsible className="z-20">
               <AccordionItem
-                value='item-1'
-                className='[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none'
+                value="item-1"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
                 <AccordionTrigger>Type of Therapy</AccordionTrigger>
-                <AccordionContent className='flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2 pl-2'>
+                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2 bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
-                    <Link href='/services/therapy-type/parenting-counselling'>
+                    <Link href="/services/therapy-type/parenting-counselling">
                       Parenting
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-type/child-therapy'>
+                    <Link href="/services/therapy-type/child-therapy">
                       Child Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-type/teen-therapy'>
+                    <Link href="/services/therapy-type/teen-therapy">
                       Teen Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-type/couples-therapy'>
+                    <Link href="/services/therapy-type/couples-therapy">
                       Couples Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-type/group-therapy'>
+                    <Link href="/services/therapy-type/group-therapy">
                       Group Therapy
                     </Link>
                   </SheetClose>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
-                value='item-2'
-                className='[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none'
+                value="item-2"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
                 <AccordionTrigger>Conditions we supports</AccordionTrigger>
-                <AccordionContent className='flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2 pl-2'>
+                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/adhd-therapy'>
+                    <Link href="/services/conditions-we-support/adhd-therapy">
                       ADHD Coaching & Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/anxiety-therapy'>
+                    <Link href="/services/conditions-we-support/anxiety-therapy">
                       Anxiety Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/burnout-therapy'>
+                    <Link href="/services/conditions-we-support/burnout-therapy">
                       Burnout Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/behavioral-therapy'>
+                    <Link href="/services/conditions-we-support/behavioral-therapy">
                       Behavioral Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/depression-therapy'>
+                    <Link href="/services/conditions-we-support/depression-therapy">
                       Depression Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/grief-therapy'>
+                    <Link href="/services/conditions-we-support/grief-therapy">
                       Grief Counselling
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/trauma-therapy'>
+                    <Link href="/services/conditions-we-support/trauma-therapy">
                       Trauma Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/autism-therapy'>
+                    <Link href="/services/conditions-we-support/autism-therapy">
                       Autism Spectrum
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/conditions-we-support/clinical-supervision'>
+                    <Link href="/services/conditions-we-support/clinical-supervision">
                       Clinical Supervision
                     </Link>
                   </SheetClose>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
-                value='item-3'
-                className='[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none'
+                value="item-3"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
                 <AccordionTrigger>Therapy modalities</AccordionTrigger>
-                <AccordionContent className='flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2 pl-2'>
+                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/art-therapy'>
+                    <Link href="/services/therapy-modalities/art-therapy">
                       Art Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/acceptance-commitment-therapy'>
+                    <Link href="/services/therapy-modalities/acceptance-commitment-therapy">
                       Acceptance and Commitment Therapy (ACT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/cognitive-behavioral-therapy'>
+                    <Link href="/services/therapy-modalities/cognitive-behavioral-therapy">
                       Cognitive Behavioral Therapy (CBT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/dialectical-behavioral-therapy'>
+                    <Link href="/services/therapy-modalities/dialectical-behavioral-therapy">
                       Dialectical Behavioral Therapy (DBT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/emotion-focused-therapy'>
+                    <Link href="/services/therapy-modalities/emotion-focused-therapy">
                       Emotion Focused Therapy (EFT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/narrative-therapy'>
+                    <Link href="/services/therapy-modalities/narrative-therapy">
                       Narrative Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/play-therapy'>
+                    <Link href="/services/therapy-modalities/play-therapy">
                       Play Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/parent-child-therapy'>
+                    <Link href="/services/therapy-modalities/parent-child-therapy">
                       Parent-Child Interaction Therapy (PCIT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/therapy-modalities/solution-focused-therapy'>
+                    <Link href="/services/therapy-modalities/solution-focused-therapy">
                       Solution-Focused Therapy (SFT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href='/services/approach-and-specialties'>
+                    <Link href="/services/approach-and-specialties">
                       Approach & Specialties
                     </Link>
                   </SheetClose>

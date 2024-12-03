@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 
 import { PortableText } from "@/lib/portabletext";
 import Link from "next/link";
-import { PostComment } from "@/components/organism/blogs/blog-details";
+// import { PostComment } from "@/components/organism/blogs/blog-details";
 
 type Props = {
   post: Post;
@@ -112,7 +112,7 @@ export function BlogDetailsPage({ post }: Props) {
           </Link>
         </div>
       </article>
-      <PostComment post={post} />
+      {/* <PostComment post={post} /> */}
     </section>
   );
 }

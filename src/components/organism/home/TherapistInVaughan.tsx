@@ -10,7 +10,7 @@ export function TherapistInVaughan() {
       <section className="grid grid-cols-1 pb-18 lg:grid-cols-2 gap-[22px] lg:gap-24 w-full h-full max-w-[1440px] mx-auto ~px-4/10 py-6 ;g:py-[79px]">
         <div className="relative h-full hidden lg:block">
           <Image
-            src={"/images/group.webp"}
+            src={"/images/caringteam.png"}
             width={1000}
             height={1000}
             alt="group team"

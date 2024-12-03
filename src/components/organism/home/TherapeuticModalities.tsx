@@ -44,27 +44,33 @@ export function TherapeuticModalities() {
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {modalities.map((item, index) => (
-            <motion.li
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: item.isDummy ? 0 : 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              key={index}
-              className={`bg-[#E6F5F7] rounded-xl shadow flex items-center justify-center flex-col gap-2.5 p-4 ${
-                item.isDummy ? "opacity-0 max-lg:hidden " : ""
-              }`}
-            >
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={48}
-                height={48}
-                className="w-12 h-12"
-              />
-              <p className="text-base leading-6 text-center text-black">
-                {item.title}
-              </p>
-            </motion.li>
+            <li key={index} className="h-full w-full group">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: item.isDummy ? 0 : 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`bg-[#E6F5F7] rounded-xl h-full group-hover:shadow-lg shadow flex items-center justify-center flex-col gap-2.5 p-4 ${
+                  item.isDummy ? "opacity-0 max-lg:hidden " : ""
+                }`}
+                viewport={{ once: true }}
+              >
+                <Link
+                  href={`${item.link}`}
+                  className="flex items-center justify-center flex-col gap-2.5 "
+                >
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
+                  />
+                  <p className="text-base leading-6 text-center text-black">
+                    {item.title}
+                  </p>
+                </Link>
+              </motion.div>
+            </li>
           ))}
         </ul>
       </div>
@@ -76,43 +82,53 @@ const modalities = [
   {
     icon: "/svg/Cognitive Behavioural Therapy (CBT).svg",
     title: "Cognitive Behavioural Therapy (CBT)",
+    link: "/services/therapy-modalities/cognitive-behavioral-therapy",
   },
   {
     icon: "/svg/Narrative Therapy.svg",
     title: "Narrative Therapy",
+    link: "/services/therapy-modalities/narrative-therapy",
   },
   {
     icon: "/svg/Solution-Focused Therapy.svg",
     title: "Solution-Focused Therapy",
+    link: "/services/therapy-modalities/solution-focused-therapy",
   },
   {
     icon: "/svg/Dialectical Behaviour Therapy (DBT).svg",
     title: "Dialectical Behaviour Therapy (DBT)",
+    link: "/services/therapy-modalities/dialectical-behavioral-therapy",
   },
   {
     icon: "/svg/Art Therapy.svg",
     title: "Art Therapy",
+    link: "/services/therapy-modalities/art-therapy",
   },
   {
     icon: "/svg/Play Therapy.svg",
     title: "Play Therapy",
+    link: "/services/therapy-modalities/play-therapy",
   },
   {
     icon: "/svg/Acceptance and Commitment.svg",
     title: "Acceptance and Commitment Therapy (ACT)",
+    link: "/services/therapy-modalities/Acceptance-commitment-therapy",
   },
   {
     icon: "/svg/Emotion-Focused.svg",
     title: "Emotion-Focused Therapy (EFT)",
+    link: "/services/therapy-modalities/emotion-focused-therapy",
   },
   {
     icon: "/svg/Parent-Child Interaction Therapy (PCIT) .svg",
     title: "Parent-Child Interaction Therapy (PCIT) ",
+    link: "/services/therapy-modalities/parent-child-therapy",
   },
   { icon: "", title: "", isDummy: true },
   {
     icon: "/svg/Music Therapy.svg",
     title: "Music Therapy",
+    link: "#",
   },
   // Dummy items for centering
   { icon: "", title: "", isDummy: true },

@@ -8,7 +8,7 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <>
-      <section className="relative min-h-[393px] h-full lg:min-h-[740px] flex items-center w-full overflow-hidden py-6">
+      <section className="relative min-h-[393px] h-full lg:min-h-[80vh] flex items-center w-full overflow-hidden py-6">
         <Image
           src={"/images/homebg.webp"}
           layout="fill"
@@ -18,8 +18,20 @@ export function HeroSection() {
           quality={85}
           objectPosition="center"
           alt="hero_bg"
+          className="max-lg:hidden"
         />
-        <section className="max-w-[1440px] mx-auto ~px-4/10 z-40 w-full flex flex-col gap-8 lg:gap-24">
+        <Image
+          src={"/images/mobilehero.webp"}
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+          decoding="async"
+          quality={85}
+          objectPosition="center"
+          alt="hero_bg"
+          className="lg:hidden rotate-180"
+        />
+        <section className="max-w-[1440px] mx-auto ~px-4/10 z-40 w-full flex flex-col gap-8 lg:gap-16">
           <>
             <div className="homeGradient max-sm:px-1.5 max-sm:py-3.5 flex flex-col gap-[18px]">
               <Title
@@ -29,7 +41,7 @@ export function HeroSection() {
               >
                 <span className="~text-xl/5xl font-medium max-sm:text-white">
                   Expert{" "}
-                  <strong className="text-white sm:text-primary">
+                  <strong className="text-white sm:text-secondary">
                     Child, Teen, and Family
                   </strong>
                 </span>
@@ -43,18 +55,21 @@ export function HeroSection() {
               </Text>
               <Text
                 size="medium"
-                className="~text-base/lg font-normal max-sm:text-[#482C2C] "
+                className="~text-sm/base font-normal max-sm:text-[#482C2C] max-w-[650px] "
               >
                 Supporting Families in Vaughan and Thornhill with Personalized,
                 Evidence-Based Therapy
               </Text>
             </div>
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-5 w-full z-20">
+            <div className="flex flex-col sm:flex-row max-sm:items-center gap-4 lg:gap-5 w-full z-20">
               <ContactDialog />
-              <Link href={"/#book-consultation"}>
+              <Link
+                href={"/#book-consultation"}
+                className="w-full flex max-sm:items-center max-sm:justify-center"
+              >
                 <Button
                   variant={"outline"}
-                  className="lg:max-w-[260px] w-full max-sm:bg-white max-sm:bg-opacity-75"
+                  className="max-w-[260px] w-full max-sm:bg-white max-sm:bg-opacity-75"
                 >
                   Schedule a Free Consult
                 </Button>
@@ -65,7 +80,7 @@ export function HeroSection() {
               width={1600}
               height={1200}
               alt="wave"
-              className="w-full absolute -bottom-16 lg:-bottom-[72%] left-0 right-0 z-10"
+              className="w-full absolute -bottom-16 lg:-bottom-[72%] left-0 right-0 z-10 max-lg:hidden"
             />
           </>
         </section>

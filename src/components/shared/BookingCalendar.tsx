@@ -23,7 +23,7 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
           src="https://calendly.com/youngsproutstherapy/15-minute-consult?month=2024-07"
           width="100%"
           frameBorder="0"
-          className="min-h-[80vh] border-0 rounded-lg w-full max-w-[1160px]"
+          className="h-[100vh] sm:min-h-[90vh] border-0 rounded-lg w-full max-w-[1160px]"
           allowFullScreen
         ></iframe>
       </div>

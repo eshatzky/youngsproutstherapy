@@ -47,7 +47,7 @@ export function TeamDetailsPage({ team }: Props) {
                 }
                 target="_blank"
               >
-                Book Free Consultating
+                Get Started
               </Link>
             </Button>
           </div>
