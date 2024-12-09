@@ -44,12 +44,12 @@ export function TherapeuticModalities() {
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {modalities.map((item, index) => (
-            <li key={index} className="h-full w-full group">
+            <li key={index} className="h-full group w-full group">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: item.isDummy ? 0 : 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`bg-[#E6F5F7] rounded-xl h-full group-hover:shadow-lg shadow flex items-center justify-center flex-col gap-2.5 p-4 ${
+                className={`bg-[#E6F5F7]  rounded-xl h-full group-hover:shadow-2xl shadow flex items-center justify-center flex-col gap-2.5 p-4 ${
                   item.isDummy ? "opacity-0 max-lg:hidden " : ""
                 }`}
                 viewport={{ once: true }}

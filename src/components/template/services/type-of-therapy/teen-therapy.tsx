@@ -26,6 +26,7 @@ export function TeenTherapy() {
         <HeroSection props={HeroSectionData} />
       </div>
       <TherapyCanHelp />
+
       <OurApproach
         data={timelineData}
         showBg={false}

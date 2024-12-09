@@ -9,7 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import traumatherapyhomepageimage from "/public/services/traumatherapyhomepageimage.webp";
-import griftherapyaboutimage from "/public/services/griftherapyaboutimage.webp";
+import trumatherapyaboutimage from "/public/services/trumatherapyaboutimage.png";
 import howtraumatherapycanhelp from "/public/services/howtraumatherapycanhelp.webp";
 
 export function TraumaTherapy() {
@@ -22,7 +22,7 @@ export function TraumaTherapy() {
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={TraumaTherapyData} />}
-          image={griftherapyaboutimage}
+          image={trumatherapyaboutimage}
         />
       </div>
       <OurApproach

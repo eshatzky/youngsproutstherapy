@@ -22,7 +22,7 @@ export function HowPsychotherapyCanHelpCard({ item, index }: Props) {
             {item.title}
           </h3>
           <p className="text-sm leading-5">{item.desc}</p>
-          <div className=" items-center gap-2.5 text-sm leading-5 text-primary opacity-0 flex group-hover:opacity-100 cursor-pointer">
+          <div className=" items-center gap-2.5 text-sm leading-5 group-hover:text-white text-primary opacity-0 flex group-hover:opacity-100 cursor-pointer">
             Learn more{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

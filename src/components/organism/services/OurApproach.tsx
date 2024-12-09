@@ -31,8 +31,8 @@ export function OurApproach({
           {description}
         </p>
       </div>
-      <div className="max-w-[690px] w-full mx-auto mt-6">
-        <VerticalTimeLine data={data} />
+      <div className="max-w-[690px] w-full mx-auto mt-4">
+        <VerticalTimeLine showTitle={false} data={data} />
       </div>
       {subDescription && (
         <p className="text-center leading-6 max-w-[846px] mx-auto mt-8">

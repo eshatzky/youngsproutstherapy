@@ -5,15 +5,18 @@ type DataType = {
 
 type Props = {
   data: DataType[];
+  showTitle?: boolean;
 };
 
-export function VerticalTimeLine({ data }: Props) {
+export function VerticalTimeLine({ data, showTitle = true }: Props) {
   return (
     <div className="-my-6 flex flex-col gap-6">
       <div>
-        <h3 className="text-center ~text-2xl/3xl font-medium text-primary">
-          Our Approach
-        </h3>
+        {showTitle && (
+          <h3 className="text-center ~text-2xl/3xl font-medium text-primary">
+            Our Approach
+          </h3>
+        )}
       </div>
       <div className="max-w-[968px] mx-auto w-full flex flex-col">
         {data.map((item, index) => (

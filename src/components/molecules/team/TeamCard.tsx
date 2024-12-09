@@ -14,7 +14,10 @@ export function TeamCard({ item }: Props) {
     item && item?.mainImage ? urlForImage(item.mainImage) : null;
   return (
     <Card className="grid grid-cols-1 @[864px]/team:grid-cols-2 gap-7 ">
-      <div className="max-lg:flex items-center justify-center">
+      <Link
+        href={`/team/${item.slug}`}
+        className="max-lg:flex items-center justify-center"
+      >
         {imageProps && (
           <Image
             src={imageProps.src}
@@ -28,9 +31,9 @@ export function TeamCard({ item }: Props) {
             className="w-[218px] object-cover object-center aspect-auto"
           />
         )}
-      </div>
+      </Link>
       <div className="flex flex-col justify-between gap-4 p-4">
-        <div className="flex flex-col gap-4">
+        <Link href={`/team/${item.slug}`} className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <h2 className="text-lg font-bold leading-7 text-[#19191B]">
               {item.name}
@@ -42,13 +45,10 @@ export function TeamCard({ item }: Props) {
           <p className="leading-6 text-sm text-gray-600 line-clamp-3">
             {item.description}
           </p>
-          <Link
-            className="text-primary text-sm leading-6 hover:font-medium"
-            href={`/team/${item.slug}`}
-          >
+          <div className="text-primary text-sm leading-6 hover:font-medium">
             Learn more
-          </Link>
-        </div>
+          </div>
+        </Link>
         <Button asChild className="w-full text-sm leading-6 rounded-lg">
           <Link
             href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}

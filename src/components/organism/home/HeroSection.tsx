@@ -21,15 +21,15 @@ export function HeroSection() {
           className="max-lg:hidden"
         />
         <Image
-          src={"/images/mobilehero.webp"}
-          layout="fill"
+          src={"/images/homebg.webp"}
+          fill
           objectFit="cover"
           priority={true}
           decoding="async"
           quality={85}
-          objectPosition="center"
+          objectPosition="center  top"
           alt="hero_bg"
-          className="lg:hidden rotate-180"
+          className=""
         />
         <section className="max-w-[1440px] mx-auto ~px-4/10 z-40 w-full flex flex-col gap-8 lg:gap-16">
           <>

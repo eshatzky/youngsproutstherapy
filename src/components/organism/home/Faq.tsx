@@ -54,10 +54,12 @@ export const FAQItem = ({
   toggleItem: () => void;
 }) => {
   return (
-    <div className="border rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white">
+    <div
+      onClick={toggleItem}
+      className="border rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
+    >
       <button
         className="w-full text-left flex items-center justify-between gap-4"
-        onClick={toggleItem}
         aria-expanded={isOpen}
       >
         <div className="flex flex-col lg:flex-row gap-2.5 lg:gap-4">

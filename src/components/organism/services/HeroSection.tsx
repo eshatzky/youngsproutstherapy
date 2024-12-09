@@ -31,7 +31,7 @@ export function HeroSection({ props }: PropType) {
           <h3 className="text-center ~text-sm/2xl font-medium text-white">
             Young Sprouts
           </h3>
-          <h1 className="text-center w-full max-w-[820px] mx-auto text-white ~text-2xl/5xl font-bold">
+          <h1 className="text-center max-w-[1164px] w-full mx-auto text-white ~text-2xl/4xl font-bold">
             {props?.title}
           </h1>
           {props?.description ? (
