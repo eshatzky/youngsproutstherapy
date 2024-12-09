@@ -128,7 +128,7 @@ const modalities = [
   {
     icon: "/svg/Music Therapy.svg",
     title: "Music Therapy",
-    link: "#",
+    link: "/services/therapy-modalities/music-therapy",
   },
   // Dummy items for centering
   { icon: "", title: "", isDummy: true },
