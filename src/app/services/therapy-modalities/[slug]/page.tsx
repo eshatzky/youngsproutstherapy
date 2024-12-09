@@ -9,6 +9,7 @@ import {
   PlayTherapy,
   SolutionFocusedTherapy,
 } from "@/components/pages/services/therapy-modalities";
+import { MusicTherapy } from "@/components/template/services/therapy-modalities/music-therapy";
 
 interface ContidionsWeSupportTypeProps {
   params: {
@@ -71,6 +72,11 @@ const serviceData: Record<string, ServiceConfig> = {
     description:
       "Focus on solutions and achieve goals through a positive and future-oriented approach.",
   },
+  "music-therapy": {
+    title: "Music Therapy for Kids and Teens | Young Sprouts Therapy",
+    description:
+      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+  },
 };
 
 export async function generateMetadata({
@@ -125,6 +131,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "solution-focused-therapy":
       content = <SolutionFocusedTherapy />;
+      break;
+    case "music-therapy":
+      content = <MusicTherapy />;
       break;
 
     default:

@@ -303,6 +303,13 @@ export function Header() {
                           Solution-Focused Therapy (SFT)
                         </Link>
                       </DropdownMenuItem>
+                      <DropdownMenuItem asChild className="cursor-pointer">
+                        <Link
+                          href={"/services/therapy-modalities/music-therapy"}
+                        >
+                          Music Therapy
+                        </Link>
+                      </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>
                 </DropdownMenuSub>

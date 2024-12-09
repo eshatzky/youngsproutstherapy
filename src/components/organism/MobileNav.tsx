@@ -169,6 +169,11 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
+                    <Link href="/services/therapy-modalities/music-therapy">
+                      Music Therapy
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
                     <Link href="/services/approach-and-specialties">
                       Approach & Specialties
                     </Link>
