@@ -5,7 +5,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#F8F9FA] w-full">
-      <section className="~py-7/12 max-w-[1440px] border-b border-[#B0DEE6] mx-auto w-full ~px-2.5/16 flex flex-col lg:flex-row gap-6 justify-between lg:gap-[120px]">
+      <section className="~py-7/12 max-w-[1440px] border-b border-[#B0DEE6] mx-auto w-full ~px-2.5/16 flex flex-col lg:flex-row ~gap-6/28 justify-between ">
         <div className="flex flex-col max-sm:items-center max-sm:justify-center gap-6">
           <Image
             src={"/svg/footer.svg"}
@@ -110,24 +110,36 @@ export function Footer() {
           <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
             Date & Time
           </h3>
-          <ul className="flex flex-col gap-2">
-            <li className="flex gap-4 leading-6 text-[#77808B] ">
-              Monday - Thursday
-            </li>
-            <li className="flex gap-4 leading-6 text-[#77808B] ">
-              9:00 am - 9:00 pm
-            </li>
-            <li className="flex gap-4 leading-6 text-[#77808B] ">Friday</li>
-            <li className="flex gap-4 leading-6 text-[#77808B] ">
-              9:00 am – 3:00 pm
-            </li>
-
-            <li className="flex gap-4 leading-6 text-secondary">Saturday</li>
-            <li className="flex gap-4 leading-6 text-red-500 ">Closed</li>
-            <li className="flex gap-4 leading-6 text-secondary">Sunday</li>
-            <li className="flex gap-4 leading-6 text-[#77808B] ">
-              9:00 am – 9:00 pm
-            </li>
+          <ul className="flex flex-shrink-0 flex-col gap-2 w-full">
+            <div className="flex flex-shrink-0 items-center gap-6">
+              <li className="flex flex-col flex-shrink-0  leading-6 text-[#77808B] ">
+                Monday - Thursday <span>9:00 am - 9:00 pm</span>
+              </li>
+            </div>
+            <div className="flex flex-shrink-0  justify-between items-center gap-6">
+              <li className="flex min-w-16 flex-shrink-0 gap-4 leading-6 text-[#77808B] ">
+                Friday
+              </li>
+              <li className="flex flex-shrink-0 gap-4 leading-6 text-[#77808B] ">
+                9:00 am – 3:00 pm
+              </li>
+            </div>
+            <div className="flex flex-shrink-0  items-center gap-6">
+              <li className="flex  min-w-16 flex-shrink-0 gap-4 leading-6 text-secondary">
+                Saturday
+              </li>
+              <li className="flex flex-shrink-0 gap-4 leading-6 text-red-500 ">
+                Closed
+              </li>
+            </div>
+            <div className="flex flex-shrink-0  justify-between items-center gap-6">
+              <li className="flex  min-w-16 flex-shrink-0 gap-4 leading-6 text-secondary">
+                Sunday
+              </li>
+              <li className="flex flex-shrink-0 gap-4 leading-6 text-[#77808B] ">
+                9:00 am – 9:00 pm
+              </li>
+            </div>
           </ul>
         </div>
         <div className="flex gap-14 justify-center">

@@ -1,9 +1,8 @@
+import { ContactDialog } from "@/components/molecules/home/contact-dialog";
 import { Team } from "@/components/types";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { urlForImage } from "@/lib/image";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   team: Team;
@@ -37,24 +36,13 @@ export function TeamDetailsPage({ team }: Props) {
             <p className="text-primary font-medium ~text-lg/2xl">
               {team.position}
             </p>
-            <Button
-              asChild
-              className="!w-full rounded-lg lg:!w-full lg:max-w-full"
-            >
-              <Link
-                href={
-                  "https://calendly.com/youngsproutstherapy/15-minute-consult"
-                }
-                target="_blank"
-              >
-                Get Started
-              </Link>
-            </Button>
+
+            <ContactDialog className="!w-full rounded-lg lg:!w-full lg:max-w-full" />
           </div>
         </div>
         <div className="p-4 flex flex-col justify-between gap-8">
           <p className="leading-6 text-[#000]">{team.description}</p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-2xl">
             {team.specialities && (
               <div className="flex flex-col gap-5">
                 <h3 className="text-xl font-medium text-gray-500">

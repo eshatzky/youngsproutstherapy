@@ -77,12 +77,12 @@ export function Header() {
             >
               <DropdownMenuTrigger
                 onMouseEnter={() => setIsOpen(true)}
-                className="outlino-none border-none focus:outline-none"
+                className="outlino-none border-none focus:outline-none cursor-pointer"
               >
                 <Text
                   type="p"
                   size="medium"
-                  className="flex items-center gap-1.5"
+                  className="flex items-center gap-1.5 cursor-pointer"
                 >
                   Services
                   <svg
@@ -330,12 +330,12 @@ export function Header() {
             >
               <DropdownMenuTrigger
                 onMouseEnter={() => setIsOpenAbout(true)}
-                className="outlino-none border-none focus:outline-none"
+                className="outlino-none border-none focus:outline-none cursor-pointer"
               >
                 <Text
                   type="p"
                   size="medium"
-                  className="flex items-center gap-1.5"
+                  className="flex items-center gap-1.5 cursor-pointer"
                 >
                   About us
                   <svg
@@ -379,7 +379,10 @@ export function Header() {
       </nav>
 
       <Link href={"/#book-consultation"}>
-        <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base w-fit">
+        <Button
+          variant="default"
+          className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full"
+        >
           Book a Free Consult
         </Button>
       </Link>

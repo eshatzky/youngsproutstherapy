@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function TherapyCanHelp() {
   return (
-    <section className="~py-6/16 flex flex-col gap-7 w-full bg-[#F4FDFF]">
+    <section className="~py-6/16 px-5 flex flex-col gap-7 w-full bg-[#F4FDFF]">
       <h2 className="font-medium text-center ~text-2xl/3xl text-primary">
         Therapy can help you and your teen:
       </h2>

@@ -45,16 +45,13 @@ export function TeamCard({ item }: Props) {
           <p className="leading-6 text-sm text-gray-600 line-clamp-3">
             {item.description}
           </p>
-          <div className="text-primary text-sm leading-6 hover:font-medium">
-            Learn more
-          </div>
         </Link>
         <Button asChild className="w-full text-sm leading-6 rounded-lg">
           <Link
             href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
             target="_blank"
           >
-            Book Free Consultating
+            Learn more
           </Link>
         </Button>
       </div>

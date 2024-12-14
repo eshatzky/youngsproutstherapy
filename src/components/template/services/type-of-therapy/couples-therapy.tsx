@@ -27,7 +27,11 @@ export function CouplesTherapy() {
       <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
         <HeroSection props={HeroSectionData} />
       </div>
-      <div className="max-w-[1440px] mx-auto ~px-4/10">
+      <div className="max-w-[1440px] mx-auto ~px-4/10 flex flex-col gap-6">
+        <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
+          Child TheHelping Couples Reconnect and Build Stronger
+          Relationshipsrapy
+        </h2>
         <TwoGridSection
           renderComponent={() => <AboutSection />}
           image={coupletherapyaboutimage}

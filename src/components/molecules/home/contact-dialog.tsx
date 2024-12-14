@@ -17,8 +17,9 @@ import { sendGAEvent } from "@next/third-parties/google";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 
-export function ContactDialog() {
+export function ContactDialog({ className }: { className?: string }) {
   const form = React.useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [open, setOpen] = React.useState(false);
@@ -64,21 +65,21 @@ export function ContactDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="default" className="max-w-[260px]">
+        <Button variant="default" className={cn(className)}>
           Get Started
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[690px] w-full bg-white">
+      <DialogContent className="sm:max-w-[690px] w-full bg-white px-4 max-sm:max-h-[660px] overflow-y-scroll">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-gray-800">
+          <DialogTitle className="text-2xl text-gray-800 px-2">
             Get Started With Us
           </DialogTitle>
         </DialogHeader>
-        <div className="text-gray-600 pb-4 border-b border-primary">
+        <div className="text-gray-600 pb-4 border-b border-primary mx-2">
           Send us a message, and we&apos;ll be in touch shortly.
         </div>
         <form
-          className=" grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 overflow-y-auto"
+          className=" grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 overflow-y-auto px-2"
           onSubmit={handleSubmit}
           ref={form}
         >

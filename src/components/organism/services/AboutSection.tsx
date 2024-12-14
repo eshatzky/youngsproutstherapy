@@ -17,7 +17,7 @@ export function AboutSection({ props }: PropsType) {
   return (
     <section className="flex flex-col gap-6 lg:gap-8">
       <article className="flex flex-col gap-6 ">
-        <h2 className="font-medium ~text-lg/3xl text-primary">
+        <h2 className="font-medium ~text-lg/3xl text-primary max-lg:hidden">
           {props?.title}
         </h2>
         <p className="leading-6">{props?.description}</p>

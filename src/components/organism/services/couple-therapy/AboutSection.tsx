@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full">
       <div className="flex flex-col gap-6">
-        <h2 className="font-medium ~text-2xl/3xl text-primary">
+        <h2 className="font-medium ~text-2xl/3xl text-primary max-lg:hidden">
           Child TheHelping Couples Reconnect and Build Stronger
           Relationshipsrapy
         </h2>

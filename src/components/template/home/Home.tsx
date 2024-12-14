@@ -15,7 +15,6 @@ import {
   PersonalizedTherapy,
   ConvenientLocation,
 } from "@/components/organism/home";
-import Image from "next/image";
 
 export function Home() {
   return (
@@ -30,15 +29,15 @@ export function Home() {
       <PersonalizedTherapy />
       <ConvenientLocation />
       <InsuranceCoverage />
-      <div className="relative">
-        <Image
+      <div className="">
+        {/* <Image
           src={"/svg/rectangle.svg"}
           alt="svg"
           layout="fill"
           objectPosition="center"
           objectFit="cover"
           className="-z-20"
-        />
+        /> */}
         <PositiveOutcomes />
         <BookingConsultation />
         <HomepageFaq />

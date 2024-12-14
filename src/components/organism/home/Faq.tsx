@@ -56,7 +56,7 @@ export const FAQItem = ({
   return (
     <div
       onClick={toggleItem}
-      className="border rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
+      className="border cursor-pointer rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
     >
       <button
         className="w-full text-left flex items-center justify-between gap-4"

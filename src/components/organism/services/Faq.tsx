@@ -74,7 +74,7 @@ export const FAQItem = ({
   return (
     <div
       onClick={toggleItem}
-      className="border rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
+      className="border cursor-pointer rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
     >
       <button
         className="w-full text-left flex items-center justify-between gap-4"
@@ -127,7 +127,7 @@ export const FAQItem = ({
   );
 };
 
-export function HomepageFaq({ faqData }) {
+export function HomepageFaq({ faqData, title = "FAQs" }) {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const toggleItem = (title: string) => {
@@ -137,7 +137,7 @@ export function HomepageFaq({ faqData }) {
   return (
     <div className="w-full max-w-[1180px] mx-auto flex flex-col gap-6">
       <h2 className="text-primary ~text-2xl/3xl font-medium text-center">
-        FAQs
+        {title}
       </h2>
       <ul className="py-10 lg:py-16 p-4 lg:px-8 bg-[#F3F5F6] lg:rounded-[28px]">
         {faqData.map((item, key) => (

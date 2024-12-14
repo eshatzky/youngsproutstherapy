@@ -23,7 +23,10 @@ export function ChildTherapy() {
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <HeroSection props={HeroSectionData} />
       </div>
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
+      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10 flex flex-col gap-6">
+        <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
+          Child Therapy
+        </h2>
         <TwoGridSection
           renderComponent={() => <AboutSection props={AboutSectionData} />}
           image={childtherapyAboutImage}
