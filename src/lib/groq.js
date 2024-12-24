@@ -235,7 +235,7 @@ export const teamListShort = groq`
 `;
 
 export const teamListAll = groq`
-  *[_type == "teams"] | order(publishedAt asc) {
+  *[_type == "teams"] | order(orderTeamsList asc) {
     ...,
     'slug': slug.current,
     mainImage {

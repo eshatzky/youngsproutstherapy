@@ -65,7 +65,10 @@ export function ContactDialog({ className }: { className?: string }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="default" className={cn(className)}>
+        <Button
+          variant="default"
+          className={cn("max-w-[260px] w-full", className)}
+        >
           Get Started
         </Button>
       </DialogTrigger>

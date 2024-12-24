@@ -33,15 +33,15 @@ export function HeroSection() {
         />
         <section className="max-w-[1440px] mx-auto ~px-4/10 z-40 w-full flex flex-col gap-8 lg:gap-16">
           <>
-            <div className="homeGradient max-sm:px-1.5 max-sm:py-3.5 flex flex-col gap-[18px]">
+            <div className="homeGradient max-lg:px-1.5 max-lg:py-3.5 flex flex-col gap-[18px]">
               <Title
                 size="big"
                 type="h1"
-                className="flex flex-col ~text-xl/6xl max-sm:text-white"
+                className="flex flex-col ~text-xl/6xl max-lg:text-white"
               >
-                <span className="~text-xl/5xl font-medium max-sm:text-white">
+                <span className="~text-xl/5xl font-medium max-lg:text-white">
                   Expert{" "}
-                  <strong className="text-white sm:text-secondary">
+                  <strong className="text-white lg:text-secondary">
                     Child, Teen, and Family
                   </strong>
                 </span>
@@ -49,27 +49,27 @@ export function HeroSection() {
               </Title>
               <Text
                 size="medium"
-                className="~text-base/2xl font-normal text-[#482C2C] sm:text-[#91818A]"
+                className="~text-base/2xl font-normal text-[#482C2C] lg:text-[#91818A]"
               >
                 Supporting Growth Through Psychotherapy and Counselling
               </Text>
               <Text
                 size="medium"
-                className="~text-sm/base font-normal max-sm:text-[#482C2C] max-w-[650px] "
+                className="~text-sm/base font-normal max-lg:text-[#482C2C] max-w-[650px] "
               >
                 Supporting Families in Vaughan and Thornhill with Personalized,
                 Evidence-Based Therapy
               </Text>
             </div>
-            <div className="flex flex-col sm:flex-row max-sm:items-center gap-4 lg:gap-5 w-full z-20">
+            <div className="flex flex-col sm:flex-row max-lg:items-center gap-4 lg:gap-5 w-full z-20">
               <ContactDialog />
               <Link
                 href={"/#book-consultation"}
-                className="w-full flex max-sm:items-center max-sm:justify-center"
+                className="max-sm:w-full flex max-sm:items-center max-lg:justify-center"
               >
                 <Button
                   variant={"outline"}
-                  className="max-w-[260px] w-full max-sm:bg-white max-sm:bg-opacity-75"
+                  className="max-w-[260px] w-full max-sm:bg-white max-lg:bg-opacity-75"
                 >
                   Schedule a Free Consult
                 </Button>
