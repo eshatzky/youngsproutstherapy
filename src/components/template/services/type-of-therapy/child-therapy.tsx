@@ -13,6 +13,7 @@ import {
 } from "@/components/organism/services/child-therapy";
 
 import ChildTherapyHeroImage from "/public/services/childtherapyheroimage.webp";
+import childtherapymobile from "/public/services/childtherapymobile.png";
 import childtherapyAboutImage from "/public/services/childtherapyAboutImage.webp";
 import childtherapyemphasis from "/public/services/childtherapyemphasis.webp";
 import childtherapylongtermgrowth from "/public/services/childtherapylongtermgrowth.webp";
@@ -21,7 +22,12 @@ export function ChildTherapy() {
   return (
     <section className="">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
       </div>
       <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10 flex flex-col gap-6">
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
@@ -72,6 +78,11 @@ export function ChildTherapy() {
 
 const HeroSectionData = {
   image: ChildTherapyHeroImage,
+  title: "Child Therapy",
+};
+
+const HeroSectionDataMobile = {
+  image: childtherapymobile,
   title: "Child Therapy",
 };
 

@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import griftherapyhomeimage from "/public/services/griftherapyhomeimage.webp";
+import grieftherapymobile from "/public/services/grieftherapymobile.png";
 import griftherapyaboutimage from "/public/services/griftherapyaboutimage.webp";
 import howgriefcounsellingcanhelp from "/public/services/howgriefcounsellingcanhelp.webp";
 
@@ -16,7 +17,12 @@ export function GriefTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsGriefTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -61,6 +67,13 @@ export function GriefTherapy() {
 }
 const HeroSectionData = {
   image: griftherapyhomeimage,
+  title:
+    "Individual Grief Counselling in Vaughan & Thornhill: Support for Loss and Healing",
+  description:
+    "A safe space to find a path through bereavement to healing and hope. ",
+};
+const HeroSectionDataMobile = {
+  image: grieftherapymobile,
   title:
     "Individual Grief Counselling in Vaughan & Thornhill: Support for Loss and Healing",
   description:

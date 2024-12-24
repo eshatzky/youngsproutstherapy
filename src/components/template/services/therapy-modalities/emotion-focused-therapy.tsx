@@ -10,6 +10,7 @@ import {
 } from "@/components/organism/services";
 
 import emotionfocusedheroimage from "/public/services/emotionfocusedheroimage.png";
+import emotionfocusedmobile from "/public/services/emotionfocusedmobile.png";
 import eftforcouples from "/public/services/eftforcouples.png";
 import familyinvolvementimage from "/public/services/familyinvolvementimage.png";
 import integratingEftImage from "/public/services/integratingEftImage.png";
@@ -18,7 +19,12 @@ export function EmotionFocusedTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsEmotionFocusedTherapy} />
       </div>
       <OurApproach
@@ -75,6 +81,11 @@ export function EmotionFocusedTherapy() {
 }
 const HeroSectionData = {
   image: emotionfocusedheroimage,
+  title:
+    "Emotion Focused Therapy (EFT) in Vaughan & Thornhill: Rebuilding Emotional Connections",
+};
+const HeroSectionDataMobile = {
+  image: emotionfocusedmobile,
   title:
     "Emotion Focused Therapy (EFT) in Vaughan & Thornhill: Rebuilding Emotional Connections",
 };

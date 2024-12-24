@@ -11,6 +11,7 @@ import {
 } from "@/components/organism/services";
 
 import cognitiveheroimage from "/public/services/cognitiveheroimage.png";
+import cognitivemobile from "/public/services/cognitivemobile.png";
 import groupCBTImage from "/public/services/groupCBTImage.png";
 import cbtbannerimage from "/public/services/cbtbannerimage.png";
 
@@ -18,7 +19,12 @@ export function CognitiveTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsCognitiveTherapy} />
       </div>
       <div className="flex flex-col gap-8  ~pb-10/16 overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
@@ -62,6 +68,12 @@ export function CognitiveTherapy() {
 }
 const HeroSectionData = {
   image: cognitiveheroimage,
+  title: "Cognitive Behavioural Therapy (CBT) in Vaughan & Thornhill",
+  description:
+    "CBT is a type of psychotherapy that helps individuals change negative thought patterns and behaviors.",
+};
+const HeroSectionDataMobile = {
+  image: cognitivemobile,
   title: "Cognitive Behavioural Therapy (CBT) in Vaughan & Thornhill",
   description:
     "CBT is a type of psychotherapy that helps individuals change negative thought patterns and behaviors.",

@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import musictherapyherosection from "/public/services/musictherapyherosection.png";
+import musictherapymobile from "/public/services/musictherapymobile.png";
 import musictherapyaboutimage from "/public/services/musictherapyaboutimage.png";
 import musictherapyforchildren from "/public/services/musictherapyforchildren.png";
 
@@ -16,7 +17,12 @@ export function MusicTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
 
@@ -60,6 +66,10 @@ export function MusicTherapy() {
 }
 const HeroSectionData = {
   image: musictherapyherosection,
+  title: "Music Therapy for Kids & Teens in Vaughan & Thornhill",
+};
+const HeroSectionDataMobile = {
+  image: musictherapymobile,
   title: "Music Therapy for Kids & Teens in Vaughan & Thornhill",
 };
 

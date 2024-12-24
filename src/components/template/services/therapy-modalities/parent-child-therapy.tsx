@@ -10,6 +10,7 @@ import {
 } from "@/components/organism/services";
 
 import parentchildinteractionheroimage from "/public/services/parentchildinteractionheroimage.png";
+import parentMobile from "/public/services/parent-child-interfactionobile.png";
 import pcidforbehavioralimage from "/public/services/pcidforbehavioralimage.png";
 import strengtheningtheparentimage from "/public/services/strengtheningtheparentimage.png";
 import pcitbannerimage from "/public/services/pcitbannerimage.png";
@@ -18,7 +19,12 @@ export function ParentChildTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
       <div className=" ~pb-6/8">
@@ -73,6 +79,12 @@ export function ParentChildTherapy() {
 }
 const HeroSectionData = {
   image: parentchildinteractionheroimage,
+  title: "Parent-Child Interaction Therapy (PCIT) in Vaughan & Thornhill",
+  description:
+    "PCIT is a form of therapy that focuses on improving the quality of the parent-child relationship and changing parent-child interaction patterns.",
+};
+const HeroSectionDataMobile = {
+  image: parentMobile,
   title: "Parent-Child Interaction Therapy (PCIT) in Vaughan & Thornhill",
   description:
     "PCIT is a form of therapy that focuses on improving the quality of the parent-child relationship and changing parent-child interaction patterns.",

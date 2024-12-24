@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import traumatherapyhomepageimage from "/public/services/traumatherapyhomepageimage.webp";
+import traumatherapymobile from "/public/services/traumatherapymobile.png";
 import trumatherapyaboutimage from "/public/services/trumatherapyaboutimage.png";
 import howtraumatherapycanhelp from "/public/services/howtraumatherapycanhelp.webp";
 
@@ -16,7 +17,12 @@ export function TraumaTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsTraumaTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -58,6 +64,12 @@ export function TraumaTherapy() {
 }
 const HeroSectionData = {
   image: traumatherapyhomepageimage,
+  title: "Trauma Therapy in Vaughan & Thornhill",
+  description:
+    "Compassionate support to help you heal from the past and regain a sense of safety. ",
+};
+const HeroSectionDataMobile = {
+  image: traumatherapymobile,
   title: "Trauma Therapy in Vaughan & Thornhill",
   description:
     "Compassionate support to help you heal from the past and regain a sense of safety. ",

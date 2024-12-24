@@ -11,6 +11,7 @@ import {
 } from "@/components/organism/services";
 
 import anxietyherosection from "/public/services/anxietyherosection.webp";
+import anxietytherapymobile from "/public/services/anxietytherapymobile.png";
 import anxietyherosectionimage from "/public/services/anxietyherosectionimage.webp";
 import anxietybannerimage from "/public/services/anxietybannerimage.webp";
 
@@ -18,7 +19,12 @@ export function AnxietyTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsAnxiety} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -59,6 +65,12 @@ export function AnxietyTherapy() {
 }
 const HeroSectionData = {
   image: anxietyherosection,
+  title: "Anxiety Therapy & Support in Vaughan & Thornhill",
+  description:
+    "Therapy to support and equip children, teens and adults with strategies for dealing with anxiety",
+};
+const HeroSectionDataMobile = {
+  image: anxietytherapymobile,
   title: "Anxiety Therapy & Support in Vaughan & Thornhill",
   description:
     "Therapy to support and equip children, teens and adults with strategies for dealing with anxiety",

@@ -10,13 +10,19 @@ import {
 } from "@/components/organism/services";
 
 import adhdheroImage from "/public/services/adhdheroImage.webp";
+import adhdmobile from "/public/services/adhdmobile.png";
 import adhdcoaching from "/public/services/adhdcoaching.webp";
 
 export function AdhdTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsAdHd} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -55,6 +61,12 @@ export function AdhdTherapy() {
 }
 const HeroSectionData = {
   image: adhdheroImage,
+  title: "ADHD Coaching & Therapy in Vaughan & Thornhill",
+  description:
+    "Treatment and support to help individuals of all ages navigate the challenges of Attention Deficit Hyperactivity Disorder (ADHD) & Attention Deficit Disorder (ADD).",
+};
+const HeroSectionDataMobile = {
+  image: adhdmobile,
   title: "ADHD Coaching & Therapy in Vaughan & Thornhill",
   description:
     "Treatment and support to help individuals of all ages navigate the challenges of Attention Deficit Hyperactivity Disorder (ADHD) & Attention Deficit Disorder (ADD).",

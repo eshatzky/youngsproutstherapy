@@ -9,13 +9,19 @@ import {
 } from "@/components/organism/services";
 
 import burnouttherapyheroimage from "/public/services/burnouttherapyheroimage.webp";
+import burnouttherapymobile from "/public/services/burnouttherapymobile.png";
 import burnouttherapyaboutiamge from "/public/services/burnouttherapyaboutiamge.webp";
 
 export function BurnOutTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsBurnOutTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -51,6 +57,12 @@ export function BurnOutTherapy() {
 }
 const HeroSectionData = {
   image: burnouttherapyheroimage,
+  title: "Burnout Therapy & Stress Management in Vaughan & Thornhill",
+  description:
+    "Therapy to help you regain control and find renewed energy for life's demands.",
+};
+const HeroSectionDataMobile = {
+  image: burnouttherapymobile,
   title: "Burnout Therapy & Stress Management in Vaughan & Thornhill",
   description:
     "Therapy to help you regain control and find renewed energy for life's demands.",

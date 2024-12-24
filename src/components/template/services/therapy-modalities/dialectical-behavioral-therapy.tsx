@@ -11,6 +11,7 @@ import {
 } from "@/components/organism/services";
 
 import dialecticalheroimage from "/public/services/dialecticalheroimage.png";
+import dialecticalmobile from "/public/services/dialecticalmobile.png";
 import benefitfromdbt from "/public/services/benefitfromdbt.png";
 import dbtbannerimage from "/public/services/dbtbannerimage.png";
 
@@ -18,7 +19,12 @@ export function DialecticalTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
       <OurApproach
@@ -68,6 +74,12 @@ export function DialecticalTherapy() {
 }
 const HeroSectionData = {
   image: dialecticalheroimage,
+  title: "Dialectical Behaviour Therapy (DBT) in Vaughan & Thornhill",
+  description:
+    "DBT is a type of cognitive-behavioral therapy that helps people manage their emotions and develop healthy coping mechanisms.",
+};
+const HeroSectionDataMobile = {
+  image: dialecticalmobile,
   title: "Dialectical Behaviour Therapy (DBT) in Vaughan & Thornhill",
   description:
     "DBT is a type of cognitive-behavioral therapy that helps people manage their emotions and develop healthy coping mechanisms.",

@@ -10,13 +10,19 @@ import {
 } from "@/components/organism/services";
 
 import narrativetherapyheroimage from "/public/services/narrativetherapyheroimage.png";
+import narrativetherapymobile from "/public/services/narrativetherapymobile.png";
 import narrativetherapyforcouplesImage from "/public/services/narrativetherapyforcouplesImage.png";
 
 export function NarrativeTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsNarrativeTherapy} />
       </div>
       <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
@@ -64,6 +70,12 @@ export function NarrativeTherapy() {
 }
 const HeroSectionData = {
   image: narrativetherapyheroimage,
+  title: "Narrative Therapy in Vaughan & Thornhill: Rewrite Your Story",
+  description:
+    "Narrative Therapy seeks to help patients identify their values and the skills associated with them.      ",
+};
+const HeroSectionDataMobile = {
+  image: narrativetherapymobile,
   title: "Narrative Therapy in Vaughan & Thornhill: Rewrite Your Story",
   description:
     "Narrative Therapy seeks to help patients identify their values and the skills associated with them.      ",

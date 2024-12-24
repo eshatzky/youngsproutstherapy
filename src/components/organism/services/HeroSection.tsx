@@ -16,13 +16,13 @@ type PropType = {
 
 export function HeroSection({ props }: PropType) {
   return (
-    <section className="w-full relative rounded-lg lg:rounded-3xl p-4 overflow-hidden h-full min-h-[216px] lg:min-h-[400px] lg:h-full flex items-center justify-center ">
+    <section className="w-full relative rounded-lg lg:rounded-3xl p-4 overflow-hidden h-full min-h-[228px] lg:min-h-[400px] lg:h-full flex items-center justify-center ">
       <Image
         src={props?.image ? props.image : HeroImage}
         alt="Parenting Counselling in Vaughan & Thornhill"
         layout="fill"
         placeholder="blur"
-        className="w-full aspect-auto -z-10  object-cover object-center"
+        className="w-full aspect-auto -z-10  object-cover object-top lg:object-center"
       />
       <div className="flex flex-col h-full items-center justify-center gap-6 lg:gap-12">
         <header className="flex flex-col gap-2.5 lg:gap-4">

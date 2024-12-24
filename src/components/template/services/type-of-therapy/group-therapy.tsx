@@ -10,6 +10,7 @@ import { TwoGridSection } from "@/components/organism";
 import { AboutSection } from "@/components/organism/services/group-therapy/AboutSection";
 
 import grouptherapyheroimage from "/public/services/grouptherapyheroimage.webp";
+import grouptherapymobile from "/public/services/grouptherapymobile.png";
 import groupAboutImage from "/public/services/groupAboutImage.webp";
 import groupguideddiscussions from "/public/services/groupguideddiscussions.webp";
 import groupsettingsarttherapy from "/public/services/groupsettingsarttherapy.webp";
@@ -29,8 +30,13 @@ import {
 export function GroupTherapy() {
   return (
     <section className=" pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
-        <HeroSection props={HeroSectionData} />
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
+        <div className="hidden lg:block w-full">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden w-full">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
       </div>
       <div className="max-w-[1440px] mx-auto  ~px-4/10 flex flex-col gap-6 ">
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
@@ -96,6 +102,10 @@ export function GroupTherapy() {
 }
 const HeroSectionData = {
   image: grouptherapyheroimage,
+  title: "Group Therapy for Kids and Teens in Vaughan & Thornhill",
+};
+const HeroSectionDataMobile = {
+  image: grouptherapymobile,
   title: "Group Therapy for Kids and Teens in Vaughan & Thornhill",
 };
 

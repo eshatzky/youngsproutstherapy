@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import depressinotherapyheroimage from "/public/services/depressinotherapyheroimage.webp";
+import depressiontherapymobile from "/public/services/depressiontherapymobile.png";
 import depressiontherapyaboutimage from "/public/services/depressiontherapyaboutimage.webp";
 import howdepressiontherapycanhelp from "/public/services/howdepressiontherapycanhelp.webp";
 
@@ -16,7 +17,12 @@ export function DepressionTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsDepressionTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -50,6 +56,12 @@ export function DepressionTherapy() {
 }
 const HeroSectionData = {
   image: depressinotherapyheroimage,
+  title: "Depression Therapy in Vaughan & Thornhill",
+  description:
+    "Providing a safe space to help you overcome depression and build a more fulfilling and resilient life. ",
+};
+const HeroSectionDataMobile = {
+  image: depressiontherapymobile,
   title: "Depression Therapy in Vaughan & Thornhill",
   description:
     "Providing a safe space to help you overcome depression and build a more fulfilling and resilient life. ",

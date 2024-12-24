@@ -15,6 +15,7 @@ import {
 } from "@/components/organism/services/couple-therapy";
 
 import coupletherapyheroImage from "/public/services/coupletherapyheroImage.webp";
+import coupletherapyheroImageMobile from "/public/services/coupletherapymobile.png";
 import coupletherapyaboutimage from "/public/services/coupletherapyaboutimage.webp";
 import issueswehelp from "/public/services/issueswehelp.webp";
 import couplebannerimage from "/public/services/couplebannerimage.webp";
@@ -24,8 +25,13 @@ import localcouplestherapy from "/public/services/localcouplestherapy.webp";
 export function CouplesTherapy() {
   return (
     <section className=" pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
-        <HeroSection props={HeroSectionData} />
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
       </div>
       <div className="max-w-[1440px] mx-auto ~px-4/10 flex flex-col gap-6">
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
@@ -93,6 +99,11 @@ export function CouplesTherapy() {
 }
 const HeroSectionData = {
   image: coupletherapyheroImage,
+  title:
+    "Couples Therapy in Vaughan & Thornhill: Strengthen Your Relationship, Rebuild Trust",
+};
+const HeroSectionDataMobile = {
+  image: coupletherapyheroImageMobile,
   title:
     "Couples Therapy in Vaughan & Thornhill: Strengthen Your Relationship, Rebuild Trust",
 };

@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import playtherapyheroimage from "/public/services/playtherapyheroimage.png";
+import playtherapymobile from "/public/services/playtherapymobile.png";
 import playtherapyforchildren from "/public/services/playtherapyforchildren.png";
 import familycentredplayimage from "/public/services/familycentredplayimage.png";
 import whatistheraplay from "/public/services/whatistheraplay.png";
@@ -18,7 +19,12 @@ export function PlayTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsPlayTherapy} />
       </div>
       <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10">
@@ -96,6 +102,12 @@ export function PlayTherapy() {
 }
 const HeroSectionData = {
   image: playtherapyheroimage,
+  title: "Play Therapy for Children in Vaughan & Thornhill",
+  description:
+    "Play Therapy uses play to help children communicate their feelings and deal with emotional issues.",
+};
+const HeroSectionDataMobile = {
+  image: playtherapymobile,
   title: "Play Therapy for Children in Vaughan & Thornhill",
   description:
     "Play Therapy uses play to help children communicate their feelings and deal with emotional issues.",

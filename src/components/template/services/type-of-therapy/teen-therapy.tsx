@@ -14,6 +14,7 @@ import {
 import { TwoGridSection } from "@/components/organism";
 
 import teentherapyheroImage from "/public/services/teentherapyheroImage.webp";
+import teentherapyheroImageMobile from "/public/services/teentherapymobile.png";
 import TeenTherapyAboutImage from "/public/services/TeenTherapyAboutImage.webp";
 import teentherapymaximumsuccess from "/public/services/teentherapymaximumsuccess.webp";
 import benefitofteentherapyImage from "/public/services/benefitofteentherapy.webp";
@@ -22,8 +23,13 @@ import teentherapylongtermgrowth from "/public/services/teentherapylongtermgrowt
 export function TeenTherapy() {
   return (
     <section className="  pt-6 lg:pt-2.5 flex flex-col gap-7">
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
-        <HeroSection props={HeroSectionData} />
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
       </div>
       <TherapyCanHelp />
 
@@ -73,8 +79,14 @@ export function TeenTherapy() {
     </section>
   );
 }
+
 const HeroSectionData = {
   image: teentherapyheroImage,
+  title:
+    "Teen Therapy in Vaughan & Thornhill: Building Emotional Strength and Confidence",
+};
+const HeroSectionDataMobile = {
+  image: teentherapyheroImageMobile,
   title:
     "Teen Therapy in Vaughan & Thornhill: Building Emotional Strength and Confidence",
 };

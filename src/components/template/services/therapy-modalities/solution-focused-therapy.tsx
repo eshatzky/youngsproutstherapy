@@ -10,13 +10,19 @@ import {
 } from "@/components/organism/services";
 
 import sftheroimage from "/public/services/sftheroimage.png";
+import solutionfocusedtherapymobile from "/public/services/solutionfocusedtherapymobile.png";
 import techniqueUsedimage from "/public/services/techniqueUsedimage.png";
 
 export function SolutionFocusedTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+      <div className="hidden lg:block">
+           <HeroSection props={HeroSectionData} />
+       </div>
+       <div className="block lg:hidden">
+            <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
       <div className=" ~pb-6/8">
@@ -62,6 +68,12 @@ export function SolutionFocusedTherapy() {
 }
 const HeroSectionData = {
   image: sftheroimage,
+  title: " (SFT) in Vaughan & Thornhill: Find Solutions, Achieve Goals",
+  description:
+    "Solution-Focused Therapy is future-focused and goal-directed, focusing on solutions rather than problems.",
+};
+const HeroSectionDataMobile = {
+  image: solutionfocusedtherapymobile,
   title: " (SFT) in Vaughan & Thornhill: Find Solutions, Achieve Goals",
   description:
     "Solution-Focused Therapy is future-focused and goal-directed, focusing on solutions rather than problems.",

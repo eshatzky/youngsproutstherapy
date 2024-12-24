@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import clinicalheroimage from "/public/services/clinicalheroimage.webp";
+import Clinicaltherapymobile from "/public/services/Clinicaltherapymobile.png";
 import benefitsofclinicalsupervision from "/public/services/benefitsofclinicalsupervision.webp";
 import SupervisoinImage from "/public/services/SupervisoinImage.webp";
 import ourApproachtoclinical from "/public/services/ourApproachtoclinical.webp";
@@ -17,7 +18,12 @@ export function ClinicalTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsClinicalTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -70,6 +76,13 @@ export function ClinicalTherapy() {
 }
 const HeroSectionData = {
   image: clinicalheroimage,
+  title:
+    "Clinical Supervision for Psychotherapists & Social Workers in Vaughan & Thornhill",
+  description:
+    "Offering clinical supervision in Thornhill, Vaughan for therapists specializing in children, teens, and families. Elevate your practice with Young Sprouts' expertise.",
+};
+const HeroSectionDataMobile = {
+  image: Clinicaltherapymobile,
   title:
     "Clinical Supervision for Psychotherapists & Social Workers in Vaughan & Thornhill",
   description:

@@ -11,6 +11,7 @@ import {
 } from "@/components/organism/services";
 
 import acceptance from "/public/services/acceptance.png";
+import acceptancetherapymobile from "/public/services/acceptancetherapymobile.png";
 import BenefitFromActImage from "/public/services/BenefitFromActImage.png";
 import actfortraumarecovery from "/public/services/actfortraumarecovery.png";
 import actbannerimage from "/public/services/actbannerimage.png";
@@ -19,7 +20,12 @@ export function AcceptanceTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsAcceptanceTherapy} />
       </div>
 
@@ -71,6 +77,11 @@ export function AcceptanceTherapy() {
 }
 const HeroSectionData = {
   image: acceptance,
+  title:
+    "Acceptance and Commitment Therapy (ACT) in Vaughan & Thornhill: Live Meaningfully While Embracing Life’s Challenges",
+};
+const HeroSectionDataMobile = {
+  image: acceptancetherapymobile,
   title:
     "Acceptance and Commitment Therapy (ACT) in Vaughan & Thornhill: Live Meaningfully While Embracing Life’s Challenges",
 };

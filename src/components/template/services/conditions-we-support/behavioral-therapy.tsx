@@ -11,6 +11,7 @@ import {
 } from "@/components/organism/services";
 
 import behaviouraltherapyheroimage from "/public/services/behaviouraltherapyheroimage.webp";
+import behaviouralmobile from "/public/services/behaviouralmobile.png";
 import behavioralTherapyaboutimage from "/public/services/behavioralTherapyaboutimage.webp";
 import behavioraltherapybannerimage from "/public/services/behavioraltherapybannerimage.webp";
 
@@ -18,7 +19,12 @@ export function BehavioralTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsBehavioraltherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -63,6 +69,12 @@ export function BehavioralTherapy() {
 }
 const HeroSectionData = {
   image: behaviouraltherapyheroimage,
+  title: "Behavioural Therapy for Kids & Teens in Vaughan & Thornhill",
+  description:
+    "We can help you manage stress, become resilient and develop healthy relationships.",
+};
+const HeroSectionDataMobile = {
+  image: behaviouralmobile,
   title: "Behavioural Therapy for Kids & Teens in Vaughan & Thornhill",
   description:
     "We can help you manage stress, become resilient and develop healthy relationships.",

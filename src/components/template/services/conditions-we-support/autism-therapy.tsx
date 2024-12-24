@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import autismtherapyhomepageimage from "/public/services/autismtherapyhomepageimage.webp";
+import Autismtherapymobile from "/public/services/Autismtherapymobile.png";
 import autismtherapyaboutimage from "/public/services/autismtherapyaboutimage.webp";
 import autismcounselling from "/public/services/autismcounselling.webp";
 import therapyforautism from "/public/services/therapyforautism.webp";
@@ -18,7 +19,12 @@ export function AutismTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsAutismTherapy} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
@@ -77,6 +83,12 @@ export function AutismTherapy() {
 }
 const HeroSectionData = {
   image: autismtherapyhomepageimage,
+  title: "Autism Therapy & Services in Vaughan & Thornhill",
+  description:
+    "Expert autism therapy and counseling for children and teens. Compassionate support tailored to your child's needs.",
+};
+const HeroSectionDataMobile = {
+  image: Autismtherapymobile,
   title: "Autism Therapy & Services in Vaughan & Thornhill",
   description:
     "Expert autism therapy and counseling for children and teens. Compassionate support tailored to your child's needs.",

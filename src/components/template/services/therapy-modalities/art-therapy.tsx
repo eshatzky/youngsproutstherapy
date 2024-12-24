@@ -9,6 +9,7 @@ import {
 } from "@/components/organism/services";
 
 import arttherapyheroimage from "/public/services/arttherapyheroimage.webp";
+import arttherapymobile from "/public/services/arttherapymobile.png";
 import benefitsofArttherapy from "/public/services/benefitsofArttherapy.webp";
 import useArtThreapy from "/public/services/useArtThreapy.webp";
 import integratingarttherapy from "/public/services/integratingarttherapy.webp";
@@ -20,7 +21,12 @@ export function ArtTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
-        <HeroSection props={HeroSectionData} />
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
+        </div>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
         <WhatIsSection data={WhatIsArtTherapy} />
         <WhatIsSection data={WhatIsArtTherapySubSection} className="!pt-4" />
       </div>
@@ -76,6 +82,12 @@ export function ArtTherapy() {
 }
 const HeroSectionData = {
   image: arttherapyheroimage,
+  title: "Art Therapy for Kids and Teens in Vaughan & Thornhill",
+  description:
+    "Art Therapy involves the use of creative techniques such as drawing, painting, and sculpting to help individuals express themselves.",
+};
+const HeroSectionDataMobile = {
+  image: arttherapymobile,
   title: "Art Therapy for Kids and Teens in Vaughan & Thornhill",
   description:
     "Art Therapy involves the use of creative techniques such as drawing, painting, and sculpting to help individuals express themselves.",

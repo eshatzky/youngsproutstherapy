@@ -10,13 +10,19 @@ import {
 } from "@/components/organism/services/parent-counselling";
 
 import HeroImage from "/public/services/Parenting Counselling.webp";
+import HeroImageMobile from "/public/services/Parenting Counsellingmobile.png";
 import AboutImage from "/public/services/parenting-about.webp";
 import PracticalParentingImage from "/public/services/parent-session.webp";
 
 export function ParentingCounselling() {
   return (
-    <section className="max-w-[1440px] w-full mx-auto ~px-4/16  pt-6 lg:pt-2.5">
-      <HeroSection props={HeroSectionData} />
+    <section className="max-w-[1440px] w-full mx-auto ~px-4/10  pt-6 lg:pt-2.5">
+      <div className="hidden lg:block">
+        <HeroSection props={HeroSectionData} />
+      </div>
+      <div className="block lg:hidden">
+        <HeroSection props={HeroSectionDataMobile} />
+      </div>
       <div className="~py-5/28 flex flex-col gap-6">
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
           Parenting Counselling in Vaughan & Thornhill
@@ -68,6 +74,10 @@ const HeroSectionData = {
   title: "Parenting Counselling in Vaughan & Thornhill",
 };
 
+const HeroSectionDataMobile = {
+  image: HeroImageMobile,
+  title: "Parenting Counselling in Vaughan & Thornhill",
+};
 const AboutSectionData = {
   title: "Parenting Counselling in Vaughan & Thornhill",
   subtitle: "Understanding the Challenges of Modern Parenting",
