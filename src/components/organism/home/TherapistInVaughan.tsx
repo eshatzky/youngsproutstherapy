@@ -33,7 +33,7 @@ export function TherapistInVaughan() {
             </Text>
             <div className="relative h-full block lg:hidden">
               <Image
-                src={"/images/group.webp"}
+                src={"/images/caringteam.png"}
                 width={1000}
                 height={1000}
                 alt="group team"

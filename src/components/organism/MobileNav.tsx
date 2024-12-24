@@ -129,7 +129,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="/services/therapy-modalities/acceptance-commitment-therapy">
+                    <Link href="/services/therapy-modalities/Acceptance-commitment-therapy">
                       Acceptance and Commitment Therapy (ACT)
                     </Link>
                   </SheetClose>
