@@ -27,6 +27,14 @@ export function ParentingCounselling() {
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
           Parenting Counselling in Vaughan & Thornhill
         </h2>
+        <p className="leading-6 lg:hidden">
+          Parenting is rewarding, but it can also be overwhelming. At Young
+          Sprouts Therapy, we provide expert parenting counselling to help you
+          navigate challenges, improve family dynamics, and strengthen your bond
+          with your children. Whether you&apos;re dealing with behavioural
+          issues, emotional stress, or general parenting struggles, our
+          compassionate team is here to support you every step of the way.
+        </p>
         <TwoGridSection
           renderComponent={() => <AboutSection props={AboutSectionData} />}
           image={AboutImage}
@@ -57,7 +65,13 @@ export function ParentingCounselling() {
         <h2 className="font-medium ~text-2xl/3xl text-primary">
           Practical Parenting Support Through Our Sessions
         </h2>
-
+        <p className="leading-6 lg:hidden">
+          We understand that parenting is a day-to-day journey, and we want to
+          equip you with tools and strategies that you can use both during and
+          after counselling. Our sessions focus on building sustainable
+          parenting habits, helping you apply what you’ve learned in real-life
+          situations.
+        </p>
         <TwoGridSection
           renderComponent={() => <PracticalParenting />}
           image={PracticalParentingImage}

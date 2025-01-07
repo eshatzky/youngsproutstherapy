@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function LongTermGrowth() {
   return (
-    <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full">
+    <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full max-lg:mt-5">
       <div className="flex flex-col gap-6">
         <h2 className="font-medium ~text-2xl/3xl text-primary">
           Therapy Tailored for Long-term Growth

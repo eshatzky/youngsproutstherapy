@@ -5,17 +5,25 @@ import Link from "next/link";
 
 export function AboutSection() {
   return (
-    <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full">
+    <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full max-lg:mt-5">
       <div className="flex flex-col gap-6">
         <h2 className="font-medium ~text-2xl/3xl text-primary max-lg:hidden">
           Child TheHelping Couples Reconnect and Build Stronger
           Relationshipsrapy
         </h2>
-        <p className="leading-6">
+        <p className="leading-6 max-lg:hidden">
           Relationships are rewarding, but they can also be challenging. Many
           couples experience periods of emotional disconnection, conflict, or
           even infidelity. At Young Sprouts Therapy, we specialize in helping
           couples rebuild trust, improve communication, and restore intimacy.
+          Whether you&apos;re facing conflicts about work-life balance,
+          emotional disconnection, or long-term relationship strain, our
+          licensed therapists are here to help. Our therapy services are
+          available both in-person in Vaughan and Thornhill and through virtual
+          sessions across Ontario, making it easy to access support regardless
+          of location.
+        </p>
+        <p className="leading-6 lg:hidden">
           Whether you&apos;re facing conflicts about work-life balance,
           emotional disconnection, or long-term relationship strain, our
           licensed therapists are here to help. Our therapy services are

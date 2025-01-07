@@ -33,6 +33,14 @@ export function ChildTherapy() {
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
           Child Therapy
         </h2>
+        <p className="leading-6 lg:hidden">
+          Parenting is rewarding but can also be challenging, especially when
+          your child is struggling emotionally or behaviourally. At Young
+          Sprouts Therapy, we offer specialized child therapy services designed
+          to support your child in overcoming their unique challenges. Whether
+          it&apos;s anxiety, behavioural issues, or low self-esteem, our
+          dedicated team is here to help your child thrive.
+        </p>
         <TwoGridSection
           renderComponent={() => <AboutSection props={AboutSectionData} />}
           image={childtherapyAboutImage}

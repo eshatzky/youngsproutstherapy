@@ -11,12 +11,12 @@ import { AboutSection } from "@/components/organism/services/group-therapy/About
 
 import grouptherapyheroimage from "/public/services/grouptherapyheroimage.webp";
 import grouptherapymobile from "/public/services/grouptherapymobile.png";
-import groupAboutImage from "/public/services/groupAboutImage.webp";
-import groupguideddiscussions from "/public/services/groupguideddiscussions.webp";
-import groupsettingsarttherapy from "/public/services/groupsettingsarttherapy.webp";
+import groupAboutImage from "../../../../../public/services/group/groupv1.jpeg";
+import groupsettingsarttherapy from "../../../../../public/services/group/groupv3.jpg";
+import groupguideddiscussions from "../../../../../public/services/group/groupv2.jpeg";
 import groupsubscriptionimage from "/public/services/groupsubscriptionimage.webp";
 import groupbannerimage from "/public/services/groupbannerimage.webp";
-import mindfulnessImage from "/public/services/mindfulness.webp";
+import mindfulnessImage from "../../../../../public/services/group//groupv5.jpg";
 import workshopforparents from "/public/services/workshopforparents.webp";
 
 import {
@@ -42,12 +42,18 @@ export function GroupTherapy() {
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
           Helping Kids and Teens Build Social Skills and Emotional Resilience
         </h2>
+        <p className="leading-6 lg:hidden">
+          Relationships are rewarding, but they can also be challenging. Many
+          couples experience periods of emotional disconnection, conflict, or
+          even infidelity. At Young Sprouts Therapy, we specialize in helping
+          couples rebuild trust, improve communication, and restore intimacy.
+        </p>
         <TwoGridSection
           renderComponent={() => <AboutSection />}
           image={groupAboutImage}
         />
       </div>
-      <div className="~py-12/24  max-w-[1440px] w-full mx-auto ~px-4/10">
+      <div className="~py-8/12  max-w-[1440px] w-full mx-auto ~px-4/10">
         <SubscriptionBanner data={SubscriptionData} />
       </div>
       <SpecificChallenges />

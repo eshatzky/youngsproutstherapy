@@ -4,7 +4,7 @@ import Link from "next/link";
 export function PracticalParenting() {
   return (
     <article className="flex flex-col gap-8 lg:gap-12">
-      <p className="leading-6">
+      <p className="leading-6 max-lg:hidden">
         We understand that parenting is a day-to-day journey, and we want to
         equip you with tools and strategies that you can use both during and
         after counselling. Our sessions focus on building sustainable parenting

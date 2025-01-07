@@ -18,11 +18,11 @@ export function TwoFlexSection({
     <section
       className={cn(
         "flex flex-col-reverse w-full lg:flex-row gap-[44px] lg:gap-14",
-        rtl ? "flex-col lg:flex-row-reverse" : "",
+        rtl ? "flex-col max-lg:flex-col-reverse lg:flex-row-reverse" : "",
         className
       )}
     >
-      <article className={cn("w-full lg:max-w-[765px]")}>
+      <article className={cn("w-full lg:max-w-[765px] max-lg:-mt-2")}>
         {renderComponent()}
       </article>
       <div

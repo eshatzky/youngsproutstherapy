@@ -12,12 +12,12 @@ import {
 
 import dialecticalheroimage from "/public/services/dialecticalheroimage.png";
 import dialecticalmobile from "/public/services/dialecticalmobile.png";
-import benefitfromdbt from "/public/services/benefitfromdbt.png";
+import benefitfromdbt from "../../../../../public/services/dbt/dbt.jpg";
 import dbtbannerimage from "/public/services/dbtbannerimage.png";
 
 export function DialecticalTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />

@@ -6,7 +6,6 @@ import {
   TherapeuticModalities,
   TherapistInVaughan,
   WhyChooseUs,
-  BookingConsultation,
   InsuranceCoverage,
   PositiveOutcomes,
   MapBox,
@@ -15,6 +14,17 @@ import {
   PersonalizedTherapy,
   ConvenientLocation,
 } from "@/components/organism/home";
+import dynamic from "next/dynamic";
+
+const BookingConsultation = dynamic(
+  () =>
+    import("../../organism/home/BookingConsultation").then(
+      (module) => module.BookingConsultation
+    ),
+  {
+    ssr: false,
+  }
+);
 
 export function Home() {
   return (

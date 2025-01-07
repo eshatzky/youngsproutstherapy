@@ -11,11 +11,11 @@ import {
 
 import narrativetherapyheroimage from "/public/services/narrativetherapyheroimage.png";
 import narrativetherapymobile from "/public/services/narrativetherapymobile.png";
-import narrativetherapyforcouplesImage from "/public/services/narrativetherapyforcouplesImage.png";
+import narrativetherapyforcouplesImage from "../../../../../public/services/narrative/narrativev1.jpg";
 
 export function NarrativeTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -39,7 +39,7 @@ export function NarrativeTherapy() {
       <div className="~pt-10/16 ~pb-6/8">
         <WhyChooseUs data={WhyChooseUsData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-8">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={NarrativeTherapyForCouplesData} />

@@ -10,7 +10,7 @@ import {
 
 import burnouttherapyheroimage from "/public/services/burnouttherapyheroimage.webp";
 import burnouttherapymobile from "/public/services/burnouttherapymobile.png";
-import burnouttherapyaboutiamge from "/public/services/burnouttherapyaboutiamge.webp";
+import burnouttherapyaboutiamge from "../../../../../public/services/burnout/burnout.jpg";
 
 export function BurnOutTherapy() {
   return (
@@ -24,7 +24,7 @@ export function BurnOutTherapy() {
         </div>
         <WhatIsSection data={WhatIsBurnOutTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={BurnOutTherapyData} />}
           image={burnouttherapyaboutiamge}

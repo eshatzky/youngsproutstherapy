@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 import { MobileNav } from "./MobileNav";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +57,7 @@ export function Header() {
         <Link href={"/"}>
           <Image
             src={Logo}
-            className="w-[145px] lg:w-[173px] "
+            className="w-[145px] lg:w-[220px] "
             width={140}
             height={50}
             alt="logo"
@@ -77,12 +78,15 @@ export function Header() {
             >
               <DropdownMenuTrigger
                 onMouseEnter={() => setIsOpen(true)}
-                className="outlino-none border-none focus:outline-none cursor-pointer"
+                className="outline-none border-none focus:outline-none flex items-center gap-1.5 cursor-pointer"
               >
                 <Text
                   type="p"
                   size="medium"
-                  className="flex items-center gap-1.5 cursor-pointer"
+                  className={cn(
+                    "flex items-center gap-1.5 cursor-pointer",
+                    isOpen ? "text-primary cursor-pointer" : ""
+                  )}
                 >
                   Services
                   <svg
@@ -94,7 +98,7 @@ export function Header() {
                   >
                     <path
                       d="M5 5.5L0.669873 0.25L9.33013 0.250001L5 5.5Z"
-                      fill="#A79AA1"
+                      fill={isOpen ? "#ab7574" : "#A79AA1"}
                     />
                   </svg>
                 </Text>
@@ -335,7 +339,10 @@ export function Header() {
                 <Text
                   type="p"
                   size="medium"
-                  className="flex items-center gap-1.5 cursor-pointer"
+                  className={cn(
+                    "flex items-center gap-1.5 cursor-pointer",
+                    isOpenAbout ? "text-primary cursor-pointer" : ""
+                  )}
                 >
                   About us
                   <svg
@@ -347,7 +354,7 @@ export function Header() {
                   >
                     <path
                       d="M5 5.5L0.669873 0.25L9.33013 0.250001L5 5.5Z"
-                      fill="#A79AA1"
+                      fill={isOpenAbout ? "#ab7574" : "#A79AA1"}
                     />
                   </svg>
                 </Text>

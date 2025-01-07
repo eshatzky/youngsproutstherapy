@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function LongTermGrowth() {
   return (
-    <section className="flex flex-col gap-6 ">
+    <section className="flex flex-col gap-6 max-lg:mt-4 ">
       <h2 className="font-medium ~text-2xl/3xl text-primary">
         Therapy Tailored for Long-term Growth
       </h2>

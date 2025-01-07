@@ -11,11 +11,11 @@ import {
 import musictherapyherosection from "/public/services/musictherapyherosection.png";
 import musictherapymobile from "/public/services/musictherapymobile.png";
 import musictherapyaboutimage from "/public/services/musictherapyaboutimage.png";
-import musictherapyforchildren from "/public/services/musictherapyforchildren.png";
+import musictherapyforchildren from "../../../../../public/services/music/music.jpg";
 
 export function MusicTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -26,7 +26,7 @@ export function MusicTherapy() {
         <WhatIsSection data={WhatIsDialecticalTherapy} />
       </div>
 
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={MusicTherapyAboutSectionData} />
@@ -37,7 +37,7 @@ export function MusicTherapy() {
       <div className=" ~pb-6/8">
         <WhyChooseUs data={howPCITWorks} row={3} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10 max-lg:pt-5">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={MusicTherapyChallenges} />
@@ -46,7 +46,7 @@ export function MusicTherapy() {
         />
       </div>
 
-      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10 pt-10">
+      <div className="flex flex-col gap-8  overflow-hidden max-w-[1440px] w-full mx-auto ~px-4/10 pt-10 max-lg:pt-5">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
             How Music Therapy Can Help Your Child or Teen

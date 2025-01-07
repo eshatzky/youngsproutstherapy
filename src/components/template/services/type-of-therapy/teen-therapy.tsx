@@ -17,8 +17,9 @@ import teentherapyheroImage from "/public/services/teentherapyheroImage.webp";
 import teentherapyheroImageMobile from "/public/services/teentherapymobile.png";
 import TeenTherapyAboutImage from "/public/services/TeenTherapyAboutImage.webp";
 import teentherapymaximumsuccess from "/public/services/teentherapymaximumsuccess.webp";
-import benefitofteentherapyImage from "/public/services/benefitofteentherapy.webp";
-import teentherapylongtermgrowth from "/public/services/teentherapylongtermgrowth.webp";
+import benefitofteentherapyImage from "../../../../../public/services/teens/teentherapy1.jpeg";
+
+import teentherapylongtermgrowth from "../../../../../public/services/teens/teentherapylongtimegrowth.jpeg";
 
 export function TeenTherapy() {
   return (
@@ -39,7 +40,7 @@ export function TeenTherapy() {
         title="Our Teen Therapy Approach"
         description="Every teen’s journey is different. At Young Sprouts Therapy, we tailor our therapeutic approach to the individual needs of each teen. Our therapists integrate a variety of evidence-based modalities to help teens navigate emotional challenges, behavioural issues, and peer or academic stress."
       />
-      <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-4/10">
+      <div className="~py-5/28 max-lg:pt-0 max-w-[1440px] w-full mx-auto ~px-4/10">
         <TwoGridSection
           renderComponent={() => <GroupTherapyforTeens />}
           image={TeenTherapyAboutImage}

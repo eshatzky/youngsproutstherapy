@@ -28,7 +28,7 @@ export function TwoGridSection({
     >
       <article
         className={cn(
-          "order-2 lg:order-1 h-full flex lg:items-center lg:justify-center",
+          "order-2 lg:order-1 h-full flex lg:items-center lg:justify-center max-lg:-mt-10",
           row === 5 ? "grid-cols-1 lg:col-span-3" : "",
           rtl ? "order-2 lg:order-2" : ""
         )}

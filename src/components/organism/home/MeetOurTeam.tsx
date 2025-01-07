@@ -35,7 +35,7 @@ export async function MeetOurTeam() {
           </defs>
         </svg>
 
-        <div className="flex flex-col gap-7 max-w-[1440px] mx-auto w-full ~px-5/16 py-16 lg:py-12">
+        <div className="flex flex-col gap-7 max-w-[1440px] mx-auto w-full ~px-5/16 ~py-8/16 lg:py-12">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-1.5 justify-center">
               <svg
@@ -62,8 +62,8 @@ export async function MeetOurTeam() {
           </div>
           <TeamCarousel teams={teams} />
           <div className="w-full flex items-center justify-center mt-4">
-            <Button asChild className="w-fit" variant={"default"}>
-              <Link href={"/team"}>Meet the all team member</Link>
+            <Button asChild className="w-fit px-4" variant={"default"}>
+              <Link href={"/team"}>Meet our Entire Therapy Team</Link>
             </Button>
           </div>
         </div>

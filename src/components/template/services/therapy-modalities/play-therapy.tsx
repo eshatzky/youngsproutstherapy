@@ -17,7 +17,7 @@ import parentchildplaytherapyimage from "/public/services/parentchildplaytherapy
 
 export function PlayTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -57,7 +57,7 @@ export function PlayTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={FamilyCenteredPlayData} />
@@ -65,7 +65,7 @@ export function PlayTherapy() {
           image={familycentredplayimage}
         />
       </div>
-      <div className="~pt-10/16">
+      <div className="~pt-10/16 max-lg:pt-0">
         <WhyChooseUs
           subDescription={
             "This flexible approach ensures that each child receives the therapeutic support that best suits their unique needs."
@@ -82,7 +82,7 @@ export function PlayTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 py-10 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={ParentChildPlayTherapyData} />
@@ -90,7 +90,7 @@ export function PlayTherapy() {
           image={parentchildplaytherapyimage}
         />
       </div>
-      <div className="~pt-10/16">
+      <div className="~pt-10/16 max-lg:pt-0">
         <WhyChooseUs data={BenefitsofPlayTherapy} showBg={true} row={3} />
       </div>
 

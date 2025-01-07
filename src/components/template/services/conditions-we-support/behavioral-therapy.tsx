@@ -12,12 +12,12 @@ import {
 
 import behaviouraltherapyheroimage from "/public/services/behaviouraltherapyheroimage.webp";
 import behaviouralmobile from "/public/services/behaviouralmobile.png";
-import behavioralTherapyaboutimage from "/public/services/behavioralTherapyaboutimage.webp";
+import behavioralTherapyaboutimage from "../../../../../public/services/behavioural/behavioral.jpg";
 import behavioraltherapybannerimage from "/public/services/behavioraltherapybannerimage.webp";
 
 export function BehavioralTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -27,7 +27,7 @@ export function BehavioralTherapy() {
         </div>
         <WhatIsSection data={WhatIsBehavioraltherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={BehavioralTherapyData} />

@@ -10,12 +10,12 @@ import {
 
 import depressinotherapyheroimage from "/public/services/depressinotherapyheroimage.webp";
 import depressiontherapymobile from "/public/services/depressiontherapymobile.png";
-import depressiontherapyaboutimage from "/public/services/depressiontherapyaboutimage.webp";
-import howdepressiontherapycanhelp from "/public/services/howdepressiontherapycanhelp.webp";
+import depressiontherapyaboutimage from "../../../../../public/services/depression/depression.jpg";
+import howdepressiontherapycanhelp from "../../../../../public/services/depression/depressionv3.jpg";
 
 export function DepressionTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -25,7 +25,7 @@ export function DepressionTherapy() {
         </div>
         <WhatIsSection data={WhatIsDepressionTherapy} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={BurnOutTherapyData} />}
           image={depressiontherapyaboutimage}
@@ -40,7 +40,7 @@ export function DepressionTherapy() {
       <div className="py-16">
         <WhyChooseUs data={WhyChooseUsData} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~pt-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~pt-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => (
             <BlockWithPoints data={HowDepressionTherapyCanHelpData} />

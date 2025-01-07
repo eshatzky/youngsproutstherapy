@@ -20,7 +20,7 @@ export function AboutSection({ props }: PropsType) {
         <h2 className="font-medium ~text-lg/3xl text-primary max-lg:hidden">
           {props?.title}
         </h2>
-        <p className="leading-6">{props?.description}</p>
+        <p className="leading-6 max-lg:hidden">{props?.description}</p>
       </article>
       <article className="flex flex-col gap-6">
         <h2 className="font-medium ~text-lg/3xl text-primary">

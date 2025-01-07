@@ -43,6 +43,7 @@ export function ContactDialog({ className }: { className?: string }) {
           label: "Form Submission",
         });
         form.current.reset();
+        setOpen(false);
       } catch (error) {
         console.warn(error);
         toast.error("Failed to send message. Please try again.");

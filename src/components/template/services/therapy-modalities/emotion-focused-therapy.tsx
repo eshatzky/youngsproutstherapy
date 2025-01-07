@@ -11,13 +11,13 @@ import {
 
 import emotionfocusedheroimage from "/public/services/emotionfocusedheroimage.png";
 import emotionfocusedmobile from "/public/services/emotionfocusedmobile.png";
-import eftforcouples from "/public/services/eftforcouples.png";
-import familyinvolvementimage from "/public/services/familyinvolvementimage.png";
+import eftforcouples from "../../../../../public/services/eft/eftv1.jpg";
+import familyinvolvementimage from "../../../../../public/services/eft/eftv2.jpg";
 import integratingEftImage from "/public/services/integratingEftImage.png";
 
 export function EmotionFocusedTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -54,7 +54,7 @@ export function EmotionFocusedTherapy() {
           rtl={true}
         />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={IntegratingEftData} />}
           image={integratingEftImage}

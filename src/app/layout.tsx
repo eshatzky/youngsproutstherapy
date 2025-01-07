@@ -56,8 +56,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleAnalytics gaId="G-7SPHMHP3YC" />
-        <GoogleTagManager gtmId="GTM-KZHGKVZ" />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
+        />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
       </head>
       <body className={` text-[#5c5c5c] bg-white antialiased`}>
         <AlertBar />

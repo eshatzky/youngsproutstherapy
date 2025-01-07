@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function GuidedDiscussions() {
   return (
-    <article className="flex flex-col gap-4">
+    <article className="flex flex-col gap-4 max-lg:mt-5">
       <div className="flex flex-col gap-6">
         <h2 className="font-medium ~text-2xl/3xl text-primary">
           Guided Discussions for Emotional Exploration

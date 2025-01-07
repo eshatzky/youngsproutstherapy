@@ -12,12 +12,12 @@ import {
 
 import anxietyherosection from "/public/services/anxietyherosection.webp";
 import anxietytherapymobile from "/public/services/anxietytherapymobile.png";
-import anxietyherosectionimage from "/public/services/anxietyherosectionimage.webp";
+import anxietyherosectionimage from "../../../../../public/services/anxiety/anxiety.jpg";
 import anxietybannerimage from "/public/services/anxietybannerimage.webp";
 
 export function AnxietyTherapy() {
   return (
-    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
+    <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col lg:gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/10">
         <div className="hidden lg:block">
           <HeroSection props={HeroSectionData} />
@@ -27,7 +27,7 @@ export function AnxietyTherapy() {
         </div>
         <WhatIsSection data={WhatIsAnxiety} />
       </div>
-      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16">
+      <div className="max-w-[1440px] w-full mx-auto ~px-4/10 ~py-10/16 max-lg:pt-0">
         <TwoFlexSection
           renderComponent={() => <BlockWithPoints data={AnxietyTherapyData} />}
           image={anxietyherosectionimage}

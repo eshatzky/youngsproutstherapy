@@ -14,7 +14,7 @@ export function WhatIsSection({ data, className }: Props) {
   return (
     <section
       className={cn(
-        "max-w-[1020px] mx-auto w-full ~py-11/14 flex flex-col gap-6",
+        "max-w-[1020px] mx-auto w-full ~py-11/14 max-lg:px-4 flex flex-col gap-6",
         className
       )}
     >

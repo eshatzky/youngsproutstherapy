@@ -19,7 +19,7 @@ import coupletherapyheroImageMobile from "/public/services/coupletherapymobile.p
 import coupletherapyaboutimage from "/public/services/coupletherapyaboutimage.webp";
 import issueswehelp from "/public/services/issueswehelp.webp";
 import couplebannerimage from "/public/services/couplebannerimage.webp";
-import benefitofteentherapyImage from "/public/services/benefitofteentherapy.webp";
+import benefitofCoupletherapyImage from "../../../../../public/services/couple/couple.jpeg";
 import localcouplestherapy from "/public/services/localcouplestherapy.webp";
 
 export function CouplesTherapy() {
@@ -38,6 +38,12 @@ export function CouplesTherapy() {
           Child TheHelping Couples Reconnect and Build Stronger
           Relationshipsrapy
         </h2>
+        <p className="leading-6 lg:hidden">
+          Relationships are rewarding, but they can also be challenging. Many
+          couples experience periods of emotional disconnection, conflict, or
+          even infidelity. At Young Sprouts Therapy, we specialize in helping
+          couples rebuild trust, improve communication, and restore intimacy.
+        </p>
         <TwoGridSection
           renderComponent={() => <AboutSection />}
           image={coupletherapyaboutimage}
@@ -62,7 +68,7 @@ export function CouplesTherapy() {
         <div>
           <TwoGridSection
             renderComponent={() => <BenefitsofCoupleTherapy />}
-            image={benefitofteentherapyImage}
+            image={benefitofCoupletherapyImage}
             row={5}
           />
         </div>

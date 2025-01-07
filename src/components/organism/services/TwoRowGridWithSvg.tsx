@@ -30,7 +30,9 @@ export function TwoRowGridWithSvg({
           className=" object-center object-cover w-full h-full  flex-shrink-0 "
         />
       </div>
-      <article className={cn("max-w-[776px]")}>{renderComponent()}</article>
+      <article className={cn("max-w-[776px] max-lg:-mt-3")}>
+        {renderComponent()}
+      </article>
     </section>
   );
 }

@@ -29,14 +29,16 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
         className="w-full bg-secondary overflow-y-scroll max-h-fit pb-[52px]  "
       >
         <SheetHeader>
-          <SheetDescription className="text-white mt-20 z-10">
+          <SheetDescription className="text-white mt-20 z-10 text-base">
             <Accordion type="single" collapsible className="z-20">
               <AccordionItem
                 value="item-1"
-                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none text-base"
               >
-                <AccordionTrigger>Type of Therapy</AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2 bg-[#34abbf] py-2 px-2.5">
+                <AccordionTrigger className="text-base">
+                  Type of Therapy
+                </AccordionTrigger>
+                <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2 bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
                     <Link href="/services/therapy-type/parenting-counselling">
                       Parenting
@@ -68,8 +70,10 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 value="item-2"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
-                <AccordionTrigger>Conditions we supports</AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
+                <AccordionTrigger className="text-base">
+                  Conditions we supports
+                </AccordionTrigger>
+                <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
                     <Link href="/services/conditions-we-support/adhd-therapy">
                       ADHD Coaching & Therapy
@@ -121,8 +125,10 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 value="item-3"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
-                <AccordionTrigger>Therapy modalities</AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-7 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
+                <AccordionTrigger className="text-base">
+                  Therapy modalities
+                </AccordionTrigger>
+                <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild>
                     <Link href="/services/therapy-modalities/art-therapy">
                       Art Therapy
@@ -180,6 +186,39 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                   </SheetClose>
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem
+                value="item-4"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
+              >
+                <AccordionTrigger className="text-base">
+                  About us
+                </AccordionTrigger>
+                <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
+                  <SheetClose asChild>
+                    <Link href="/team">Team</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/fees">Fees</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/faq">Faq</Link>
+                  </SheetClose>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-5"
+                className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
+              ></AccordionItem>
+              <div className="text-base text-left p-2.5">
+                <SheetClose asChild>
+                  <Link href="/contact-us">Contact Us</Link>
+                </SheetClose>
+              </div>
+              <div className="text-base text-left p-2.5">
+                <SheetClose asChild>
+                  <Link href="/blog">Blog</Link>
+                </SheetClose>
+              </div>
             </Accordion>
           </SheetDescription>
         </SheetHeader>
