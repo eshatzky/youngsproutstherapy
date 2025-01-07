@@ -50,7 +50,7 @@ export function TeamDetailsPage({ team }: Props) {
             <ContactDialog className="!w-full rounded-lg lg:!w-full lg:max-w-full" />
           </div>
         </div>
-        <div className="lg:p-4 pt-0 flex flex-col justify-between gap-8">
+        <div className="lg:p-4 lg:pt-0 flex flex-col justify-between gap-8">
           <TeamDetailsCard team={team} />
         </div>
       </Card>
