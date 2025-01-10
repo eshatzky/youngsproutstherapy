@@ -67,7 +67,10 @@ export function HeroSection() {
                 href={"/#book-consultation"}
                 className="max-sm:w-full flex max-sm:items-center max-lg:justify-center"
               >
-                <Button variant={"outline"} className="max-w-[260px] w-full  ">
+                <Button
+                  variant={"outlineV2"}
+                  className="max-w-[260px] w-full  "
+                >
                   Schedule a Free Consult
                 </Button>
               </Link>

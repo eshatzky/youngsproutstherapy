@@ -74,10 +74,10 @@ export function ArtTherapy() {
           image={groupArttherapy}
         />
       </div>
-      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-4/10">
+      <div className="~pt-12/16 max-w-[1440px] mx-auto w-full ~px-4/1 max-lg:pt-0">
         <Banner data={BannerData} />
       </div>
-      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10">
+      <div className=" max-w-[1440px] w-full mx-auto ~px-4/10 max-lg:-pt-5">
         <Faq data={FaqData} />
       </div>
     </section>

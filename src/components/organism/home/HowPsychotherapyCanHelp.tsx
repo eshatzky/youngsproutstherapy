@@ -48,12 +48,12 @@ const items: PsychotherapyData[] = [
   {
     title: "Parenting",
     desc: "Guiding parents to foster strong, healthy relationships with their children, while navigating the challenges and joys of parenthood.",
-    href: "/services/conditions-we-support/clinical-supervision",
+    href: "/services/therapy-type/parenting-counselling",
   },
   {
     title: "Self-Esteem",
     desc: "Boosting children's and teens' confidence and self-worth through counselling strategies that promote positive self-perception and resilience.",
-    href: "/services/conditions-we-support/burnout-therapy",
+    href: "#",
   },
   {
     title: "Behavioural Challenges",
@@ -63,7 +63,7 @@ const items: PsychotherapyData[] = [
   {
     title: "Emotional Regulation",
     desc: "Enhancing emotional regulation in children and teens, using proven techniques to help them understand and manage their feelings for better mental health and relationships.",
-    href: "/services/conditions-we-support/burnout-therapy",
+    href: "#",
   },
   {
     title: "Trauma",
@@ -78,7 +78,7 @@ const items: PsychotherapyData[] = [
   {
     title: "Learning Disabilities",
     desc: "Supporting children and teens with learning disabilities, using tailored strategies to enhance their academic skills, confidence, and overall school experience.",
-    href: "/services/conditions-we-support/autism-therapy",
+    href: "#",
   },
   {
     title: "Depression",
@@ -93,6 +93,6 @@ const items: PsychotherapyData[] = [
   {
     title: "Learn More",
     desc: "Dive deeper into our comprehensive range of services and discover how we tailor our therapeutic approaches to meet the unique needs of every child and family.",
-    href: "/approach-and-specialties",
+    href: "/services/approach-and-specialties",
   },
 ];

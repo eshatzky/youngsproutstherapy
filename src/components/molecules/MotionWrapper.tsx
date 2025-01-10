@@ -32,7 +32,7 @@ export default function MotionWrapper({ children }: Props) {
           whileInView={{
             opacity: [0, 1],
           }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
+          transition={{ ease: "easeInOut", duration: 0.1 }}
         >
           {children}
         </motion.div>

@@ -6,24 +6,138 @@ import { Button } from "../ui/button";
 import { Logo } from "@/assets";
 import Text from "../atom/Text";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuPortal,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 import { MobileNav } from "./MobileNav";
-import { cn } from "@/lib/utils";
+import { CustomSubmenu } from "../molecules/customsubmenu";
 
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOpenAbout, setIsOpenAbout] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+
+  const handleMenuOpen = (menu: string) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+  };
+
+  const servicesItems = [
+    {
+      label: "Type of Therapy",
+      items: [
+        {
+          label: "Parenting",
+          href: "/services/therapy-type/parenting-counselling",
+        },
+        {
+          label: "Child Therapy",
+          href: "/services/therapy-type/child-therapy",
+        },
+        { label: "Teen Therapy", href: "/services/therapy-type/teen-therapy" },
+        {
+          label: "Couples Therapy",
+          href: "/services/therapy-type/couples-therapy",
+        },
+        {
+          label: "Group Therapy",
+          href: "/services/therapy-type/group-therapy",
+        },
+      ],
+    },
+    {
+      label: "Conditions we support",
+      items: [
+        {
+          label: "ADHD Coaching & Therapy",
+          href: "/services/conditions-we-support/adhd-therapy",
+        },
+        {
+          label: "Anxiety Therapy",
+          href: "/services/conditions-we-support/anxiety-therapy",
+        },
+        {
+          label: "Burnout Therapy",
+          href: "/services/conditions-we-support/burnout-therapy",
+        },
+        {
+          label: "Behavioral Therapy",
+          href: "/services/conditions-we-support/behavioral-therapy",
+        },
+        {
+          label: "Depression Therapy",
+          href: "/services/conditions-we-support/depression-therapy",
+        },
+        {
+          label: "Grief Therapy",
+          href: "/services/conditions-we-support/grief-therapy",
+        },
+        {
+          label: "Trauma Therapy",
+          href: "/services/conditions-we-support/trauma-therapy",
+        },
+        {
+          label: "Autism Therapy",
+          href: "/services/conditions-we-support/autism-therapy",
+        },
+        {
+          label: "Clinical Supervision",
+          href: "/services/conditions-we-support/clinical-supervision",
+        },
+      ],
+    },
+    {
+      label: "Therapy modalities",
+      items: [
+        {
+          label: "Art Therapy",
+          href: "/services/therapy-modalities/art-therapy",
+        },
+        {
+          label: "Acceptance and Commitment Therapy (ACT)",
+          href: "/services/therapy-modalities/Acceptance-commitment-therapy",
+        },
+        {
+          label: "Cognitive Behavioral Therapy (CBT)",
+          href: "/services/therapy-modalities/cognitive-behavioral-therapy",
+        },
+        {
+          label: "Dialectical Behavioral Therapy (DBT)",
+          href: "/services/therapy-modalities/dialectical-behavioral-therapy",
+        },
+        {
+          label: "Emotion Focused Therapy (EFT)",
+          href: "/services/therapy-modalities/emotion-focused-therapy",
+        },
+        {
+          label: "Narrative Therapy",
+          href: "/services/therapy-modalities/narrative-therapy",
+        },
+        {
+          label: "Play Therapy",
+          href: "/services/therapy-modalities/play-therapy",
+        },
+        {
+          label: "Parent-Child Interaction Therapy (PCIT)",
+          href: "/services/therapy-modalities/parent-child-therapy",
+        },
+        {
+          label: "Solution-Focused Therapy (SFT)",
+          href: "/services/therapy-modalities/solution-focused-therapy",
+        },
+        {
+          label: "Music Therapy",
+          href: "/services/therapy-modalities/music-therapy",
+        },
+      ],
+    },
+    {
+      label: "Approach & Specialties",
+      href: "/services/approach-and-specialties",
+    },
+  ];
+
+  const aboutUsItems = [
+    { label: "Team", href: "/team" },
+    { label: "Fees", href: "/fees" },
+    { label: "FAQ", href: "/faq" },
+  ];
 
   return (
     <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
@@ -64,315 +178,30 @@ export function Header() {
           />
         </Link>
       </div>
-      <nav className=" hidden lg:flex items-center gap-8">
+      <nav className="hidden lg:flex items-center gap-8">
         <Link href={"/"}>
           <Text type="p" size="medium" className="hover:text-primary">
             Home
           </Text>
         </Link>
-        <div>
-          <ul>
-            <DropdownMenu
-              open={isOpen}
-              onOpenChange={(open) => setIsOpen(open)}
-            >
-              <DropdownMenuTrigger
-                onMouseEnter={() => setIsOpen(true)}
-                className="outline-none border-none focus:outline-none flex items-center gap-1.5 cursor-pointer"
-              >
-                <Text
-                  type="p"
-                  size="medium"
-                  className={cn(
-                    "flex items-center gap-1.5 cursor-pointer",
-                    isOpen ? "text-primary cursor-pointer" : ""
-                  )}
-                >
-                  Services
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                  >
-                    <path
-                      d="M5 5.5L0.669873 0.25L9.33013 0.250001L5 5.5Z"
-                      fill={isOpen ? "#ab7574" : "#A79AA1"}
-                    />
-                  </svg>
-                </Text>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className=" absolute left-0 -ml-8">
-                <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>
-                    <span>Type of Therapy</span>
-                  </DropdownMenuSubTrigger>
-                  <DropdownMenuPortal>
-                    <DropdownMenuSubContent>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={"/services/therapy-type/parenting-counselling"}
-                        >
-                          Parenting
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link href={"/services/therapy-type/child-therapy"}>
-                          Child Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link href={"/services/therapy-type/teen-therapy"}>
-                          Teen Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link href={"/services/therapy-type/couples-therapy"}>
-                          Couples Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link href={"/services/therapy-type/group-therapy"}>
-                          Group Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuSubContent>
-                  </DropdownMenuPortal>
-                </DropdownMenuSub>
-                <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>
-                    <span>Conditions we supports</span>
-                  </DropdownMenuSubTrigger>
-                  <DropdownMenuPortal>
-                    <DropdownMenuSubContent>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={"/services/conditions-we-support/adhd-therapy"}
-                        >
-                          ADHD Coaching & Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/anxiety-therapy"
-                          }
-                        >
-                          Anxiety Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/burnout-therapy"
-                          }
-                        >
-                          Burnout Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/behavioral-therapy"
-                          }
-                        >
-                          Behavioral Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/depression-therapy"
-                          }
-                        >
-                          Depression Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={"/services/conditions-we-support/grief-therapy"}
-                        >
-                          Grief Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/trauma-therapy"
-                          }
-                        >
-                          Trauma Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/autism-therapy"
-                          }
-                        >
-                          Autism Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/conditions-we-support/clinical-supervision"
-                          }
-                        >
-                          Clinical Supervision
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuSubContent>
-                  </DropdownMenuPortal>
-                </DropdownMenuSub>
-                <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>
-                    <span>Therapy modalities</span>
-                  </DropdownMenuSubTrigger>
-                  <DropdownMenuPortal>
-                    <DropdownMenuSubContent>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link href={"/services/therapy-modalities/art-therapy"}>
-                          Art Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/Acceptance-commitment-therapy"
-                          }
-                        >
-                          Acceptance and Commitment Therapy (ACT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/cognitive-behavioral-therapy"
-                          }
-                        >
-                          Cognitive Behavioral Therapy (CBT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/dialectical-behavioral-therapy"
-                          }
-                        >
-                          Dialectical Behavioral Therapy (DBT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/emotion-focused-therapy"
-                          }
-                        >
-                          Emotion Focused Therapy (EFT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/narrative-therapy"
-                          }
-                        >
-                          Narrative Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={"/services/therapy-modalities/play-therapy"}
-                        >
-                          Play Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/parent-child-therapy"
-                          }
-                        >
-                          Parent-Child Interaction Therapy (PCIT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={
-                            "/services/therapy-modalities/solution-focused-therapy"
-                          }
-                        >
-                          Solution-Focused Therapy (SFT)
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild className="cursor-pointer">
-                        <Link
-                          href={"/services/therapy-modalities/music-therapy"}
-                        >
-                          Music Therapy
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuSubContent>
-                  </DropdownMenuPortal>
-                </DropdownMenuSub>
-                <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href={"/services/approach-and-specialties"}>
-                    Approach & Specialties
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <DropdownMenu
-              open={isOpenAbout}
-              onOpenChange={(open) => setIsOpenAbout(open)}
-            >
-              <DropdownMenuTrigger
-                onMouseEnter={() => setIsOpenAbout(true)}
-                className="outlino-none border-none focus:outline-none cursor-pointer"
-              >
-                <Text
-                  type="p"
-                  size="medium"
-                  className={cn(
-                    "flex items-center gap-1.5 cursor-pointer",
-                    isOpenAbout ? "text-primary cursor-pointer" : ""
-                  )}
-                >
-                  About us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="6"
-                    viewBox="0 0 10 6"
-                    fill="none"
-                  >
-                    <path
-                      d="M5 5.5L0.669873 0.25L9.33013 0.250001L5 5.5Z"
-                      fill={isOpenAbout ? "#ab7574" : "#A79AA1"}
-                    />
-                  </svg>
-                </Text>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className=" absolute left-0 -ml-8">
-                <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href={"/team"}>Team</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href={"/fees"}>Fees</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href={"/faq"}>Faq</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </ul>
-        </div>
+        <CustomSubmenu
+          label="Services"
+          items={servicesItems}
+          isOpen={openMenu === "services"}
+          onOpen={() => handleMenuOpen("services")}
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          setOpenMenu={setOpenMenu}
+        />
+        <CustomSubmenu
+          label="About us"
+          items={aboutUsItems}
+          isOpen={openMenu === "about"}
+          onOpen={() => handleMenuOpen("about")}
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          setOpenMenu={setOpenMenu}
+        />
         <Link href={"/contact-us"} className="hover:text-primary">
           <Text type="p" size="medium" className="">
             Contact Us

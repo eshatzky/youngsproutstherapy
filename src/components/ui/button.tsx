@@ -13,6 +13,8 @@ const buttonVariants = cva(
           "bg-[#ab6969] hover:bg-[#ab6969]/90 hover:border border border-[#ab6969] hover:border-[#ab6969]    text-white  dark:bg-slate-70 dark:text-slate-900 dark:hover:bg-slate-50/90",
         destructive:
           "bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
+        outlineV2:
+          "border border-primary bg-white text-primary hover:bg-white/75 hover:border-[#ab6969] hover:text-primary dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         outline:
           "border border-primary bg-transparent text-primary hover:bg-[#ab6969] hover:border-[#ab6969] hover:text-white dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         secondary:

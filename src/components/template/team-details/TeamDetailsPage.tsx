@@ -68,26 +68,32 @@ export function TeamDetailsCard({ team }: { team: TeamMember }) {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-lg leading-7 text-gray-700">{team.description}</p>
+          <p className="text-lg leading-7 text-gray-700">{team?.description}</p>
         </CardContent>
       </Card>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <DetailsSection
-          title="Specialities"
-          items={team.specialities}
-          icon="🧠"
-        />
-        <DetailsSection
-          title="Client Focus"
-          items={team.clientFocus}
-          icon="👥"
-        />
-        <DetailsSection
-          title="Therapy Formats"
-          items={team.therapyFormats}
-          icon="💬"
-        />
+        {team?.specialities && (
+          <DetailsSection
+            title="Specialities"
+            items={team?.specialities}
+            icon="🧠"
+          />
+        )}
+        {team?.clientFocus && (
+          <DetailsSection
+            title="Client Focus"
+            items={team?.clientFocus}
+            icon="👥"
+          />
+        )}
+        {team?.therapyFormats && (
+          <DetailsSection
+            title="Therapy Formats"
+            items={team?.therapyFormats}
+            icon="💬"
+          />
+        )}
       </div>
     </div>
   );
@@ -111,15 +117,15 @@ function DetailsSection({
       </CardHeader>
       <CardContent className="pt-6">
         <ul className="space-y-3">
-          {items.map((item, index) => (
+          {items?.map((item, index) => (
             <motion.li
               key={index}
-              className="flex items-center gap-2 text-gray-700"
+              className="flex items-center gap-2 text-gray-700 capitalize"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <span className="h-2 w-2 bg-primary rounded-full" />
+              <span className="h-2 w-2 bg-primary rounded-full !capitalize" />
               {item}
             </motion.li>
           ))}

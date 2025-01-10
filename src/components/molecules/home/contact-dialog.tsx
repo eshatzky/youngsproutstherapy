@@ -23,6 +23,7 @@ export function ContactDialog({ className }: { className?: string }) {
   const form = React.useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -43,7 +44,7 @@ export function ContactDialog({ className }: { className?: string }) {
           label: "Form Submission",
         });
         form.current.reset();
-        setOpen(false);
+        setIsSubmitted(true);
       } catch (error) {
         console.warn(error);
         toast.error("Failed to send message. Please try again.");
@@ -64,7 +65,13 @@ export function ContactDialog({ className }: { className?: string }) {
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+      open={open}
+      onOpenChange={(isOpen) => {
+        setOpen(isOpen);
+        if (!isOpen) setIsSubmitted(false); // Reset form state when dialog closes
+      }}
+    >
       <DialogTrigger asChild>
         <Button
           variant="default"
@@ -73,81 +80,102 @@ export function ContactDialog({ className }: { className?: string }) {
           Get Started
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[690px] w-full bg-white px-4 max-sm:max-h-[660px] overflow-y-scroll">
+      <DialogContent
+        className={cn(
+          "sm:max-w-[690px] w-full bg-white px-4 max-sm:max-h-[660px] overflow-y-scroll",
+          isSubmitted ? "no-scrollbar" : "no-scrollbar"
+        )}
+      >
         <DialogHeader>
           <DialogTitle className="text-2xl text-gray-800 px-2">
             Get Started With Us
           </DialogTitle>
         </DialogHeader>
-        <div className="text-gray-600 pb-4 border-b border-primary mx-2">
-          Send us a message, and we&apos;ll be in touch shortly.
-        </div>
-        <form
-          className=" grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 overflow-y-auto px-2"
-          onSubmit={handleSubmit}
-          ref={form}
+        <div
+          className={cn(
+            "text-gray-600 pb-4 mx-2",
+            isSubmitted ? "border-none" : ""
+          )}
         >
-          <div className="space-y-1.5">
-            <Label htmlFor="first_name">First Name*</Label>
-            <Input
-              className="py-5 "
-              placeholder="Enter first name"
-              id="first_name"
-              name="first_name"
-              required
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label htmlFor="last_name">Last Name*</Label>
-            <Input
-              className="py-5 "
-              placeholder="Enter last name"
-              id="last_name"
-              name="last_name"
-              required
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label htmlFor="email">Email*</Label>
-            <Input
-              className="py-5 "
-              placeholder="Enter email address"
-              id="email"
-              name="email"
-              required
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label htmlFor="phone">Phone Number*</Label>
-            <Input
-              className="py-5 "
-              placeholder="Enter phone number"
-              id="phone"
-              name="phone"
-              required
-            />
-          </div>
-          <div className="space-y-1.5 col-span-1 sm:col-span-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea
-              className="col-span-1 sm:col-span-2"
-              placeholder="Enter message"
-              id="message"
-              name="message"
-              required
-            />
-          </div>
+          {isSubmitted ? (
+            <p className="text-lg">
+              Thank you for sending your message! We will be in touch as soon as
+              we can.
+            </p>
+          ) : (
+            <>
+              <p className="pb-3 border-b border-primary">
+                Send us a message, and we&apos;ll be in touch shortly.
+              </p>
+              <form
+                className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 overflow-y-auto px-2 mt-2"
+                onSubmit={handleSubmit}
+                ref={form}
+              >
+                <div className="space-y-1.5">
+                  <Label htmlFor="first_name">First Name*</Label>
+                  <Input
+                    className="py-5"
+                    placeholder="Enter first name"
+                    id="first_name"
+                    name="first_name"
+                    required
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <Label htmlFor="last_name">Last Name*</Label>
+                  <Input
+                    className="py-5"
+                    placeholder="Enter last name"
+                    id="last_name"
+                    name="last_name"
+                    required
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <Label htmlFor="email">Email*</Label>
+                  <Input
+                    className="py-5"
+                    placeholder="Enter email address"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <Label htmlFor="phone">Phone Number*</Label>
+                  <Input
+                    className="py-5"
+                    placeholder="Enter phone number"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <div className="space-y-1.5 col-span-1 sm:col-span-2">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    className="col-span-1 sm:col-span-2"
+                    placeholder="Enter message"
+                    id="message"
+                    name="message"
+                    required
+                  />
+                </div>
 
-          <div className="w-full col-span-1 sm:col-span-2">
-            <Button
-              className="w-full lg:max-w-full rounded-lg"
-              type="submit"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "Sending..." : "Send"}
-            </Button>
-          </div>
-        </form>
+                <div className="w-full col-span-1 sm:col-span-2">
+                  <Button
+                    className="w-full lg:max-w-full rounded-lg"
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Send"}
+                  </Button>
+                </div>
+              </form>
+            </>
+          )}
+        </div>
       </DialogContent>
     </Dialog>
   );

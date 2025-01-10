@@ -26,40 +26,40 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
     <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
       <SheetContent
         side={"left"}
-        className="w-full bg-secondary overflow-y-scroll max-h-fit pb-[52px]  "
+        className="w-full bg-secondary overflow-y-scroll max-h-fit pb-[52px] !no-scrollbar"
       >
-        <SheetHeader>
+        <SheetHeader className="bg-secondary">
           <SheetDescription className="text-white mt-20 z-10 text-base">
             <Accordion type="single" collapsible className="z-20">
               <AccordionItem
                 value="item-1"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none text-base"
               >
-                <AccordionTrigger className="text-base">
+                <AccordionTrigger className="text-base cursor-pointer">
                   Type of Therapy
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2 bg-[#34abbf] py-2 px-2.5">
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-type/parenting-counselling">
                       Parenting
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-type/child-therapy">
                       Child Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-type/teen-therapy">
                       Teen Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-type/couples-therapy">
                       Couples Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-type/group-therapy">
                       Group Therapy
                     </Link>
@@ -70,51 +70,51 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 value="item-2"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
-                <AccordionTrigger className="text-base">
+                <AccordionTrigger className="text-base cursor-pointer">
                   Conditions we supports
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/adhd-therapy">
                       ADHD Coaching & Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/anxiety-therapy">
                       Anxiety Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/burnout-therapy">
                       Burnout Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/behavioral-therapy">
                       Behavioral Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/depression-therapy">
                       Depression Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/grief-therapy">
                       Grief Counselling
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/trauma-therapy">
                       Trauma Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/autism-therapy">
                       Autism Spectrum
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/conditions-we-support/clinical-supervision">
                       Clinical Supervision
                     </Link>
@@ -125,61 +125,61 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 value="item-3"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
-                <AccordionTrigger className="text-base">
+                <AccordionTrigger className="text-base cursor-pointer">
                   Therapy modalities
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/art-therapy">
                       Art Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/Acceptance-commitment-therapy">
                       Acceptance and Commitment Therapy (ACT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/cognitive-behavioral-therapy">
                       Cognitive Behavioral Therapy (CBT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/dialectical-behavioral-therapy">
                       Dialectical Behavioral Therapy (DBT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/emotion-focused-therapy">
                       Emotion Focused Therapy (EFT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/narrative-therapy">
                       Narrative Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/play-therapy">
                       Play Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/parent-child-therapy">
                       Parent-Child Interaction Therapy (PCIT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/solution-focused-therapy">
                       Solution-Focused Therapy (SFT)
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/therapy-modalities/music-therapy">
                       Music Therapy
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/approach-and-specialties">
                       Approach & Specialties
                     </Link>
@@ -190,17 +190,17 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 value="item-4"
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
-                <AccordionTrigger className="text-base">
+                <AccordionTrigger className="text-base cursor-pointer">
                   About us
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/team">Team</Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/fees">Fees</Link>
                   </SheetClose>
-                  <SheetClose asChild>
+                  <SheetClose asChild className="cursor-pointer">
                     <Link href="/faq">Faq</Link>
                   </SheetClose>
                 </AccordionContent>
@@ -210,12 +210,12 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               ></AccordionItem>
               <div className="text-base text-left p-2.5">
-                <SheetClose asChild>
+                <SheetClose asChild className="cursor-pointer">
                   <Link href="/contact-us">Contact Us</Link>
                 </SheetClose>
               </div>
               <div className="text-base text-left p-2.5">
-                <SheetClose asChild>
+                <SheetClose asChild className="cursor-pointer">
                   <Link href="/blog">Blog</Link>
                 </SheetClose>
               </div>
