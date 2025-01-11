@@ -53,7 +53,6 @@ const items: PsychotherapyData[] = [
   {
     title: "Self-Esteem",
     desc: "Boosting children's and teens' confidence and self-worth through counselling strategies that promote positive self-perception and resilience.",
-    href: "#",
   },
   {
     title: "Behavioural Challenges",
@@ -63,7 +62,6 @@ const items: PsychotherapyData[] = [
   {
     title: "Emotional Regulation",
     desc: "Enhancing emotional regulation in children and teens, using proven techniques to help them understand and manage their feelings for better mental health and relationships.",
-    href: "#",
   },
   {
     title: "Trauma",
@@ -78,7 +76,6 @@ const items: PsychotherapyData[] = [
   {
     title: "Learning Disabilities",
     desc: "Supporting children and teens with learning disabilities, using tailored strategies to enhance their academic skills, confidence, and overall school experience.",
-    href: "#",
   },
   {
     title: "Depression",

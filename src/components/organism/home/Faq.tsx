@@ -122,9 +122,9 @@ export function HomepageFaq() {
         FAQs
       </h2>
       <ul className="py-10 lg:py-16 p-4 lg:px-8 bg-[#F3F5F6] lg:rounded-[28px]">
-        {faqData.map((item) => (
+        {faqData.map((item,key) => (
           <FAQItem
-            key={item.id}
+            key={key}
             item={item}
             isOpen={openItem === item.id}
             toggleItem={() => toggleItem(item.id)}

@@ -48,7 +48,7 @@ export function TeamCard({ item }: Props) {
         </Link>
         <Button asChild className="w-full text-sm leading-6 rounded-lg">
           <Link
-            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
+            href={`/team/${item.slug}`}
             target="_blank"
           >
             Learn more

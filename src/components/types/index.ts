@@ -1,7 +1,7 @@
 export interface PsychotherapyData {
   title: string;
   desc: string;
-  href: string;
+  href?: string;
 }
 
 export interface Post {
