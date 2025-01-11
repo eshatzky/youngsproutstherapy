@@ -48,24 +48,33 @@ export async function processMetadata() {
     },
   };
 }
+
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <GoogleAnalytics
-          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.sanity.io" />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
       </head>
-      <body className={` text-[#5c5c5c] bg-white antialiased`}>
+      <body className="min-h-screen text-[#5c5c5c] bg-white antialiased">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4">
+          Skip to main content
+        </a>
         <AlertBar />
         <Header />
         <MotionWrapper>
-          <main>{children}</main>
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
           <Footer />
         </MotionWrapper>
         <Toaster position="top-center" />

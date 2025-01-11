@@ -171,10 +171,13 @@ export function Header() {
         <Link href={"/"}>
           <Image
             src={Logo}
-            className="w-[145px] lg:w-[220px] "
-            width={140}
-            height={50}
-            alt="logo"
+            className="w-[145px] lg:w-[220px]"
+            width={220}
+            height={78}
+            alt="Young Sprouts Therapy Logo"
+            priority
+            quality={75}
+            sizes="(max-width: 768px) 145px, 220px"
           />
         </Link>
       </div>
@@ -214,7 +217,7 @@ export function Header() {
         </Link>
       </nav>
 
-      <Link href={"/#book-consultation"}>
+      <Link href={"/#book-consultation"} className="max-sm:hidden">
         <Button
           variant="default"
           className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full"
