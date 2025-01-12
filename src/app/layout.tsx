@@ -66,9 +66,6 @@ export default async function RootLayout({
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
       </head>
       <body className="min-h-screen text-[#5c5c5c] bg-white antialiased">
-        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4">
-          Skip to main content
-        </a>
         <AlertBar />
         <Header />
         <MotionWrapper>
