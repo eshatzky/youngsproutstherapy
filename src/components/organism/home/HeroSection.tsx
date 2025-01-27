@@ -31,8 +31,8 @@ export function HeroSection() {
           loading='eager'
         /> */}
       </picture>
-      <div className='bg-[url("/images/homebg.webp")] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16 max-md:[background-position:calc(100%+210px)_0px]'>
-        <div className="container mx-auto space-y-8  max-w-[1440px] ~px-4/10">
+      <div className='bg-[url("/images/homebg.webp")] max-h-[100vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16 max-md:[background-position:calc(100%+210px)_0px]'>
+        <div className="container mx-auto space-y-8  max-w-[1440px] ">
           <div className="homeGradient  max-lg:px-1.5 max-lg:py-3.5 flex flex-col gap-[18px]">
             <Title
               size="big"
@@ -49,13 +49,13 @@ export function HeroSection() {
             </Title>
             <Text
               size="medium"
-              className="~text-base/2xl font-normal text-[#482C2C] lg:text-[#91818A]"
+              className="~text-base/2xl font-normal  text-white lg:text-[#91818A]"
             >
               Supporting Growth Through Psychotherapy and Counselling
             </Text>
             <Text
               size="medium"
-              className="~text-sm/base font-normal max-lg:text-[#482C2C] max-w-[650px]"
+              className="~text-sm/base font-normal max-lg:text-white max-w-[650px]"
             >
               Supporting Families in Vaughan and Thornhill with Personalized,
               Evidence-Based Therapy
