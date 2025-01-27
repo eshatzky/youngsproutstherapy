@@ -39,7 +39,7 @@ export function HowTherapyWorks() {
             </p>
           </Card>
         </motion.li>
-        <motion.div
+        <motion.li
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 * 0.1 }}
@@ -56,8 +56,8 @@ export function HowTherapyWorks() {
               path forward.
             </p>
           </Card>
-        </motion.div>
-        <motion.div
+        </motion.li>
+        <motion.li
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 2 * 0.1 }}
@@ -73,7 +73,7 @@ export function HowTherapyWorks() {
               sessions begin, supporting growth and well-bei
             </p>
           </Card>
-        </motion.div>
+        </motion.li>
       </ul>
     </motion.section>
   );

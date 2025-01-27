@@ -66,7 +66,7 @@ export function TherapeuticModalities() {
                 >
                   <Image
                     src={item.icon}
-                    alt={item.title}
+                    alt={item.title + index}
                     width={48}
                     height={48}
                     className="w-12 h-12"

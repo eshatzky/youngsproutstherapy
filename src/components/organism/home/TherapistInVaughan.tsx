@@ -110,11 +110,11 @@ export function TherapistInVaughan() {
                 conveniently located office in the heart of Thornhill.”
               </Text>
             </div>
-            <Text size="small">
+            <Text size="medium">
               <Link
                 href={"/"}
                 aria-label="Get in touch"
-                className="text-primary"
+                className="text-secondary"
               >
                 Get in touch
               </Link>

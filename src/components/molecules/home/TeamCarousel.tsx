@@ -123,8 +123,7 @@ export function TeamCarousel({ teams }: Props) {
       <div className="flex justify-center items-center gap-4 mt-8">
         <div className="flex gap-2">
           {scrollSnaps.map((_, index) => (
-            <button
-              aria-label={`Scroll to slide ${index + 1}`}
+            <div
               key={index}
               className={`w-2.5 h-2.5 rounded-full transition-colors ${
                 index === selectedIndex ? "bg-primary" : "bg-primary/20"

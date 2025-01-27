@@ -54,13 +54,14 @@ export const FAQItem = ({
   toggleItem: () => void;
 }) => {
   return (
-    <div
+    <li
       onClick={toggleItem}
       className="border cursor-pointer rounded-lg px-4 lg:px-[60px] py-8 lg:py-[52px] w-full flex flex-col gap-4 lg:gap-6 bg-white"
     >
       <button
         className="w-full text-left flex items-center justify-between gap-4"
         aria-expanded={isOpen}
+        aria-label={item.question}
       >
         <div className="flex flex-col lg:flex-row gap-2.5 lg:gap-4">
           <span className="text-secondary text-[32px] lg:text-4xl font-medium">
@@ -105,7 +106,7 @@ export const FAQItem = ({
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </li>
   );
 };
 
@@ -122,7 +123,7 @@ export function HomepageFaq() {
         FAQs
       </h2>
       <ul className="py-10 lg:py-16 p-4 lg:px-8 bg-[#F3F5F6] lg:rounded-[28px]">
-        {faqData.map((item,key) => (
+        {faqData.map((item, key) => (
           <FAQItem
             key={key}
             item={item}
