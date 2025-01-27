@@ -111,7 +111,11 @@ export function TherapistInVaughan() {
               </Text>
             </div>
             <Text size="small">
-              <Link href={"/"} className="text-primary">
+              <Link
+                href={"/"}
+                aria-label="Get in touch"
+                className="text-primary"
+              >
                 Get in touch
               </Link>
                to see how therapy can help your child and family today!

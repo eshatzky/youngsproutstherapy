@@ -56,6 +56,7 @@ export function CustomSubmenu({
       <button
         className="flex items-center gap-1.5 cursor-pointer focus:outline-none z-[9999]"
         onClick={onOpen}
+        aria-label={"navmenu"}
         onMouseEnter={onOpen}
       >
         <Text
@@ -127,6 +128,7 @@ export function CustomSubmenu({
                   <div className="absolute left-full top-0 mt-0 ml-0.5 w-64 bg-white shadow-lg border rounded-md py-2 z-50">
                     {item.items.map((subItem, subIndex) => (
                       <Link
+                        aria-label={subItem.label}
                         key={subIndex}
                         href={subItem.href}
                         className="px-4 py-2 flex items-center gap-2 hover:bg-[#F7F0F0] hover:!text-primary"
@@ -150,6 +152,7 @@ export function CustomSubmenu({
             ) : (
               <Link
                 key={index}
+                aria-label={item.label}
                 href={item.href}
                 className="px-4 py-2 flex items-center gap-2 hover:bg-[#F7F0F0] hover:!text-primary"
                 onClick={closeMenu} // Close menu on click

@@ -27,6 +27,7 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
             allowFullScreen
             scrolling="no"
             loading="eager"
+            title="Booking Calendar"
           ></iframe>
         </div>
       </div>

@@ -21,7 +21,7 @@ export function HowTherapyWorks() {
         </p>
       </div>
       <ul className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 relative before:absolute before:content-[url('/svg/howtherapyworkmobile.svg')] before:-top-8 before:bottom-0 before:left-6 lg:before:content-[url('/svg/howtherapywork.svg')]  lg:before:-left-8 lg:before:-right-16 before:w-full lg:before:-top-12 before:h-full before:bg-no-repeat before:z-10">
-        <motion.div
+        <motion.li
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0 * 0.1 }}
@@ -38,7 +38,7 @@ export function HowTherapyWorks() {
               steps.
             </p>
           </Card>
-        </motion.div>
+        </motion.li>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

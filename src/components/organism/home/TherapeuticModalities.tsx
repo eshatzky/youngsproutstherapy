@@ -36,8 +36,10 @@ export function TherapeuticModalities() {
           <Link
             href={"/services/approach-and-specialties"}
             className="hidden lg:block"
+            aria-label={"Learn More +"}
           >
             <Button
+              aria-label={"Learn More +"}
               variant={"outline"}
               className="border border-white text-white sm:max-w-[260px] w-full lg:mt-[43px]"
             >
@@ -58,6 +60,7 @@ export function TherapeuticModalities() {
                 viewport={{ once: true }}
               >
                 <Link
+                  aria-label={item.link || "services"}
                   href={`${item.link}`}
                   className="flex items-center justify-center flex-col gap-2.5 "
                 >
@@ -87,6 +90,7 @@ export function TherapeuticModalities() {
                 viewport={{ once: true }}
               >
                 <Link
+                  aria-label={item.link || "services"}
                   href={`${item.link}`}
                   className="flex items-center justify-center flex-col gap-2.5 "
                 >
@@ -107,9 +111,11 @@ export function TherapeuticModalities() {
           <Link
             href={"/services/approach-and-specialties"}
             className="block lg:hidden"
+            aria-label={"Learn More +"}
           >
             <Button
               variant={"outline"}
+              aria-label={"Learn More +"}
               className="border border-white text-white sm:max-w-[260px] w-full"
             >
               Learn More +
