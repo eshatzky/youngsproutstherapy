@@ -40,8 +40,7 @@ export function SubscriptionBanner({ data }: Props) {
 
         toast.success("Successfully Subscribed");
       } catch (error) {
-        console.error("Subscription request failed", error);
-        toast.error("Something went wrong");
+        toast.error(String(error));
       }
 
       setEmail("");

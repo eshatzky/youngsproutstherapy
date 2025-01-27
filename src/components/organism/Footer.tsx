@@ -87,36 +87,32 @@ export function Footer() {
           </h3>
           <ul className="flex flex-col gap-2">
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-level={1} aria-label="Home" href={"/"}>
+              <Link aria-label="Home" href={"/"}>
                 Home
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-level={2} aria-label="Teams" href={"/teams"}>
+              <Link aria-label="Teams" href={"/teams"}>
                 Teams
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-level={3} aria-label="Fees" href={"/fees"}>
+              <Link aria-label="Fees" href={"/fees"}>
                 Fees
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link
-                aria-level={4}
-                aria-label="Frequently Asked Questions"
-                href={"/faq"}
-              >
+              <Link aria-label="Frequently Asked Questions" href={"/faq"}>
                 FaQ
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-level={5} aria-label="Blog" href={"/blog"}>
+              <Link aria-label="Blog" href={"/blog"}>
                 Blog
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-level={6} aria-label="Contact" href={"/contact"}>
+              <Link aria-label="Contact" href={"/contact"}>
                 Contact
               </Link>
             </li>
@@ -165,32 +161,32 @@ export function Footer() {
             </h3>
             <ul className="flex flex-col gap-2">
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Home" aria-level={7} href={"/"}>
+                <Link aria-label="Home" href={"/"}>
                   Home
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Teams" aria-level={8} href={"/teams"}>
+                <Link aria-label="Teams" href={"/teams"}>
                   Teams
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Fees" aria-level={9} href={"/fees"}>
+                <Link aria-label="Fees" href={"/fees"}>
                   Fees
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="FAQ" aria-level={10} href={"/faq"}>
+                <Link aria-label="FAQ" href={"/faq"}>
                   FAQ
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Blog" aria-level={11} href={"/blog"}>
+                <Link aria-label="Blog" href={"/blog"}>
                   Blog
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Contact" aria-level={12} href={"/contact"}>
+                <Link aria-label="Contact" href={"/contact"}>
                   Contact
                 </Link>
               </li>

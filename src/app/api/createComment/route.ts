@@ -19,7 +19,6 @@ export async function POST(req: Request) {
       comment,
     });
   } catch (err) {
-    console.error(err);
     return NextResponse.json(
       { message: "Couldn't submit comment", err },
       { status: 500 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
@@ -18,8 +19,8 @@ export async function GET() {
     const fields = [...blogFields];
 
     return getServerSideSitemap(fields);
+    // @ts-ignore
   } catch (err) {
-    console.error("Error generating sitemap:", err);
     return NextResponse.error();
   }
 }

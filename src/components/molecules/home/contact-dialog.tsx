@@ -1,23 +1,23 @@
-'use client';
+"use client";
 
-import * as React from 'react';
+import * as React from "react";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from "@/components/ui/dialog";
 
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { sendGAEvent } from '@next/third-parties/google';
-import { toast } from 'sonner';
-import emailjs from '@emailjs/browser';
-import { Label } from '@/components/ui/label';
-import { cn } from '@/lib/utils';
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { sendGAEvent } from "@next/third-parties/google";
+import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 
 export function ContactDialog({ className }: { className?: string }) {
   const form = React.useRef<HTMLFormElement>(null);
@@ -41,22 +41,21 @@ export function ContactDialog({ className }: { className?: string }) {
     if (form.current) {
       try {
         await emailjs.sendForm(
-          'service_cwiihbb',
-          'template_0s2nneh',
+          "service_cwiihbb",
+          "template_0s2nneh",
           form.current,
-          '_O-IBWyLZwt2kHPs5'
+          "_O-IBWyLZwt2kHPs5"
         );
-        toast.success('Message sent successfully!');
+        toast.success("Message sent successfully!");
         triggerGoogleAdsConversion();
-        sendGAEvent('submit_form', {
-          category: 'Contact',
-          label: 'Form Submission',
+        sendGAEvent("submit_form", {
+          category: "Contact",
+          label: "Form Submission",
         });
         form.current.reset();
         setIsSubmitted(true);
       } catch (error) {
-        console.warn(error);
-        toast.error('Failed to send message. Please try again.');
+        toast.error(String(error));
       }
     }
 
@@ -64,7 +63,7 @@ export function ContactDialog({ className }: { className?: string }) {
   };
 
   const triggerGoogleAdsConversion = () => {
-    const gtagScript = document.createElement('script');
+    const gtagScript = document.createElement("script");
     gtagScript.innerHTML = `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -91,142 +90,142 @@ export function ContactDialog({ className }: { className?: string }) {
     >
       <DialogTrigger asChild>
         <Button
-          variant='default'
-          className={cn('max-w-[260px] w-full', className)}
+          variant="default"
+          className={cn("max-w-[260px] w-full", className)}
         >
           Get Started
         </Button>
       </DialogTrigger>
       <DialogContent
         className={cn(
-          'w-full bg-white px-4', // Default shared classes
-          isSubmitted ? 'no-scrollbar' : 'no-scrollbar', // Scrollbar condition
-          'sm:max-w-[690px] max-sm:max-h-[660px] overflow-y-scroll', // Large and small screen-specific behavior
+          "w-full bg-white px-4", // Default shared classes
+          isSubmitted ? "no-scrollbar" : "no-scrollbar", // Scrollbar condition
+          "sm:max-w-[690px] max-sm:max-h-[660px] overflow-y-scroll", // Large and small screen-specific behavior
           fieldFocus.first_name ||
             fieldFocus.last_name ||
             fieldFocus.email ||
             fieldFocus.phone ||
             fieldFocus.message
-            ? 'max-sm:fixed max-sm:inset-0' // Apply `fixed` and `inset-0` only on small devices
-            : ''
+            ? "max-sm:fixed max-sm:inset-0" // Apply `fixed` and `inset-0` only on small devices
+            : ""
         )}
         style={{
-          WebkitOverflowScrolling: 'touch',
-          position: 'fixed',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          maxHeight: '90vh',
-          overscrollBehavior: 'contain',
+          WebkitOverflowScrolling: "touch",
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxHeight: "90vh",
+          overscrollBehavior: "contain",
         }}
       >
         <DialogHeader>
-          <DialogTitle className='text-2xl text-gray-800 px-2'>
+          <DialogTitle className="text-2xl text-gray-800 px-2">
             Get Started With Us
           </DialogTitle>
         </DialogHeader>
         <div
           className={cn(
-            'text-gray-600 pb-4 mx-2',
-            isSubmitted ? 'border-none' : ''
+            "text-gray-600 pb-4 mx-2",
+            isSubmitted ? "border-none" : ""
           )}
         >
           {isSubmitted ? (
-            <p className='text-lg'>
+            <p className="text-lg">
               Thank you for sending your message! We will be in touch as soon as
               we can.
             </p>
           ) : (
             <>
-              <p className='pb-3 border-b border-primary'>
+              <p className="pb-3 border-b border-primary">
                 Send us a message, and we&apos;ll be in touch shortly.
               </p>
               <form
-                className='grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 px-2 mt-2'
+                className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-6 px-2 mt-2"
                 onSubmit={handleSubmit}
                 ref={form}
               >
-                <div className='space-y-1.5'>
-                  <Label htmlFor='first_name'>First Name*</Label>
+                <div className="space-y-1.5">
+                  <Label htmlFor="first_name">First Name*</Label>
                   <Input
-                    className='py-5'
-                    placeholder='Enter first name'
-                    id='first_name'
-                    name='first_name'
+                    className="py-5"
+                    placeholder="Enter first name"
+                    id="first_name"
+                    name="first_name"
                     required
-                    type='text'
-                    inputMode='text'
-                    autoComplete='given-name'
-                    onFocus={() => handleFocus('first_name')}
-                    onBlur={() => handleBlur('first_name')}
+                    type="text"
+                    inputMode="text"
+                    autoComplete="given-name"
+                    onFocus={() => handleFocus("first_name")}
+                    onBlur={() => handleBlur("first_name")}
                   />
                 </div>
-                <div className='space-y-1.5'>
-                  <Label htmlFor='last_name'>Last Name*</Label>
+                <div className="space-y-1.5">
+                  <Label htmlFor="last_name">Last Name*</Label>
                   <Input
-                    className='py-5'
-                    placeholder='Enter last name'
-                    id='last_name'
-                    name='last_name'
+                    className="py-5"
+                    placeholder="Enter last name"
+                    id="last_name"
+                    name="last_name"
                     required
-                    type='text'
-                    inputMode='text'
-                    autoComplete='family-name'
-                    onFocus={() => handleFocus('last_name')}
-                    onBlur={() => handleBlur('last_name')}
+                    type="text"
+                    inputMode="text"
+                    autoComplete="family-name"
+                    onFocus={() => handleFocus("last_name")}
+                    onBlur={() => handleBlur("last_name")}
                   />
                 </div>
-                <div className='space-y-1.5'>
-                  <Label htmlFor='email'>Email*</Label>
+                <div className="space-y-1.5">
+                  <Label htmlFor="email">Email*</Label>
                   <Input
-                    className='py-5'
-                    placeholder='Enter email address'
-                    id='email'
-                    name='email'
+                    className="py-5"
+                    placeholder="Enter email address"
+                    id="email"
+                    name="email"
                     required
-                    type='email'
-                    inputMode='email'
-                    autoComplete='email'
-                    onFocus={() => handleFocus('email')}
-                    onBlur={() => handleBlur('email')}
+                    type="email"
+                    inputMode="email"
+                    autoComplete="email"
+                    onFocus={() => handleFocus("email")}
+                    onBlur={() => handleBlur("email")}
                   />
                 </div>
-                <div className='space-y-1.5'>
-                  <Label htmlFor='phone'>Phone Number*</Label>
+                <div className="space-y-1.5">
+                  <Label htmlFor="phone">Phone Number*</Label>
                   <Input
-                    className='py-5'
-                    placeholder='Enter phone number'
-                    id='phone'
-                    name='phone'
+                    className="py-5"
+                    placeholder="Enter phone number"
+                    id="phone"
+                    name="phone"
                     required
-                    type='tel'
-                    inputMode='tel'
-                    autoComplete='tel'
-                    onFocus={() => handleFocus('phone')}
-                    onBlur={() => handleBlur('phone')}
+                    type="tel"
+                    inputMode="tel"
+                    autoComplete="tel"
+                    onFocus={() => handleFocus("phone")}
+                    onBlur={() => handleBlur("phone")}
                   />
                 </div>
-                <div className='space-y-1.5 col-span-1 sm:col-span-2'>
-                  <Label htmlFor='message'>Message</Label>
+                <div className="space-y-1.5 col-span-1 sm:col-span-2">
+                  <Label htmlFor="message">Message</Label>
                   <Textarea
-                    className='col-span-1 sm:col-span-2'
-                    placeholder='Enter message'
-                    id='message'
-                    name='message'
+                    className="col-span-1 sm:col-span-2"
+                    placeholder="Enter message"
+                    id="message"
+                    name="message"
                     required
                     rows={4}
-                    onFocus={() => handleFocus('message')}
-                    onBlur={() => handleBlur('message')}
+                    onFocus={() => handleFocus("message")}
+                    onBlur={() => handleBlur("message")}
                   />
                 </div>
 
-                <div className='w-full col-span-1 sm:col-span-2'>
+                <div className="w-full col-span-1 sm:col-span-2">
                   <Button
-                    className='w-full lg:max-w-full rounded-lg'
-                    type='submit'
+                    className="w-full lg:max-w-full rounded-lg"
+                    type="submit"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send'}
+                    {isSubmitting ? "Sending..." : "Send"}
                   </Button>
                 </div>
               </form>

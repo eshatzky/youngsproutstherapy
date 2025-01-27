@@ -17,7 +17,6 @@ export async function generateMetadata({ params }: BlogPageType) {
   const ogImage = mainImage ? urlForImage(mainImage) : "/images/logo.png";
 
   if (!ogImage) {
-    console.warn("ogImage is undefined");
   }
 
   return {

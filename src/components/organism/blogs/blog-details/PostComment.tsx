@@ -46,8 +46,7 @@ export function PostComment({ post }) {
         setMessage(`Error: ${data.message}`);
       }
     } catch (err) {
-      console.error("Error posting comment:", err);
-      setMessage("An error occurred. Please try again later.");
+      setMessage(String(err));
     } finally {
       setIsSubmitting(false);
     }

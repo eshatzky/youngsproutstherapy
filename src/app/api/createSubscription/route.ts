@@ -33,7 +33,6 @@ export async function POST(req: Request) {
       date: new Date().toISOString(),
     });
   } catch (err) {
-    console.error(err);
     return NextResponse.json(
       { message: "Couldn't create subscription", err },
       { status: 500 }
