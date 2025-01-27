@@ -65,10 +65,15 @@ export function HeroSection() {
           <div className="flex flex-col  sm:flex-row max-lg:items-center gap-4 lg:gap-5 w-full z-20">
             <ContactDialog />
             <Link
+              aria-label="schedule consultation"
               href="/#book-consultation"
               className="max-sm:w-full flex max-sm:items-center max-lg:justify-center"
             >
-              <Button variant="outlineV2" className="max-w-[260px] w-full">
+              <Button
+                aria-label="schedule a free consultation"
+                variant="outlineV2"
+                className="max-w-[260px] w-full"
+              >
                 Schedule a Free Consult
               </Button>
             </Link>
