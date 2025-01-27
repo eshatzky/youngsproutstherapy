@@ -12,7 +12,7 @@ export function HeroSection() {
         {/* Mobile Image */}
         <source
           media="(max-width: 768px)"
-         srcSet="/images/mobilebg.webp"
+          srcSet="/images/mobilebg.webp"
           type="image/webp"
         />
         {/* Desktop Image */}
@@ -31,7 +31,7 @@ export function HeroSection() {
           loading="eager"
         />
       </picture>
-      
+
       <div className="relative max-w-[1440px] mx-auto ~px-4/10 z-40 w-full flex flex-col gap-8 lg:gap-16">
         <div className="homeGradient max-lg:px-1.5 max-lg:py-3.5 flex flex-col gap-[18px]">
           <Title
@@ -61,14 +61,19 @@ export function HeroSection() {
             Evidence-Based Therapy
           </Text>
         </div>
-        
-        <div className="flex flex-col max-sm:hidden sm:flex-row max-lg:items-center gap-4 lg:gap-5 w-full z-20">
+
+        <div className="flex flex-col sm:flex-row max-lg:items-center gap-4 lg:gap-5 w-full z-20">
           <ContactDialog />
           <Link
+            aria-label="Schedule a Free Consult"
             href="/#book-consultation"
             className="max-sm:w-full flex max-sm:items-center max-lg:justify-center"
           >
-            <Button variant="outlineV2" className="max-w-[260px] w-full">
+            <Button
+              aria-label="schedule a free consultation"
+              variant="outlineV2"
+              className="max-w-[260px] w-full"
+            >
               Schedule a Free Consult
             </Button>
           </Link>

@@ -21,7 +21,7 @@ export function HowPsychotherapyCanHelp() {
           Can Help
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {items.map((item, index) => (
+          {items?.map((item, index) => (
             <HowPsychotherapyCanHelpCard
               item={item}
               key={index}

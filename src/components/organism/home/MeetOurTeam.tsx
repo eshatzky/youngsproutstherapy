@@ -62,8 +62,15 @@ export async function MeetOurTeam() {
           </div>
           <TeamCarousel teams={teams} />
           <div className="w-full flex items-center justify-center mt-4">
-            <Button asChild className="w-fit px-4" variant={"default"}>
-              <Link href={"/team"}>Meet our Entire Therapy Team</Link>
+            <Button
+              aria-label={"Meet our Entire Therapy Team"}
+              asChild
+              className="w-fit px-4"
+              variant={"default"}
+            >
+              <Link aria-label={"Meet our Entire Therapy Team"} href={"/team"}>
+                Meet our Entire Therapy Team
+              </Link>
             </Button>
           </div>
         </div>

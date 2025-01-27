@@ -10,14 +10,18 @@ interface Props {
 }
 export function HowPsychotherapyCanHelpCard({ item, index }: Props) {
   return (
-    <motion.div
+    <motion.li
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
       {item?.href ? (
-        <Link href={`${item.href}`} className="group">
+        <Link
+          aria-label={item.href + 1}
+          href={`${item.href}`}
+          className="group"
+        >
           <Card className="flex flex-col gap-5 h-full px-4 py-6 bg-[#FAFAFA] group-hover:bg-primary group-hover:text-white  group-hover:scale-[1.02] group-hover:shadow transition-colors duration-500 ease-in-out">
             <h3 className="text-[32px] font-medium text-primary group-hover:text-white">
               {item.title}
@@ -71,6 +75,6 @@ export function HowPsychotherapyCanHelpCard({ item, index }: Props) {
           </Card>
         </div>
       )}
-    </motion.div>
+    </motion.li>
   );
 }

@@ -16,6 +16,7 @@ export function BlogCard({ post }: Props) {
   return (
     <div className="flex flex-col ~gap-4/8 group ">
       <Link
+        aria-label={post.slug.current}
         className={cn("relative block overflow-hidden ")}
         href={`/blog/${post.slug.current}`}
       >
@@ -53,7 +54,11 @@ export function BlogCard({ post }: Props) {
         )}
       </Link>
 
-      <Link href={`/blog/${post.slug.current}`} className="flex flex-col gap-4">
+      <Link
+        aria-label={post.slug.current}
+        href={`/blog/${post.slug.current}`}
+        className="flex flex-col gap-4"
+      >
         <p className="flex items-center gap-2 text-sm leading-5 font-medium">
           By{" "}
           <span className="text-[#592EA9] font-medium">

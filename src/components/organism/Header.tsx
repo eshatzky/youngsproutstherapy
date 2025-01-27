@@ -168,7 +168,7 @@ export function Header() {
             setIsMenuOpen={setMobileNavOpen}
           />
         </div>
-        <Link href={"/"}>
+        <Link aria-label={"home"} href={"/"}>
           <Image
             src={Logo}
             className="w-[145px] lg:w-[220px]"
@@ -182,7 +182,7 @@ export function Header() {
         </Link>
       </div>
       <nav className="hidden lg:flex items-center gap-8">
-        <Link href={"/"}>
+        <Link aria-label={"home"} href={"/"} scroll>
           <Text type="p" size="medium" className="hover:text-primary">
             Home
           </Text>
@@ -205,26 +205,39 @@ export function Header() {
           // @ts-ignore
           setOpenMenu={setOpenMenu}
         />
-        <Link href={"/contact-us"} className="hover:text-primary">
+        <Link
+          aria-label={"Contact Us"}
+          href={"/contact-us"}
+          className="hover:text-primary"
+        >
           <Text type="p" size="medium" className="">
             Contact Us
           </Text>
         </Link>
-        <Link href={"/blog"}>
+        <Link aria-label={"Blog"} href={"/blog"}>
           <Text type="p" size="medium" className="hover:text-primary">
             Blog
           </Text>
         </Link>
+        <Link aria-label={"Site"} href={"/site"} className="hover:text-primary">
+          <Text type="p" size="medium" className="">
+            Site
+          </Text>
+        </Link>
       </nav>
 
-      <Link href={"/#book-consultation"} className="max-sm:hidden">
+      <a
+        aria-label={" Book a Free Consult"}
+        href={"/#book-consultation"}
+        className="max-sm:hidden"
+      >
         <Button
           variant="default"
           className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full"
         >
           Book a Free Consult
         </Button>
-      </Link>
+      </a>
     </header>
   );
 }

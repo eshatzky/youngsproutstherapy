@@ -57,6 +57,7 @@ export function TeamCarousel({ teams }: Props) {
           size="icon"
           className="rounded-full !p-0"
           onClick={scrollPrev}
+          aria-label="Previous Slide"
         >
           <ChevronLeft className="h-4 w-4" />
         </Button>
@@ -65,6 +66,7 @@ export function TeamCarousel({ teams }: Props) {
           size="icon"
           className="rounded-full !p-0"
           onClick={scrollNext}
+          aria-label="Next Slide"
         >
           <ChevronRight className="h-4 w-4" />
         </Button>
@@ -79,6 +81,7 @@ export function TeamCarousel({ teams }: Props) {
             return (
               <Link
                 href={`/team/${member.slug}`}
+                aria-label={`View profile of ${member.name}`}
                 key={index}
                 className="flex-[0_0_100%] min-w-0 pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
               >
@@ -91,7 +94,7 @@ export function TeamCarousel({ teams }: Props) {
                           placeholder: "blur",
                           blurDataURL: member.mainImage.blurDataURL,
                         })}
-                        alt={member.name}
+                        alt={`${member.name}'s profile picture`}
                         loading="lazy"
                         decoding="async"
                         layout="fill"
@@ -121,6 +124,7 @@ export function TeamCarousel({ teams }: Props) {
         <div className="flex gap-2">
           {scrollSnaps.map((_, index) => (
             <button
+              aria-label={`Scroll to slide ${index + 1}`}
               key={index}
               className={`w-2.5 h-2.5 rounded-full transition-colors ${
                 index === selectedIndex ? "bg-primary" : "bg-primary/20"

@@ -219,6 +219,11 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                   <Link href="/blog">Blog</Link>
                 </SheetClose>
               </div>
+              <div className="text-base text-left p-2.5">
+                <SheetClose asChild className="cursor-pointer">
+                  <Link href="/site">Site</Link>
+                </SheetClose>
+              </div>
             </Accordion>
           </SheetDescription>
         </SheetHeader>
