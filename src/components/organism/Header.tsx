@@ -207,7 +207,7 @@ export function Header() {
           setOpenMenu={setOpenMenu}
         />
         <Link
-          aria-label={"Contact Us"}
+          aria-label={"Contact"}
           href={"/contact-us"}
           className="hover:text-primary"
         >
