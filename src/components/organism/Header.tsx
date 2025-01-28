@@ -212,7 +212,7 @@ export function Header() {
           className="hover:text-primary"
         >
           <Text type="p" size="medium" className="">
-            Contact Us
+            Contact
           </Text>
         </Link>
         <Link aria-label={"Blog"} href={"/blog"}>
