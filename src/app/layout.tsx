@@ -4,6 +4,7 @@ import MotionWrapper from "@/components/molecules/MotionWrapper";
 import { AlertBar } from "@/components/molecules/AlertBar";
 import { Toaster } from "@/components/ui/sonner";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata() {
   return processMetadata();
@@ -100,6 +101,7 @@ export default async function RootLayout({
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
         />
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
+        <SpeedInsights />
       </head>
       <body className="min-h-screen text-[#5c5c5c] bg-white antialiased">
         <AlertBar />

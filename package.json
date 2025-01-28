@@ -2,10 +2,12 @@
   "name": "young",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.youngsproutstherapy.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -26,6 +28,7 @@
     "@sanity/types": "^3.26.0",
     "@sanity/vision": "^3.26.0",
     "@tailwindcss/container-queries": "^0.1.1",
+    "@vercel/speed-insights": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
