@@ -81,7 +81,7 @@ export function Footer() {
         </div>
         <div className="sm:flex flex-col gap-7 hidden ">
           <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
-            Quick link
+            Quick Links
           </h3>
           <ul className="flex flex-col gap-2">
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
@@ -101,7 +101,7 @@ export function Footer() {
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
               <Link aria-label="Frequently Asked Questions" href={"/faq"}>
-                FaQ
+                FAQ
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
