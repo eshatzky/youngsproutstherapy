@@ -106,7 +106,7 @@ export function ContactDialog({ className }: { className?: string }) {
             fieldFocus.email ||
             fieldFocus.phone ||
             fieldFocus.message
-            ? "max-sm:fixed max-sm:inset-0" // Apply `fixed` and `inset-0` only on small devices
+            ? "max-sm:fixed max-sm:top-0" // Apply `fixed` and `inset-0` only on small devices
             : ""
         )}
         style={{

@@ -16,6 +16,7 @@ type TeamMember = {
   specialities: string[];
   clientFocus: string[];
   therapyFormats: string[];
+  therapyAreasOfSupport: string[];
 };
 
 export function TeamDetailsPage({ team }: Props) {
@@ -49,6 +50,18 @@ export function TeamDetailsPage({ team }: Props) {
 
             <ContactDialog className="!w-full rounded-lg lg:!w-full lg:max-w-full" />
           </div>
+          {team?.therapyFormats && team.therapyFormats.length > 0 && (
+            <div className="flex flex-col gap-2">
+              <h3 className="text-xl font-semibold ">Therapy Formats</h3>
+              <ul className="list-disc pl-5">
+                {team.therapyFormats.map((format, index) => (
+                  <li key={index} className="text-lg text-gray-600">
+                    {format}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
         <div className="lg:p-4 lg:pt-0 flex flex-col justify-between gap-8">
           <TeamDetailsCard team={team} />
@@ -87,11 +100,11 @@ export function TeamDetailsCard({ team }: { team: TeamMember }) {
             icon="👥"
           />
         )}
-        {team?.therapyFormats && (
+        {team?.therapyAreasOfSupport && (
           <DetailsSection
-            title="Therapy Formats"
-            items={team?.therapyFormats}
-            icon="💬"
+            title="Areas of Support"
+            items={team?.therapyAreasOfSupport}
+            icon="🙌"
           />
         )}
       </div>

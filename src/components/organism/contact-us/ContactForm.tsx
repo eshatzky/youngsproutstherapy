@@ -65,7 +65,7 @@ export function ContactForm() {
   };
 
   return (
-    <section className="max-w-[1440px] mx-auto ~p-5/28">
+    <section className="max-w-[1440px] mx-auto ~p-5/28 -mt-14">
       <div className="w-full lg:w-6/12 mx-auto">
         <form className="space-y-6" onSubmit={handleSubmit} ref={form}>
           <Input

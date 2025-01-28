@@ -3,15 +3,17 @@ import {
   ContactForm,
   ContactUsHero,
   MapBox,
-} from '@/components/organism/contact-us';
+} from "@/components/organism/contact-us";
 
 export function ContactUs() {
   return (
-    <section className='min-h-screen'>
+    <section className="min-h-screen">
       <ContactUsHero />
       <BlobSection />
-      <MapBox />
       <ContactForm />
+      <div className="~pb-5/28">
+        <MapBox />
+      </div>
     </section>
   );
 }

@@ -203,6 +203,9 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                   <SheetClose asChild className="cursor-pointer">
                     <Link href="/faq">Faq</Link>
                   </SheetClose>
+                  <SheetClose asChild className="cursor-pointer">
+                    <Link href="/site">Site</Link>
+                  </SheetClose>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -217,11 +220,6 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
               <div className="text-base text-left p-2.5">
                 <SheetClose asChild className="cursor-pointer">
                   <Link href="/blog">Blog</Link>
-                </SheetClose>
-              </div>
-              <div className="text-base text-left p-2.5">
-                <SheetClose asChild className="cursor-pointer">
-                  <Link href="/site">Site</Link>
                 </SheetClose>
               </div>
             </Accordion>

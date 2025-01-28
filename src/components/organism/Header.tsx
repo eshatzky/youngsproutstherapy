@@ -137,6 +137,7 @@ export function Header() {
     { label: "Team", href: "/team" },
     { label: "Fees", href: "/fees" },
     { label: "FAQ", href: "/faq" },
+    { label: "Location", href: "/site" },
   ];
 
   return (
@@ -171,7 +172,7 @@ export function Header() {
         <Link aria-label={"home"} href={"/"}>
           <Image
             src={Logo}
-            className="w-[145px] lg:w-[220px]"
+            className="w-[165px] lg:w-[220px]"
             width={220}
             height={78}
             alt="Young Sprouts Therapy Logo"
@@ -217,11 +218,6 @@ export function Header() {
         <Link aria-label={"Blog"} href={"/blog"}>
           <Text type="p" size="medium" className="hover:text-primary">
             Blog
-          </Text>
-        </Link>
-        <Link aria-label={"Site"} href={"/site"} className="hover:text-primary">
-          <Text type="p" size="medium" className="">
-            Site
           </Text>
         </Link>
       </nav>
