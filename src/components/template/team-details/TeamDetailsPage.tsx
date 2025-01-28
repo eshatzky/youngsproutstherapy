@@ -35,7 +35,7 @@ export function TeamDetailsPage({ team }: Props) {
                   blurDataURL: team.mainImage.blurDataURL,
                 })}
                 alt={team.mainImage.alt || "Thumbnail"}
-                priority={false}
+                loading="lazy"
                 className="object-cover rounded-md object-top transition-all w-[334px] h-[387px] group-hover:transition-all group-hover:duration-500 group-hover:ease-in-out"
                 width={300}
                 height={300}
