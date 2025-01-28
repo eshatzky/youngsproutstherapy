@@ -52,12 +52,11 @@ const faqData: FAQItem[] = [
     id: "item-6",
     number: "06",
     question: "How do I book a consultation?",
-    answer:
-      "Booking a consultation is simple! You have several options:\n\n" +
-      "- Schedule a free consultation through our calendar booking system to discuss your needs and find the right fit for your family.\n" +
-      "- Contact us by filling out the contact form or calling us directly at (289) 579-4769, and we’ll be happy to assist you.\n" +
-      "- If you're ready to set up an appointment with a therapist right away, visit our Jane page at [https://youngsproutstherapy.janeapp.com/](https://youngsproutstherapy.janeapp.com/) to book online instantly.",
-  },
+    answer: "Booking a consultation is simple! You have several options:\n\n" +
+            "- Schedule a free consultation through our calendar booking system to discuss your needs and find the right fit for your family.\n" +
+            "- Contact us by filling out the contact form or calling us directly at (289) 579-4769, and we’ll be happy to assist you.\n" +
+            "- If you're ready to set up an appointment with a therapist right away, visit our Jane page at https://youngsproutstherapy.janeapp.com/ to book online instantly.",
+},
 ];
 
 
