@@ -16,33 +16,50 @@ const faqData: FAQItem[] = [
   {
     id: "item-1",
     number: "01",
-    question: "Alright, but what exactly do you do?",
+    question: "What is child and family therapy, and how can it help my family?",
     answer:
-      "Timperlist gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.",
+      "Child and family therapy supports children, teens, and their families in navigating emotional, behavioural, and relational challenges. At Young Sprouts Therapy in Vaughan, our experienced therapists use proven approaches like CBT, play therapy, and parent-child interaction therapy to foster understanding, improve communication, and strengthen family bonds.",
   },
   {
     id: "item-2",
     number: "02",
-    question:
-      "I don't need a brand strategist but I need help executing an upcoming campaign. Can we still work together?",
+    question: "Do you offer virtual therapy sessions?",
     answer:
-      "Yes, we can definitely work together on executing your campaign. We offer flexible services that can be tailored to your specific needs.",
+      "Yes, we provide both in-person and virtual therapy options for children, teens, and families. Whether you're located in Vaughan, Thornhill, or nearby areas, you can access flexible therapy services that fit your schedule.",
   },
   {
     id: "item-3",
     number: "03",
-    question: "Are your rates competitive?",
+    question: "Do you offer therapy for teenagers?",
     answer:
-      "Our rates are competitive and reflect the quality and value of our services. We offer transparent pricing and flexible packages.",
+      "Yes! Our therapists specialize in working with teens facing anxiety, depression, self-esteem issues, trauma, and more. We use approaches like CBT, emotion-focused therapy, and art therapy to help teenagers build resilience and thrive.",
   },
   {
     id: "item-4",
     number: "04",
-    question: "Why do you have a monthly project cap?",
+    question: "Are your therapy services covered by insurance?",
     answer:
-      "We maintain a monthly project cap to ensure we can deliver the highest quality work and give each client the attention they deserve.",
+      "Yes, most of our therapy services are covered by common workplace benefits and extended health insurance plans. We recommend checking with your provider to confirm coverage for registered social workers or psychotherapists in Vaughan and Thornhill.",
+  },
+  {
+    id: "item-5",
+    number: "05",
+    question: "Where are you located, and what areas do you serve?",
+    answer:
+      "Young Sprouts Therapy is located at 1137 Centre Street, Suite #204, Thornhill, ON. We serve families across Vaughan, Thornhill, Richmond Hill, Markham, North York, and surrounding areas.",
+  },
+  {
+    id: "item-6",
+    number: "06",
+    question: "How do I book a consultation?",
+    answer:
+      "Booking a consultation is simple! You have several options:\n\n" +
+      "- Schedule a free consultation through our calendar booking system to discuss your needs and find the right fit for your family.\n" +
+      "- Contact us by filling out the contact form or calling us directly at (289) 579-4769, and we’ll be happy to assist you.\n" +
+      "- If you're ready to set up an appointment with a therapist right away, visit our Jane page at [https://youngsproutstherapy.janeapp.com/](https://youngsproutstherapy.janeapp.com/) to book online instantly.",
   },
 ];
+
 
 export const FAQItem = ({
   item,
