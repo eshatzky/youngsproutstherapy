@@ -50,16 +50,14 @@ export async function GET() {
       changefreq: "weekly",
       priority: 0.7,
     }));
-
     // Team members
     const teamMembers = await getAllTeamMembers();
     const teamFields = teamMembers.map((member) => ({
-      loc: `https://www.youngsproutstherapy.com/team/${member.slug.current}`,
+      loc: `https://www.youngsproutstherapy.com/team/${member.name}`,
       lastmod: new Date().toISOString(),
       changefreq: "monthly",
       priority: 0.6,
     }));
-
     // Static pages
     const staticPages = [
       {
@@ -110,29 +108,27 @@ export async function GET() {
       ...CONDITION_SUPPORT_SLUGS.map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/services/conditions-we-support/${slug}`,
         lastmod: new Date().toISOString(),
-        changefreq: "monthly",
-        priority: 0.7,
       })),
 
       // Therapy Modalities
       ...THERAPY_MODALITIES_SLUGS.map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/services/therapy-modalities/${slug}`,
         lastmod: new Date().toISOString(),
-        changefreq: "monthly",
-        priority: 0.7,
       })),
 
       // Therapy Types
       ...THERAPY_TYPES_SLUGS.map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/services/therapy-type/${slug}`,
         lastmod: new Date().toISOString(),
-        changefreq: "monthly",
-        priority: 0.7,
       })),
     ];
 
-    const fields = [...blogFields, ...teamFields, ...staticPages, ...servicePages];
-
+    const fields = [
+      ...blogFields,
+      ...teamFields,
+      ...staticPages,
+      ...servicePages,
+    ];
     return getServerSideSitemap(fields);
   } catch (err) {
     console.error("Sitemap generation error:", err);
