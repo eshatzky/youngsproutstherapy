@@ -75,7 +75,7 @@ export function Footer() {
                   fill="#0196AF"
                 />
               </svg>
-              (+289) 579-4769 (GROW)
+              (289) 579-4769 (GROW)
             </li>
           </ul>
         </div>
