@@ -198,7 +198,7 @@ export function Header() {
           setOpenMenu={setOpenMenu}
         />
         <CustomSubmenu
-          label="About us"
+          label="About"
           items={aboutUsItems}
           isOpen={openMenu === "about"}
           onOpen={() => handleMenuOpen("about")}
