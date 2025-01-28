@@ -26,13 +26,13 @@ export function ContactDialog({ className }: { className?: string }) {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   // State to track focus of fields
-  const [fieldFocus, setFieldFocus] = React.useState({
-    first_name: false,
-    last_name: false,
-    email: false,
-    phone: false,
-    message: false,
-  });
+  // const [fieldFocus, setFieldFocus] = React.useState({
+  //   first_name: false,
+  //   last_name: false,
+  //   email: false,
+  //   phone: false,
+  //   message: false,
+  // });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -72,13 +72,13 @@ export function ContactDialog({ className }: { className?: string }) {
     document.head.appendChild(gtagScript);
   };
 
-  const handleFocus = (field: string) => {
-    setFieldFocus((prev) => ({ ...prev, [field]: true }));
-  };
+  // const handleFocus = (field: string) => {
+  //   setFieldFocus((prev) => ({ ...prev, [field]: true }));
+  // };
 
-  const handleBlur = (field: string) => {
-    setFieldFocus((prev) => ({ ...prev, [field]: false }));
-  };
+  // const handleBlur = (field: string) => {
+  //   setFieldFocus((prev) => ({ ...prev, [field]: false }));
+  // };
 
   return (
     <Dialog
@@ -98,26 +98,9 @@ export function ContactDialog({ className }: { className?: string }) {
       </DialogTrigger>
       <DialogContent
         className={cn(
-          "w-full bg-white px-4", // Default shared classes
-          isSubmitted ? "no-scrollbar" : "no-scrollbar", // Scrollbar condition
-          "sm:max-w-[690px] max-sm:max-h-[660px] overflow-y-scroll", // Large and small screen-specific behavior
-          fieldFocus.first_name ||
-            fieldFocus.last_name ||
-            fieldFocus.email ||
-            fieldFocus.phone ||
-            fieldFocus.message
-            ? "max-sm:fixed max-sm:top-0" // Apply `fixed` and `inset-0` only on small devices
-            : ""
+          "w-full bg-white px-4 max-sm:h-auto border border-red-500 overflow-auto", // Default shared classes
+          "max-sm:max-h-[60vh] overflow-y-auto" // Ensure the content is scrollable
         )}
-        style={{
-          WebkitOverflowScrolling: "touch",
-          position: "fixed",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          maxHeight: "90vh",
-          overscrollBehavior: "contain",
-        }}
       >
         <DialogHeader>
           <DialogTitle className="text-2xl text-gray-800 px-2">
@@ -126,7 +109,7 @@ export function ContactDialog({ className }: { className?: string }) {
         </DialogHeader>
         <div
           className={cn(
-            "text-gray-600 pb-4 mx-2",
+            "text-gray-600 pb-4 mx-2 h-auto overflow-y-auto",
             isSubmitted ? "border-none" : ""
           )}
         >
@@ -156,8 +139,6 @@ export function ContactDialog({ className }: { className?: string }) {
                     type="text"
                     inputMode="text"
                     autoComplete="given-name"
-                    onFocus={() => handleFocus("first_name")}
-                    onBlur={() => handleBlur("first_name")}
                   />
                 </div>
                 <div className="space-y-1.5">
@@ -171,8 +152,6 @@ export function ContactDialog({ className }: { className?: string }) {
                     type="text"
                     inputMode="text"
                     autoComplete="family-name"
-                    onFocus={() => handleFocus("last_name")}
-                    onBlur={() => handleBlur("last_name")}
                   />
                 </div>
                 <div className="space-y-1.5">
@@ -186,8 +165,6 @@ export function ContactDialog({ className }: { className?: string }) {
                     type="email"
                     inputMode="email"
                     autoComplete="email"
-                    onFocus={() => handleFocus("email")}
-                    onBlur={() => handleBlur("email")}
                   />
                 </div>
                 <div className="space-y-1.5">
@@ -201,8 +178,6 @@ export function ContactDialog({ className }: { className?: string }) {
                     type="tel"
                     inputMode="tel"
                     autoComplete="tel"
-                    onFocus={() => handleFocus("phone")}
-                    onBlur={() => handleBlur("phone")}
                   />
                 </div>
                 <div className="space-y-1.5 col-span-1 sm:col-span-2">
@@ -214,8 +189,6 @@ export function ContactDialog({ className }: { className?: string }) {
                     name="message"
                     required
                     rows={4}
-                    onFocus={() => handleFocus("message")}
-                    onBlur={() => handleBlur("message")}
                   />
                 </div>
 
