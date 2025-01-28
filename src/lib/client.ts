@@ -209,6 +209,16 @@ export async function getShortTeamList() {
   }
   return [];
 }
+
+
+export async function getAllTeamMembers() {
+  if (client) {
+    return (await client.fetch(teamListAll)) || [];
+  }
+  return [];
+}
+
+
 export async function getAllTeamList() {
   if (client) {
     return (await client.fetch(teamListAll)) || [];

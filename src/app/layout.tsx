@@ -74,6 +74,8 @@ export async function processMetadata() {
     robots: {
       index: true,
       follow: true,
+      googlebot: "index, follow",
+      
     },
     // verification: {
     //   google: "your-google-site-verification-code",

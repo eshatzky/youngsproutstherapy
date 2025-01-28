@@ -56,7 +56,7 @@ export async function MeetOurTeam() {
               Meet Our Team of Child and Family Therapists
             </h2>
             <p className="max-w-[648px] mx-auto w-full text-center leading-6 text-gray-500">
-              We provide a range of expert therapy services to support your mental health and well-being. Whether you're seeking child therapy, teen counselling, family therapy, or parenting support, we tailor our approach to meet your unique needs and help you thrive.
+              We provide a range of expert therapy services to support your mental health and well-being. Whether you&apos;re seeking child therapy, teen counselling, family therapy, or parenting support, we tailor our approach to meet your unique needs and help you thrive.
             </p>
           </div>
           <TeamCarousel teams={teams} />

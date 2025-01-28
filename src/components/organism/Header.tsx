@@ -172,7 +172,7 @@ export function Header() {
         <Link aria-label={"home"} href={"/"}>
           <Image
             src={Logo}
-            className="w-[165px] lg:w-[220px]"
+            className="w-[185px] lg:w-[220px]"
             width={220}
             height={78}
             alt="Young Sprouts Therapy Logo"
