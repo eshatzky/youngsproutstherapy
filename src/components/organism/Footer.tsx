@@ -90,8 +90,8 @@ export function Footer() {
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-label="Teams" href={"/teams"}>
-                Teams
+              <Link aria-label="Team" href={"/team"}>
+                Team
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
