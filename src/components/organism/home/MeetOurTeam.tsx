@@ -53,7 +53,7 @@ export async function MeetOurTeam() {
               <p className="text-[#8A969E] text-sm text-center">Our Team</p>
             </div>
             <h2 className="text-[#293B46] font-medium text-center ~text-3xl/4xl">
-              Meet Our Team Behind the Best Counseling
+              Meet Our Team of Child and Family Therapists
             </h2>
             <p className="max-w-[648px] mx-auto w-full text-center leading-6 text-gray-500">
               We offer a variety of services to support your mindfulness
