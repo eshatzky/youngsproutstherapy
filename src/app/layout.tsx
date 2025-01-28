@@ -74,9 +74,6 @@ export async function processMetadata() {
     robots: {
       index: true,
       follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
     },
     // verification: {
     //   google: "your-google-site-verification-code",
