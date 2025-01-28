@@ -18,6 +18,9 @@ const config = {
     screens,
     fontSize,
     extend: {
+      fontFamily: {
+        sans: ["var(--font-lato)", "sans-serif"],
+      },
       colors: {
         primary: "#ab6969",
         secondary: "#0196AF",

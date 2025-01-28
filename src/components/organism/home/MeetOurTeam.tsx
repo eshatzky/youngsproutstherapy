@@ -29,8 +29,8 @@ export async function MeetOurTeam() {
               y2="1176"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#f7f0f0" stop-opacity="0.1" />
-              <stop offset="1" stop-color="#f7f0f0" stop-opacity="0" />
+              <stop stopColor="#f7f0f0" stop-opacity="0.1" />
+              <stop offset="1" stopColor="#f7f0f0" stop-opacity="0" />
             </linearGradient>
           </defs>
         </svg>

@@ -22,7 +22,7 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
         <div className="h-full no-scrollbar overflowScrollbar">
           <iframe
             className=" h-full rounded-lg  min-h-[135vh] sm:min-h-[1200px] lg:min-h-[900px] w-full overflowScrollbar "
-            src="https://calendly.com/youngsproutstherapy/15-minute-consult?month=2024-07"
+            src="https://calendly.com/youngsproutstherapy/15-minute-consult"
             frameBorder="0"
             allowFullScreen
             scrolling="no"
