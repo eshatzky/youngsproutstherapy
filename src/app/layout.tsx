@@ -5,6 +5,14 @@ import { AlertBar } from "@/components/molecules/AlertBar";
 import { Toaster } from "@/components/ui/sonner";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 export async function generateMetadata() {
   return processMetadata();
@@ -86,7 +94,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={lato.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
@@ -118,4 +126,4 @@ export default async function RootLayout({
   );
 }
 
-export const revalidate = 3600;
+export const revalidate = 1500;

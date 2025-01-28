@@ -64,13 +64,15 @@ export function TherapeuticModalities() {
                   href={`${item.link}`}
                   className="flex items-center justify-center flex-col gap-2.5 "
                 >
-                  <Image
-                    src={item.icon}
-                    alt={item.title + index}
-                    width={48}
-                    height={48}
-                    className="w-12 h-12"
-                  />
+                  {item.icon && (
+                    <Image
+                      src={item.icon}
+                      alt={item.title + index}
+                      width={48}
+                      height={48}
+                      className="w-12 h-12"
+                    />
+                  )}
                   <p className="text-base leading-6 text-center text-black">
                     {item.title}
                   </p>
@@ -94,13 +96,15 @@ export function TherapeuticModalities() {
                   href={`${item.link}`}
                   className="flex items-center justify-center flex-col gap-2.5 "
                 >
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                    className="w-12 h-12"
-                  />
+                  {item.icon && (
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={48}
+                      height={48}
+                      className="w-12 h-12"
+                    />
+                  )}
                   <p className="text-base leading-6 text-center text-black">
                     {item.title}
                   </p>
