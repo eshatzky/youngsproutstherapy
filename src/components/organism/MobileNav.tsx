@@ -204,7 +204,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     <Link href="/faq">Faq</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/site">Site</Link>
+                    <Link href="/locations">Site</Link>
                   </SheetClose>
                 </AccordionContent>
               </AccordionItem>
