@@ -20,9 +20,18 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
       </p>
       <div className="relative w-full h-full  bg-transparent">
         <div className="h-full no-scrollbar overflowScrollbar">
-          <iframe
+          {/* <iframe
             className=" h-full rounded-lg  min-h-[135vh] sm:min-h-[1200px] lg:min-h-[900px] w-full overflowScrollbar "
             src="https://calendly.com/youngsproutstherapy/15-minute-consult"
+            frameBorder="0"
+            allowFullScreen
+            scrolling="no"
+            loading="eager"
+            title="Booking Calendar"
+          ></iframe> */}
+          <iframe
+            className="h-full rounded-lg min-h-[135vh] sm:min-h-[1200px] lg:min-h-[900px] w-full overflowScrollbar"
+            src="https://calendly.com/youngsproutstherapy/15-minute-consult?embed_domain=www.youngsproutstherapy.com&embed_type=Inline"
             frameBorder="0"
             allowFullScreen
             scrolling="no"
