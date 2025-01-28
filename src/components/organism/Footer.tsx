@@ -15,9 +15,7 @@ export function Footer() {
             className="w-[133px] h-[50px] aspect-auto "
           />
           <p className="text-[#77808B] max-w-[336px] w-full max-sm:text-center ">
-            Tailored ADHD therapy and counseling for children and teens in
-            Thornhill, Vaughan. Empower your child with effective strategies for
-            focus and growth.
+            Compassionate therapy and counselling for children, teens, and families in Thornhill and Vaughan.
           </p>
         </div>
         <div className="flex flex-col gap-7">
