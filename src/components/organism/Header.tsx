@@ -137,7 +137,7 @@ export function Header() {
     { label: "Team", href: "/team" },
     { label: "Fees", href: "/fees" },
     { label: "FAQ", href: "/faq" },
-    { label: "Location", href: "/locations" },
+    { label: "Locations", href: "/locations" },
   ];
 
   return (
@@ -198,7 +198,7 @@ export function Header() {
           setOpenMenu={setOpenMenu}
         />
         <CustomSubmenu
-          label="About us"
+          label="About"
           items={aboutUsItems}
           isOpen={openMenu === "about"}
           onOpen={() => handleMenuOpen("about")}
@@ -207,7 +207,7 @@ export function Header() {
           setOpenMenu={setOpenMenu}
         />
         <Link
-          aria-label={"Contact Us"}
+          aria-label={"Contact"}
           href={"/contact-us"}
           className="hover:text-primary"
         >

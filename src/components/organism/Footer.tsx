@@ -15,9 +15,7 @@ export function Footer() {
             className="w-[133px] h-[50px] aspect-auto "
           />
           <p className="text-[#77808B] max-w-[336px] w-full max-sm:text-center ">
-            Tailored ADHD therapy and counseling for children and teens in
-            Thornhill, Vaughan. Empower your child with effective strategies for
-            focus and growth.
+            Compassionate therapy and counselling for children, teens, and families in Thornhill and Vaughan.
           </p>
         </div>
         <div className="flex flex-col gap-7">
@@ -83,7 +81,7 @@ export function Footer() {
         </div>
         <div className="sm:flex flex-col gap-7 hidden ">
           <h3 className="text-secondary font-bold leading-5 whitespace-nowrap">
-            Quick link
+            Quick Links
           </h3>
           <ul className="flex flex-col gap-2">
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
@@ -92,8 +90,8 @@ export function Footer() {
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-label="Teams" href={"/teams"}>
-                Teams
+              <Link aria-label="Team" href={"/team"}>
+                Team
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
@@ -103,7 +101,7 @@ export function Footer() {
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
               <Link aria-label="Frequently Asked Questions" href={"/faq"}>
-                FaQ
+                FAQ
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
