@@ -84,7 +84,7 @@ export function SiteTemplate() {
               "St. Catharines",
             ].map((location, index) => (
               <Link
-                href={`/site/${location.toLowerCase().replace(/ /g, "-")}`}
+                href={`/locations/${location.toLowerCase().replace(/ /g, "-")}`}
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center space-x-3"
               >

@@ -17,9 +17,9 @@ const locations = {
       "Expert tutoring services in the Vaughan area for elementary and high school students.",
     address: "1000 16th Ave, Vaughan, ON L4K 0C5",
     mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.6393092318176!2d-79.38895362344256!3d43.863304138816105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2b2954eabb1b%3A0x35d7e918770e89dc!2s1000%2016th%20Ave%2C%20Richmond%20Hill%2C%20ON%20L4B%203K9%2C%20Canada!5e0!3m2!1sen!2sbd!4v1738056524915!5m2!1sen!2sbd",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92092.7878805373!2d-79.64834130533858!3d43.83717922378304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b268883243a77%3A0xdd95317585aa054b!2sVaughan%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1738062693891!5m2!1sen!2sbd",
   },
-  richmondHill: {
+  "richmond-hill": {
     name: "Richmond Hill",
     description:
       "Expert tutoring services in the Richmond Hill area for elementary and high school students.",
@@ -35,7 +35,7 @@ const locations = {
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92025.50477592275!2d-79.45542543996659!3d43.880756894266824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5efa0324ca9%3A0xf73d52812cb23d63!2sMarkham%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1738056624450!5m2!1sen!2sbd",
   },
-  northYork: {
+  "north-york": {
     name: "North York",
     description:
       "Expert tutoring services in the North York area for elementary and high school students.",
@@ -179,7 +179,7 @@ const locations = {
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39127.18402945437!2d0.07878780331512417!3d52.19888753470316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge%2C%20UK!5e0!3m2!1sen!2sbd!4v1738057081584!5m2!1sen!2sbd",
   },
-  niagaraFalls: {
+  "niagara-falls": {
     name: "Niagara Falls",
     description:
       "Expert tutoring services in the Niagara Falls area for elementary and high school students.",
@@ -187,7 +187,7 @@ const locations = {
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93292.95510977176!2d-79.24392174371238!3d43.053952162085544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3445eec824db9%3A0x46d2c56156bda288!2sNiagara%20Falls%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1738057114343!5m2!1sen!2sbd",
   },
-  stCatharines: {
+  "st.-catharines": {
     name: "St. Catharines",
     description:
       "Expert tutoring services in the St. Catharines area for elementary and high school students.",

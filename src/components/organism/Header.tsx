@@ -137,7 +137,7 @@ export function Header() {
     { label: "Team", href: "/team" },
     { label: "Fees", href: "/fees" },
     { label: "FAQ", href: "/faq" },
-    { label: "Location", href: "/site" },
+    { label: "Location", href: "/locations" },
   ];
 
   return (
