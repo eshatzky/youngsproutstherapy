@@ -70,7 +70,7 @@ export function HowTherapyWorks() {
             </h3>
             <p className="text-base leading-6 text-center">
               A customized treatment plan is created, and regular therapy
-              sessions begin, supporting growth and well-bei
+              sessions begin, supporting growth and well-being.
             </p>
           </Card>
         </motion.li>
