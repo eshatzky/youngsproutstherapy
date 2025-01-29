@@ -170,17 +170,17 @@ const FaqData = {
     "Book a Grief Counselling Session in Vaughan & Thornhill If you or a loved one is struggling with grief, our grief counselling services provide the support and understanding you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin the healing process.",
   accordion: [
     {
-      title: "How long dose grief counselling take ?",
+      title: "How long does grief counselling take?",
       description:
         "Grief is a personal process, and the duration of therapy depends on the individual’s needs. Some clients may find relief after 8 to 12 sessions, while others benefit from longer-term support.",
     },
     {
-      title: "Can grief counselling help with loses other then death ?",
+      title: "Can grief counselling help with losses other than death?",
       description:
         "Absolutely. Grief counselling can help individuals process various types of loss, including the end of a relationship, job loss, or other significant life changes.",
     },
     {
-      title: "Is grief counselling effective for children and teens ?",
+      title: "Is grief counselling effective for children and teens?",
       description:
         "Yes. Children and teens often benefit from grief counselling, especially when they struggle to express their emotions. Our age-appropriate techniques make it easier for younger clients to process their feelings.",
     },
