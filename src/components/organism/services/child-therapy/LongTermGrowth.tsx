@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Script from "next/script";
 
 export function LongTermGrowth() {
   return (
@@ -38,10 +39,32 @@ export function LongTermGrowth() {
           asChild
           variant={"outline"}
           className="max-w-[270px] w-full py-3"
+          onClick={() => {
+            if (typeof window !== "undefined" && window.gtag) {
+              window.gtag("event", "conversion", {
+                send_to: "AW-10834730946/BnbgCPymmaUDEMK_s64o",
+                event_category: "Phone Call",
+                event_label: "Click to Call",
+                value: 1,
+              });
+            }
+          }}
         >
           <Link href="tel:+(289) 579-4769">Call Now - (289) 579-4769</Link>
         </Button>
       </div>
+      {/* Google Ads Call Tracking Script */}
+      <Script
+        id="google-call-tracking"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('config', 'AW-10834730946/BnbgCPymmaUDEMK_s64o', {
+              'phone_conversion_number': '(289) 579-4769'
+            });
+          `,
+        }}
+      />
     </section>
   );
 }

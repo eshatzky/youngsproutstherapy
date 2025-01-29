@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 
 const initializeGA = () => {
-  ReactGA.initialize("G-TGE4VPB9T2");
+  ReactGA.initialize("G-7SPHMHP3YC");
 };
 
 const trackGAEvent = (category, action, label) => {

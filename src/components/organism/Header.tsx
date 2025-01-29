@@ -157,8 +157,8 @@ export function Header() {
           <Image
             src={"/logo.png"}
             className="hidden lg:block lg:w-[265px] h-auto"
-            width={220}
-            height={78}
+            width={600}
+            height={600}
             alt="Young Sprouts Therapy Logo"
             priority
             quality={75}

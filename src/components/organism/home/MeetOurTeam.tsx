@@ -29,8 +29,8 @@ export async function MeetOurTeam() {
               y2="1176"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#f7f0f0" stop-opacity="0.1" />
-              <stop offset="1" stopColor="#f7f0f0" stop-opacity="0" />
+              <stop stopColor="#f7f0f0" stopOpacity="0.1" />
+              <stop offset="1" stopColor="#f7f0f0" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -56,7 +56,11 @@ export async function MeetOurTeam() {
               Meet Our Team of Child and Family Therapists
             </h2>
             <p className="max-w-[648px] mx-auto w-full text-center leading-6 text-gray-500">
-              We provide a range of expert therapy services to support your mental health and well-being. Whether you&apos;re seeking child therapy, teen counselling, family therapy, or parenting support, we tailor our approach to meet your unique needs and help you thrive.
+              We provide a range of expert therapy services to support your
+              mental health and well-being. Whether you&apos;re seeking child
+              therapy, teen counselling, family therapy, or parenting support,
+              we tailor our approach to meet your unique needs and help you
+              thrive.
             </p>
           </div>
           <TeamCarousel teams={teams} />

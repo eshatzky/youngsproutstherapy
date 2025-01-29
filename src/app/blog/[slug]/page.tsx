@@ -4,9 +4,7 @@ import { urlForImage } from "@/lib/image";
 import { Suspense } from "react";
 
 interface BlogPageType {
-  params: {
-    slug: string;
-  };
+  params: { slug: string };
 }
 
 export async function generateMetadata({ params }: BlogPageType) {

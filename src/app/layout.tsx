@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Lato } from "next/font/google";
+import Script from "next/script";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -91,7 +92,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const metadata = await generateMetadata();
   return (
     <html lang="en" suppressHydrationWarning className={lato.className}>
       <head>
@@ -103,16 +103,30 @@ export default async function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="dns-prefetch" href="https://cdn.sanity.io" />
-        <GoogleAnalytics
-          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
-        />
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
+
         <SpeedInsights />
-        {/* <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} /> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10834730946"
+        />
+        <Script id="google-ads-tracking" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-10834730946');
+    `}
+        </Script>
       </head>
       <body className="min-h-screen text-[#5c5c5c] bg-white antialiased">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${"G-7SPHMHP3YC"}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <AlertBar />
         <Header />
         <MotionWrapper>
@@ -123,6 +137,8 @@ export default async function RootLayout({
         </MotionWrapper>
         <Toaster position="top-center" />
       </body>
+      <GoogleAnalytics gaId={"G-7SPHMHP3YC"} />
+      <GoogleTagManager gtmId={"GTM-KZHGKVZ"} />
     </html>
   );
 }

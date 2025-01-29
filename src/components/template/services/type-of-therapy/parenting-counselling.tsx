@@ -16,70 +16,73 @@ import PracticalParentingImage from "/public/services/parent-session.webp";
 
 export function ParentingCounselling() {
   return (
-    <section className="max-w-[1440px] w-full mx-auto ~px-4/10  pt-6 lg:pt-2.5">
-      <div className="hidden lg:block">
-        <HeroSection props={HeroSectionData} />
-      </div>
-      <div className="block lg:hidden">
-        <HeroSection props={HeroSectionDataMobile} />
-      </div>
-      <div className="~py-5/28 flex flex-col gap-6">
-        <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
-          Parenting Counselling in Vaughan & Thornhill
-        </h2>
-        <p className="leading-6 lg:hidden">
-          Parenting is rewarding, but it can also be overwhelming. At Young
-          Sprouts Therapy, we provide expert parenting counselling to help you
-          navigate challenges, improve family dynamics, and strengthen your bond
-          with your children. Whether you&apos;re dealing with behavioural
-          issues, emotional stress, or general parenting struggles, our
-          compassionate team is here to support you every step of the way.
-        </p>
-        <TwoGridSection
-          renderComponent={() => <AboutSection props={AboutSectionData} />}
-          image={AboutImage}
-        />
-      </div>
-      <div className="flex flex-col gap-6">
-        <h2 className="text-primary ~text-xl/3xl font-medium max-lg:text-center">
-          Our Approach to Parenting Counselling
-        </h2>
-        <ServiceAccordion props={AccordionSectionData} />
-      </div>
-      <div className="space-y-8 ~py-10/16 overflow-hidden">
-        <div className="flex flex-col gap-[22px] ">
-          <h2 className="text-center font-medium ~text-2xl/3xl text-primary">
-            The Benefits of Parenting Counselling
-          </h2>
-          <p className="text-center leading-6 max-w-[846px] mx-auto">
-            Parenting counselling offers a range of benefits that extend beyond
-            problem-solving. Our sessions are designed to help you strengthen
-            your relationship with your children and grow personally as a
-            parent.
-          </p>
+    <>
+      <section className="max-w-[1440px] w-full mx-auto ~px-4/10  pt-6 lg:pt-2.5">
+        <div className="hidden lg:block">
+          <HeroSection props={HeroSectionData} />
         </div>
-        <TimeLine props={TimeLineSectionData} />
-      </div>
-      <SpecificChallenges />
-      <div className="~py-5/16 flex flex-col gap-6">
-        <h2 className="font-medium ~text-2xl/3xl text-primary">
-          Practical Parenting Support Through Our Sessions
-        </h2>
-        <p className="leading-6 lg:hidden">
-          We understand that parenting is a day-to-day journey, and we want to
-          equip you with tools and strategies that you can use both during and
-          after counselling. Our sessions focus on building sustainable
-          parenting habits, helping you apply what you’ve learned in real-life
-          situations.
-        </p>
-        <TwoGridSection
-          renderComponent={() => <PracticalParenting />}
-          image={PracticalParentingImage}
-          row={5}
-          roundedRight
-        />
-      </div>
-    </section>
+        <div className="block lg:hidden">
+          <HeroSection props={HeroSectionDataMobile} />
+        </div>
+        <div className="~py-5/28 flex flex-col gap-6">
+          <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
+            Parenting Counselling in Vaughan & Thornhill
+          </h2>
+          <p className="leading-6 lg:hidden">
+            Parenting is rewarding, but it can also be overwhelming. At Young
+            Sprouts Therapy, we provide expert parenting counselling to help you
+            navigate challenges, improve family dynamics, and strengthen your
+            bond with your children. Whether you&apos;re dealing with
+            behavioural issues, emotional stress, or general parenting
+            struggles, our compassionate team is here to support you every step
+            of the way.
+          </p>
+          <TwoGridSection
+            renderComponent={() => <AboutSection props={AboutSectionData} />}
+            image={AboutImage}
+          />
+        </div>
+        <div className="flex flex-col gap-6">
+          <h2 className="text-primary ~text-xl/3xl font-medium max-lg:text-center">
+            Our Approach to Parenting Counselling
+          </h2>
+          <ServiceAccordion props={AccordionSectionData} />
+        </div>
+        <div className="space-y-8 ~py-10/16 overflow-hidden">
+          <div className="flex flex-col gap-[22px] ">
+            <h2 className="text-center font-medium ~text-2xl/3xl text-primary">
+              The Benefits of Parenting Counselling
+            </h2>
+            <p className="text-center leading-6 max-w-[846px] mx-auto">
+              Parenting counselling offers a range of benefits that extend
+              beyond problem-solving. Our sessions are designed to help you
+              strengthen your relationship with your children and grow
+              personally as a parent.
+            </p>
+          </div>
+          <TimeLine props={TimeLineSectionData} />
+        </div>
+        <SpecificChallenges />
+        <div className="~py-5/16 flex flex-col gap-6">
+          <h2 className="font-medium ~text-2xl/3xl text-primary">
+            Practical Parenting Support Through Our Sessions
+          </h2>
+          <p className="leading-6 lg:hidden">
+            We understand that parenting is a day-to-day journey, and we want to
+            equip you with tools and strategies that you can use both during and
+            after counselling. Our sessions focus on building sustainable
+            parenting habits, helping you apply what you’ve learned in real-life
+            situations.
+          </p>
+          <TwoGridSection
+            renderComponent={() => <PracticalParenting />}
+            image={PracticalParentingImage}
+            row={5}
+            roundedRight
+          />
+        </div>
+      </section>
+    </>
   );
 }
 
