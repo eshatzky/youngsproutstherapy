@@ -176,17 +176,17 @@ const FaqData = {
     "Book an Anxiety Therapy Session in Vaughan & Thornhill Are you or a loved one struggling with anxiety? Our tailored anxiety therapy programs are designed to help you manage your symptoms and regain control of your life. Contact us today to book an anxiety therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long dose anxiety therapy take ?",
+      title: "How long does anxiety therapy take?",
       description:
         "The duration of therapy varies, but most clients see improvement within 8 to 12 sessions. Therapy for anxiety is typically a short-to-medium-term process, depending on the severity of the symptoms and personal goals.",
     },
     {
-      title: "Can anxiety therapy be combined with medication ? ",
+      title: "Can anxiety therapy be combined with medication? ",
       description:
         "Yes, anxiety therapy can be combined with medication. Many clients benefit from a combined approach, with therapy addressing cognitive and behavioral patterns, and medication providing relief from more severe symptoms.",
     },
     {
-      title: "Is virtual anxiety therapy effectives ? ",
+      title: "Is virtual anxiety therapy effective? ",
       description:
         "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions are just as effective as in-person sessions, offering flexibility for clients who prefer remote care.",
     },
