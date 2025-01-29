@@ -177,17 +177,17 @@ const FaqData = {
     "Book a Group Therapy Session for Kids and Teens in Vaughan & Thornhill Are you ready to help your child or teen build social skills and emotional resilience? Contact us today to book a group therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "What is the difference between ADHD coaching and ADHD therapy ?",
+      title: "What is the difference between ADHD coaching and ADHD therapy?",
       description:
         "ADHD coaching focuses on practical strategies like time management, organization, and goal-setting to help clients manage their ADHD in daily life. ADHD therapy, on the other hand, addresses the emotional and behavioral challenges associated with ADHD, such as impulsivity, anxiety, and depression.",
     },
     {
-      title: "Is ADHS coaching effective for adults ? ",
+      title: "Is ADHD coaching effective for adults? ",
       description:
         "Yes. ADHD coaching for adults is highly effective, especially for improving executive functioning skills like planning, organizing, and prioritizing tasks. It’s also beneficial for improving emotional regulation and workplace success.",
     },
     {
-      title: "Can ADHD coaching be done virtually ? ",
+      title: "Can ADHD coaching be done virtually? ",
       description:
         "Absolutely. At Young Sprouts Therapy, we offer virtual ADHD coaching sessions for both children and adults, allowing clients to receive personalized support from the comfort of their own homes.",
     },

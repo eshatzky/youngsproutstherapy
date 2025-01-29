@@ -209,17 +209,17 @@ const FaqData = {
     "Book a Clinical Supervision Session in Vaughan & Thornhill If you’re looking for clinical supervision to enhance your practice, contact us today to schedule a session. We offer in-person and virtual supervision for registered psychotherapists and social workers. Fill out our online contact form or schedule a free consultation to start your supervision journey.",
   accordion: [
     {
-      title: "How often should i attend clinical supervision ?",
+      title: "How often should I attend clinical supervision?",
       description:
         "The frequency depends on your professional needs. Most psychotherapists and social workers benefit from monthly sessions, though those handling complex cases may opt for more frequent supervision.",
     },
     {
-      title: "Is virtual supervision Available ?",
+      title: "Is virtual supervision available?",
       description:
         "Yes, we offer virtual clinical supervision for psychotherapists and social workers across Ontario, ensuring flexibility and accessibility.",
     },
     {
-      title: "Does clinical supervision meet professional standards ?",
+      title: "Does clinical supervision meet professional standards?",
       description:
         "Our supervision services meet the requirements for professional development and regulatory board standards for both psychotherapists and social workers.",
     },

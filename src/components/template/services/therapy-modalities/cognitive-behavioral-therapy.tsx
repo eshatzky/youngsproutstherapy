@@ -195,17 +195,17 @@ const FaqData = {
     "Book a CBT Session in Vaughan & Thornhill Are you ready to take control of your mental health with Cognitive Behavioural Therapy (CBT)? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy for individuals and families across Ontario. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "HHow long does CBT therapy take?",
+      title: "How long does CBT therapy take?",
       description:
         "CBT is typically a short-term therapy, lasting anywhere from 8 to 20 sessions, depending on the individual's needs and goals. Some clients may continue therapy for a longer period if they are dealing with more complex issues.",
     },
     {
-      title: "Is CBT effective for children and teens ?",
+      title: "Is CBT effective for children and teens?",
       description:
         "Yes, CBT is highly effective for children and teens, particularly for managing anxiety, behavioural challenges, and emotional regulation. Our therapists tailor CBT techniques to meet the developmental needs of younger clients.",
     },
     {
-      title: "Can CBT be combined with other form od therapy ? ",
+      title: "Can CBT be combined with other forms of therapy? ",
       description:
         "Absolutely. At Young Sprouts Therapy, we often integrate CBT with mindfulness, DBT, and other therapeutic approaches to create a comprehensive treatment plan that meets each client’s unique needs.",
     },

@@ -243,18 +243,18 @@ const FaqData = {
     "Book an Art Therapy Session for Your Child or Teen in Vaughan & Thornhill. Are you ready to help your child express their emotions and develop emotional resilience through art? Contact us today to book an art therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How often should my child attend art therapy sessions ?",
+      title: "How often should my child attend art therapy sessions?",
       description:
         "At Young Sprouts Therapy, we believe that family involvement is essential to the success of art therapy. We work closely with parents and caregivers to ensure that the progress made in therapy is supported at home. Family members are encouraged to participate in occasional sessions to strengthen the family dynamic and provide ongoing support for their child’s emotional growth.",
     },
     {
       title:
-        "Does my child need to have artistic skills to benefit from art therapy ? ",
+        "Does my child need to have artistic skills to benefit from art therapy? ",
       description:
         "No! Art therapy focuses on the process of creating, not the final product. Your child doesn’t need to be an artist to benefit from art therapy. It’s about using creativity as a way to express emotions and work through challenges.",
     },
     {
-      title: "Can art therapy be combined with other type of therapy ? ",
+      title: "Can art therapy be combined with other types of therapy? ",
       description:
         "Absolutely! Art therapy is often integrated with other therapeutic approaches like CBT, play therapy, or family therapy to provide a comprehensive treatment plan for your child.",
     },

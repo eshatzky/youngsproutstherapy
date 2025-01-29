@@ -138,17 +138,17 @@ const FaqData = {
     "Book a Burnout Therapy Session in Vaughan & Thornhill Are you feeling overwhelmed, exhausted, or stuck in a cycle of burnout? Our burnout and stress therapy programs can help you regain control and live a balanced life. Contact us today to schedule a session at our Vaughan or Thornhill clinic. We offer both in-person and virtual sessions. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long dose burnout therapy take ?",
+      title: "How long does burnout therapy take?",
       description:
         "Burnout therapy varies depending on the severity of symptoms, but most clients see significant improvements within 8 to 12 sessions. For some, longer-term support may be beneficial to ensure lasting recovery.",
     },
     {
-      title: "Is stress therapy effective for managing work-related stress ?",
+      title: "Is stress therapy effective for managing work-related stress?",
       description:
         "Yes. Stress therapy focuses on helping clients identify and manage the specific stressors in their work environment, providing strategies to handle high-pressure situations effectively.",
     },
     {
-      title: "Can burnout therapy be done virtually ?",
+      title: "Can burnout therapy be done virtually?",
       description:
         "Absolutely. Our virtual therapy options allow clients to receive support from the comfort of their homes, ensuring flexibility and convenience.",
     },

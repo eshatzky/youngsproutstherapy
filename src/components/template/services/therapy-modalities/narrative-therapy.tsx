@@ -184,17 +184,17 @@ const FaqData = {
     "Book a Narrative Therapy Session in Vaughan & Thornhill Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does Narrative therapy take?",
+      title: "How long does narrative therapy take?",
       description:
         "The duration of therapy varies based on individual needs. While some clients may benefit from short-term therapy, others may choose to engage in longer-term sessions to work through complex issues.",
     },
     {
-      title: "Is Narrative therapy effective for children teens ?",
+      title: "Is narrative therapy effective for children teens?",
       description:
         "Yes, narrative therapy is highly effective for children and teens. It allows young clients to explore their experiences in a way that feels safe and empowering, helping them navigate challenges like anxiety, bullying, and family conflict.",
     },
     {
-      title: "Can Narrative therapy be combined with other therapies ?  ",
+      title: "Can narrative therapy be combined with other therapies?  ",
       description:
         "Absolutely. At Young Sprouts Therapy, we often integrate narrative therapy with CBT and mindfulness techniques to provide a comprehensive approach tailored to each client’s unique needs.",
     },

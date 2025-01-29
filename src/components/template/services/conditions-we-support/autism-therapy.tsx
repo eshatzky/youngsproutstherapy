@@ -251,17 +251,17 @@ const FaqData = {
   accordion: [
     {
       title:
-        "What therapies are available for autism at young sprouts therapy ?",
+        "What therapies are available for autism at young sprouts therapy?",
       description:
         "We offer play therapy, art therapy, sandtray therapy, and social skills development as part of our autism services. These therapies focus on helping children communicate, process emotions, and improve social interactions.",
     },
     {
-      title: "Is autism therapy available for teens ?",
+      title: "Is autism therapy available for teens?",
       description:
         "Yes, we provide autism counselling for older children and teens. These sessions focus on social skills, emotional regulation, and problem-solving, helping teens navigate social situations and relationships.",
     },
     {
-      title: "Can parents be involved in autism therapy ?",
+      title: "Can parents be involved in autism therapy?",
       description:
         "Absolutely. We believe in a family-centred approach. Our therapists work closely with parents through parent coaching and Theraplay to ensure a strong support system at home.",
     },

@@ -221,17 +221,17 @@ const FaqData = {
     "Book an EFT Session in Vaughan & Thornhill Are you ready to explore your emotions and rebuild emotional connections with yourself and your loved ones? Contact us today to book an Emotion Focused Therapy (EFT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy options to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does Emotion Focused therapy take?",
+      title: "How long does emotion focused therapy take?",
       description:
         "The length of therapy varies depending on the client’s needs. Many clients benefit from 8 to 20 sessions, but longer-term therapy may be recommended for more complex issues.",
     },
     {
-      title: "Is EFT effective for individuals, or is it only for couples ?",
+      title: "Is EFT effective for individuals, or is it only for couples?",
       description:
         "EFT is highly effective for both individuals and couples. While it’s commonly used in relationship therapy, it also helps individuals dealing with trauma, anxiety, and emotional dysregulation.",
     },
     {
-      title: "Can EFT be combined with other forms of therapy ? ",
+      title: "Can EFT be combined with other forms of therapy? ",
       description:
         "Absolutely. EFT can be integrated with therapies like CBT and mindfulness to provide a comprehensive approach that addresses both the emotional and cognitive aspects of mental health challenges.",
     },

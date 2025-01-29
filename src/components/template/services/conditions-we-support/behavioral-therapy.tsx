@@ -179,17 +179,17 @@ const FaqData = {
     "Book a Behavioural Therapy Session in Vaughan & Thornhill If your child or teen is struggling with behavioural issues, our behavioural therapists can provide the support and tools needed for lasting change. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long dose behavioral therapy typically take ?",
+      title: "How long dose behavioural therapy typically take?",
       description:
         "Every child is different, but many clients start to see improvements within 8 to 12 sessions. However, the total duration depends on the complexity of the behavioural issues and the child’s progress.",
     },
     {
-      title: "Can parents be involved in therapy ? ",
+      title: "Can parents be involved in therapy? ",
       description:
         "Yes. Parental involvement is key to reinforcing positive changes at home. We offer parent coaching and often involve families in sessions to create a unified approach.",
     },
     {
-      title: "Is virtual behavioral therapy effective for children ? ",
+      title: "Is virtual behavioural therapy effective for children? ",
       description:
         "Absolutely. Our virtual therapy sessions are designed to provide the same level of care as in-person sessions, with flexible scheduling to meet your family’s needs.",
     },

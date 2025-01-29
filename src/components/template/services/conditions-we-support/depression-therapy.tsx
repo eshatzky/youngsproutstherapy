@@ -165,17 +165,17 @@ const FaqData = {
     "Book a Depression Therapy Session in Vaughan & Thornhill If you or a loved one is struggling with depression, our depression therapy programs are here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to start your journey toward emotional well-being.",
   accordion: [
     {
-      title: "How long dose depression therapy typically take ?",
+      title: "How long does depression therapy typically take?",
       description:
         "Every client’s journey is different. While some clients experience improvement within 8 to 12 sessions, others may need longer-term support to fully recover. Our therapists work with you to create a treatment plan that fits your unique needs.",
     },
     {
-      title: "Can therapy for depression be combined with medication ?",
+      title: "Can therapy for depression be combined with medication?",
       description:
         "Yes. For many clients, a combined approach of therapy and medication is the most effective way to manage depression. We work closely with medical professionals to ensure a coordinated approach to treatment.",
     },
     {
-      title: "Is virtual depression therapy effective ?",
+      title: "Is virtual depression therapy effective?",
       description:
         "Absolutely. Our virtual therapy sessions provide the same level of care as in-person sessions, allowing clients to receive support from the comfort of their home",
     },

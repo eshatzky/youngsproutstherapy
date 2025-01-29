@@ -165,18 +165,18 @@ const FaqData = {
     "Book a Trauma Therapy Session in Vaughan & Thornhill If you or your child is struggling with trauma, our trauma therapy programs can provide the support and healing you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your journey to recovery.",
   accordion: [
     {
-      title: "How long dose Trauma therapy tpically  last ?",
+      title: "How long does trauma therapy tpically last?",
       description:
         "The duration of trauma therapy depends on the individual and the severity of the trauma. While some clients see improvement in 8 to 12 sessions, others may require more extended support for deeper healing.",
     },
     {
       title:
-        "Can Trauma therapy help children who don’t talk about their trauma?",
+        "Can trauma therapy help children who don’t talk about their trauma?",
       description:
         "Yes. Our approaches like play therapy and sandtray therapy are designed for children who struggle to express their trauma verbally. These therapies allow children to explore and process emotions through play and creativity.",
     },
     {
-      title: "Is Trauma therapy available virtually ?",
+      title: "Is Trauma therapy available virtually?",
       description:
         "Yes, we offer virtual trauma therapy for clients who prefer remote sessions, ensuring the same level of care and support as in-person therapy.",
     },
