@@ -91,6 +91,9 @@ export async function generateMetadata({
   return {
     title: `${service.title}`,
     description: service.description,
+    alternates: {
+      canonical: `https://www.youngsproutstherapy.com/services/therapy-modalities/${params.slug}`,
+    },
   };
 }
 

@@ -75,7 +75,6 @@ export async function processMetadata() {
       index: true,
       follow: true,
       googlebot: "index, follow",
-      
     },
     // verification: {
     //   google: "your-google-site-verification-code",
@@ -92,7 +91,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const metadata = await generateMetadata();
+  // const metadata = await generateMetadata();
   return (
     <html lang="en" suppressHydrationWarning className={lato.className}>
       <head>
@@ -110,8 +109,8 @@ export default async function RootLayout({
         />
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
         <SpeedInsights />
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        {/* <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} /> */}
       </head>
       <body className="min-h-screen text-[#5c5c5c] bg-white antialiased">
         <AlertBar />

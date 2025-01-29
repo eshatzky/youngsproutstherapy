@@ -98,8 +98,8 @@ export function ContactDialog({ className }: { className?: string }) {
       </DialogTrigger>
       <DialogContent
         className={cn(
-          "w-full bg-white px-4 max-sm:h-auto border border-red-500 overflow-auto", // Default shared classes
-          "max-sm:max-h-[60vh] overflow-y-auto" // Ensure the content is scrollable
+          "w-full bg-white px-4 max-sm:h-auto border border-red-500 overflow-auto",
+          "max-sm:max-h-[60vh] overflow-y-auto"
         )}
       >
         <DialogHeader>

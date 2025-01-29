@@ -79,6 +79,9 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
   return {
     title: `Young Sprouts Therapy - ${service.title}`,
     description: service.description,
+    alternates: {
+      canonical: `https://www.youngsproutstherapy.com/services/conditions-we-support/${params.slug}`,
+    },
   };
 }
 

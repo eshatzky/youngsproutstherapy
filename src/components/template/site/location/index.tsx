@@ -209,7 +209,7 @@ export function LocationTemplate({ location }: { location: string }) {
             At Young Sprouts Therapy, we are dedicated to supporting children,
             teens, and families in{" "}
             <span className="!capitalize">
-              {locationData?.name?.toLowerCase().replace(/ /g, "-")}
+              {locationData?.name?.toLowerCase().replace(/-/g, " ")}
             </span>{" "}
             through expert psychotherapy and counselling services. We understand
             that every family and individual is unique, and our tailored
@@ -220,7 +220,7 @@ export function LocationTemplate({ location }: { location: string }) {
             Child and Family Therapy in{" "}
             <span className="capitalize">
               {" "}
-              {locationData?.name?.toLowerCase().replace(/ /g, "-")}
+              {locationData?.name?.toLowerCase().replace(/-/g, " ")}
             </span>
           </h1>
         </div>
@@ -236,7 +236,7 @@ export function LocationTemplate({ location }: { location: string }) {
                 options for children, teens, and families in{" "}
                 <span className="capitalize">
                   {" "}
-                  {locationData?.name?.toLowerCase().replace(/ /g, "-")}
+                  {locationData?.name?.toLowerCase().replace(/-/g, " ")}
                 </span>
                 , addressing various emotional, behavioural, and relational
                 challenges.

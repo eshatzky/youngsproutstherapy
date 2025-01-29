@@ -93,7 +93,7 @@ export function PracticalParenting() {
           variant={"outline"}
           className="max-w-[270px] w-full py-3"
         >
-          <Link href="tel:+(647)370-7622">Call Now -(647)370-7622</Link>
+          <Link href="tel:+(289) 579-4769">Call Now -(289) 579-4769</Link>
         </Button>
       </div>
     </article>

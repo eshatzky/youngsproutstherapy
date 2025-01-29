@@ -23,19 +23,23 @@ export async function generateMetadata({ params }: BlogPageType) {
     metadataBase: new URL(
       process.env.BASE_URL || "https://www.youngsproutstherapy.com/"
     ),
-    title: `Young Sprouts Therapy | ${title}`,
+    title: title.includes("Young Sprouts Therapy")
+      ? title
+      : `Young Sprouts Therapy | ${title}`,
     description: excerpt,
 
     openGraph: {
       type: "website",
       url,
-      title: `Young Sprouts Therapy | ${title}`,
+      title: title.includes("Young Sprouts Therapy")
+        ? title
+        : `Young Sprouts Therapy | ${title}`,
       description: excerpt,
       images: typeof ogImage === "string" ? ogImage : null,
     },
 
     alternates: {
-      canonical: url,
+      canonical: `https://www.youngsproutstherapy.com/blog/${post?.slug?.current}`,
       types: {
         "application/rss+xml": `/blog/${post?.slug?.current}/rss.xml`,
       },

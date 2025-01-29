@@ -16,6 +16,10 @@ export const metadata = {
   title: "Contact for Child, Teen, and Family Therapy in Vaughan",
   description:
     "Contact us at Young Sprouts Therapy to schedule an appointment or inquire about our services. Our office is located in Thornhill, Vaughan. Call us at (289) 579-4769.",
+
+  alternates: {
+    canonical: "https://www.youngsproutstherapy.com/contact-us",
+  },
 };
 
 const jsonLd = {

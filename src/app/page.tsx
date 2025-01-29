@@ -12,12 +12,6 @@ export default function HomePage() {
   );
 }
 
-export const metadata = {
-  title: "Young Sprouts | Child, Teen and Family Therapy | Vaughan",
-  description:
-    "Psychotherapy and counseling for kids and teens in Vaughan. Find support for kids and teens struggling with anxiety, behavioral issues, ADHD, grief, trauma, and more.",
-};
-
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "MedicalBusiness", "HealthAndBeautyBusiness"],
@@ -39,7 +33,7 @@ const jsonLd = {
     latitude: 43.80910677814606,
     longitude: -79.46233340468766,
   },
-  telephone: "(647) 370-7622",
+  telephone: "(289) 370-7622",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

@@ -9,7 +9,13 @@ interface ParemsType {
 
 export async function generateMetadata({ params }: ParemsType) {
   const team = await getTeamBySlug(params.slug);
-  return { title: team.name };
+  const url = `https://www.youngsproutstherapy.com/team/${team?.name}`;
+  return {
+    title: team.name,
+    alternates: {
+      canonical: url,
+    },
+  };
 }
 
 export default async function page({ params }: ParemsType) {

@@ -55,6 +55,9 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
   return {
     title: `${service.title}`,
     description: service.description,
+    alternates: {
+      canonical: `https://www.youngsproutstherapy.com/services/therapy-type/${params.slug}`,
+    },
   };
 }
 

@@ -141,12 +141,22 @@ export function Header() {
   ];
 
   return (
-    <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
-      <div className="flex items-center gap-3.5 max-sm:flex-1 max-sm:justify-center">
-        <Link aria-label={"home"} href={"/"} className="max-sm:ml-10">
+    <header className="w-full flex items-center justify-between gap-4 sm:py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
+      <div className="flex items-center gap-3.5 max-sm:flex-1 ">
+        <Link aria-label={"home"} href={"/"} className="lg:py-4">
           <Image
             src={Logo}
-            className="w-[195px] lg:w-[255px]"
+            className="w-[195px] block lg:hidden"
+            width={220}
+            height={78}
+            alt="Young Sprouts Therapy Logo"
+            priority
+            quality={75}
+            sizes="(max-width: 768px) 145px, 220px"
+          />
+          <Image
+            src={"/logo.png"}
+            className="hidden lg:block lg:w-[265px] h-auto"
             width={220}
             height={78}
             alt="Young Sprouts Therapy Logo"
@@ -208,7 +218,7 @@ export function Header() {
           Book a Free Consult
         </Button>
       </a>
-      <div className="lg:hidden mt-2">
+      <div className="lg:hidden">
         <span onClick={() => setMobileNavOpen(true)} className="cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -216,6 +226,7 @@ export function Header() {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
+            className="size-7"
           >
             <path
               d="M3 12H15M3 6H21M3 18H21"

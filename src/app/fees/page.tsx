@@ -15,6 +15,9 @@ export const metadata = {
   title: "Fees for Child, Teen, and Family Therapy in Vaughan",
   description:
     "Competitive rates for child, teen, and family therapy services in Vaughan. Our registered therapists and social workers are covered by most workplace insurance.",
+  alternates: {
+    canonical: "https://www.youngsproutstherapy.com/fees",
+  },
 };
 
 const jsonLd = {
