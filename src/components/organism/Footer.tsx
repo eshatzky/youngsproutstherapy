@@ -15,7 +15,8 @@ export function Footer() {
             className="w-[133px] h-[50px] aspect-auto "
           />
           <p className="text-[#77808B] max-w-[336px] w-full max-sm:text-center ">
-            Compassionate therapy and counselling for children, teens, and families in Thornhill and Vaughan.
+            Compassionate therapy and counselling for children, teens, and
+            families in Thornhill and Vaughan.
           </p>
         </div>
         <div className="flex flex-col gap-7">
@@ -110,7 +111,7 @@ export function Footer() {
               </Link>
             </li>
             <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-              <Link aria-label="Contact" href={"/contact"}>
+              <Link aria-label="contact-us" href={"/contact-us"}>
                 Contact
               </Link>
             </li>
@@ -164,7 +165,7 @@ export function Footer() {
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Teams" href={"/teams"}>
+                <Link aria-label="Teams" href={"/team"}>
                   Teams
                 </Link>
               </li>
@@ -184,7 +185,7 @@ export function Footer() {
                 </Link>
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] hover:underline">
-                <Link aria-label="Contact" href={"/contact"}>
+                <Link aria-label="contact-us" href={"/contact-us"}>
                   Contact
                 </Link>
               </li>
