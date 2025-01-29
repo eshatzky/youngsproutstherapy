@@ -47,7 +47,7 @@ export function ContactForm() {
     triggerGoogleAdsConversion();
     sendGAEvent("submit_form", {
       category: "Contact",
-      label: "something",
+      label: "Form Submission",
     });
     trackGAEvent("Contact", "Form Submit", "clicked");
     setIsSubmitting(false);
@@ -55,13 +55,11 @@ export function ContactForm() {
   };
 
   const triggerGoogleAdsConversion = () => {
-    const gtagScript = document.createElement("script");
-    gtagScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('event', 'conversion', {'send_to': 'AW-10834730946/4Je8CMG_maUDEMK_s64o'});
-    `;
-    document.head.appendChild(gtagScript);
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-10834730946/4Je8CMG_maUDEMK_s64o",
+      });
+    }
   };
 
   return (
