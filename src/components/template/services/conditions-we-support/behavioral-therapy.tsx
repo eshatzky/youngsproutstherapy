@@ -191,7 +191,7 @@ const FaqData = {
     {
       title: "Is virtual behavioural therapy effective for children? ",
       description:
-        "Absolutely. Our virtual therapy sessions are designed to provide the same level of care as in-person sessions, with flexible scheduling to meet your family’s needs.",
+        "Absolutely. Our virtual therapy sessions offer a convenient and flexible way to access professional support, tailored to meet your family's unique needs.",
     },
   ],
 };
