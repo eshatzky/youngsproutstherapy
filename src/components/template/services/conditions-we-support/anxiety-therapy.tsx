@@ -188,7 +188,7 @@ const FaqData = {
     {
       title: "Is virtual anxiety therapy effective? ",
       description:
-        "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions are just as effective as in-person sessions, offering flexibility for clients who prefer remote care.",
+        "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions provide the same high-quality support as in-person sessions, offering flexibility for clients who prefer remote care.",
     },
   ],
 };
