@@ -218,12 +218,12 @@ const FaqData = {
     },
     {
       title:
-        "Is CBT only for individuals with borderline personality Disorder (BPD) ?",
+        "Is DBT only for individuals with borderline personality Disorder (BPD)?",
       description:
         "No. While DBT was originally developed for BPD, it is also highly effective for individuals dealing with self-harm, eating disorders, addiction, anxiety, and other emotional challenges.",
     },
     {
-      title: "Can DBT be done virtually ? ",
+      title: "Can DBT be done virtually? ",
       description:
         "Yes, at Young Sprouts Therapy, we offer both in-person and virtual DBT sessions to meet your needs and ensure accessibility.",
     },
