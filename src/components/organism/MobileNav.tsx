@@ -191,7 +191,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 className="[&[data-state=open]]:shadow-none [&[data-state=open]]:rounded-none border-none"
               >
                 <AccordionTrigger className="text-base cursor-pointer">
-                  About us
+                  About
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild className="cursor-pointer">
@@ -201,7 +201,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     <Link href="/fees">Fees</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/faq">Faq</Link>
+                    <Link href="/faq">FAQ</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
                     <Link href="/locations">Locations</Link>
@@ -214,7 +214,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
               ></AccordionItem>
               <div className="text-base text-left p-2.5">
                 <SheetClose asChild className="cursor-pointer">
-                  <Link href="/contact-us">Contact Us</Link>
+                  <Link href="/contact-us">Contact</Link>
                 </SheetClose>
               </div>
               <div className="text-base text-left p-2.5">
