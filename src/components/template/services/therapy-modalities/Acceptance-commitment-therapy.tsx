@@ -218,17 +218,17 @@ const FaqData = {
     "Book an ACT Session in Vaughan & Thornhill Are you ready to embrace life’s challenges while living meaningfully? Contact us today to book an Acceptance and Commitment Therapy (ACT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does ACT therapy take ?",
+      title: "How long does ACT therapy take?",
       description:
         "The length of therapy varies based on individual needs. Some clients may benefit from short-term therapy (8-12 sessions), while others may continue longer to address more complex challenges.",
     },
     {
-      title: "Can ACT be combined with other therapies ? ",
+      title: "Can ACT be combined with other therapies? ",
       description:
         "Yes, ACT is often combined with therapies like CBT to provide a more comprehensive approach to managing mental health challenges such as anxiety, depression, and trauma.",
     },
     {
-      title: "Is ACT suitable for children and teens ?  ",
+      title: "Is ACT suitable for children and teens?  ",
       description:
         "Absolutely. ACT is highly effective for helping children and teens manage anxiety, stress, and emotional regulation by teaching them to accept their feelings while taking positive actions aligned with their values.",
     },
