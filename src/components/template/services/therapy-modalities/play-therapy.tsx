@@ -275,17 +275,17 @@ const FaqData = {
     "Book a Play Therapy Session in Vaughan & Thornhill Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does Play therapy typically take?",
+      title: "How long does play therapy typically take?",
       description:
         "The duration of play therapy varies depending on each child’s needs. While some children may benefit from 8 to 12 sessions, others may require longer-term therapy to address more complex emotional or behavioural challenges.",
     },
     {
-      title: "Is play therapy effective for children with autism ?",
+      title: "Is play therapy effective for children with autism?",
       description:
         "Yes. Play therapy is highly effective for children with autism spectrum disorder (ASD). It helps improve social communication skills, emotional regulation, and behavioural responses, allowing children with autism to thrive.",
     },
     {
-      title: "Can parents be involved in play therapy ?  ",
+      title: "Can parents be involved in play therapy?",
       description:
         "Absolutely. Family involvement is a key aspect of our play therapy programs. We encourage parents to participate in consultations and parent coaching to ensure that the progress made in therapy is supported at home.",
     },
