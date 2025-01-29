@@ -184,19 +184,19 @@ const FaqData = {
     "Book a PCIT Session in Vaughan & Thornhill Are you struggling with managing your child's behavior? Parent-Child Interaction Therapy (PCIT) can provide the tools and support you need. Contact us today to book a PCIT session at our Vaughan or Thornhill office. We offer both in-person and virtual parent coaching options. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does PGIT take?",
+      title: "How long does PCIT take?",
       description:
         "PCIT typically involves 12 to 20 sessions, though the exact length depends on the family’s progress. Each session lasts about an hour, and the treatment is considered complete once parents master the necessary skills.",
     },
     {
-      title: "Is PCIT only for young children ?",
+      title: "Is PCIT only for young children?",
       description:
         "PCIT is most effective for children aged 2 to 7, though it can be adapted for older children in some cases. The techniques taught in PCIT are beneficial for parents of children with behavioral challenges of any age.",
     },
     {
-      title: "Can PCIT be done virtually ?  ",
+      title: "Can PCIT be done virtually?  ",
       description:
-        "Yes. We offer virtual PCIT sessions that allow parents to receive coaching from the comfort of their home. Virtual PCIT has been shown to be as effective as in-person sessions.",
+        "Yes. We offer virtual PCIT sessions that allow parents to receive coaching from the comfort of their home.",
     },
   ],
 };
