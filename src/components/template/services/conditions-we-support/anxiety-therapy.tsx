@@ -176,19 +176,28 @@ const FaqData = {
     "Book an Anxiety Therapy Session in Vaughan & Thornhill Are you or a loved one struggling with anxiety? Our tailored anxiety therapy programs are designed to help you manage your symptoms and regain control of your life. Contact us today to book an anxiety therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does anxiety therapy take?",
-      description:
-        "The duration of therapy varies, but most clients see improvement within 8 to 12 sessions. Therapy for anxiety is typically a short-to-medium-term process, depending on the severity of the symptoms and personal goals.",
+      "title": "How long does anxiety therapy take?",
+      "description": "The duration of therapy varies, but most clients see improvement within 8 to 12 sessions. Therapy for anxiety is typically a short-to-medium-term process, depending on the severity of the symptoms and personal goals."
     },
     {
-      title: "Can anxiety therapy be combined with medication? ",
-      description:
-        "Yes, anxiety therapy can be combined with medication. Many clients benefit from a combined approach, with therapy addressing cognitive and behavioral patterns, and medication providing relief from more severe symptoms.",
+      "title": "How do I know if my child needs anxiety therapy?",
+      "description": "If anxiety is affecting your child's daily life—such as school, friendships, or family interactions—it may be time to seek professional support. Signs include excessive worry, sleep disturbances, irritability, or avoiding activities they once enjoyed. A therapist can assess their needs and provide effective coping strategies."
     },
     {
-      title: "Is virtual anxiety therapy effective? ",
-      description:
-        "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions provide the same high-quality support as in-person sessions, offering flexibility for clients who prefer remote care.",
+      "title": "Is virtual anxiety therapy effective?",
+      "description": "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions provide the same high-quality support as in-person sessions, offering flexibility for clients who prefer remote care."
     },
-  ],
+    {
+      "title": "How can therapy help my child with anxiety?",
+      "description": "Anxiety therapy helps children and teens understand their anxious thoughts, build coping skills, and develop confidence in managing stress. We use approaches like Cognitive Behavioural Therapy (CBT), Play Therapy, and Emotion-Focused Therapy to support their growth."
+    },
+    {
+      "title": "Is anxiety therapy covered by insurance?",
+      "description": "Most workplace benefits and private insurance plans cover psychotherapy services. We recommend checking with your provider to confirm coverage for therapy in Ontario."
+    },
+    {
+      "title": "What should I expect in my child's first anxiety therapy session?",
+      "description": "The first session involves a warm and engaging discussion to understand your child's concerns, emotions, and therapy goals. The therapist will create a personalized plan and introduce techniques to help your child manage anxiety in a way that feels safe and comfortable."
+    }
+  ]
 };
