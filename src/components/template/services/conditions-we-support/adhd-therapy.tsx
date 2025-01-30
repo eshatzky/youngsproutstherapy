@@ -196,7 +196,7 @@ const FaqData = {
   },
   {
     "title": "Does insurance cover ADHD coaching and therapy?",
-    "description": "Coverage depends on your provider and the specific services. Many insurance plans cover ADHD therapy provided by licensed professionals, but ADHD coaching may not always be included."
+    "description": "Coverage depends on your insurance provider and plan. At Young Sprouts Therapy, our ADHD therapy services are provided by Registered Psychotherapists and Registered Social Workers, which are covered under many extended health benefit plans. We recommend checking with your provider to confirm your coverage."
   },
   {
     "title": "Can parents be involved in their child’s ADHD coaching or therapy?",
