@@ -49,7 +49,7 @@ export function HeroSection() {
             </Title>
             <Text
               size="medium"
-              className="~text-base/2xl font-normal  text-white lg:text-[#91818A]"
+              className="~text-base/xl font-medium text-white lg:text-[#91818A]"
             >
               Supporting Growth Through Psychotherapy and Counselling
             </Text>
@@ -57,8 +57,8 @@ export function HeroSection() {
               size="medium"
               className="~text-sm/base font-normal max-lg:text-white max-w-[650px]"
             >
-              Supporting Families in Vaughan and Thornhill with Personalized,
-              Evidence-Based Therapy
+              Supporting Families in Thornhill with Personalized, Evidence-Based
+              Therapy
             </Text>
           </div>
 

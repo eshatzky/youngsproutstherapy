@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "../ui/button";
-import { Logo } from "@/assets";
 import Text from "../atom/Text";
 
 import { useState } from "react";
@@ -143,26 +141,16 @@ export function Header() {
   return (
     <header className="w-full flex items-center justify-between gap-4 sm:py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
       <div className="flex items-center gap-3.5 max-sm:flex-1 ">
-        <Link aria-label={"home"} href={"/"} className="lg:py-4">
-          <Image
-            src={Logo}
+        <Link aria-label={"home"} href={"/"} className="py-1 lg:py-4">
+          <img
+            src={"/logo.png"}
             className="w-[195px] block lg:hidden"
-            width={400}
-            height={400}
             alt="Young Sprouts Therapy Logo"
-            priority
-            quality={95}
-            sizes="(max-width: 768px) 145px, 220px"
           />
-          <Image
+          <img
             src={"/logo.png"}
             className="hidden lg:block lg:w-[265px] h-auto"
-            width={600}
-            height={600}
             alt="Young Sprouts Therapy Logo"
-            priority
-            quality={95}
-            sizes="(max-width: 768px) 145px, 220px"
           />
         </Link>
       </div>
@@ -222,18 +210,16 @@ export function Header() {
         <span onClick={() => setMobileNavOpen(true)} className="cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
             fill="none"
-            className="size-7"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-8"
           >
             <path
-              d="M3 12H15M3 6H21M3 18H21"
-              stroke="#333333"
-              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
         </span>

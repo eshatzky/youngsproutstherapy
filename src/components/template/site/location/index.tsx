@@ -275,7 +275,7 @@ export function LocationTemplate({ location }: { location: string }) {
       {/* Services Section */}
       <div className="max-w-6xl mx-auto px-4 mb-12">
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="text-white bg-primary">
+          <Card className="text-white bg-secondary">
             <CardHeader>
               <CardTitle>Child Therapy</CardTitle>
             </CardHeader>
@@ -295,7 +295,7 @@ export function LocationTemplate({ location }: { location: string }) {
             </CardContent>
           </Card>
 
-          <Card className="text-white bg-primary">
+          <Card className="text-white bg-secondary">
             <CardHeader>
               <CardTitle>Teen Therapy</CardTitle>
             </CardHeader>
@@ -315,7 +315,7 @@ export function LocationTemplate({ location }: { location: string }) {
             </CardContent>
           </Card>
 
-          <Card className="text-white bg-primary">
+          <Card className="text-white bg-secondary">
             <CardHeader>
               <CardTitle>Family Therapy</CardTitle>
             </CardHeader>

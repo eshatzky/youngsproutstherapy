@@ -31,32 +31,39 @@ export function CustomSubmenu({
 }: CustomSubmenuProps) {
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (label: string) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setActiveSubmenu(label);
   };
 
   const handleMouseLeave = () => {
-    setActiveSubmenu(null);
+    timeoutRef.current = setTimeout(() => {
+      setActiveSubmenu(null);
+    }, 600);
   };
 
   const closeMenu = () => {
-    setActiveSubmenu(null);
-    setOpenMenu(false);
+    timeoutRef.current = setTimeout(() => {
+      setActiveSubmenu(null);
+      setOpenMenu(false);
+    }, 600);
   };
-
-  // Add an event listener for clicks outside the menu
 
   return (
     <div
       ref={menuRef}
       className="relative z-[9999]"
+      onMouseEnter={() => {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      }}
       onMouseLeave={closeMenu} // Close the menu when mouse leaves
     >
       <button
         className="flex items-center gap-1.5 cursor-pointer focus:outline-none z-[9999]"
         onClick={onOpen}
-        aria-label={"navmenu"}
+        aria-label="navmenu"
         onMouseEnter={onOpen}
       >
         <Text
@@ -83,7 +90,7 @@ export function CustomSubmenu({
         </Text>
       </button>
       {isOpen && (
-        <div className="absolute left-0  w-64 bg-white shadow-lg rounded-md border py-2 z-[9999]">
+        <div className="absolute left-0 w-64 bg-white shadow-lg rounded-md border py-2 z-[9999]">
           {items.map((item, index) =>
             "items" in item ? (
               <div
@@ -125,7 +132,7 @@ export function CustomSubmenu({
                   </Text>
                 </div>
                 {activeSubmenu === item.label && (
-                  <div className="absolute left-full top-0 mt-0 ml-0.5 w-64 bg-white shadow-lg border rounded-md py-2 z-50">
+                  <div className="absolute left-full top-0 mt-0 ml-[1px] w-64 bg-white shadow-lg border rounded-md py-2 z-50">
                     {item.items.map((subItem, subIndex) => (
                       <Link
                         aria-label={subItem.label}

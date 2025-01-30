@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function PositiveOutcomes() {
   return (
-    <section className="~py-14/24 max-w-[1050px] w-full mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden">
-      <div className="flex lg:flex-row flex-col items-center gap-8 lg:gap-8">
+    <section className="~py-14/24 max-w-[1440px] mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden">
+      <div className="flex lg:flex-row flex-col items-center gap-8 lg:gap-28">
         <div className="w-full space-y-4">
           <div className="flex gap-4 items-center">
             <h2 className="text-primary font-bold text-2xl lg:text-6xl text-center lg:text-left">
@@ -30,7 +30,7 @@ export function PositiveOutcomes() {
           width={1000}
           height={1000}
           alt="why choose us"
-          className="w-full "
+          className="w-full lg:w-8/12"
         />
       </div>
     </section>

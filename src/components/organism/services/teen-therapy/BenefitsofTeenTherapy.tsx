@@ -79,7 +79,7 @@ export function BenefitsTeenTherapy() {
           </Button>
 
           <Button asChild variant={"outline"} className="max-w-[270px] w-full">
-            <Link href={`tel:(289) 579-4769`}>Call Now -(289) 579-4769</Link>
+            <Link href={`tel:(289) 579-4769`}>Call Now - (289) 579-4769</Link>
           </Button>
         </div>
       </div>

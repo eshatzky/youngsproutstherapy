@@ -106,7 +106,7 @@ export function PracticalParenting() {
             }
           }}
         >
-          <Link href="tel:+(289) 579-4769">Call Now -(289) 579-4769</Link>
+          <Link href="tel:+(289) 579-4769">Call Now - (289) 579-4769</Link>
         </Button>
       </div>
       {/* Google Ads Call Tracking Script */}

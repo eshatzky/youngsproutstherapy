@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export function WhyChooseUs() {
   return (
-    <div className="flex flex-col max-w-[1050px] w-full mx-auto ">
+    <div className="flex flex-col max-w-[1440px] w-full mx-auto ">
       <h2 className="text-primary font-bold ~text-2xl/5xl text-center ">
         Why Choose Us?
       </h2>
       <section className="~pt-6/20 max-w-[1440px] mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-4 lg:gap-4">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-28">
           <Image
             src={"/images/caringteam.png"}
             width={1000}

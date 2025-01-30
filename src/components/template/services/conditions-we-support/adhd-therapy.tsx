@@ -99,8 +99,6 @@ const AdhdTherapyData = {
         "By combining ADHD therapy with behavioral interventions, we help children and teens manage hyperactivity and impulsivity, fostering better behavior at home and in school.",
     },
   ],
-  subTitle:
-    "By combining ADHD therapy with behavioral interventions, we help children and teens manage hyperactivity and impulsivity, fostering better behavior at home and in school.",
 };
 
 const timelineData = [
