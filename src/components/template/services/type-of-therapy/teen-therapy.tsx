@@ -144,20 +144,27 @@ const FaqData = {
   description:
     "Book a Teen Therapy Session in Vaughan & Thornhill Are you ready to help your teen build emotional strength and resilience? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual appointments to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-    {
-      title: "How do i know if my teen need therapy?",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+   {
+      "title": "How do I know if my teen needs therapy?",
+      "description": "If your teen is experiencing persistent mood swings, withdrawal from family or friends, trouble managing stress, declining grades, or struggles with anxiety or self-esteem, therapy can help. A licensed therapist will assess their needs and provide strategies for coping and emotional growth."
     },
     {
-      title: "How long docs teen therapy typically list?",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+      "title": "How long does teen therapy typically last?",
+      "description": "The length of therapy depends on your teen’s unique challenges and goals. Many teens see improvement within 8 to 12 sessions, but longer-term support may be beneficial for deeper concerns like trauma, depression, or ongoing anxiety."
     },
     {
-      title: "Can parents be involved in the process ? ",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+      "title": "Can parents be involved in the therapy process?",
+      "description": "Yes! Parental involvement is encouraged. While teens often need a private space to express themselves, therapists may offer parent check-ins, guidance on supporting your teen at home, and strategies to improve communication and relationships."
     },
-  ],
-};
+    {
+      "title": "What types of therapy are used for teens?",
+      "description": "We use evidence-based approaches like Cognitive Behavioural Therapy (CBT), Emotion-Focused Therapy (EFT), and Solution-Focused Therapy to help teens manage stress, build confidence, and develop emotional resilience."
+    },
+    {
+      "title": "Is teen therapy covered by insurance?",
+      "description": "Most workplace benefits and private insurance plans cover psychotherapy services. We recommend checking with your provider to confirm coverage for therapy in Ontario."
+    },
+    {
+      "title": "Do you offer in-person teen therapy near me?",
+      "description": "Yes, we offer in-person teen therapy at our Thornhill office, located at 1137 Centre Street. Many families from Vaughan, Richmond Hill, Markham, North York, and surrounding areas visit our clinic. We also provide virtual therapy across Ontario for added convenience."
+    };
