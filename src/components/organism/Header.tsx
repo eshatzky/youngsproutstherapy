@@ -147,11 +147,11 @@ export function Header() {
           <Image
             src={Logo}
             className="w-[195px] block lg:hidden"
-            width={220}
-            height={78}
+            width={400}
+            height={400}
             alt="Young Sprouts Therapy Logo"
             priority
-            quality={75}
+            quality={95}
             sizes="(max-width: 768px) 145px, 220px"
           />
           <Image
@@ -161,7 +161,7 @@ export function Header() {
             height={600}
             alt="Young Sprouts Therapy Logo"
             priority
-            quality={75}
+            quality={95}
             sizes="(max-width: 768px) 145px, 220px"
           />
         </Link>

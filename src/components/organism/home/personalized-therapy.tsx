@@ -4,7 +4,7 @@ export function PersonalizedTherapy() {
   return (
     <>
       <section className="~pt-6/20  max-w-[1050px] w-full mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[122px]">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[76px]">
           <div className="space-y-5 w-full">
             <h2 className="text-primary font-medium ~text-xl/3xl text-left">
               Personalized Therapy
