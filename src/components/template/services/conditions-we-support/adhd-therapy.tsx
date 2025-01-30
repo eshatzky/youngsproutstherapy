@@ -174,20 +174,33 @@ const FaqData = {
   description:
     "Book a Group Therapy Session for Kids and Teens in Vaughan & Thornhill Are you ready to help your child or teen build social skills and emotional resilience? Contact us today to book a group therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-    {
-      title: "What is the difference between ADHD coaching and ADHD therapy?",
-      description:
-        "ADHD coaching focuses on practical strategies like time management, organization, and goal-setting to help clients manage their ADHD in daily life. ADHD therapy, on the other hand, addresses the emotional and behavioral challenges associated with ADHD, such as impulsivity, anxiety, and depression.",
-    },
-    {
-      title: "Is ADHD coaching effective for adults? ",
-      description:
-        "Yes. ADHD coaching for adults is highly effective, especially for improving executive functioning skills like planning, organizing, and prioritizing tasks. It’s also beneficial for improving emotional regulation and workplace success.",
-    },
-    {
-      title: "Can ADHD coaching be done virtually? ",
-      description:
-        "Absolutely. At Young Sprouts Therapy, we offer virtual ADHD coaching sessions for both children and adults, allowing clients to receive personalized support from the comfort of their own homes.",
-    },
+  {
+    "title": "What is the difference between ADHD coaching and ADHD therapy?",
+    "description": "ADHD coaching focuses on practical strategies like time management, organization, and goal-setting to help clients manage their ADHD in daily life. ADHD therapy, on the other hand, addresses the emotional and behavioral challenges associated with ADHD, such as impulsivity, anxiety, and depression."
+  },
+  {
+    "title": "How does ADHD coaching help kids and teens?",
+    "description": "ADHD coaching helps children and teens build executive functioning skills, develop better study habits, and improve social interactions. It provides personalized strategies to help them succeed in school and daily life."
+  },
+  {
+    "title": "How do I know if my child needs ADHD coaching or therapy?",
+    "description": "If your child struggles with attention, organization, impulsivity, or emotional regulation that impacts their daily life and academic performance, they may benefit from ADHD coaching or therapy. Consulting with a professional can provide clarity and guidance."
+  },
+  {
+    "title": "Can ADHD coaching or therapy be done virtually?",
+    "description": "Yes, we offer virtual ADHD coaching and therapy sessions, providing flexibility for children and teens to receive support from the comfort of home."
+  },
+  {
+    "title": "How long does my child need ADHD coaching or therapy?",
+    "description": "The duration varies based on the child's needs and progress. Some children benefit from short-term interventions, while others may require ongoing support to achieve their goals."
+  },
+  {
+    "title": "Does insurance cover ADHD coaching and therapy?",
+    "description": "Coverage depends on your provider and the specific services. Many insurance plans cover ADHD therapy provided by licensed professionals, but ADHD coaching may not always be included."
+  },
+  {
+    "title": "Can parents be involved in their child’s ADHD coaching or therapy?",
+    "description": "Yes, involving parents is encouraged. Parent training can help families better understand ADHD and support their child's development effectively."
+  },
   ],
 };
