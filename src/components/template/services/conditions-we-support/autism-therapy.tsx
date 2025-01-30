@@ -249,21 +249,25 @@ const FaqData = {
   description:
     "Book an Autism Therapy Session in Vaughan & Thornhill If your child is on the autism spectrum and could benefit from autism therapy or autism services, our team is here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your child’s journey toward growth and development.",
   accordion: [
-    {
-      title:
-        "What therapies are available for autism at young sprouts therapy?",
-      description:
-        "We offer play therapy, art therapy, sandtray therapy, and social skills development as part of our autism services. These therapies focus on helping children communicate, process emotions, and improve social interactions.",
-    },
-    {
-      title: "Is autism therapy available for teens?",
-      description:
-        "Yes, we provide autism counselling for older children and teens. These sessions focus on social skills, emotional regulation, and problem-solving, helping teens navigate social situations and relationships.",
-    },
-    {
-      title: "Can parents be involved in autism therapy?",
-      description:
-        "Absolutely. We believe in a family-centred approach. Our therapists work closely with parents through parent coaching and Theraplay to ensure a strong support system at home.",
-    },
+ {
+    "title": "What autism therapies does Young Sprouts Therapy offer in Thornhill?",
+    "description": "At Young Sprouts Therapy, we provide a range of services tailored to children and teens with autism, including play therapy, art therapy, sandtray therapy, and social skills development. These approaches aim to enhance communication, emotional processing, and social interactions."
+  },
+  {
+    "title": "Is autism therapy available for teenagers at Young Sprouts Therapy?",
+    "description": "Yes, we offer specialized counselling for teens with autism. Our sessions focus on developing social skills, emotional regulation, and problem-solving abilities, assisting adolescents in navigating social situations and building meaningful relationships."
+  },
+  {
+    "title": "Can parents participate in their child's autism therapy at Young Sprouts Therapy?",
+    "description": "Absolutely. We embrace a family-centred approach, encouraging parental involvement through coaching and Theraplay techniques to strengthen the support system at home."
+  },
+  {
+    "title": "Are your autism therapy services in Thornhill covered by Ontario's Autism Program?",
+    "description": "We offer a variety of funded services for families registered in Ontario's Autism Program. This program provides financial support for eligible families, ensuring that every child has the opportunity to benefit from high-quality autism therapy and interventions."
+  },
+  {
+    "title": "How can I tell if my child is autistic?",
+    "description": "Children diagnosed with autism tend to process and respond to information in the environment in unique ways. In some cases, parents are frightened because they exhibit aggressive and/or self-injurious behaviors which are difficult to manage."
+  },
   ],
 };
