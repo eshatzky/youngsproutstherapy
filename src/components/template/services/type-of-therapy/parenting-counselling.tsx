@@ -111,14 +111,14 @@ const AccordionSectionData = [
       "CBT helps parents identify and reframe negative thought patterns, leading to more positive behavioural responses. This method is particularly helpful for parents struggling with anxiety, stress, or self-doubt. Our therapists guide you through exercises that challenge unhelpful thoughts, allowing you to foster healthier interactions with your children.",
   },
   {
-    title: "Solution-Focused Therapy(SFBT)",
+    title: "Solution-Focused Therapy (SFT)",
     description:
-      "CBT helps parents identify and reframe negative thought patterns, leading to more positive behavioural responses. This method is particularly helpful for parents struggling with anxiety, stress, or self-doubt. Our therapists guide you through exercises that challenge unhelpful thoughts, allowing you to foster healthier interactions with your children.",
+      "SFT focuses on identifying strengths and solutions rather than dwelling on problems. This approach helps parents build on what’s already working in their family dynamics, fostering confidence and resilience. Our therapists guide you in setting realistic goals and discovering practical steps to create meaningful, positive change in your parenting journey.",
   },
   {
     title: "Adlerian Approach",
     description:
-      "CBT helps parents identify and reframe negative thought patterns, leading to more positive behavioural responses. This method is particularly helpful for parents struggling with anxiety, stress, or self-doubt. Our therapists guide you through exercises that challenge unhelpful thoughts, allowing you to foster healthier interactions with your children.",
+      "The Adlerian approach emphasizes understanding family dynamics, personal strengths, and social connections to foster positive change. This method helps parents develop a sense of belonging and purpose, empowering them to create a supportive environment for their children. Our therapists work collaboratively with you to explore past experiences, recognize patterns, and implement strategies that promote healthy family relationships.",
   },
 ];
 
