@@ -165,19 +165,32 @@ const FaqData = {
     "Book a Depression Therapy Session in Vaughan & Thornhill If you or a loved one is struggling with depression, our depression therapy programs are here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to start your journey toward emotional well-being.",
   accordion: [
     {
-      title: "How long does depression therapy typically take?",
-      description:
-        "Every client’s journey is different. While some clients experience improvement within 8 to 12 sessions, others may need longer-term support to fully recover. Our therapists work with you to create a treatment plan that fits your unique needs.",
-    },
-    {
-      title: "Can therapy for depression be combined with medication?",
-      description:
-        "Yes. For many clients, a combined approach of therapy and medication is the most effective way to manage depression. We work closely with medical professionals to ensure a coordinated approach to treatment.",
-    },
-    {
-      title: "Is virtual depression therapy effective?",
-      description:
-        "Absolutely. Our virtual therapy sessions provide the same level of care as in-person sessions, allowing clients to receive support from the comfort of their home",
-    },
+    "title": "How long does depression therapy typically take?",
+    "description": "The duration of depression therapy varies for each individual. While some clients notice improvements within 8 to 12 sessions, others may benefit from longer-term support. Our therapists collaborate with you to develop a personalized treatment plan that addresses your unique needs."
+  },
+  {
+    "title": "What types of therapy are effective for depression?",
+    "description": "Several therapeutic approaches have proven effective for depression, including Cognitive Behavioral Therapy (CBT), Interpersonal Therapy (IPT), and Mindfulness-Based Cognitive Therapy (MBCT). Our therapists will help determine the best approach for you."
+  },
+  {
+    "title": "How can I support a loved one undergoing depression therapy?",
+    "description": "Supporting a loved one involves being patient, listening without judgment, and encouraging them to continue therapy. Educating yourself about depression can also help you provide informed support."
+  },
+  {
+    "title": "Are there any side effects of depression therapy?",
+    "description": "Therapy is generally safe and focuses on providing coping strategies and emotional support. Some individuals may experience emotional discomfort when discussing challenging topics, but this is a natural part of the healing process."
+  },
+  {
+    "title": "How do I know if I need therapy for depression?",
+    "description": "If you're experiencing persistent feelings of sadness, loss of interest in activities, changes in appetite or sleep patterns, or difficulty concentrating, it may be beneficial to consult with a therapist to assess your symptoms."
+  },
+  {
+    "title": "Is depression therapy covered by insurance?",
+    "description": "Coverage for depression therapy varies by insurance provider and plan. At Young Sprouts Therapy, our services are provided by Registered Psychotherapists and Registered Social Workers, which are covered under many extended health benefit plans. We recommend checking with your provider to confirm your coverage."
+  },
+  {
+    "title": "Do you offer depression therapy in Thornhill?",
+    "description": "Yes, Young Sprouts Therapy offers depression therapy for children, teens, and families in Thornhill and the surrounding areas. Whether in-person or virtually, our therapists provide compassionate and personalized support to help you or your child navigate depression."
+  },
   ],
 };
