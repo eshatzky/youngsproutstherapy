@@ -12,7 +12,7 @@ export function AlertBar() {
           target="_blank"
           className="text-sm"
         >
-          Ready to schedule an appointment ?{" "}
+          Ready to schedule an appointment?{" "}
           <span className="underline font-medium">Click Here</span>
         </Link>
         <div className="flex items-center gap-2">
