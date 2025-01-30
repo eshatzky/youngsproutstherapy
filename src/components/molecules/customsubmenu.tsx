@@ -40,15 +40,19 @@ export function CustomSubmenu({
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
-      setActiveSubmenu(null);
-    }, 600);
+      if (!menuRef.current?.matches(":hover")) {
+        setActiveSubmenu(null);
+      }
+    }, 1000);
   };
 
   const closeMenu = () => {
     timeoutRef.current = setTimeout(() => {
-      setActiveSubmenu(null);
-      setOpenMenu(false);
-    }, 600);
+      if (!menuRef.current?.matches(":hover")) {
+        setActiveSubmenu(null);
+        setOpenMenu(false);
+      }
+    }, 1000);
   };
 
   return (
