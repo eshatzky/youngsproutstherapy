@@ -178,20 +178,25 @@ const FaqData = {
   description:
     "Book a Behavioural Therapy Session in Vaughan & Thornhill If your child or teen is struggling with behavioural issues, our behavioural therapists can provide the support and tools needed for lasting change. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-    {
-      title: "How long dose behavioural therapy typically take?",
-      description:
-        "Every child is different, but many clients start to see improvements within 8 to 12 sessions. However, the total duration depends on the complexity of the behavioural issues and the child’s progress.",
-    },
-    {
-      title: "Can parents be involved in therapy? ",
-      description:
-        "Yes. Parental involvement is key to reinforcing positive changes at home. We offer parent coaching and often involve families in sessions to create a unified approach.",
-    },
-    {
-      title: "Is virtual behavioural therapy effective for children? ",
-      description:
-        "Absolutely. Our virtual therapy sessions offer a convenient and flexible way to access professional support, tailored to meet your family's unique needs.",
-    },
+   {
+  "title": "How long does behavioural therapy typically take?",
+  "description": "Every child is unique, and the length of behavioural therapy depends on their specific challenges and progress. Some children show improvement within a few months (about 8-12 sessions), while others benefit from ongoing support over a longer period. At Young Sprouts Therapy, we tailor therapy plans to your child's needs, ensuring lasting positive change."
+},
+  {
+    "title": "Can parents be involved in their child's behavioural therapy?",
+    "description": "Yes, parental involvement is crucial in reinforcing positive changes at home. We offer parent coaching and often involve families in sessions to create a unified approach, ensuring consistency and support for the child."
+  },
+  {
+    "title": "What types of behavioural issues do you address in therapy?",
+    "description": "We work with children and teens facing a range of behavioural challenges, including aggression, defiance, anxiety, impulsivity, and difficulties with emotional regulation. Our evidence-based approaches help promote positive change and improve daily functioning."
+  },
+  {
+    "title": "Do you offer behavioural therapy services in Thornhill?",
+    "description": "Yes, we provide behavioural therapy services to families in Thornhill and the surrounding areas. Our local presence allows us to understand and address the unique needs of our community effectively."
+  },
+  {
+    "title": "What therapy approaches do you use for behavioural challenges?",
+    "description": "At Young Sprouts Therapy, we use evidence-based approaches such as cognitive-behavioural therapy (CBT), dialectical behaviour therapy (DBT) skills, play therapy, and parent coaching. These techniques help children develop self-regulation, improve problem-solving, and manage emotions more effectively."
+  },
   ],
 };
