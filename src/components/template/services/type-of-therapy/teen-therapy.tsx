@@ -144,7 +144,7 @@ const FaqData = {
   description:
     "Book a Teen Therapy Session in Vaughan & Thornhill Are you ready to help your teen build emotional strength and resilience? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual appointments to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-   {
+    {
       "title": "How do I know if my teen needs therapy?",
       "description": "If your teen is experiencing persistent mood swings, withdrawal from family or friends, trouble managing stress, declining grades, or struggles with anxiety or self-esteem, therapy can help. A licensed therapist will assess their needs and provide strategies for coping and emotional growth."
     },
@@ -167,4 +167,6 @@ const FaqData = {
     {
       "title": "Do you offer in-person teen therapy near me?",
       "description": "Yes, we offer in-person teen therapy at our Thornhill office, located at 1137 Centre Street. Many families from Vaughan, Richmond Hill, Markham, North York, and surrounding areas visit our clinic. We also provide virtual therapy across Ontario for added convenience."
-    };
+    }
+  ]
+}; 
