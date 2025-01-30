@@ -55,6 +55,11 @@ export function CustomSubmenu({
     }, 1000);
   };
 
+  const handleClose = () => {
+    setActiveSubmenu(null);
+    setOpenMenu(false);
+  };
+
   return (
     <div
       ref={menuRef}
@@ -143,7 +148,7 @@ export function CustomSubmenu({
                         key={subIndex}
                         href={subItem.href}
                         className="px-4 py-2 flex items-center gap-2 hover:bg-[#F7F0F0] hover:!text-primary"
-                        onClick={closeMenu} // Close menu on click
+                        onClick={handleClose} // Close menu on click
                       >
                         {subItem.icon && (
                           <span className="w-5 h-5">{subItem.icon}</span>
@@ -166,7 +171,7 @@ export function CustomSubmenu({
                 aria-label={item.label}
                 href={item.href}
                 className="px-4 py-2 flex items-center gap-2 hover:bg-[#F7F0F0] hover:!text-primary"
-                onClick={closeMenu} // Close menu on click
+                onClick={handleClose} // Close menu on click
               >
                 {item.icon && <span className="w-5 h-5">{item.icon}</span>}
                 <Text type="p" size="small">
