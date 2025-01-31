@@ -29,10 +29,7 @@ export function AboutSection({ props }: PropsType) {
         <p className="leading-6 ">{props?.subDescription}</p>
       </article>
       <Button asChild className="sm:w-fit text-sm lg:text-base ~px-10/16">
-        <Link
-          href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
-          target="_blank"
-        >
+        <Link href={"/#book-consultation"} target="_blank">
           Book a Free Consult
         </Link>
       </Button>

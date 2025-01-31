@@ -84,10 +84,7 @@ export function PracticalParenting() {
       </p>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
         <Button asChild className="max-w-[270px] w-full py-3">
-          <Link
-            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
-            target="_blank"
-          >
+          <Link href={"/#book-consultation"} target="_blank">
             Book a Free Consult
           </Link>
         </Button>

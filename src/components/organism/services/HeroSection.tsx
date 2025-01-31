@@ -47,12 +47,7 @@ export function HeroSection({ props }: PropType) {
             variant={"default"}
             className="bg-white text-secondary hover:bg-primary hover:text-white border-white hover:border-primary "
           >
-            <Link
-              href={
-                "https://calendly.com/youngsproutstherapy/15-minute-consult"
-              }
-              target="_blank"
-            >
+            <Link href={"/#book-consultation"} target="_blank">
               Book a Free Consult
             </Link>
           </Button>

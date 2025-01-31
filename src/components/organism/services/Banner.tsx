@@ -36,12 +36,7 @@ export function Banner({ data }: Props) {
             asChild
             className="max-w-[270px] w-full bg-white  text-primary hover:text-white font-semibold"
           >
-            <Link
-              href={
-                "https://calendly.com/youngsproutstherapy/15-minute-consult"
-              }
-              target="_blank"
-            >
+            <Link href={"/#book-consultation"} target="_blank">
               Book a Free Consult
             </Link>
           </Button>
