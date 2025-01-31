@@ -3,7 +3,7 @@ import Image from "next/image";
 export function ConvenientLocation() {
   return (
     <>
-      <section className="~py-16/20 max-w-[1440px] w-full mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden lg:pt-0">
+      <section className="~py-16/20 max-w-[1440px] w-full mx-auto ~px-4/16 flex flex-col gap-14 lg:gap-12 overflow-hidden !pt-0 lg:pt-0">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-28">
           <Image
             src={"/images/why-choose-us-section.webp"}
