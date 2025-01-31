@@ -178,7 +178,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
     title: `${service.title}`,
     description: service.description,
     alternates: {
-      canonical: `https://www.youngsproutstherapy.com/services/${params.slug}`,
+      canonical: `https://www.youngsproutstherapy.com/${params.slug}`,
     },
   };
 }
@@ -284,12 +284,12 @@ export default async function ServicePage({
     ],
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.youngsproutstherapy.com/services/${slug}`,
+      "@id": `https://www.youngsproutstherapy.com/${slug}`,
     },
 
     name: title,
     description: description,
-    url: `https://www.youngsproutstherapy.com/services/${slug}`,
+    url: `https://www.youngsproutstherapy.com/${slug}`,
     author: {
       "@type": "Organization",
       name: "Young Sprouts Therapy",
