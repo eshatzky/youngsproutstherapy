@@ -76,7 +76,7 @@ export async function GET() {
         priority: 0.6,
       },
       {
-        loc: "https://www.youngsproutstherapy.com/services/approach-and-specialties",
+        loc: "https://www.youngsproutstherapy.com/approach-and-specialties",
         changefreq: "monthly",
         priority: 0.7,
       },
