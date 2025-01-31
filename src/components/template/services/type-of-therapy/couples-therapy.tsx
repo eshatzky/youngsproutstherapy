@@ -35,8 +35,8 @@ export function CouplesTherapy() {
       </div>
       <div className="max-w-[1440px] mx-auto ~px-4/10 flex flex-col gap-6">
         <h2 className="font-medium ~text-lg/3xl text-primary lg:hidden">
-          Child TheHelping Couples Reconnect and Build Stronger
-          Relationshipsrapy
+          Helping Couples Reconnect and Build Stronger
+          Relationships
         </h2>
         <p className="leading-6 lg:hidden">
           Relationships are rewarding, but they can also be challenging. Many
