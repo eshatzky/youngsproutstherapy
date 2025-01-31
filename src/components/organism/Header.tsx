@@ -141,7 +141,7 @@ export function Header() {
   return (
     <header className="w-full flex items-center justify-between gap-4 sm:py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
       <div className="flex items-center gap-3.5 max-sm:flex-1 ">
-        <Link aria-label={"home"} href={"/"} className="py-1 lg:py-4">
+        <Link aria-label={"home"} href={"/"} className="py-2 lg:py-4">
           <img
             src={"/logo.png"}
             className="w-[195px] block lg:hidden"
