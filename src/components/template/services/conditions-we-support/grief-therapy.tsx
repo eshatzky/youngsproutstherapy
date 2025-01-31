@@ -170,19 +170,24 @@ const FaqData = {
     "Book a Grief Counselling Session in Vaughan & Thornhill If you or a loved one is struggling with grief, our grief counselling services provide the support and understanding you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin the healing process.",
   accordion: [
     {
-      title: "How long does grief counselling take?",
-      description:
-        "Grief is a personal process, and the duration of therapy depends on the individual’s needs. Some clients may find relief after 8 to 12 sessions, while others benefit from longer-term support.",
+        "title": "What is grief therapy for children and teens?",
+        "description": "Grief therapy for children and adolescents involves specialized counseling to help young individuals process the loss of a loved one. Therapists utilize age-appropriate techniques, such as play therapy and art therapy, to assist them in expressing emotions and developing healthy coping mechanisms."
     },
     {
-      title: "Can grief counselling help with losses other than death?",
-      description:
-        "Absolutely. Grief counselling can help individuals process various types of loss, including the end of a relationship, job loss, or other significant life changes.",
+        "title": "How can I tell if my child needs grief counseling?",
+        "description": "Signs that a child may benefit from grief counseling include prolonged sadness, withdrawal from friends and activities, changes in eating or sleeping patterns, academic decline, and expressions of guilt or hopelessness. If these behaviors persist, consulting a grief therapist can be beneficial."
     },
     {
-      title: "Is grief counselling effective for children and teens?",
-      description:
-        "Yes. Children and teens often benefit from grief counselling, especially when they struggle to express their emotions. Our age-appropriate techniques make it easier for younger clients to process their feelings.",
+        "title": "What should we expect during grief therapy sessions?",
+        "description": "During grief therapy sessions, children engage in activities that encourage expression, such as drawing, storytelling, or role-playing. Therapists create a safe environment where children can share their feelings, ask questions about loss, and learn strategies to manage their emotions effectively."
+    },
+    {
+        "title": "How long does grief counseling typically last for children and teens?",
+        "description": "The duration of grief counseling varies based on the individual needs of the child or teen. Some may benefit from short-term therapy over a few months, while others might require longer support to navigate their grief journey. Therapists work collaboratively with families to determine the appropriate length of treatment."
+    },
+    {
+        "title": "Are there local resources in Vaughan and Thornhill for grief therapy?",
+        "description": "Yes, Young Sprouts Therapy offers specialized grief counseling for children and teens in Vaughan and Thornhill. Our experienced therapists provide compassionate support to help young individuals navigate their grief and develop resilience. Contact us to learn more about our services."
     },
   ],
 };
