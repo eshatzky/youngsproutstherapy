@@ -8,8 +8,7 @@ export function AboutSection() {
     <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full max-lg:mt-5">
       <div className="flex flex-col gap-6">
         <h2 className="font-medium ~text-2xl/3xl text-primary max-lg:hidden">
-          Child TheHelping Couples Reconnect and Build Stronger
-          Relationshipsrapy
+         Helping Couples Reconnect and Build Stronger Relationships
         </h2>
         <p className="leading-6 max-lg:hidden">
           Relationships are rewarding, but they can also be challenging. Many
