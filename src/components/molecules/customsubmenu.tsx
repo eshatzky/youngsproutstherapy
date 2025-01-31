@@ -63,14 +63,14 @@ export function CustomSubmenu({
   return (
     <div
       ref={menuRef}
-      className="relative z-[9999]"
+      className="relative z-[50]"
       onMouseEnter={() => {
         if (timeoutRef.current) clearTimeout(timeoutRef.current);
       }}
       onMouseLeave={closeMenu} // Close the menu when mouse leaves
     >
       <button
-        className="flex items-center gap-1.5 cursor-pointer focus:outline-none z-[9999]"
+        className="flex items-center gap-1.5 cursor-pointer focus:outline-none z-[49]"
         onClick={onOpen}
         aria-label="navmenu"
         onMouseEnter={onOpen}
