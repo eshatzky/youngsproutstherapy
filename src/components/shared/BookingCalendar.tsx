@@ -22,7 +22,7 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
         <div className="h-full no-scrollbar overflowScrollbar">
           {/* <iframe
             className=" h-full rounded-lg  min-h-[135vh] sm:min-h-[1200px] lg:min-h-[900px] w-full overflowScrollbar "
-            src="/#book-consultation"
+            src="https://calendly.com/youngsproutstherapy/15-minute-consult"
             frameBorder="0"
             allowFullScreen
             scrolling="no"
@@ -31,7 +31,7 @@ export const BookingCalender = ({ text }: BookingCalenderProps) => {
           ></iframe> */}
           <iframe
             className="h-full rounded-lg min-h-[135vh] sm:min-h-[1200px] lg:min-h-[900px] w-full overflowScrollbar"
-            src="/#book-consultation?embed_domain=www.youngsproutstherapy.com&embed_type=Inline"
+            src="https://calendly.com/youngsproutstherapy/15-minute-consult?embed_domain=www.youngsproutstherapy.com&embed_type=Inline"
             frameBorder="0"
             allowFullScreen
             scrolling="no"
