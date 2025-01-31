@@ -161,7 +161,7 @@ export function Header() {
           </Text>
         </Link>
         <CustomSubmenu
-          label=""
+          label="Services"
           items={Items}
           isOpen={openMenu === ""}
           onOpen={() => handleMenuOpen("")}
