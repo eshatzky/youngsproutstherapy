@@ -26,56 +26,56 @@ const serviceData: Record<string, ServiceConfig> = {
   "art-therapy": {
     title: "Art Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Engage in creative expression through art therapy to explore emotions and improve mental well-being.",
+      "Engage in creative expression through art therapy to explore emotions, improve well-being, and enhance mental health for kids and teens in Thornhill and Vaughan.",
   },
   "acceptance-commitment-therapy": {
     title:
-      "Acceptance Commitment Therapy for Kids and Teens | Young Sprouts Therapy",
+      "Acceptance and Commitment Therapy | Young Sprouts Therapy",
     description:
-      "Learn to accept thoughts and feelings while committing to meaningful actions with ACT.",
+      "Help kids and teens in Thornhill and Vaughan embrace their thoughts and feelings with Acceptance Commitment Therapy (ACT), fostering personal growth and meaningful action.",
   },
   "cognitive-behavioral-therapy": {
     title:
       "Cognitive Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "A structured approach to address negative thought patterns and improve emotional regulation.",
+      "Address negative thought patterns and improve emotional regulation with Cognitive Behavioral Therapy (CBT) for kids and teens in Thornhill and Vaughan.",
   },
   "dialectical-behavioral-therapy": {
     title:
       "Dialectical Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Enhance emotional and interpersonal skills through DBT's practical techniques.",
+      "Enhance emotional and interpersonal skills with Dialectical Behavioral Therapy (DBT) for kids and teens in Thornhill and Vaughan, using practical techniques for lasting change.",
   },
   "emotion-focused-therapy": {
     title: "Emotion Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Discover the role of emotions in relationships and personal growth with EFT.",
+      "Help kids and teens in Thornhill and Vaughan understand and manage their emotions with Emotion-Focused Therapy (EFT) for personal growth and stronger relationships.",
   },
   "narrative-therapy": {
     title: "Narrative Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Reframe and reshape your personal story to empower change and healing.",
+      "Empower change and healing by reframing and reshaping your personal story with Narrative Therapy for kids and teens in Thornhill and Vaughan.",
   },
   "play-therapy": {
     title: "Play Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "A child-centered approach using play to help children express and resolve challenges.",
+      "A child-centered approach using play to help kids and teens express feelings, resolve challenges, and build emotional resilience in Thornhill and Vaughan.",
   },
   "parent-child-therapy": {
     title: "Parent Child Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Strengthen the bond between parents and children through guided therapeutic interactions.",
+      "Strengthen the parent-child bond with guided therapeutic interactions to improve communication and understanding in therapy for kids and teens in Thornhill and Vaughan.",
   },
   "solution-focused-therapy": {
     title:
       "Solution-Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+      "Achieve your goals with Solution-Focused Therapy, a future-oriented approach to solving problems for kids and teens in Thornhill and Vaughan.",
   },
   "music-therapy": {
     title: "Music Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+      "Express emotions, reduce stress, and achieve therapeutic goals through music therapy for kids and teens in Thornhill and Vaughan.",
   },
 };
 
