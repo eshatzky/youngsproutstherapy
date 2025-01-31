@@ -30,10 +30,7 @@ export function LongTermGrowth() {
       </p>
       <div className="flex flex-col max-lg:items-center lg:flex-row gap-6 mt-4 lg:mt-8 w-full">
         <Button asChild className="max-w-[270px] w-full py-3">
-          <Link
-            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
-            target="_blank"
-          >
+          <Link href={"/#book-consultation"} target="_blank">
             Book a Free Consult
           </Link>
         </Button>

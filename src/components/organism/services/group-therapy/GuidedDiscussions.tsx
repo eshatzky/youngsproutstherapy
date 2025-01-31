@@ -43,12 +43,7 @@ export function GuidedDiscussions() {
 
         <div className="flex-col flex lg:flex-row gap-6 items-center w-full mt-6">
           <Button asChild variant={"default"} className="max-w-[270px] w-full">
-            <Link
-              href={
-                "https://calendly.com/youngsproutstherapy/15-minute-consult"
-              }
-              target="_blank"
-            >
+            <Link href={"/#book-consultation"} target="_blank">
               Book a Free Consult
             </Link>
           </Button>

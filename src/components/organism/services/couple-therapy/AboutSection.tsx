@@ -35,10 +35,7 @@ export function AboutSection() {
 
       <div className="flex-col flex lg:flex-row gap-6 w-full mt-6">
         <Button asChild variant={"default"} className="sm:max-w-[270px] w-full">
-          <Link
-            href={"https://calendly.com/youngsproutstherapy/15-minute-consult"}
-            target="_blank"
-          >
+          <Link href={"/#book-consultation"} target="_blank">
             Book a Free Consult
           </Link>
         </Button>
