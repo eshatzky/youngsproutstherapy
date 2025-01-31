@@ -40,29 +40,23 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2 bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-type/parenting-counselling">
+                    <Link href="/services/parenting-counselling">
                       Parenting
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-type/child-therapy">
-                      Child Therapy
-                    </Link>
+                    <Link href="/services/child-therapy">Child Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-type/teen-therapy">
-                      Teen Therapy
-                    </Link>
+                    <Link href="/services/teen-therapy">Teen Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-type/couples-therapy">
+                    <Link href="/services/couples-therapy">
                       Couples Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-type/group-therapy">
-                      Group Therapy
-                    </Link>
+                    <Link href="/services/group-therapy">Group Therapy</Link>
                   </SheetClose>
                 </AccordionContent>
               </AccordionItem>
@@ -75,47 +69,43 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/adhd-therapy">
+                    <Link href="/services/adhd-therapy">
                       ADHD Coaching & Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/anxiety-therapy">
+                    <Link href="/services/anxiety-therapy">
                       Anxiety Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/burnout-therapy">
+                    <Link href="/services/burnout-therapy">
                       Burnout Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/behavioral-therapy">
+                    <Link href="/services/behavioral-therapy">
                       Behavioral Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/depression-therapy">
+                    <Link href="/services/depression-therapy">
                       Depression Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/grief-therapy">
+                    <Link href="/services/grief-therapy">
                       Grief Counselling
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/trauma-therapy">
-                      Trauma Therapy
-                    </Link>
+                    <Link href="/services/trauma-therapy">Trauma Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/autism-therapy">
-                      Autism Spectrum
-                    </Link>
+                    <Link href="/services/autism-therapy">Autism Spectrum</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/conditions-we-support/clinical-supervision">
+                    <Link href="/services/clinical-supervision">
                       Clinical Supervision
                     </Link>
                   </SheetClose>
@@ -130,54 +120,48 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                 </AccordionTrigger>
                 <AccordionContent className="flex text-base flex-col gap-5 text-start items-start [&[data-state=close]]:p-2  bg-[#34abbf] py-2 px-2.5">
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/art-therapy">
-                      Art Therapy
-                    </Link>
+                    <Link href="/services/art-therapy">Art Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/Acceptance-commitment-therapy">
+                    <Link href="/services/Acceptance-commitment-therapy">
                       Acceptance and Commitment Therapy (ACT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/cognitive-behavioral-therapy">
+                    <Link href="/services/cognitive-behavioral-therapy">
                       Cognitive Behavioral Therapy (CBT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/dialectical-behavioral-therapy">
+                    <Link href="/services/dialectical-behavioral-therapy">
                       Dialectical Behavioral Therapy (DBT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/emotion-focused-therapy">
+                    <Link href="/services/emotion-focused-therapy">
                       Emotion Focused Therapy (EFT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/narrative-therapy">
+                    <Link href="/services/narrative-therapy">
                       Narrative Therapy
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/play-therapy">
-                      Play Therapy
-                    </Link>
+                    <Link href="/services/play-therapy">Play Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/parent-child-therapy">
+                    <Link href="/services/parent-child-therapy">
                       Parent-Child Interaction Therapy (PCIT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/solution-focused-therapy">
+                    <Link href="/services/solution-focused-therapy">
                       Solution-Focused Therapy (SFT)
                     </Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/services/therapy-modalities/music-therapy">
-                      Music Therapy
-                    </Link>
+                    <Link href="/services/music-therapy">Music Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
                     <Link href="/services/approach-and-specialties">

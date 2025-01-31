@@ -27,7 +27,7 @@ export function GroupTherapyforTeens() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p>Content</p>
+          <p>What to Expect</p>
         </div>
         <p className="leading-6">
           Group therapy sessions are guided by a licensed therapist who fosters
@@ -54,7 +54,7 @@ export function GroupTherapyforTeens() {
             height={45}
             className="w-3 h-3 aspect-auto"
           />
-          <p>Content</p>
+          <p>Topics We Cover</p>
         </div>
         <ul className=" list-disc">
           <li className="ml-5 lg:ml-4">

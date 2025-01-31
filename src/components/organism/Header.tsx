@@ -22,20 +22,20 @@ export function Header() {
       items: [
         {
           label: "Parenting",
-          href: "/services/therapy-type/parenting-counselling",
+          href: "/services/parenting-counselling",
         },
         {
           label: "Child Therapy",
-          href: "/services/therapy-type/child-therapy",
+          href: "/services/child-therapy",
         },
-        { label: "Teen Therapy", href: "/services/therapy-type/teen-therapy" },
+        { label: "Teen Therapy", href: "/services/teen-therapy" },
         {
           label: "Couples Therapy",
-          href: "/services/therapy-type/couples-therapy",
+          href: "/services/couples-therapy",
         },
         {
           label: "Group Therapy",
-          href: "/services/therapy-type/group-therapy",
+          href: "/services/group-therapy",
         },
       ],
     },
@@ -44,39 +44,39 @@ export function Header() {
       items: [
         {
           label: "ADHD Coaching & Therapy",
-          href: "/services/conditions-we-support/adhd-therapy",
+          href: "/services/adhd-therapy",
         },
         {
           label: "Anxiety Therapy",
-          href: "/services/conditions-we-support/anxiety-therapy",
+          href: "/services/anxiety-therapy",
         },
         {
           label: "Burnout Therapy",
-          href: "/services/conditions-we-support/burnout-therapy",
+          href: "/services/burnout-therapy",
         },
         {
           label: "Behavioral Therapy",
-          href: "/services/conditions-we-support/behavioral-therapy",
+          href: "/services/behavioral-therapy",
         },
         {
           label: "Depression Therapy",
-          href: "/services/conditions-we-support/depression-therapy",
+          href: "/services/depression-therapy",
         },
         {
           label: "Grief Therapy",
-          href: "/services/conditions-we-support/grief-therapy",
+          href: "/services/grief-therapy",
         },
         {
           label: "Trauma Therapy",
-          href: "/services/conditions-we-support/trauma-therapy",
+          href: "/services/trauma-therapy",
         },
         {
           label: "Autism Therapy",
-          href: "/services/conditions-we-support/autism-therapy",
+          href: "/services/autism-therapy",
         },
         {
           label: "Clinical Supervision",
-          href: "/services/conditions-we-support/clinical-supervision",
+          href: "/services/clinical-supervision",
         },
       ],
     },
@@ -85,43 +85,43 @@ export function Header() {
       items: [
         {
           label: "Art Therapy",
-          href: "/services/therapy-modalities/art-therapy",
+          href: "/services/art-therapy",
         },
         {
           label: "Acceptance and Commitment Therapy (ACT)",
-          href: "/services/therapy-modalities/Acceptance-commitment-therapy",
+          href: "/services/Acceptance-commitment-therapy",
         },
         {
           label: "Cognitive Behavioral Therapy (CBT)",
-          href: "/services/therapy-modalities/cognitive-behavioral-therapy",
+          href: "/services/cognitive-behavioral-therapy",
         },
         {
           label: "Dialectical Behavioral Therapy (DBT)",
-          href: "/services/therapy-modalities/dialectical-behavioral-therapy",
+          href: "/services/dialectical-behavioral-therapy",
         },
         {
           label: "Emotion Focused Therapy (EFT)",
-          href: "/services/therapy-modalities/emotion-focused-therapy",
+          href: "/services/emotion-focused-therapy",
         },
         {
           label: "Narrative Therapy",
-          href: "/services/therapy-modalities/narrative-therapy",
+          href: "/services/narrative-therapy",
         },
         {
           label: "Play Therapy",
-          href: "/services/therapy-modalities/play-therapy",
+          href: "/services/play-therapy",
         },
         {
           label: "Parent-Child Interaction Therapy (PCIT)",
-          href: "/services/therapy-modalities/parent-child-therapy",
+          href: "/services/parent-child-therapy",
         },
         {
           label: "Solution-Focused Therapy (SFT)",
-          href: "/services/therapy-modalities/solution-focused-therapy",
+          href: "/services/solution-focused-therapy",
         },
         {
           label: "Music Therapy",
-          href: "/services/therapy-modalities/music-therapy",
+          href: "/services/music-therapy",
         },
       ],
     },
