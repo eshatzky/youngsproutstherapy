@@ -150,21 +150,25 @@ const FaqData = {
   description:
     "Book a Group Therapy Session for Kids and Teens in Vaughan & Thornhill Are you ready to help your child or teen build social skills and emotional resilience? Contact us today to book a group therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-    {
-      title: "How long does group therapy ?",
-      description:
-        "Our group therapy programs typically run for 8-10 weeks, with one session per week. This structure allows participants to build strong connections with their peers while making steady progress toward their goals",
+  {
+        "title": "What is group therapy for kids and teens?",
+        "description": "Group therapy for children and adolescents involves a therapist leading multiple participants through discussions and activities designed to address common issues such as anxiety, social skills, and emotional regulation. This setting allows young individuals to learn from peers, develop coping strategies, and build confidence in a supportive environment."
     },
     {
-      title:
-        "Can my Child join grpup therapy it they have never done individual therapy before?",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+        "title": "How can group therapy benefit my child?",
+        "description": "Group therapy provides a safe space for kids and teens to express their feelings, improve social interactions, and learn effective coping mechanisms. Engaging with peers facing similar challenges fosters empathy, reduces feelings of isolation, and enhances communication skills."
     },
     {
-      title: "Is family involvement required in group therapy ?",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+        "title": "What topics are typically covered in group therapy sessions?",
+        "description": "Sessions often address issues like managing anxiety, developing social skills, emotional regulation, building self-esteem, and handling peer pressure. Activities may include role-playing, art projects, and group discussions tailored to the participants' needs."
     },
+    {
+        "title": "Is group therapy suitable for all children and teens?",
+        "description": "While many young individuals benefit from group therapy, it's essential to assess if this format aligns with your child's specific needs and comfort level. Consulting with a qualified therapist can help determine the most appropriate therapeutic approach for your child."
+    },
+   {
+    "title": "How do I find group therapy programs in Vaughan and Thornhill?",
+    "description": "Young Sprouts Therapy offers group therapy programs designed to help kids and teens develop social skills, manage anxiety, and build confidence in a supportive environment. Our therapists create engaging sessions tailored to your child's needs. Contact us to learn more about our upcoming group therapy programs in Vaughan and Thornhill."
+},
   ],
 };
