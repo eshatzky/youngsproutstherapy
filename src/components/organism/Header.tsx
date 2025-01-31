@@ -16,26 +16,26 @@ export function Header() {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
-  const servicesItems = [
+  const Items = [
     {
       label: "Type of Therapy",
       items: [
         {
           label: "Parenting",
-          href: "/services/parenting-counselling",
+          href: "/parenting-counselling",
         },
         {
           label: "Child Therapy",
-          href: "/services/child-therapy",
+          href: "/child-therapy",
         },
-        { label: "Teen Therapy", href: "/services/teen-therapy" },
+        { label: "Teen Therapy", href: "/teen-therapy" },
         {
           label: "Couples Therapy",
-          href: "/services/couples-therapy",
+          href: "/couples-therapy",
         },
         {
           label: "Group Therapy",
-          href: "/services/group-therapy",
+          href: "/group-therapy",
         },
       ],
     },
@@ -44,39 +44,39 @@ export function Header() {
       items: [
         {
           label: "ADHD Coaching & Therapy",
-          href: "/services/adhd-therapy",
+          href: "/adhd-therapy",
         },
         {
           label: "Anxiety Therapy",
-          href: "/services/anxiety-therapy",
+          href: "/anxiety-therapy",
         },
         {
           label: "Burnout Therapy",
-          href: "/services/burnout-therapy",
+          href: "/burnout-therapy",
         },
         {
           label: "Behavioral Therapy",
-          href: "/services/behavioral-therapy",
+          href: "/behavioral-therapy",
         },
         {
           label: "Depression Therapy",
-          href: "/services/depression-therapy",
+          href: "/depression-therapy",
         },
         {
           label: "Grief Therapy",
-          href: "/services/grief-therapy",
+          href: "/grief-therapy",
         },
         {
           label: "Trauma Therapy",
-          href: "/services/trauma-therapy",
+          href: "/trauma-therapy",
         },
         {
           label: "Autism Therapy",
-          href: "/services/autism-therapy",
+          href: "/autism-therapy",
         },
         {
           label: "Clinical Supervision",
-          href: "/services/clinical-supervision",
+          href: "/clinical-supervision",
         },
       ],
     },
@@ -85,49 +85,49 @@ export function Header() {
       items: [
         {
           label: "Art Therapy",
-          href: "/services/art-therapy",
+          href: "/art-therapy",
         },
         {
           label: "Acceptance and Commitment Therapy (ACT)",
-          href: "/services/Acceptance-commitment-therapy",
+          href: "/Acceptance-commitment-therapy",
         },
         {
           label: "Cognitive Behavioral Therapy (CBT)",
-          href: "/services/cognitive-behavioral-therapy",
+          href: "/cognitive-behavioral-therapy",
         },
         {
           label: "Dialectical Behavioral Therapy (DBT)",
-          href: "/services/dialectical-behavioral-therapy",
+          href: "/dialectical-behavioral-therapy",
         },
         {
           label: "Emotion Focused Therapy (EFT)",
-          href: "/services/emotion-focused-therapy",
+          href: "/emotion-focused-therapy",
         },
         {
           label: "Narrative Therapy",
-          href: "/services/narrative-therapy",
+          href: "/narrative-therapy",
         },
         {
           label: "Play Therapy",
-          href: "/services/play-therapy",
+          href: "/play-therapy",
         },
         {
           label: "Parent-Child Interaction Therapy (PCIT)",
-          href: "/services/parent-child-therapy",
+          href: "/parent-child-therapy",
         },
         {
           label: "Solution-Focused Therapy (SFT)",
-          href: "/services/solution-focused-therapy",
+          href: "/solution-focused-therapy",
         },
         {
           label: "Music Therapy",
-          href: "/services/music-therapy",
+          href: "/music-therapy",
         },
       ],
     },
     {
       label: "Approach & Specialties",
-      href: "/services/approach-and-specialties",
+      href: "/approach-and-specialties",
     },
   ];
 
@@ -161,10 +161,10 @@ export function Header() {
           </Text>
         </Link>
         <CustomSubmenu
-          label="Services"
-          items={servicesItems}
-          isOpen={openMenu === "services"}
-          onOpen={() => handleMenuOpen("services")}
+          label=""
+          items={Items}
+          isOpen={openMenu === ""}
+          onOpen={() => handleMenuOpen("")}
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           setOpenMenu={setOpenMenu}

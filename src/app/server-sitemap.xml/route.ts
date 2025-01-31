@@ -106,19 +106,19 @@ export async function GET() {
     const servicePages = [
       // Conditions We Support
       ...CONDITION_SUPPORT_SLUGS.map((slug) => ({
-        loc: `https://www.youngsproutstherapy.com/services/${slug}`,
+        loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),
 
       // Therapy Modalities
       ...THERAPY_MODALITIES_SLUGS.map((slug) => ({
-        loc: `https://www.youngsproutstherapy.com/services/${slug}`,
+        loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),
 
       // Therapy Types
       ...THERAPY_TYPES_SLUGS.map((slug) => ({
-        loc: `https://www.youngsproutstherapy.com/services/${slug}`,
+        loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),
     ];
