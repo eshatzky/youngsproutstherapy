@@ -110,7 +110,7 @@ const AnxietyTherapyData = {
 const timelineData = [
   {
     title:
-      "GeneraGeneralized Anxiety Disorder (GAD):lized Anxiety Disorder (GAD):",
+      "Generalized Anxiety Disorder (GAD)",
     description: "Chronic worry and fear that disrupt daily life.",
   },
   {
