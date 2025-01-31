@@ -43,10 +43,9 @@ export function GroupTherapy() {
           Helping Kids and Teens Build Social Skills and Emotional Resilience
         </h2>
         <p className="leading-6 lg:hidden">
-          Relationships are rewarding, but they can also be challenging. Many
-          couples experience periods of emotional disconnection, conflict, or
-          even infidelity. At Young Sprouts Therapy, we specialize in helping
-          couples rebuild trust, improve communication, and restore intimacy.
+         Group therapy can be an incredibly effective way for kids and teens to develop social skills, improve emotional regulation, and gain confidence in a supportive peer environment. At Young Sprouts Therapy, we offer age-specific group therapy programs designed to meet the unique needs of children and adolescents. Whether your child is struggling with anxiety, social interactions, or emotional regulation, our group therapy sessions provide a safe space for them to learn, grow, and connect with others.
+Our programs are available both in-person in Vaughan and Thornhill and through virtual sessions for families across Ontario.
+
         </p>
         <TwoGridSection
           renderComponent={() => <AboutSection />}
