@@ -161,20 +161,25 @@ const FaqData = {
   description:
     "Book a Couples Therapy Session in Vaughan & Thornhill Are you ready to strengthen your relationship and reconnect with your partner? Contact us today to book a couples therapy session in Vaughan, Thornhill, or Richmond Hill. We offer both in-person and virtual sessions to fit your schedule. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
-    {
-      title: "How long does couples therapy usually list ?",
-      description:
-        "The duration of therapy de[ends on the unique challenges facing your relationship. some couples benefit from short term therapy to address specific issues. whice others may continue others may continue therapy over several months to work through deeper emotional or relational concerns",
+   {
+      "title": "How can couples therapy improve our relationship?",
+      "description": "Couples therapy provides a safe space to address communication issues, rebuild trust, and strengthen emotional connections. By working with a trained therapist, partners can develop effective strategies to navigate conflicts and deepen their bond."
     },
     {
-      title: "How long docs teen therapy typically list?",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+      "title": "What should we expect during a couples counselling session?",
+      "description": "In a typical session, both partners discuss their perspectives and concerns with the guidance of a therapist. The therapist facilitates open dialogue, helping identify underlying issues and fostering mutual understanding. Sessions are tailored to address specific relationship challenges and goals."
     },
     {
-      title: "Can parents be involved in the process ? ",
-      description:
-        "If your teen is struggling with persistent anxiety, mood swing, low-self-esteem, or difficulty managing school or social pressures, therapy can help. A licensed therapist will work with your teen to identify the root causes of their struggles and develop strategies for managing them.",
+      "title": "How many couples therapy sessions are usually needed?",
+      "description": "The number of sessions varies based on the unique needs of each couple. Some may find resolution in a few sessions, while others benefit from a longer commitment to address deeper issues. Your therapist will work with you to develop a personalized plan."
+    },
+    {
+      "title": "Is couples counselling effective for non-married partners?",
+      "description": "Absolutely. Couples therapy is beneficial for partners at any stage of their relationship, whether dating, engaged, or in a long-term partnership. It aids in improving communication, resolving conflicts, and building a stronger connection."
+    },
+    {
+      "title": "How do we choose the right couples therapist in Vaughan or Thornhill?",
+      "description": "When selecting a therapist, consider their experience, approach to therapy, and areas of specialization. It's important to find someone both partners feel comfortable with. Many therapists offer initial consultations to help you determine if they're the right fit for your needs."
     },
   ],
 };
