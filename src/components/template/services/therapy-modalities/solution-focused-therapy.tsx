@@ -190,19 +190,28 @@ const FaqData = {
     "Book a PCIT Session in Vaughan & Thornhill Are you struggling with managing your child's behavior? Parent-Child Interaction Therapy (PCIT) can provide the tools and support you need. Contact us today to book a PCIT session at our Vaughan or Thornhill office. We offer both in-person and virtual parent coaching options. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How many sessions does solution-focused therapy take?",
-      description:
-        "SFT is typically a short-term therapy, with clients often seeing improvements in 6 to 10 sessions. The exact number of sessions will depend on the client’s individual needs and goals.",
-    },
-    {
-      title: "Can solution-focused therapy be combined with other types of therapy ? ",
-      description:
-        "Yes! At Young Sprouts Therapy, we often integrate SFT with CBT, mindfulness, and other approaches to provide a well-rounded treatment plan tailored to each client.",
-    },
-    {
-      title: "Is SFT suitable for children teens ?  ",
-      description:
-        "Absolutely. SFT is highly effective for children and teens, especially those struggling with anxiety, depression, or behavioral challenges. The positive, goal-oriented approach helps young clients build resilience and confidence.",
-    },
+    "title": "What is Solution-Focused Therapy (SFT) and how can it benefit my child or teen?",
+    "description": "SFT is a goal-oriented therapeutic approach that emphasizes building solutions rather than focusing on problems. It helps children and teens identify their strengths and resources to overcome challenges, promoting positive change in a short time frame."
+  },
+  {
+    "title": "How does Solution-Focused Therapy work with children and adolescents?",
+    "description": "In SFT sessions, therapists collaborate with young clients to set specific goals and explore past successes. Techniques such as the 'miracle question' and scaling are used to help them envision their desired future and recognize steps toward achieving it."
+  },
+  {
+    "title": "What types of issues can Solution-Focused Therapy address in young individuals?",
+    "description": "SFT is effective for a range of concerns, including anxiety, depression, behavioral issues, and self-esteem challenges. It empowers children and teens to leverage their existing strengths to navigate difficulties."
+  },
+  {
+    "title": "How many sessions are typically needed in Solution-Focused Therapy?",
+    "description": "SFT is designed to be brief, often requiring fewer sessions than traditional therapy. The number of sessions varies based on individual needs, but many clients experience positive changes within 3 to 5 sessions."
+  },
+  {
+    "title": "Is parental involvement part of the Solution-Focused Therapy process?",
+    "description": "Parental involvement can enhance the effectiveness of SFT. Therapists may encourage parents to support their child's progress by reinforcing solution-focused techniques at home."
+  },
+  {
+    "title": "Is Solution-Focused Therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer Solution-Focused Therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's well-being."
+  },
   ],
 };
