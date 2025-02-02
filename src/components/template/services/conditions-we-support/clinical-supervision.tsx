@@ -209,19 +209,28 @@ const FaqData = {
     "Book a Clinical Supervision Session in Vaughan & Thornhill If you’re looking for clinical supervision to enhance your practice, contact us today to schedule a session. We offer in-person and virtual supervision for registered psychotherapists and social workers. Fill out our online contact form or schedule a free consultation to start your supervision journey.",
   accordion: [
     {
-      title: "How often should I attend clinical supervision?",
-      description:
-        "The frequency depends on your professional needs. Most psychotherapists and social workers benefit from monthly sessions, though those handling complex cases may opt for more frequent supervision.",
-    },
-    {
-      title: "Is virtual supervision available?",
-      description:
-        "Yes, we offer virtual clinical supervision for psychotherapists and social workers across Ontario, ensuring flexibility and accessibility.",
-    },
-    {
-      title: "Does clinical supervision meet professional standards?",
-      description:
-        "Our supervision services meet the requirements for professional development and regulatory board standards for both psychotherapists and social workers.",
-    },
+    "title": "What is clinical supervision, and why is it important for psychotherapists and social workers?",
+    "description": "Clinical supervision is a formal process of professional support and learning that enables individual practitioners to develop knowledge and competence, assume responsibility for their own practice, and enhance client protection and safety. It is essential for ensuring ethical practice, enhancing skills, and providing a space for reflection."
+  },
+  {
+    "title": "Who can benefit from clinical supervision services?",
+    "description": "Registered Psychotherapists, Qualifying Psychotherapists, and Registered Social Workers can benefit from clinical supervision. It is particularly valuable for those working with children, adolescents, and parents, as it provides specialized guidance tailored to these populations."
+  },
+  {
+    "title": "What can I expect during a clinical supervision session with Daniela?",
+    "description": "During supervision sessions, Daniela offers a collaborative and supportive environment where practitioners can discuss cases, explore therapeutic techniques, and reflect on their professional development. The focus is on enhancing clinical skills, ethical decision-making, and personal growth."
+  },
+  {
+    "title": "Is clinical supervision available virtually for practitioners outside of Thornhill?",
+    "description": "Yes, while Daniela is based in Thornhill, she offers virtual supervision sessions to practitioners across Ontario, making her services accessible regardless of your location."
+  },
+  {
+    "title": "How can clinical supervision enhance my work with children, teens, and parents?",
+    "description": "Clinical supervision provides tailored guidance for working with young clients and their families. It helps practitioners develop effective strategies, understand developmental considerations, and navigate the unique challenges associated with these populations."
+  },
+  {
+    "title": "How do I schedule a clinical supervision session with Daniela?",
+    "description": "To schedule a session, you can contact us through our website or call our office directly. We offer flexible scheduling options to accommodate the diverse needs of practitioners."
+  },
   ],
 };
