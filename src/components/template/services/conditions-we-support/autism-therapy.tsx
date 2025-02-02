@@ -247,7 +247,7 @@ const TheraplayforAutism = {
 
 const FaqData = {
   description:
-    "Book an Autism Therapy Session in Vaughan & Thornhill If your child is on the autism spectrum and could benefit from autism therapy or autism services, our team is here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your child’s journey toward growth and development.",
+    "If your child is on the autism spectrum and could benefit from autism therapy or autism services, our team is here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your child’s journey toward growth and development.",
   accordion: [
  {
     "title": "What autism therapies does Young Sprouts Therapy offer in Thornhill?",
