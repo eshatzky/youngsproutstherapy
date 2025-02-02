@@ -162,7 +162,7 @@ const timelineData = [
 
 const FaqData = {
   description:
-    "Book a Depression Therapy Session in Vaughan & Thornhill If you or a loved one is struggling with depression, our depression therapy programs are here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to start your journey toward emotional well-being.",
+    "If you or a loved one is struggling with depression, our depression therapy programs are here to help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to start your journey toward emotional well-being.",
   accordion: [
     {
     "title": "How long does depression therapy typically take?",
