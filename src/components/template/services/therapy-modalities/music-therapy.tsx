@@ -174,20 +174,29 @@ const FaqData = {
   description:
     "If you're seeking music therapy for your child or teen, our experienced therapists at Young Sprouts Therapy can help. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to start your child’s journey toward emotional and social growth through music.",
   accordion: [
-    {
-      title: "What age groups can benefit from music therapy?",
-      description:
-        "Music therapy is beneficial for children as young as toddlers, as well as teens. We offer age-appropriate therapy for all developmental stages, ensuring that each session meets the child’s unique needs.",
-    },
-    {
-      title: "Can music therapy help children with autism?",
-      description:
-        "Yes. Music therapy is highly effective for children on the autism spectrum because it helps them communicate and express emotions in a non-verbal way. It also aids in social skill development and sensory regulation.",
-    },
-    {
-      title: "Is music therapy available virtually?",
-      description:
-        "We offer both in-person and virtual music therapy sessions to ensure that therapy is accessible, no matter your location.",
-    },
+   {
+    "title": "What is music therapy and how can it benefit my child or teen?",
+    "description": "Music therapy is a clinical and evidence-based practice where trained therapists use music interventions to achieve individualized goals. It helps children and teens express emotions, improve communication skills, and manage behavioural issues through musical activities."
+  },
+  {
+    "title": "How can music therapy support children aged 6 and under in developing social and communication skills?",
+    "description": "For young children, music therapy provides a non-verbal medium to express themselves, facilitating the development of social and communication skills. Engaging in musical activities can enhance their ability to interact with others and communicate effectively."
+  },
+  {
+    "title": "How does music therapy assist children with autism?",
+    "description": "Music therapy has been shown to improve social interaction and communication skills in children with autism. Musical activities can provide a safe and structured environment for these children to express themselves and connect with others."
+  },
+  {
+    "title": "What happens during a typical music therapy session?",
+    "description": "In a music therapy session, your child may engage in activities such as playing instruments, singing, songwriting, or listening to music. These sessions are tailored to your child's needs and aim to provide a safe space for self-expression and emotional processing."
+  },
+  {
+    "title": "Is musical ability required to participate in music therapy?",
+    "description": "No musical skills are necessary for your child to benefit from music therapy. The focus is on using music as a therapeutic tool to address emotional, cognitive, and social needs, not on musical performance."
+  },
+  {
+    "title": "Is music therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer music therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's well-being."
+  },
   ],
 };
