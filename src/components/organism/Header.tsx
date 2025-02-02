@@ -30,7 +30,7 @@ export function Header() {
         },
         { label: "Teen Therapy", href: "/teen-therapy" },
         {
-          label: "Couples Therapy",
+          label: "Couples Counselling",
           href: "/couples-counselling",
         },
         {
