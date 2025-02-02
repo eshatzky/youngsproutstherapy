@@ -75,8 +75,7 @@ export function PracticalParenting() {
         </svg>
       </div>
       <p className="leading-6">
-        Book Your Parenting Counselling Session in Vaughan & Thornhill : Ready
-        to take the next step towards building a stronger family? Contact us
+       Ready to take the next step towards building a stronger family? Contact us
         today to book a parenting counselling session in Vaughan or Thornhill.
         We offer both in-person and virtual appointments to fit your schedule.
         Fill out our online contact form or schedule a free consultation to get
