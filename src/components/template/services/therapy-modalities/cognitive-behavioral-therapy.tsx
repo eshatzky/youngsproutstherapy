@@ -195,19 +195,28 @@ const FaqData = {
     "Book a CBT Session in Vaughan & Thornhill Are you ready to take control of your mental health with Cognitive Behavioural Therapy (CBT)? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy for individuals and families across Ontario. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does CBT therapy take?",
-      description:
-        "CBT is typically a short-term therapy, lasting anywhere from 8 to 20 sessions, depending on the individual's needs and goals. Some clients may continue therapy for a longer period if they are dealing with more complex issues.",
-    },
-    {
-      title: "Is CBT effective for children and teens?",
-      description:
-        "Yes, CBT is highly effective for children and teens, particularly for managing anxiety, behavioural challenges, and emotional regulation. Our therapists tailor CBT techniques to meet the developmental needs of younger clients.",
-    },
-    {
-      title: "Can CBT be combined with other forms of therapy? ",
-      description:
-        "Absolutely. At Young Sprouts Therapy, we often integrate CBT with mindfulness, DBT, and other therapeutic approaches to create a comprehensive treatment plan that meets each client’s unique needs.",
-    },
+    "title": "What is Cognitive Behavioral Therapy (CBT) and how can it help my child or teen?",
+    "description": "CBT is a structured, goal-oriented form of psychotherapy that focuses on identifying and changing negative thought patterns and behaviors. It has been shown to be effective in treating various mental health issues in children and teens, including anxiety, depression, and behavioral problems."
+  },
+  {
+    "title": "What can we expect during a CBT session for children or adolescents?",
+    "description": "During CBT sessions, therapists work collaboratively with children or teens to identify negative thought patterns and develop coping strategies. Sessions may include activities like role-playing, journaling, and practicing new skills to manage emotions and behaviors."
+  },
+  {
+    "title": "How long does CBT typically take to show results in young individuals?",
+    "description": "The duration of CBT varies depending on the individual needs of the child or teen. Some may experience improvements within a few weeks, while others might require longer-term therapy to achieve their goals."
+  },
+  {
+    "title": "Is CBT effective for children with anxiety or depression?",
+    "description": "Yes, CBT is considered a first-line treatment for anxiety and depression in children and adolescents. It helps them develop skills to manage their symptoms and improve their overall well-being."
+  },
+  {
+    "title": "Are parents involved in the CBT process for their child or teen?",
+    "description": "Parental involvement can be a crucial component of CBT for children and teens. Therapists often work with parents to reinforce strategies at home and support their child's progress."
+  },
+  {
+    "title": "Is CBT available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer CBT services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's mental health."
+  },
   ],
 };
