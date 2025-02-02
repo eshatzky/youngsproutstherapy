@@ -184,19 +184,28 @@ const FaqData = {
     "Book a Narrative Therapy Session in Vaughan & Thornhill Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does narrative therapy take?",
-      description:
-        "The duration of therapy varies based on individual needs. While some clients may benefit from short-term therapy, others may choose to engage in longer-term sessions to work through complex issues.",
-    },
-    {
-      title: "Is narrative therapy effective for children teens?",
-      description:
-        "Yes, narrative therapy is highly effective for children and teens. It allows young clients to explore their experiences in a way that feels safe and empowering, helping them navigate challenges like anxiety, bullying, and family conflict.",
-    },
-    {
-      title: "Can narrative therapy be combined with other therapies?  ",
-      description:
-        "Absolutely. At Young Sprouts Therapy, we often integrate narrative therapy with CBT and mindfulness techniques to provide a comprehensive approach tailored to each client’s unique needs.",
-    },
+    "title": "What is Narrative Therapy and how can it benefit my child or teen?",
+    "description": "Narrative Therapy is a collaborative counseling approach that separates individuals from their problems, viewing issues as external to the person. This method empowers children and teens to reshape their personal narratives, fostering resilience and personal growth."
+  },
+  {
+    "title": "How does Narrative Therapy work with children and adolescents?",
+    "description": "In Narrative Therapy sessions, therapists engage young clients in storytelling to help them articulate their experiences. By externalizing problems, children and teens can view challenges objectively, enabling them to develop effective coping strategies and re-author their life stories."
+  },
+  {
+    "title": "What issues can Narrative Therapy address in young individuals?",
+    "description": "Narrative Therapy is effective for a range of concerns, including anxiety, depression, behavioral issues, and trauma. It helps young individuals reframe their experiences, reducing the impact of negative narratives on their self-identity."
+  },
+  {
+    "title": "Is Narrative Therapy suitable for children with autism?",
+    "description": "Yes, Narrative Therapy can be beneficial for children with autism. It provides a structured approach to help them express their experiences and develop a coherent self-narrative, which can enhance communication and social skills."
+  },
+  {
+    "title": "How can parents support their child during Narrative Therapy?",
+    "description": "Parents can support their child by actively participating in therapy sessions when appropriate, encouraging open communication at home, and reinforcing the positive narratives and coping strategies developed during therapy."
+  },
+  {
+    "title": "Is Narrative Therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer Narrative Therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's well-being."
+  },
   ],
 };
