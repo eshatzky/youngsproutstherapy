@@ -275,19 +275,28 @@ const FaqData = {
     "Book a Play Therapy Session in Vaughan & Thornhill Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does play therapy typically take?",
-      description:
-        "The duration of play therapy varies depending on each child’s needs. While some children may benefit from 8 to 12 sessions, others may require longer-term therapy to address more complex emotional or behavioural challenges.",
-    },
-    {
-      title: "Is play therapy effective for children with autism?",
-      description:
-        "Yes. Play therapy is highly effective for children with autism spectrum disorder (ASD). It helps improve social communication skills, emotional regulation, and behavioural responses, allowing children with autism to thrive.",
-    },
-    {
-      title: "Can parents be involved in play therapy?",
-      description:
-        "Absolutely. Family involvement is a key aspect of our play therapy programs. We encourage parents to participate in consultations and parent coaching to ensure that the progress made in therapy is supported at home.",
-    },
+    "title": "What is play therapy and how does it benefit my child?",
+    "description": "Play therapy is a structured, theoretically based approach that leverages the natural communicative and learning processes of children. It helps them express feelings, develop problem-solving skills, and modify behaviour through play. This method is effective for children facing various emotional and behavioural challenges."
+  },
+  {
+    "title": "How do I know if my child needs play therapy?",
+    "description": "If your child is experiencing moodiness, engaging in worrisome behaviours, or seems different from their usual self, it might be beneficial to consult with a play therapist. Play therapy has been shown to be effective with minor to severe emotional and behavioural problems."
+  },
+  {
+    "title": "What can we expect during a play therapy session?",
+    "description": "Each play therapy session typically lasts about 30 to 50 minutes and is held weekly. The therapist provides a safe environment with developmentally appropriate materials, allowing the child to express themselves freely through play. The number of sessions varies based on individual needs."
+  },
+  {
+    "title": "Are parents involved in the play therapy process?",
+    "description": "Absolutely. We believe in a family-centred approach. Our therapists work closely with parents to ensure a strong support system at home, providing guidance on how to support your child's progress outside of sessions."
+  },
+  {
+    "title": "Is play therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer play therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. Our goal is to provide accessible and compassionate care to support your child's well-being."
+  },
+  {
+    "title": "What is Theraplay and how can it help my young child?",
+    "description": "Theraplay is a child and family therapy that focuses on building and enhancing attachment, self-esteem, trust, and joyful engagement. It is particularly effective for children aged 6 and under, using structured play to strengthen the parent-child relationship and support the child's emotional development."
+  },
   ],
 };
