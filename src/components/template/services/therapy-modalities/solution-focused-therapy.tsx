@@ -187,7 +187,7 @@ const IntegratingSFT = {
 
 const FaqData = {
   description:
-    "Book a PCIT Session in Vaughan & Thornhill Are you struggling with managing your child's behavior? Parent-Child Interaction Therapy (PCIT) can provide the tools and support you need. Contact us today to book a PCIT session at our Vaughan or Thornhill office. We offer both in-person and virtual parent coaching options. Fill out our online contact form or schedule a free consultation to get started.",
+    "Looking for a practical, goal-oriented approach to therapy? Solution-Focused Therapy (SFT) helps individuals, couples, and families find effective strategies to overcome challenges and build a more positive future. Our Vaughan and Thornhill therapists specialize in short-term, results-driven counselling to help you move forward. Contact us today to book a session—virtual and in-person options available. Schedule a free consultation or fill out our contact form to get started.",
   accordion: [
     {
     "title": "What is Solution-Focused Therapy (SFT) and how can it benefit my child or teen?",
