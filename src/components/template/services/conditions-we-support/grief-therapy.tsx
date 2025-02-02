@@ -167,7 +167,7 @@ const timelineData = [
 
 const FaqData = {
   description:
-    "Book a Grief Counselling Session in Vaughan & Thornhill If you or a loved one is struggling with grief, our grief counselling services provide the support and understanding you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin the healing process.",
+    "If you or a loved one is struggling with grief, our grief counselling services provide the support and understanding you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin the healing process.",
   accordion: [
     {
         "title": "What is grief therapy for children and teens?",
