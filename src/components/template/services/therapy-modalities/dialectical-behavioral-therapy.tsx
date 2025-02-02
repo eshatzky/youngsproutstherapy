@@ -209,7 +209,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book a DBT Session in Vaughan & Thornhill Are you or a loved one struggling with emotional regulation or self-harm? Contact us today to book a Dialectical Behaviour Therapy (DBT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to provide flexible support. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you or a loved one struggling with emotional regulation or self-harm? Contact us today to book a Dialectical Behaviour Therapy (DBT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to provide flexible support. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
     "title": "What is Dialectical Behavior Therapy (DBT) and how can it help my child or teen?",
