@@ -120,7 +120,7 @@ const timelineData = [
   {
     title: "Comprehensive ADHD Services at Our Clinic",
     description:
-      "Our ADHD clinic in Vaughan and Thornhill offers a wide range of ADHD-related services to support clients of all ages. From ADHD coaching to behavioral therapy, we create individualized plans that address each client's unique needs. Our clinic specializes in:",
+      "Our ADHD clinic in Vaughan and Thornhill offers a wide range of ADHD-related services to support clients of all ages. From ADHD coaching to behavioral therapy, we create individualized plans that address each client's unique needs.",
   },
   {
     title: "Executive Functioning Coaching:",
