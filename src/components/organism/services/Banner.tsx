@@ -45,7 +45,7 @@ export function Banner({ data }: Props) {
             className="max-w-[270px] w-full  text-white border border-white hover:border-none font-semibold"
             variant={"outline"}
           >
-            <Link href="tel:+(289)370-7622">Call Now - (289)370-7622</Link>
+            <Link href="tel:+(289)579-4769">Call Now - (289) 579-4769</Link>
           </Button>
         </div>
       </div>
