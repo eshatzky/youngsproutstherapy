@@ -215,7 +215,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book an ACT Session in Vaughan & Thornhill Are you ready to embrace life’s challenges while living meaningfully? Contact us today to book an Acceptance and Commitment Therapy (ACT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to embrace life’s challenges while living meaningfully? Contact us today to book an Acceptance and Commitment Therapy (ACT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
       title: "How long does ACT therapy take?",
