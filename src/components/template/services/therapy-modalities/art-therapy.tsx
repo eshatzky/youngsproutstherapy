@@ -243,20 +243,28 @@ const FaqData = {
     "Book an Art Therapy Session for Your Child or Teen in Vaughan & Thornhill. Are you ready to help your child express their emotions and develop emotional resilience through art? Contact us today to book an art therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How often should my child attend art therapy sessions?",
-      description:
-        "At Young Sprouts Therapy, we believe that family involvement is essential to the success of art therapy. We work closely with parents and caregivers to ensure that the progress made in therapy is supported at home. Family members are encouraged to participate in occasional sessions to strengthen the family dynamic and provide ongoing support for their child’s emotional growth.",
-    },
-    {
-      title:
-        "Does my child need to have artistic skills to benefit from art therapy? ",
-      description:
-        "No! Art therapy focuses on the process of creating, not the final product. Your child doesn’t need to be an artist to benefit from art therapy. It’s about using creativity as a way to express emotions and work through challenges.",
-    },
-    {
-      title: "Can art therapy be combined with other types of therapy? ",
-      description:
-        "Absolutely! Art therapy is often integrated with other therapeutic approaches like CBT, play therapy, or family therapy to provide a comprehensive treatment plan for your child.",
-    },
+    "title": "What is art therapy and how can it help my child or teen?",
+    "description": "Art therapy is a mental health profession that enriches the lives of individuals, families, and communities through active art-making, creative processes, applied psychological theory, and human experience within a psychotherapeutic relationship. It helps children and teens express emotions, develop coping skills, and improve self-esteem through creative expression."
+  },
+  {
+    "title": "What are the benefits of art therapy for children and adolescents?",
+    "description": "Art therapy offers numerous advantages for children's well-being, including emotional, cognitive, and social benefits. It provides a non-threatening way for children and teens to express their inner feelings, which can be especially helpful for those who find it difficult to verbalize their emotions."
+  },
+  {
+    "title": "How is art therapy different from regular art classes?",
+    "description": "While both involve creative activities, art therapy is facilitated by a trained therapist and focuses on using art as a medium for healing and personal growth. Unlike regular art classes that emphasize technique and aesthetics, art therapy aims to help individuals process emotions and experiences."
+  },
+  {
+    "title": "How is art therapy incorporated into sessions with other therapeutic approaches?",
+    "description": "At Young Sprouts Therapy, art therapy is often integrated with other modalities like play therapy, cognitive-behavioural therapy (CBT), and mindfulness techniques, depending on each child’s needs. This personalized approach ensures that children and teens receive well-rounded support that fosters emotional expression, resilience, and self-confidence."
+  },
+  {
+    "title": "What can we expect during an art therapy session?",
+    "description": "In an art therapy session, your child will engage in creative activities tailored to their needs. The therapist provides a safe and supportive environment, encouraging the child to express themselves through various art materials. Sessions are designed to help children process their feelings and experiences."
+  },
+  {
+    "title": "Is art therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer art therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's well-being."
+  },
   ],
 };
