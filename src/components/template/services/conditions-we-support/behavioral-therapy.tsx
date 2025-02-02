@@ -176,7 +176,7 @@ const WhyChooseUsData = {
 
 const FaqData = {
   description:
-    "Book a Behavioural Therapy Session in Vaughan & Thornhill If your child or teen is struggling with behavioural issues, our behavioural therapists can provide the support and tools needed for lasting change. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to get started.",
+    "If your child or teen is struggling with behavioural issues, our behavioural therapists can provide the support and tools needed for lasting change. Contact us today to schedule an in-person or virtual session. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
    {
   "title": "How long does behavioural therapy typically take?",
