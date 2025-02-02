@@ -158,7 +158,7 @@ const BannerData = {
 
 const FaqData = {
   description:
-    "Book a Couples Therapy Session in Vaughan & Thornhill Are you ready to strengthen your relationship and reconnect with your partner? Contact us today to book a couples therapy session in Vaughan, Thornhill, or Richmond Hill. We offer both in-person and virtual sessions to fit your schedule. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to strengthen your relationship and reconnect with your partner? Contact us today to book a couples therapy session in Vaughan, Thornhill, or Richmond Hill. We offer both in-person and virtual sessions to fit your schedule. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
    {
       "title": "How can couples therapy improve our relationship?",
