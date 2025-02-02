@@ -203,7 +203,7 @@ export default async function ServicePage({
     case "teen-therapy":
       content = <TeenTherapy />;
       break;
-    case "couples-therapy":
+    case "couples-counselling":
       content = <CouplesTherapy />;
       break;
     case "group-therapy":
