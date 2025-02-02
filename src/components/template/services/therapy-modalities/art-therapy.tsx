@@ -240,7 +240,7 @@ const BannerData = {
 };
 const FaqData = {
   description:
-    "Book an Art Therapy Session for Your Child or Teen in Vaughan & Thornhill. Are you ready to help your child express their emotions and develop emotional resilience through art? Contact us today to book an art therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to help your child express their emotions and develop emotional resilience through art? Contact us today to book an art therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
     "title": "What is art therapy and how can it help my child or teen?",
