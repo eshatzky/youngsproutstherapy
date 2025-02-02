@@ -212,20 +212,28 @@ const FaqData = {
     "Book a DBT Session in Vaughan & Thornhill Are you or a loved one struggling with emotional regulation or self-harm? Contact us today to book a Dialectical Behaviour Therapy (DBT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy to provide flexible support. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "How long does DBT therapy take?",
-      description:
-        "DBT is often a longer-term therapy, with clients attending weekly sessions for 6-12 months. However, the duration of therapy depends on individual needs and goals.",
-    },
-    {
-      title:
-        "Is DBT only for individuals with borderline personality Disorder (BPD)?",
-      description:
-        "No. While DBT was originally developed for BPD, it is also highly effective for individuals dealing with self-harm, eating disorders, addiction, anxiety, and other emotional challenges.",
-    },
-    {
-      title: "Can DBT be done virtually? ",
-      description:
-        "Yes, at Young Sprouts Therapy, we offer both in-person and virtual DBT sessions to meet your needs and ensure accessibility.",
-    },
+    "title": "What is Dialectical Behavior Therapy (DBT) and how can it help my child or teen?",
+    "description": "DBT is an evidence-based psychotherapy that combines cognitive-behavioral techniques with concepts of mindfulness and acceptance. It is effective in helping children and adolescents manage intense emotions, reduce self-destructive behaviors, and improve relationships."
+  },
+  {
+    "title": "What issues can DBT address in children and adolescents?",
+    "description": "DBT is particularly effective for young individuals dealing with emotional dysregulation, self-harm, suicidal ideation, depression, anxiety, and behavioral issues. It equips them with skills to handle distress and navigate interpersonal relationships."
+  },
+  {
+    "title": "What does a typical DBT program for adolescents involve?",
+    "description": "A comprehensive DBT program for adolescents typically includes individual therapy sessions, group skills training, and family involvement. The therapy focuses on teaching skills in mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness."
+  },
+  {
+    "title": "How long does DBT treatment usually last for teens?",
+    "description": "The duration of DBT treatment varies based on individual needs, but a standard program often runs for about 16 to 24 weeks. Progress depends on the commitment to practicing skills and active participation in sessions."
+  },
+  {
+    "title": "Is parental involvement necessary in my child's DBT treatment?",
+    "description": "Yes, parental involvement is a crucial component of DBT for adolescents. Parents are often included in skills training to support their child's progress and to learn strategies to reinforce the skills at home."
+  },
+  {
+    "title": "Is DBT available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer DBT services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's mental health."
+  },
   ],
 };
