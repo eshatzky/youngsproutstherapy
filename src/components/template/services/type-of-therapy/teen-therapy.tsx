@@ -142,7 +142,7 @@ const BannerData = {
 
 const FaqData = {
   description:
-    "Book a Teen Therapy Session in Vaughan & Thornhill Are you ready to help your teen build emotional strength and resilience? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual appointments to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to help your teen build emotional strength and resilience? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual appointments to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
       "title": "How do I know if my teen needs therapy?",
