@@ -173,7 +173,7 @@ const WhyChooseUsData = {
 
 const FaqData = {
   description:
-    "Book an Anxiety Therapy Session in Vaughan & Thornhill Are you or a loved one struggling with anxiety? Our tailored anxiety therapy programs are designed to help you manage your symptoms and regain control of your life. Contact us today to book an anxiety therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you or a loved one struggling with anxiety? Our tailored anxiety therapy programs are designed to help you manage your symptoms and regain control of your life. Contact us today to book an anxiety therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
       "title": "How long does anxiety therapy take?",
