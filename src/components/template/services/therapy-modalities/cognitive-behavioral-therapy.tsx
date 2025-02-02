@@ -192,7 +192,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book a CBT Session in Vaughan & Thornhill Are you ready to take control of your mental health with Cognitive Behavioural Therapy (CBT)? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy for individuals and families across Ontario. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to take control of your mental health with Cognitive Behavioural Therapy (CBT)? Contact us today to book a session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy for individuals and families across Ontario. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
     "title": "What is Cognitive Behavioral Therapy (CBT) and how can it help my child or teen?",
