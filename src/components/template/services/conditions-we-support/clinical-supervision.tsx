@@ -206,7 +206,7 @@ const SupervisionForPsychotherapy = {
 
 const FaqData = {
   description:
-    "Book a Clinical Supervision Session in Vaughan & Thornhill If you’re looking for clinical supervision to enhance your practice, contact us today to schedule a session. We offer in-person and virtual supervision for registered psychotherapists and social workers. Fill out our online contact form or schedule a free consultation to start your supervision journey.",
+    "If you’re looking for clinical supervision to enhance your practice, contact us today to schedule a session. We offer in-person and virtual supervision for registered psychotherapists and social workers. Fill out our online contact form or schedule a free consultation to start your supervision journey.",
   accordion: [
     {
     "title": "What is clinical supervision, and why is it important for psychotherapists and social workers?",
