@@ -218,7 +218,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book an EFT Session in Vaughan & Thornhill Are you ready to explore your emotions and rebuild emotional connections with yourself and your loved ones? Contact us today to book an Emotion Focused Therapy (EFT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy options to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you ready to explore your emotions and rebuild emotional connections with yourself and your loved ones? Contact us today to book an Emotion Focused Therapy (EFT) session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy options to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
    {
     "title": "What is Emotionally Focused Therapy (EFT) and how can it benefit individuals, couples, and families?",
