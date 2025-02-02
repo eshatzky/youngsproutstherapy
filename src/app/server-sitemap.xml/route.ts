@@ -36,7 +36,7 @@ const THERAPY_TYPES_SLUGS = [
   "parenting-counselling",
   "child-therapy",
   "teen-therapy",
-  "couples-therapy",
+  "couples-counselling",
   "group-therapy",
 ];
 
