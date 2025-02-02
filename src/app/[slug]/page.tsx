@@ -56,10 +56,10 @@ const serviceData: Record<string, ServiceConfig> = {
     description:
       "Support your teen's mental health with therapy designed to navigate adolescence, anxiety, and emotional well-being.",
   },
-  "couples-therapy": {
-    title: "Couples Counseling | Young Sprouts Therapy",
+  "couples-counselling": {
+    title: "Couples Counselling | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers couples counseling in Vaughan to help partners improve communication, resolve conflict, and strengthen their relationships.",
+      "Young Sprouts Therapy offers couples counselling in Vaughan to help partners improve communication, resolve conflict, and strengthen their relationships.",
   },
   "group-therapy": {
     title: "Group Therapy for Kids and Families | Young Sprouts Therapy",
