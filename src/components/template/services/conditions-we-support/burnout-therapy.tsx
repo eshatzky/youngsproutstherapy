@@ -135,7 +135,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book a Burnout Therapy Session in Vaughan & Thornhill Are you feeling overwhelmed, exhausted, or stuck in a cycle of burnout? Our burnout and stress therapy programs can help you regain control and live a balanced life. Contact us today to schedule a session at our Vaughan or Thornhill clinic. We offer both in-person and virtual sessions. Fill out our online contact form or schedule a free consultation to get started.",
+    "Are you feeling overwhelmed, exhausted, or stuck in a cycle of burnout? Our burnout and stress therapy programs can help you regain control and live a balanced life. Contact us today to schedule a session at our Vaughan or Thornhill clinic. We offer both in-person and virtual sessions. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
      {
         "title": "What are common signs of workplace burnout?",
