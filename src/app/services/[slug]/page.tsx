@@ -284,12 +284,12 @@ export default async function ServicePage({
     ],
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.youngsproutstherapy.com/services/${slug}`,
+      "@id": `https://www.youngsproutstherapy.com/${slug}`,
     },
 
     name: title,
     description: description,
-    url: `https://www.youngsproutstherapy.com/services/${slug}`,
+    url: `https://www.youngsproutstherapy.com/${slug}`,
     author: {
       "@type": "Organization",
       name: "Young Sprouts Therapy",
@@ -307,7 +307,7 @@ export default async function ServicePage({
       "@type": "Thing",
       name: title,
       description: description,
-      sameAs: "https://en.wikipedia.org/wiki/Anxiety_disorder",
+      sameAs: `https://en.wikipedia.org/wiki/${slug}`,
     },
     keywords: [
       "anxiety therapy",
