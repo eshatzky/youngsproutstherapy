@@ -172,7 +172,7 @@ const WhyChooseUsData = {
 
 const FaqData = {
   description:
-    "Book a Group Therapy Session for Kids and Teens in Vaughan & Thornhill Are you ready to help your child or teen build social skills and emotional resilience? Contact us today to book a group therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Is your child or teen struggling with focus, impulsivity, or emotional regulation? Our ADHD therapy and coaching services in Vaughan and Thornhill provide the tools and strategies they need to thrive. We offer in-person and virtual sessions to support kids, teens, and families. Contact us today to schedule a free consultation or fill out our online form to get started.",
   accordion: [
   {
     "title": "What is the difference between ADHD coaching and ADHD therapy?",
