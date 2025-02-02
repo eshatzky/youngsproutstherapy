@@ -163,7 +163,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "music-therapy": {
     title: "Music Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+      "Help your child express emotions, reduce stress, and build confidence through music therapy. Our Vaughan and Thornhill therapists use rhythm, melody, and songwriting to support emotional and social development.",
   },
 };
 
