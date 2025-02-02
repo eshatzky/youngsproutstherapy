@@ -165,20 +165,24 @@ const FaqData = {
     "Book a Trauma Therapy Session in Vaughan & Thornhill If you or your child is struggling with trauma, our trauma therapy programs can provide the support and healing you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your journey to recovery.",
   accordion: [
     {
-      title: "How long does trauma therapy tpically last?",
-      description:
-        "The duration of trauma therapy depends on the individual and the severity of the trauma. While some clients see improvement in 8 to 12 sessions, others may require more extended support for deeper healing.",
-    },
-    {
-      title:
-        "Can trauma therapy help children who don’t talk about their trauma?",
-      description:
-        "Yes. Our approaches like play therapy and sandtray therapy are designed for children who struggle to express their trauma verbally. These therapies allow children to explore and process emotions through play and creativity.",
-    },
-    {
-      title: "Is Trauma therapy available virtually?",
-      description:
-        "Yes, we offer virtual trauma therapy for clients who prefer remote sessions, ensuring the same level of care and support as in-person therapy.",
-    },
+    "title": "What is trauma therapy and how can it help my child or teen?",
+    "description": "Trauma therapy is a form of mental health treatment designed to help children and adolescents process and recover from distressing experiences. It aims to reduce trauma-related symptoms, improve emotional regulation, and restore a sense of safety and normalcy."
+  },
+  {
+    "title": "What are the signs that my child may need trauma therapy?",
+    "description": "Children and teens who have experienced trauma may exhibit symptoms such as anxiety, depression, behavioral changes, sleep disturbances, or withdrawal from activities they once enjoyed. If these symptoms persist, seeking professional help is advisable."
+  },
+  {
+    "title": "What types of trauma therapy are effective for children and adolescents?",
+    "description": "Evidence-based therapies for young individuals include Trauma-Focused Cognitive Behavioral Therapy (TF-CBT), Eye Movement Desensitization and Reprocessing (EMDR), and play therapy. These approaches are tailored to the developmental needs of children and teens."
+  },
+  {
+    "title": "How can I support my child during trauma therapy?",
+    "description": "Parental involvement is crucial in the healing process. Providing a stable and supportive environment, actively participating in therapy sessions when appropriate, and maintaining open communication with your child can significantly aid their recovery."
+  },
+  {
+    "title": "Is trauma therapy available in Vaughan and surrounding areas?",
+    "description": "Yes, we offer trauma therapy services to children and families in Vaughan, Thornhill, North York, Richmond Hill, Markham, and nearby communities. Our clinic is located in Thornhill, making it easily accessible from these areas. We are committed to providing compassionate care to support your child's well-being."
+  },
   ],
 };
