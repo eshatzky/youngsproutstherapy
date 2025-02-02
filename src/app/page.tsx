@@ -33,7 +33,7 @@ const jsonLd = {
     latitude: 43.80910677814606,
     longitude: -79.46233340468766,
   },
-  telephone: "(289) 370-7622",
+  telephone: "(289) 579-4769",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
