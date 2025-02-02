@@ -162,7 +162,7 @@ const timelineData = [
 
 const FaqData = {
   description:
-    "Book a Trauma Therapy Session in Vaughan & Thornhill If you or your child is struggling with trauma, our trauma therapy programs can provide the support and healing you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your journey to recovery.",
+    "If you or your child is struggling with trauma, our trauma therapy programs can provide the support and healing you need. Contact us today to book an in-person or virtual session. Fill out our online contact form or schedule a free consultation to begin your journey to recovery.",
   accordion: [
     {
     "title": "What is trauma therapy and how can it help my child or teen?",
