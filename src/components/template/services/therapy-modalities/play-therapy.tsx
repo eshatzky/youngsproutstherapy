@@ -272,7 +272,7 @@ const TimeLineSectionData = [
 
 const FaqData = {
   description:
-    "Book a Play Therapy Session in Vaughan & Thornhill Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Ready to rewrite your story and take control of your life? Contact us today to book a Narrative Therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy sessions to meet your needs. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
     "title": "What is play therapy and how does it benefit my child?",
