@@ -49,7 +49,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     <Link href="/teen-therapy">Teen Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/couples-therapy">Couples Therapy</Link>
+                    <Link href="/couples-counselling">Couples Counselling</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
                     <Link href="/group-therapy">Group Therapy</Link>
