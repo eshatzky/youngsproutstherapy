@@ -1,9 +1,23 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { getCalApi } from "@calcom/embed-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function LongTermGrowth() {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full max-lg:mt-5">
       <div className="flex flex-col gap-6">
@@ -23,11 +37,17 @@ export function LongTermGrowth() {
       </div>
 
       <div className="flex-col flex lg:flex-row gap-6 items-center w-full mt-6">
-        <Button asChild variant={"default"} className="max-w-[270px] w-full">
-          <Link href={"/#book-consultation"} target="_blank">
+        {isCalLoaded && (
+          <Button
+            className="max-w-[270px] w-full"
+            aria-label="Schedule a consultation"
+            data-cal-namespace="consult"
+            data-cal-link="youngsproutstherapy/consult"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book a Free Consult
-          </Link>
-        </Button>
+          </Button>
+        )}
 
         <Button asChild variant={"outline"} className="max-w-[270px] w-full">
           <Link href={`tel:(289) 579-4769`}>Call Now - (289) 579-4769</Link>

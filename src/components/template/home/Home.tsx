@@ -13,7 +13,6 @@ import {
   HomepageFaq,
   PersonalizedTherapy,
   ConvenientLocation,
-  BookingConsultation,
 } from "@/components/organism/home";
 
 export function Home() {
@@ -33,7 +32,7 @@ export function Home() {
         <ConvenientLocation />
         <InsuranceCoverage />
         <PositiveOutcomes />
-        <BookingConsultation />
+        {/* <BookingConsultation /> */}
         <HomepageFaq />
         <LatestBlogPosts />
       </div>

@@ -1,8 +1,23 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { getCalApi } from "@calcom/embed-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function GroupTherapyforTeens() {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <article className="flex flex-col gap-4 max-lg:mt-5">
       <div className="flex flex-col gap-6">
@@ -69,11 +84,18 @@ export function GroupTherapyforTeens() {
           Stay tuned for updates on upcoming workshops or contact us to learn
           more about our parent education programs.
         </p>
-        <Button asChild className="sm:max-w-[270px] w-full py-3">
-          <Link href={"/#book-consultation"} target="_blank">
+
+        {isCalLoaded && (
+          <Button
+            className="sm:max-w-[270px] w-full py-3"
+            aria-label="Schedule a consultation"
+            data-cal-namespace="consult"
+            data-cal-link="youngsproutstherapy/consult"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book a Free Consult
-          </Link>
-        </Button>
+          </Button>
+        )}
       </div>
     </article>
   );

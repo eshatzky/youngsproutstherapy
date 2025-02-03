@@ -38,6 +38,7 @@ interface TherapyTypeProps {
 interface ServiceConfig {
   title: string;
   description: string;
+  wikiLink?: string;
 }
 
 const serviceData: Record<string, ServiceConfig> = {
@@ -45,125 +46,151 @@ const serviceData: Record<string, ServiceConfig> = {
     title: "Therapy for Parents of Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers supportive therapy for parents of children and teens in Vaughan. We help parents build skills, gain confidence, and navigate the challenges of parenting.",
+    wikiLink: "https://en.wikipedia.org/wiki/Parenting",
   },
   "child-therapy": {
     title: "Child Therapy | Young Sprouts Therapy",
     description:
       "Specialized therapy for children to address anxiety, behavior issues, and emotional challenges in a nurturing environment.",
+    wikiLink: "https://en.wikipedia.org/wiki/Child_psychology",
   },
   "teen-therapy": {
     title: "Teen Therapy | Young Sprouts Therapy",
     description:
       "Support your teen's mental health with therapy designed to navigate adolescence, anxiety, and emotional well-being.",
+    wikiLink: "https://en.wikipedia.org/wiki/Adolescence",
   },
-  "couples-therapy": {
+  "couples-counselling": {
     title: "Couples Counseling | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers couples counseling in Vaughan to help partners improve communication, resolve conflict, and strengthen their relationships.",
+    wikiLink: "https://en.wikipedia.org/wiki/Couples_therapy",
   },
   "group-therapy": {
     title: "Group Therapy for Kids and Families | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers group therapy for kids, teens, and families in Vaughan. Our groups provide a supportive environment to learn social skills, build connections, and address common challenges.",
+    wikiLink: "https://en.wikipedia.org/wiki/Group_therapy",
   },
   "adhd-therapy": {
     title: "ADHD Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy helps children and teens with ADHD thrive. Our Vaughan therapists use evidence-based approaches to improve attention, focus, organization, and emotional regulation.",
+    wikiLink:
+      "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder",
   },
   "anxiety-therapy": {
     title: "Anxiety Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy provides specialized anxiety therapy for children and teenagers in Vaughan. Learn how our expert therapists can help your child manage anxiety with play therapy, CBT, and more.",
+    wikiLink: "https://en.wikipedia.org/wiki/Anxiety_disorder",
   },
   "burnout-therapy": {
     title: "Burnout Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Recover from work-related stress and find balance through burnout therapy.",
+    wikiLink: "https://en.wikipedia.org/wiki/Occupational_burnout",
   },
   "behavioral-therapy": {
     title: "Behaviour Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers effective behaviour therapy for children and teens in Vaughan. Our therapists help with challenging behaviours, improving emotional regulation, and social skills.",
+    wikiLink: "https://en.wikipedia.org/wiki/Behavior_therapy",
   },
   "depression-therapy": {
     title: "Depression Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Compassionate care to address and overcome symptoms of depression.",
+    wikiLink: "https://en.wikipedia.org/wiki/Major_depressive_disorder",
   },
   "grief-therapy": {
     title: "Grief Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers supportive grief therapy for children and teens in Vaughan. We help kids and teens process their feelings of loss and move forward with strength and resilience",
+      "Young Sprouts Therapy offers supportive grief therapy for children and teens in Vaughan. We help kids and teens process their feelings of loss and move forward with strength and resilience.",
+    wikiLink: "https://en.wikipedia.org/wiki/Grief",
   },
   "trauma-therapy": {
     title: "Trauma Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers compassionate trauma-informed therapy for children and teens in Vaughan. Our expert therapists help kids and teens process traumatic experiences and develop healthy coping skills.",
+    wikiLink: "https://en.wikipedia.org/wiki/Trauma_(psychological)",
   },
   "autism-therapy": {
     title: "ASD Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy helps children and teens with ASD thrive. Our Vaughan therapists use evidence-based approaches to enhance communication, behaviour, and daily living skills.",
+    wikiLink: "https://en.wikipedia.org/wiki/Autism_spectrum",
   },
   "clinical-supervision": {
     title: "Clinical Supervision | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers clinical supervision to therapists-in-training in Vaughan. Our experienced supervisors provide guidance and support to help young professionals develop their skills and expertise",
+      "Young Sprouts Therapy offers clinical supervision to therapists-in-training in Vaughan. Our experienced supervisors provide guidance and support to help young professionals develop their skills and expertise.",
+    wikiLink: "https://en.wikipedia.org/wiki/Clinical_supervision",
   },
   "art-therapy": {
     title: "Art Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Engage in creative expression through art therapy to explore emotions and improve mental well-being.",
+    wikiLink: "https://en.wikipedia.org/wiki/Art_therapy",
   },
   "acceptance-commitment-therapy": {
     title:
       "Acceptance Commitment Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Learn to accept thoughts and feelings while committing to meaningful actions with ACT.",
+    wikiLink: "https://en.wikipedia.org/wiki/Acceptance_and_commitment_therapy",
   },
   "cognitive-behavioral-therapy": {
     title:
       "Cognitive Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "A structured approach to address negative thought patterns and improve emotional regulation.",
+    wikiLink: "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy",
   },
   "dialectical-behavioral-therapy": {
     title:
       "Dialectical Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Enhance emotional and interpersonal skills through DBT's practical techniques.",
+    wikiLink: "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy",
   },
   "emotion-focused-therapy": {
     title: "Emotion Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Discover the role of emotions in relationships and personal growth with EFT.",
+    wikiLink: "https://en.wikipedia.org/wiki/Emotionally_focused_therapy",
   },
   "narrative-therapy": {
     title: "Narrative Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Reframe and reshape your personal story to empower change and healing.",
+    wikiLink: "https://en.wikipedia.org/wiki/Narrative_therapy",
   },
   "play-therapy": {
     title: "Play Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "A child-centered approach using play to help children express and resolve challenges.",
+    wikiLink: "https://en.wikipedia.org/wiki/Play_therapy",
   },
   "parent-child-therapy": {
     title: "Parent Child Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Strengthen the bond between parents and children through guided therapeutic interactions.",
+    wikiLink:
+      "https://en.wikipedia.org/wiki/Parent%E2%80%93child_interaction_therapy",
   },
   "solution-focused-therapy": {
     title:
       "Solution-Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+    wikiLink: "https://en.wikipedia.org/wiki/Solution-focused_brief_therapy",
   },
   "music-therapy": {
     title: "Music Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
       "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+    wikiLink: "https://en.wikipedia.org/wiki/Music_therapy",
   },
 };
 
@@ -203,7 +230,7 @@ export default async function ServicePage({
     case "teen-therapy":
       content = <TeenTherapy />;
       break;
-    case "couples-therapy":
+    case "couples-counselling":
       content = <CouplesTherapy />;
       break;
     case "group-therapy":
@@ -307,7 +334,7 @@ export default async function ServicePage({
       "@type": "Thing",
       name: title,
       description: description,
-      sameAs: `https://en.wikipedia.org/wiki/${slug}`,
+      sameAs: service.wikiLink || `https://en.wikipedia.org/wiki/${slug}`,
     },
     keywords: [
       "anxiety therapy",

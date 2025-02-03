@@ -214,6 +214,10 @@ export function Footer() {
         <p className="leading-6 text-center text-[#333]">
           © {currentYear} Young Sprouts Therapy. All Rights Reserved.
         </p>
+        <p className="text-center text-[#333] mt-2">
+          Serving families near Thornhill, Vaughan, Richmond Hill, North York,
+          Markham and surrounding neighbourhoods
+        </p>
       </div>
     </footer>
   );

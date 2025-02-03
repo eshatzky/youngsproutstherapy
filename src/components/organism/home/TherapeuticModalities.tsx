@@ -173,7 +173,7 @@ const modalities = [
     link: "/services/therapy-modalities/emotion-focused-therapy",
   },
   {
-    icon: "/svg/Parent-Child Interaction Therapy (PCIT) .svg",
+    icon: "/svg/Parent-Child Interaction Therapy (PCIT).svg",
     title: "Parent-Child Interaction Therapy (PCIT) ",
     link: "/services/therapy-modalities/parent-child-therapy",
   },
@@ -229,7 +229,7 @@ const modalitiesMobile = [
     link: "/services/therapy-modalities/emotion-focused-therapy",
   },
   {
-    icon: "/svg/Parent-Child Interaction Therapy (PCIT) .svg",
+    icon: "/svg/Parent-Child Interaction Therapy (PCIT).svg",
     title: "Parent-Child Interaction Therapy (PCIT) ",
     link: "/services/therapy-modalities/parent-child-therapy",
   },

@@ -4,9 +4,132 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Text from "../atom/Text";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MobileNav } from "./MobileNav";
 import { CustomSubmenu } from "../molecules/customsubmenu";
+import { getCalApi } from "@calcom/embed-react";
+
+const Items = [
+  {
+    label: "Type of Therapy",
+    items: [
+      {
+        label: "Parenting",
+        href: "/parenting-counselling",
+      },
+      {
+        label: "Child Therapy",
+        href: "/child-therapy",
+      },
+      { label: "Teen Therapy", href: "/teen-therapy" },
+      {
+        label: "Couples Counselling",
+        href: "/couples-counselling",
+      },
+      {
+        label: "Group Therapy",
+        href: "/group-therapy",
+      },
+    ],
+  },
+  {
+    label: "Conditions we support",
+    items: [
+      {
+        label: "ADHD Coaching & Therapy",
+        href: "/adhd-therapy",
+      },
+      {
+        label: "Anxiety Therapy",
+        href: "/anxiety-therapy",
+      },
+      {
+        label: "Burnout Therapy",
+        href: "/burnout-therapy",
+      },
+      {
+        label: "Behavioral Therapy",
+        href: "/behavioral-therapy",
+      },
+      {
+        label: "Depression Therapy",
+        href: "/depression-therapy",
+      },
+      {
+        label: "Grief Therapy",
+        href: "/grief-therapy",
+      },
+      {
+        label: "Trauma Therapy",
+        href: "/trauma-therapy",
+      },
+      {
+        label: "Autism Therapy",
+        href: "/autism-therapy",
+      },
+      {
+        label: "Clinical Supervision",
+        href: "/clinical-supervision",
+      },
+    ],
+  },
+  {
+    label: "Therapy modalities",
+    items: [
+      {
+        label: "Art Therapy",
+        href: "/art-therapy",
+      },
+      {
+        label: "Acceptance and Commitment Therapy (ACT)",
+        href: "/Acceptance-commitment-therapy",
+      },
+      {
+        label: "Cognitive Behavioral Therapy (CBT)",
+        href: "/cognitive-behavioral-therapy",
+      },
+      {
+        label: "Dialectical Behavioral Therapy (DBT)",
+        href: "/dialectical-behavioral-therapy",
+      },
+      {
+        label: "Emotion Focused Therapy (EFT)",
+        href: "/emotion-focused-therapy",
+      },
+      {
+        label: "Narrative Therapy",
+        href: "/narrative-therapy",
+      },
+      {
+        label: "Play Therapy",
+        href: "/play-therapy",
+      },
+      {
+        label: "Parent-Child Interaction Therapy (PCIT)",
+        href: "/parent-child-therapy",
+      },
+      {
+        label: "Solution-Focused Therapy (SFT)",
+        href: "/solution-focused-therapy",
+      },
+      {
+        label: "Music Therapy",
+        href: "/music-therapy",
+      },
+    ],
+  },
+  {
+    label: "Approach & Specialties",
+    href: "/approach-and-specialties",
+  },
+];
+
+const aboutUsItems = [
+  { label: "Team", href: "/team" },
+  { label: "Fees", href: "/fees" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Locations", href: "/locations" },
+];
 
 export function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -16,127 +139,18 @@ export function Header() {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
-  const Items = [
-    {
-      label: "Type of Therapy",
-      items: [
-        {
-          label: "Parenting",
-          href: "/parenting-counselling",
-        },
-        {
-          label: "Child Therapy",
-          href: "/child-therapy",
-        },
-        { label: "Teen Therapy", href: "/teen-therapy" },
-        {
-          label: "Couples Counselling",
-          href: "/couples-counselling",
-        },
-        {
-          label: "Group Therapy",
-          href: "/group-therapy",
-        },
-      ],
-    },
-    {
-      label: "Conditions we support",
-      items: [
-        {
-          label: "ADHD Coaching & Therapy",
-          href: "/adhd-therapy",
-        },
-        {
-          label: "Anxiety Therapy",
-          href: "/anxiety-therapy",
-        },
-        {
-          label: "Burnout Therapy",
-          href: "/burnout-therapy",
-        },
-        {
-          label: "Behavioral Therapy",
-          href: "/behavioral-therapy",
-        },
-        {
-          label: "Depression Therapy",
-          href: "/depression-therapy",
-        },
-        {
-          label: "Grief Therapy",
-          href: "/grief-therapy",
-        },
-        {
-          label: "Trauma Therapy",
-          href: "/trauma-therapy",
-        },
-        {
-          label: "Autism Therapy",
-          href: "/autism-therapy",
-        },
-        {
-          label: "Clinical Supervision",
-          href: "/clinical-supervision",
-        },
-      ],
-    },
-    {
-      label: "Therapy modalities",
-      items: [
-        {
-          label: "Art Therapy",
-          href: "/art-therapy",
-        },
-        {
-          label: "Acceptance and Commitment Therapy (ACT)",
-          href: "/Acceptance-commitment-therapy",
-        },
-        {
-          label: "Cognitive Behavioral Therapy (CBT)",
-          href: "/cognitive-behavioral-therapy",
-        },
-        {
-          label: "Dialectical Behavioral Therapy (DBT)",
-          href: "/dialectical-behavioral-therapy",
-        },
-        {
-          label: "Emotion Focused Therapy (EFT)",
-          href: "/emotion-focused-therapy",
-        },
-        {
-          label: "Narrative Therapy",
-          href: "/narrative-therapy",
-        },
-        {
-          label: "Play Therapy",
-          href: "/play-therapy",
-        },
-        {
-          label: "Parent-Child Interaction Therapy (PCIT)",
-          href: "/parent-child-therapy",
-        },
-        {
-          label: "Solution-Focused Therapy (SFT)",
-          href: "/solution-focused-therapy",
-        },
-        {
-          label: "Music Therapy",
-          href: "/music-therapy",
-        },
-      ],
-    },
-    {
-      label: "Approach & Specialties",
-      href: "/approach-and-specialties",
-    },
-  ];
-
-  const aboutUsItems = [
-    { label: "Team", href: "/team" },
-    { label: "Fees", href: "/fees" },
-    { label: "FAQ", href: "/faq" },
-    { label: "Locations", href: "/locations" },
-  ];
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
 
   return (
     <header className="w-full flex items-center justify-between gap-4 sm:py-1.5 max-w-[1440px] mx-auto ~px-4/10 ">
@@ -194,18 +208,18 @@ export function Header() {
         </Link>
       </nav>
 
-      <a
-        aria-label={" Book a Free Consult"}
-        href={"/#book-consultation"}
-        className="max-lg:hidden"
-      >
+      {isCalLoaded && (
         <Button
-          variant="default"
+          variant={"default"}
           className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full"
+          aria-label="Book a Free Consult"
+          data-cal-namespace="consult"
+          data-cal-link="youngsproutstherapy/consult"
+          data-cal-config='{"layout":"month_view"}'
         >
           Book a Free Consult
         </Button>
-      </a>
+      )}
       <div className="lg:hidden">
         <span onClick={() => setMobileNavOpen(true)} className="cursor-pointer">
           <svg

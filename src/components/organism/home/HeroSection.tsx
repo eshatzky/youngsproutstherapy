@@ -1,13 +1,27 @@
+"use client";
 import Text from "@/components/atom/Text";
 import Title from "@/components/atom/Title";
 import { ContactDialog } from "@/components/molecules/home/contact-dialog";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import { getCalApi } from "@calcom/embed-react";
+import Image from "next/image";
 
 export function HeroSection() {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <section className="">
-      {/* Desktop and Mobile Background Images */}
       <picture>
         {/* Mobile Image */}
         <source
@@ -31,8 +45,24 @@ export function HeroSection() {
           loading='eager'
         /> */}
       </picture>
-      <div className='bg-[url("/images/homebg.webp")] max-h-[100vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16 max-md:[background-position:calc(100%+210px)_0px]'>
-        <div className="container mx-auto space-y-8  max-w-[1440px] ">
+      <div className=" max-h-[100vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16">
+        <div className="absolute inset-0 z-0 min">
+          <Image
+            src="/images/homebg.webp"
+            alt="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
+            fill
+            title="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
+            priority
+            quality={100}
+            sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
+            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] "
+            style={{
+              backgroundPosition: "center",
+              maxHeight: "100vh",
+            }}
+          />
+        </div>
+        <div className="container mx-auto space-y-8  max-w-[1440px] z-20 ">
           <div className="homeGradient  max-lg:px-1.5 max-lg:py-3.5 flex flex-col gap-[18px]">
             <Title
               size="big"
@@ -64,19 +94,20 @@ export function HeroSection() {
 
           <div className="flex flex-col  sm:flex-row max-lg:items-center gap-4 lg:gap-5 w-full z-20">
             <ContactDialog />
-            <Link
-              aria-label="schedule consultation"
-              href="/#book-consultation"
-              className="max-sm:w-full flex max-sm:items-center max-lg:justify-center"
-            >
-              <Button
-                aria-label="schedule a free consultation"
-                variant="outlineV2"
-                className="max-w-[260px] w-full"
-              >
-                Schedule a Free Consult
-              </Button>
-            </Link>
+            <div className="max-sm:w-full flex max-sm:items-center max-lg:justify-center">
+              {isCalLoaded && (
+                <Button
+                  variant="outlineV2"
+                  className="max-w-[260px] w-full cursor-pointer"
+                  aria-label="Schedule a consultation"
+                  data-cal-namespace="consult"
+                  data-cal-link="youngsproutstherapy/consult"
+                  data-cal-config='{"layout":"month_view"}'
+                >
+                  Schedule a Free Consult
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       </div>

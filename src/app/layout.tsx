@@ -25,7 +25,8 @@ export async function processMetadata() {
     metadataBase: new URL(
       process.env.BASE_URL || "https://www.youngsproutstherapy.com/"
     ),
-    title: "Young Sprouts | Child, Teen, and Family Therapy | Vaughan, Thornhill, North York, Markham",
+    title:
+      "Young Sprouts | Child, Teen, and Family Therapy | Vaughan, Thornhill, North York, Markham",
     keywords: [
       "child therapist Vaughan",
       "teen therapist Vaughan",
@@ -102,7 +103,7 @@ export async function processMetadata() {
       "therapy covered by insurance Vaughan",
       "therapy covered by insurance Thornhill",
       "virtual therapy for kids Ontario",
-      "virtual therapy for teens Ontario"
+      "virtual therapy for teens Ontario",
     ],
     description:
       "Psychotherapy and counseling for kids and teens in Vaughan. Find support for kids and teens struggling with anxiety, behavioral issues, ADHD, grief, trauma, and more.",
@@ -166,6 +167,7 @@ export default async function RootLayout({
         />
 
         <SpeedInsights />
+
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-10834730946"

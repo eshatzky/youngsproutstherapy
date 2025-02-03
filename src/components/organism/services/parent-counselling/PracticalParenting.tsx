@@ -1,10 +1,24 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { getCalApi } from "@calcom/embed-react";
 import Link from "next/link";
 import Script from "next/script";
+import { useEffect, useState } from "react";
 
 export function PracticalParenting() {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <article className="flex flex-col gap-8 lg:gap-12">
       <p className="leading-6 max-lg:hidden">
@@ -75,18 +89,24 @@ export function PracticalParenting() {
         </svg>
       </div>
       <p className="leading-6">
-       Ready to take the next step towards building a stronger family? Contact us
-        today to book a parenting counselling session in Vaughan or Thornhill.
-        We offer both in-person and virtual appointments to fit your schedule.
-        Fill out our online contact form or schedule a free consultation to get
-        started.
+        Ready to take the next step towards building a stronger family? Contact
+        us today to book a parenting counselling session in Vaughan or
+        Thornhill. We offer both in-person and virtual appointments to fit your
+        schedule. Fill out our online contact form or schedule a free
+        consultation to get started.
       </p>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-        <Button asChild className="max-w-[270px] w-full py-3">
-          <Link href={"/#book-consultation"} target="_blank">
+        {isCalLoaded && (
+          <Button
+            className="max-w-[270px] w-full py-3"
+            aria-label="Schedule a consultation"
+            data-cal-namespace="consult"
+            data-cal-link="youngsproutstherapy/consult"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book a Free Consult
-          </Link>
-        </Button>
+          </Button>
+        )}
         <Button
           asChild
           variant={"outline"}

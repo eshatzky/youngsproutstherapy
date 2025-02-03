@@ -1,4 +1,4 @@
-import { BookingConsultation } from "@/components/organism/home";
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -7,10 +7,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { getCalApi } from "@calcom/embed-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function FeesPage() {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <section className="max-w-[1440px] mx-auto w-full ~px-4/10 ~py-16/24">
       <div className="">
@@ -73,18 +86,22 @@ export function FeesPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Link href={"#book"} className="w-full">
-                  <Button className="w-full lg:w-full lg:max-w-full">
-                    Book A Free Consult
+                {isCalLoaded && (
+                  <Button
+                    variant={"default"}
+                    className="w-full lg:w-full lg:max-w-full"
+                    aria-label="Book a Free Consult"
+                    data-cal-namespace="consult"
+                    data-cal-link="youngsproutstherapy/consult"
+                    data-cal-config='{"layout":"month_view"}'
+                  >
+                    Book a Free Consult
                   </Button>
-                </Link>
+                )}
               </CardFooter>
             </Card>
           ))}
         </div>
-      </div>
-      <div id="book">
-        <BookingConsultation />
       </div>
     </section>
   );

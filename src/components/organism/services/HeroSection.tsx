@@ -6,6 +6,8 @@ import Image, { StaticImageData } from "next/image";
 import HeroImage from "/public/services/Parenting Counselling.webp";
 import Link from "next/link";
 import Script from "next/script";
+import { useEffect, useState } from "react";
+import { getCalApi } from "@calcom/embed-react";
 
 type props = {
   image: StaticImageData | string;
@@ -18,6 +20,18 @@ type PropType = {
 };
 
 export function HeroSection({ props }: PropType) {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <section className="w-full relative rounded-lg lg:rounded-3xl p-4 overflow-hidden h-full min-h-[228px] lg:min-h-[400px] lg:h-full flex items-center justify-center ">
       <Image
@@ -42,15 +56,18 @@ export function HeroSection({ props }: PropType) {
           ) : null}
         </header>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
-          <Button
-            asChild
-            variant={"default"}
-            className="bg-white text-secondary hover:bg-primary hover:text-white border-white hover:border-primary "
-          >
-            <Link href={"/#book-consultation"} target="_blank">
+          {isCalLoaded && (
+            <Button
+              variant={"default"}
+              className="bg-white text-secondary hover:bg-primary hover:text-white border-white hover:border-primary "
+              aria-label="Schedule a consultation"
+              data-cal-namespace="consult"
+              data-cal-link="youngsproutstherapy/consult"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Book a Free Consult
-            </Link>
-          </Button>
+            </Button>
+          )}
 
           <Button
             asChild

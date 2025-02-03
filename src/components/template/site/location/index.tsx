@@ -1,6 +1,10 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getCalApi } from "@calcom/embed-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const locations = {
   thornhill: {
@@ -200,6 +204,19 @@ const locations = {
 export function LocationTemplate({ location }: { location: string }) {
   const locationData = locations[location as keyof typeof locations];
 
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section */}
@@ -252,9 +269,19 @@ export function LocationTemplate({ location }: { location: string }) {
                 Contact Young Sprouts Therapy today to schedule a free 15-minute
                 consultation.
               </p>
-              <Button asChild className="!py-3 mt-4">
-                <Link href="/#book-consultation">Book a Free Consultation</Link>
-              </Button>
+
+              {isCalLoaded && (
+                <Button
+                  variant={"default"}
+                  className="!py-3 mt-4"
+                  aria-label="Book a Free Consult"
+                  data-cal-namespace="consult"
+                  data-cal-link="youngsproutstherapy/consult"
+                  data-cal-config='{"layout":"month_view"}'
+                >
+                  Book a Free Consult
+                </Button>
+              )}
             </div>
           </div>
           <div className="h-[400px] relative rounded-lg overflow-hidden">
@@ -404,9 +431,19 @@ export function LocationTemplate({ location }: { location: string }) {
           supported. Our office is designed with children and teens in mind,
           creating an inviting atmosphere that encourages growth and connection.
         </p>
-        <Button asChild>
-          <Link href="/#book-consultation">Book a Free Consultation</Link>
-        </Button>
+
+        {isCalLoaded && (
+          <Button
+            variant={"default"}
+            className="!py-3 mt-4"
+            aria-label="Book a Free Consult"
+            data-cal-namespace="consult"
+            data-cal-link="youngsproutstherapy/consult"
+            data-cal-config='{"layout":"month_view"}'
+          >
+            Book a Free Consult
+          </Button>
+        )}
       </div>
     </div>
   );

@@ -5,7 +5,8 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getCalApi } from "@calcom/embed-react";
 
 type AccordionDataType = {
   title: string;
@@ -24,6 +25,19 @@ type Props = {
 };
 
 export function Faq({ data, showButtons = true }: Props) {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
+
   return (
     <section className="~pt-16/24 flex flex-col gap-8 lg:gap-9 w-full">
       <HomepageFaq faqData={data.accordion} />
@@ -33,11 +47,17 @@ export function Faq({ data, showButtons = true }: Props) {
 
       {showButtons && (
         <div className="flex-col flex lg:flex-row gap-6 items-center w-full justify-center">
-          <Button asChild variant={"default"} className="max-w-[270px] w-full">
-            <Link href={"/#book-consultation"} target="_blank">
+          {isCalLoaded && (
+            <Button
+              className="max-w-[270px] w-full"
+              aria-label="Schedule a consultation"
+              data-cal-namespace="consult"
+              data-cal-link="youngsproutstherapy/consult"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Book a Free Consult
-            </Link>
-          </Button>
+            </Button>
+          )}
 
           <Button asChild variant={"outline"} className="max-w-[270px] w-full">
             <Link href={`tel:(289) 579-4769`}>Call Now - (289) 579-4769</Link>

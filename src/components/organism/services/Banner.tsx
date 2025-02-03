@@ -1,6 +1,9 @@
+"use client";
 import { Button } from "@/components/ui/button";
+import { getCalApi } from "@calcom/embed-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type data = {
   image: StaticImageData | string;
@@ -13,6 +16,18 @@ type Props = {
 };
 
 export function Banner({ data }: Props) {
+  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  useEffect(() => {
+    (async function () {
+      try {
+        const cal = await getCalApi({ namespace: "consult" });
+        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        setIsCalLoaded(true);
+      } catch (error) {
+        console.error("Failed to load Cal.com API:", error);
+      }
+    })();
+  }, []);
   return (
     <section className="relative lg:min-h-[404px] h-auto rounded-3xl overflow-hidden ">
       <Image
@@ -32,14 +47,17 @@ export function Banner({ data }: Props) {
           {data.description}
         </p>
         <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-6 z-30">
-          <Button
-            asChild
-            className="max-w-[270px] w-full bg-white  text-primary hover:text-white font-semibold"
-          >
-            <Link href={"/#book-consultation"} target="_blank">
+          {isCalLoaded && (
+            <Button
+              className="max-w-[270px] w-full bg-white  text-primary hover:text-white font-semibold"
+              aria-label="Schedule a consultation"
+              data-cal-namespace="consult"
+              data-cal-link="youngsproutstherapy/consult"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Book a Free Consult
-            </Link>
-          </Button>
+            </Button>
+          )}
           <Button
             asChild
             className="max-w-[270px] w-full  text-white border border-white hover:border-none font-semibold"
