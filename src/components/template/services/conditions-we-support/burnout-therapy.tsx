@@ -57,16 +57,18 @@ export function BurnOutTherapy() {
 }
 const HeroSectionData = {
   image: burnouttherapyheroimage,
-  title: "Burnout Therapy & Stress Management in Vaughan & Thornhill",
+  title: "School Stress & Burnout Therapy for Kids & Teens in Vaughan & Thornhill",
   description:
-    "Therapy to help you regain control and find renewed energy for life's demands.",
+    "Helping kids and teens manage school stress, burnout, and overwhelm with expert therapy in Vaughan & Thornhill. Build resilience and regain balance.",
 };
+
 const HeroSectionDataMobile = {
   image: burnouttherapymobile,
-  title: "Burnout Therapy & Stress Management in Vaughan & Thornhill",
+  title: "School Stress & Burnout Therapy for Kids & Teens in Vaughan & Thornhill",
   description:
-    "Therapy to help you regain control and find renewed energy for life's demands.",
+    "Helping kids and teens manage school stress, burnout, and overwhelm with expert therapy in Vaughan & Thornhill. Build resilience and regain balance.",
 };
+
 
 const WhatIsBurnOutTherapy = {
   title: "What Is Burnout Therapy?",
