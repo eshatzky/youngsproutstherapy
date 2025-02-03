@@ -19,7 +19,7 @@ export function ConvenientLocation() {
             </p>
             <p className="text-[#333333] ~text-base/lg text-left">
               Located in the heart of Thornhill, our clinic is easily accessible
-              from Vaughan, Thornhill, Richmond Hill, Markham, Aurora,
+              from Vaughan, Richmond Hill, Markham, Aurora,
               Newmarket, North York and surrounding areas. We also offer
               flexible online therapy sessions to accommodate busy schedules,
               ensuring that high-quality care is always within reach.
