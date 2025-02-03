@@ -61,15 +61,16 @@ export function AdhdTherapy() {
 }
 const HeroSectionData = {
   image: adhdheroImage,
-  title: "ADHD Coaching & Therapy in Vaughan & Thornhill",
+  title: "ADHD Therapy & Coaching for Kids & Teens in Thornhill",
   description:
-    "Treatment and support to help individuals of all ages navigate the challenges of Attention Deficit Hyperactivity Disorder (ADHD) & Attention Deficit Disorder (ADD).",
+    "Expert ADHD therapy and coaching tailored for kids and teens in Thornhill. Build focus, confidence, and life skills with personalized support.",
 };
+
 const HeroSectionDataMobile = {
   image: adhdmobile,
-  title: "ADHD Coaching & Therapy in Vaughan & Thornhill",
+  title: "ADHD Therapy & Coaching for Kids & Teens in Thornhill",
   description:
-    "Treatment and support to help individuals of all ages navigate the challenges of Attention Deficit Hyperactivity Disorder (ADHD) & Attention Deficit Disorder (ADD).",
+    "Expert ADHD therapy and coaching tailored for kids and teens in Thornhill. Build focus, confidence, and life skills with personalized support.",
 };
 
 const WhatIsAdHd = {
