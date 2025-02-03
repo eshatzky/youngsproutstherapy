@@ -65,15 +65,16 @@ export function AnxietyTherapy() {
 }
 const HeroSectionData = {
   image: anxietyherosection,
-  title: "Anxiety Therapy & Support in Vaughan & Thornhill",
+  title: "Anxiety Therapy & Support for Kids & Teens in Vaughan & Thornhill",
   description:
-    "Therapy to support and equip children, teens and adults with strategies for dealing with anxiety",
+    "Compassionate therapy for kids and teens struggling with anxiety in Vaughan & Thornhill. Build confidence, resilience, and coping skills with expert support.",
 };
+
 const HeroSectionDataMobile = {
   image: anxietytherapymobile,
-  title: "Anxiety Therapy & Support in Vaughan & Thornhill",
+  title: "Anxiety Therapy & Support for Kids & Teens in Vaughan & Thornhill",
   description:
-    "Therapy to support and equip children, teens and adults with strategies for dealing with anxiety",
+    "Compassionate therapy for kids and teens struggling with anxiety in Vaughan & Thornhill. Build confidence, resilience, and coping skills with expert support.",
 };
 
 const WhatIsAnxiety = {
