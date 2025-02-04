@@ -211,7 +211,7 @@ export function Header() {
       {isCalLoaded && (
         <Button
           variant={"default"}
-          className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full"
+          className="bg-primary text-white max-sm:!px-4 p-2 !py-2.5 ~text-sm/base w-fit rounded-full max-lg:hidden"
           aria-label="Book a Free Consult"
           data-cal-namespace="consult"
           data-cal-link="youngsproutstherapy/consult"
