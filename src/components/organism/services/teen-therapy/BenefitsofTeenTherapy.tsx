@@ -12,7 +12,19 @@ export function BenefitsTeenTherapy() {
     (async function () {
       try {
         const cal = await getCalApi({ namespace: "consult" });
-        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        cal("ui", {
+          theme: "light",
+          cssVarsPerTheme: {
+            light: {
+              "cal-brand": "#0196af",
+            },
+            dark: {
+              "cal-brand": "#007acc",
+            },
+          },
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
         setIsCalLoaded(true);
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
@@ -81,10 +93,9 @@ export function BenefitsTeenTherapy() {
         </div>
 
         <div className="flex-col flex lg:flex-row gap-6 items-center w-full mt-6">
-        
           {isCalLoaded && (
             <Button
-         className="max-w-[270px] w-full"
+              className="max-w-[270px] w-full"
               aria-label="Schedule a consultation"
               data-cal-namespace="consult"
               data-cal-link="youngsproutstherapy/consult"

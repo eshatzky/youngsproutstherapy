@@ -209,7 +209,19 @@ export function LocationTemplate({ location }: { location: string }) {
     (async function () {
       try {
         const cal = await getCalApi({ namespace: "consult" });
-        cal("ui", { hideEventTypeDetails: true, layout: "month_view" });
+        cal("ui", {
+          theme: "light",
+          cssVarsPerTheme: {
+            light: {
+              "cal-brand": "#0196af",
+            },
+            dark: {
+              "cal-brand": "#007acc",
+            },
+          },
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
         setIsCalLoaded(true);
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
