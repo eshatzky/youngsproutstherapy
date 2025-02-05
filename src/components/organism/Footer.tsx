@@ -8,11 +8,11 @@ export function Footer() {
       <section className="~py-7/12 max-w-[1440px] border-b border-[#B0DEE6] mx-auto w-full ~px-2.5/16 flex flex-col lg:flex-row ~gap-6/28 justify-between ">
         <div className="flex flex-col max-sm:items-center max-sm:justify-center gap-6">
           <Image
-            src={"/svg/footer.svg"}
+            src={"/logo.png"}
             alt="footer logo"
-            width={140}
-            height={60}
-            className="w-[133px] h-[50px] aspect-auto "
+            width={600}
+            height={600}
+            className="w-[240px]  aspect-auto "
           />
           <p className="text-[#77808B] max-w-[336px] w-full max-sm:text-center ">
             Compassionate therapy and counselling for children, teens, and
