@@ -300,99 +300,146 @@ export default async function ServicePage({
       content = null;
   }
 
-  const jsonLd = {
-    "@context": "http://schema.org",
-    "@type": [
-      "MedicalWebPage",
-      "WebPage",
-      "LocalBusiness",
-      "MedicalBusiness",
-      "HealthAndBeautyBusiness",
-    ],
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.youngsproutstherapy.com/${slug}`,
-    },
+ const jsonLd = {
+  "@context": "http://schema.org",
+  "@type": [
+    "MedicalWebPage",
+    "WebPage",
+    "LocalBusiness",
+    "MedicalBusiness",
+    "HealthAndBeautyBusiness"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.youngsproutstherapy.com/${slug}`
+  },
+  "name": title,
+  "description": description,
+  "url": `https://www.youngsproutstherapy.com/${slug}`,
+  "author": {
+    "@type": "Organization",
+    "name": "Young Sprouts Therapy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Young Sprouts Therapy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.youngsproutstherapy.com/images/logo.png"
+    }
+  },
+  "inLanguage": "en-CA",
+  "about": {
+    "@type": "Thing",
+    "name": title,
+    "description": description,
+    "sameAs": service.wikiLink || `https://en.wikipedia.org/wiki/${slug}`
+  },
 
-    name: title,
-    description: description,
-    url: `https://www.youngsproutstherapy.com/${slug}`,
-    author: {
-      "@type": "Organization",
-      name: "Young Sprouts Therapy",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Young Sprouts Therapy",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.youngsproutstherapy.com/images/logo.png",
-      },
-    },
-    inLanguage: "en-CA",
-    about: {
-      "@type": "Thing",
-      name: title,
-      description: description,
-      sameAs: service.wikiLink || `https://en.wikipedia.org/wiki/${slug}`,
-    },
-    keywords: [
-      "anxiety therapy",
-      "child anxiety",
-      "teen anxiety",
-      "Vaughan anxiety therapist",
-    ],
+  // 🌟 Expanded Keywords List for SEO Optimization
+  "keywords": [
+    // General therapy-related keywords
+    "therapy Vaughan", "therapy Thornhill", "therapy Richmond Hill",
+    "therapy North York", "therapy Markham", "therapy Toronto",
+    "child therapist Vaughan", "teen therapist Vaughan", "family therapy Vaughan",
+    "child counselling Vaughan", "teen counselling Vaughan",
+    "psychotherapy Vaughan", "mental health Vaughan",
+    
+    // Specific therapeutic approaches/modalities
+    "Cognitive Behavioural Therapy Vaughan", "CBT Vaughan",
+    "Dialectical Behaviour Therapy Vaughan", "DBT Vaughan",
+    "Play Therapy Vaughan", "Art Therapy Vaughan", "Music Therapy Vaughan",
+    "Behavioural Therapy Vaughan", "ADHD Therapy Vaughan",
+    "Autism Therapy Vaughan", "ASD Therapy Vaughan",
+    "Solution-Focused Therapy Vaughan", "Narrative Therapy Vaughan",
+    "Emotion-Focused Therapy Vaughan", "Acceptance and Commitment Therapy Vaughan",
+    "Parent-Child Interaction Therapy Vaughan", "Anxiety Therapy Vaughan",
+    "Depression Therapy Vaughan", "Grief Counselling Vaughan",
+    "Self-Esteem Therapy Vaughan", "Trauma Therapy Vaughan",
+    "Learning Disabilities Therapy Vaughan",
 
-    mainEntity: {
-      "@type": ["LocalBusiness", "MedicalBusiness", "HealthAndBeautyBusiness"],
-      name: "Young Sprouts Therapy",
-      telephone: "(289) 579-4769",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "1137 Centre Street, Suite #204",
-        addressLocality: "Thornhill",
-        addressRegion: "ON",
-        postalCode: "L4J 3M6",
-        addressCountry: "CA",
-      },
-      description:
-        "At Young Sprouts Therapy, we offer specialized psychological services for children, teens, and families, including Cognitive Behavioural Therapy (CBT), Play Therapy, Art Therapy, and more.",
-      areaServed: [
-        {
-          "@type": "Place",
-          name: "Thornhill",
-        },
-        {
-          "@type": "Place",
-          name: "Richmond Hill",
-        },
-        {
-          "@type": "Place",
-          name: "Vaughan",
-        },
-        {
-          "@type": "Place",
-          name: "Aurora",
-        },
-        {
-          "@type": "Place",
-          name: "Newmarket",
-        },
-        {
-          "@type": "Place",
-          name: "Toronto",
-        },
-        {
-          "@type": "Place",
-          name: "North York",
-        },
-        {
-          "@type": "Place",
-          name: "Markham",
-        },
-      ],
+    // Location variations with therapy modalities
+    "Play Therapy Thornhill", "Art Therapy Thornhill", "Music Therapy Thornhill",
+    "Behavioural Therapy Thornhill", "ADHD Therapy Thornhill",
+    "Autism Therapy Thornhill", "ASD Therapy Thornhill",
+    "Cognitive Behavioural Therapy Thornhill", "CBT Thornhill",
+    "DBT Thornhill", "Child Therapy Thornhill", "Teen Therapy Thornhill",
+    "Anxiety Therapy Thornhill", "Depression Therapy Thornhill",
+    "Psychotherapy Thornhill", "Mental Health Thornhill",
+
+    "Play Therapy Richmond Hill", "Art Therapy Richmond Hill", "Music Therapy Richmond Hill",
+    "Behavioural Therapy Richmond Hill", "ADHD Therapy Richmond Hill",
+    "Autism Therapy Richmond Hill", "ASD Therapy Richmond Hill",
+    "CBT Richmond Hill", "DBT Richmond Hill", "Child Therapy Richmond Hill",
+    "Teen Therapy Richmond Hill", "Anxiety Therapy Richmond Hill",
+    "Depression Therapy Richmond Hill",
+
+    "Play Therapy North York", "Art Therapy North York", "Music Therapy North York",
+    "Behavioural Therapy North York", "ADHD Therapy North York",
+    "Autism Therapy North York", "ASD Therapy North York",
+    "CBT North York", "DBT North York", "Anxiety Therapy North York",
+    "Depression Therapy North York",
+
+    "Play Therapy Markham", "Art Therapy Markham", "Music Therapy Markham",
+    "Behavioural Therapy Markham", "ADHD Therapy Markham",
+    "Autism Therapy Markham", "ASD Therapy Markham",
+    "CBT Markham", "DBT Markham", "Child Therapy Markham",
+    "Teen Therapy Markham", "Anxiety Therapy Markham",
+    "Depression Therapy Markham",
+
+    "Play Therapy Toronto", "Art Therapy Toronto", "Music Therapy Toronto",
+    "Behavioural Therapy Toronto", "ADHD Therapy Toronto",
+    "Autism Therapy Toronto", "ASD Therapy Toronto",
+    "CBT Toronto", "DBT Toronto", "Child Therapy Toronto",
+    "Teen Therapy Toronto", "Anxiety Therapy Toronto",
+    "Depression Therapy Toronto"
+  ],
+
+  // 🌟 Local Business Details at the Root Level
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1137 Centre Street, Suite #204",
+    "addressLocality": "Thornhill",
+    "addressRegion": "ON",
+    "postalCode": "L4J 3M6",
+    "addressCountry": "CA"
+  },
+  "telephone": "(289) 579-4769",
+  "priceRange": "$$",
+  "image": "https://www.youngsproutstherapy.com/images/logo.png",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "43.8075",
+    "longitude": "-79.4522"
+  },
+  
+  // 🌟 Retaining Local Business Details Under mainEntity
+  "mainEntity": {
+    "@type": ["LocalBusiness", "MedicalBusiness", "HealthAndBeautyBusiness"],
+    "name": "Young Sprouts Therapy",
+    "telephone": "(289) 579-4769",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1137 Centre Street, Suite #204",
+      "addressLocality": "Thornhill",
+      "addressRegion": "ON",
+      "postalCode": "L4J 3M6",
+      "addressCountry": "CA"
     },
-  };
+    "description":
+      "At Young Sprouts Therapy, we offer specialized psychological services for children, teens, and families, including Cognitive Behavioural Therapy (CBT), Play Therapy, Art Therapy, and more.",
+    "areaServed": [
+      { "@type": "Place", "name": "Thornhill" },
+      { "@type": "Place", "name": "Richmond Hill" },
+      { "@type": "Place", "name": "Vaughan" },
+      { "@type": "Place", "name": "Aurora" },
+      { "@type": "Place", "name": "Newmarket" },
+      { "@type": "Place", "name": "Toronto" },
+      { "@type": "Place", "name": "North York" },
+      { "@type": "Place", "name": "Markham" }
+    ]
+  }
+};
 
   return (
     <section>
