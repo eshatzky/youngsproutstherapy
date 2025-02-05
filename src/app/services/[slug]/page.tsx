@@ -183,13 +183,13 @@ const serviceData: Record<string, ServiceConfig> = {
     title:
       "Solution-Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+      "Solution-Focused Therapy (SFT) in Vaughan helps kids and teens overcome challenges, build confidence, and develop problem-solving skills through a strengths-based approach.",
     wikiLink: "https://en.wikipedia.org/wiki/Solution-focused_brief_therapy",
   },
   "music-therapy": {
     title: "Music Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Focus on solutions and achieve goals through a positive and future-oriented approach.",
+      "Music therapy in Vaughan for kids and teens to express emotions, reduce anxiety, and improve social skills through rhythm, songwriting, and creative musical play.",
     wikiLink: "https://en.wikipedia.org/wiki/Music_therapy",
   },
 };
