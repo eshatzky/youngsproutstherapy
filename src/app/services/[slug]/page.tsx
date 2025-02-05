@@ -51,17 +51,17 @@ const serviceData: Record<string, ServiceConfig> = {
   "child-therapy": {
     title: "Child Therapy | Young Sprouts Therapy",
     description:
-      "Specialized therapy for children to address anxiety, behavior issues, and emotional challenges in a nurturing environment.",
+      "Compassionate child therapy in Vaughan using play, art, and evidence-based approaches to support emotional growth, behaviours, anxiety, and self-esteem.",
     wikiLink: "https://en.wikipedia.org/wiki/Child_psychology",
   },
   "teen-therapy": {
     title: "Teen Therapy | Young Sprouts Therapy",
     description:
-      "Support your teen's mental health with therapy designed to navigate adolescence, anxiety, and emotional well-being.",
+      "Teen therapy in Vaughan to help adolescents navigate anxiety, stress, and self-esteem challenges. Supportive, expert care for growth and resilience.",
     wikiLink: "https://en.wikipedia.org/wiki/Adolescence",
   },
   "couples-counselling": {
-    title: "Couples Counseling | Young Sprouts Therapy",
+    title: "Couples Counselling | Young Sprouts Therapy",
     description:
       "Young Sprouts Therapy offers couples counseling in Vaughan to help partners improve communication, resolve conflict, and strengthen their relationships.",
     wikiLink: "https://en.wikipedia.org/wiki/Couples_therapy",
@@ -86,9 +86,9 @@ const serviceData: Record<string, ServiceConfig> = {
     wikiLink: "https://en.wikipedia.org/wiki/Anxiety_disorder",
   },
   "burnout-therapy": {
-    title: "Burnout Therapy for Kids and Teens | Young Sprouts Therapy",
+    title: "Burnout Therapy | Young Sprouts Therapy",
     description:
-      "Recover from work-related stress and find balance through burnout therapy.",
+      "Struggling with school or workplace stress? Our therapy for teens and young adults in Vaughan helps with burnout, anxiety, overwhelm, and motivation challenges.",
     wikiLink: "https://en.wikipedia.org/wiki/Occupational_burnout",
   },
   "behavioral-therapy": {
@@ -100,7 +100,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "depression-therapy": {
     title: "Depression Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Compassionate care to address and overcome symptoms of depression.",
+      "Expert teen depression therapy in Vaughan to help with sadness, motivation loss, and emotional struggles. Supportive care for healing, resilience, and growth.",
     wikiLink: "https://en.wikipedia.org/wiki/Major_depressive_disorder",
   },
   "grief-therapy": {
@@ -118,7 +118,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "autism-therapy": {
     title: "ASD Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy helps children and teens with ASD thrive. Our Vaughan therapists use evidence-based approaches to enhance communication, behaviour, and daily living skills.",
+      "Autism therapy in Vaughan using play, art, music, and counselling to support social skills, behaviours, communication, and emotional growth in kids and teens.",
     wikiLink: "https://en.wikipedia.org/wiki/Autism_spectrum",
   },
   "clinical-supervision": {
@@ -130,21 +130,21 @@ const serviceData: Record<string, ServiceConfig> = {
   "art-therapy": {
     title: "Art Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Engage in creative expression through art therapy to explore emotions and improve mental well-being.",
+      "Art therapy in Vaughan for kids and teens to express emotions, reduce anxiety, and improve behaviours through creative, therapeutic drawing and painting.",
     wikiLink: "https://en.wikipedia.org/wiki/Art_therapy",
   },
   "acceptance-commitment-therapy": {
     title:
       "Acceptance Commitment Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Learn to accept thoughts and feelings while committing to meaningful actions with ACT.",
+      "Acceptance and Commitment Therapy (ACT) in Vaughan helps teens and young adults manage anxiety, stress, and emotions while building resilience and mindfulness.",
     wikiLink: "https://en.wikipedia.org/wiki/Acceptance_and_commitment_therapy",
   },
   "cognitive-behavioral-therapy": {
     title:
       "Cognitive Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "A structured approach to address negative thought patterns and improve emotional regulation.",
+      "Cognitive Behavioural Therapy (CBT) in Vaughan helps kids and teens manage anxiety, depression, and negative thoughts while building coping skills and resilience.",
     wikiLink: "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy",
   },
   "dialectical-behavioral-therapy": {
