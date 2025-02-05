@@ -82,7 +82,7 @@ const Items = [
       },
       {
         label: "Acceptance and Commitment Therapy (ACT)",
-        href: "/Acceptance-commitment-therapy",
+        href: "/acceptance-commitment-therapy",
       },
       {
         label: "Cognitive Behavioral Therapy (CBT)",

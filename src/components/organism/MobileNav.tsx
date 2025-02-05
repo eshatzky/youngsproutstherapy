@@ -107,7 +107,7 @@ export function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
                     <Link href="/art-therapy">Art Therapy</Link>
                   </SheetClose>
                   <SheetClose asChild className="cursor-pointer">
-                    <Link href="/Acceptance-commitment-therapy">
+                    <Link href="/acceptance-commitment-therapy">
                       Acceptance and Commitment Therapy (ACT)
                     </Link>
                   </SheetClose>

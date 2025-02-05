@@ -34,7 +34,7 @@ export function TherapeuticModalities() {
             psychological issues for healing and growth.
           </p>
           <Link
-            href={"/services/approach-and-specialties"}
+            href={"/approach-and-specialties"}
             className="hidden lg:block"
             aria-label={"Learn More +"}
           >
@@ -165,7 +165,7 @@ const modalities = [
   {
     icon: "/svg/Acceptance and Commitment.svg",
     title: "Acceptance and Commitment Therapy (ACT)",
-    link: "/Acceptance-commitment-therapy",
+    link: "/acceptance-commitment-therapy",
   },
   {
     icon: "/svg/Emotion-Focused.svg",

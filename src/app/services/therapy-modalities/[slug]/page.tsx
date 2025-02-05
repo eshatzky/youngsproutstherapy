@@ -29,8 +29,7 @@ const serviceData: Record<string, ServiceConfig> = {
       "Engage in creative expression through art therapy to explore emotions, improve well-being, and enhance mental health for kids and teens in Thornhill and Vaughan.",
   },
   "acceptance-commitment-therapy": {
-    title:
-      "Acceptance and Commitment Therapy | Young Sprouts Therapy",
+    title: "Acceptance and Commitment Therapy | Young Sprouts Therapy",
     description:
       "Help kids and teens in Thornhill and Vaughan embrace their thoughts and feelings with Acceptance Commitment Therapy (ACT), fostering personal growth and meaningful action.",
   },

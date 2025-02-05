@@ -268,7 +268,7 @@ export default async function ServicePage({
     case "art-therapy":
       content = <ArtTherapy />;
       break;
-    case "Acceptance-commitment-therapy":
+    case "acceptance-commitment-therapy":
       content = <AcceptanceTherapy />;
       break;
     case "cognitive-behavioral-therapy":
