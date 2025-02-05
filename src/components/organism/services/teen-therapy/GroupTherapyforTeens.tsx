@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function GroupTherapyforTeens() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

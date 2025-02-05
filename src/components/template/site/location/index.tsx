@@ -204,7 +204,7 @@ const locations = {
 export function LocationTemplate({ location }: { location: string }) {
   const locationData = locations[location as keyof typeof locations];
 
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {
@@ -324,10 +324,7 @@ export function LocationTemplate({ location }: { location: string }) {
                 behavioural concerns, grief, and self-esteem issues.
               </p>
               <div className="mt-4 p-0">
-                <Link
-                  className="text-white"
-                  href="/services/therapy-type/child-therapy"
-                >
+                <Link className="text-white" href="/child-therapy">
                   MORE →
                 </Link>
               </div>
@@ -344,10 +341,7 @@ export function LocationTemplate({ location }: { location: string }) {
                 challenges, and personal growth.
               </p>
               <div className="mt-4 p-0">
-                <Link
-                  className="text-white"
-                  href="/services/therapy-type/teen-therapy"
-                >
+                <Link className="text-white" href="/teen-therapy">
                   MORE →
                 </Link>
               </div>
@@ -364,10 +358,7 @@ export function LocationTemplate({ location }: { location: string }) {
                 connection among family members.
               </p>
               <div className="mt-4 p-0">
-                <Link
-                  className="text-white"
-                  href="/services/therapy-type/parenting-counselling"
-                >
+                <Link className="text-white" href="/parenting-counselling">
                   MORE →
                 </Link>
               </div>

@@ -165,7 +165,7 @@ export default async function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-
+        <link rel="preload" href="/images/homebg.webp" as="image" />
         <SpeedInsights />
 
         <Script

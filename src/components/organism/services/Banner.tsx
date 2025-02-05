@@ -16,7 +16,7 @@ type Props = {
 };
 
 export function Banner({ data }: Props) {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

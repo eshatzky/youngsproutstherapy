@@ -23,7 +23,7 @@ type Props = {
 };
 
 export function BlockWithPoints({ data }: Props) {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

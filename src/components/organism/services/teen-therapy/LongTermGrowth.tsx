@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export function LongTermGrowth() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

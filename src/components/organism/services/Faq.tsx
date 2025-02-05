@@ -25,7 +25,7 @@ type Props = {
 };
 
 export function Faq({ data, showButtons = true }: Props) {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

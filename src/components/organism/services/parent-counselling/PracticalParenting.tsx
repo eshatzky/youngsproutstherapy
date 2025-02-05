@@ -7,7 +7,7 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 
 export function PracticalParenting() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

@@ -8,7 +8,7 @@ import { getCalApi } from "@calcom/embed-react";
 import Image from "next/image";
 
 export function HeroSection() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {
@@ -58,7 +58,7 @@ export function HeroSection() {
         /> */}
       </picture>
       <div className=" max-h-[100vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16">
-        <div className="absolute inset-0 z-0 min">
+        <div className="absolute inset-0 z-0 max-sm:max-h-[100svh]">
           <Image
             src="/images/homebg.webp"
             alt="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
@@ -67,7 +67,23 @@ export function HeroSection() {
             priority
             quality={100}
             sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] "
+            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] max-sm:hidden"
+            style={{
+              backgroundPosition: "center",
+              maxHeight: "100vh",
+            }}
+          />
+          <Image
+            src="/images/homebg.webp"
+            alt="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
+            fill
+            title="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
+            priority
+            placeholder="blur"
+            blurDataURL={"../../../../public/images/homebg.webp"}
+            quality={85}
+            sizes="(max-width: 768px) 60vw, (min-width: 769px) 100vw"
+            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] sm:hidden "
             style={{
               backgroundPosition: "center",
               maxHeight: "100vh",

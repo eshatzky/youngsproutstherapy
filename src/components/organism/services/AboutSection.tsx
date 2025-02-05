@@ -16,7 +16,7 @@ type PropsType = {
 };
 
 export function AboutSection({ props }: PropsType) {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

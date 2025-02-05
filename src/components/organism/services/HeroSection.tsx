@@ -20,7 +20,7 @@ type PropType = {
 };
 
 export function HeroSection({ props }: PropType) {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

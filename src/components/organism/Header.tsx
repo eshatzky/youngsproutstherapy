@@ -139,7 +139,7 @@ export function Header() {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

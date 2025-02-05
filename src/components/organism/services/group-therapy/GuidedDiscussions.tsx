@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { getCalApi } from "@calcom/embed-react";
 
 export function GuidedDiscussions() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

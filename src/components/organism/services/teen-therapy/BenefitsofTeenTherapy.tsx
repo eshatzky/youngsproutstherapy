@@ -7,7 +7,7 @@ import { getCalApi } from "@calcom/embed-react";
 import { useState, useEffect } from "react";
 
 export function BenefitsTeenTherapy() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {

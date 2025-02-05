@@ -5,7 +5,7 @@ import { getCalApi } from "@calcom/embed-react";
 import { useEffect, useState } from "react";
 
 export function AboutSection() {
-  const [isCalLoaded, setIsCalLoaded] = useState(false);
+  const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
     (async function () {
       try {
