@@ -112,7 +112,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "trauma-therapy": {
     title: "Trauma Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers compassionate trauma-informed therapy for children and teens in Vaughan. Our expert therapists help kids and teens process traumatic experiences and develop healthy coping skills.",
+      "Trauma therapy in Vaughan for kids and teens to heal from distressing experiences. Using play, art, and evidence-based counselling to build resilience and safety.",
     wikiLink: "https://en.wikipedia.org/wiki/Trauma_(psychological)",
   },
   "autism-therapy": {
@@ -151,31 +151,31 @@ const serviceData: Record<string, ServiceConfig> = {
     title:
       "Dialectical Behavioral Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Enhance emotional and interpersonal skills through DBT's practical techniques.",
+      "Dialectical Behaviour Therapy (DBT) in Vaughan for teens struggling with intense emotions, anxiety, and self-esteem. Build coping skills, balance, and resilience.",
     wikiLink: "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy",
   },
   "emotion-focused-therapy": {
     title: "Emotion Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Discover the role of emotions in relationships and personal growth with EFT.",
+      "Emotion-Focused Therapy (EFT) in Vaughan for teens and young adults to process emotions, build self-awareness, and strengthen relationships through counselling.",
     wikiLink: "https://en.wikipedia.org/wiki/Emotionally_focused_therapy",
   },
   "narrative-therapy": {
     title: "Narrative Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Reframe and reshape your personal story to empower change and healing.",
+      "Narrative Therapy in Vaughan for kids and teens to reshape their story, build self-identity, and process challenges like anxiety, trauma, and self-esteem.",
     wikiLink: "https://en.wikipedia.org/wiki/Narrative_therapy",
   },
   "play-therapy": {
     title: "Play Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "A child-centered approach using play to help children express and resolve challenges.",
+      "Play therapy in Vaughan for kids to express emotions, build social skills, and improve behaviours in a supportive, child-led environment using creative play.",
     wikiLink: "https://en.wikipedia.org/wiki/Play_therapy",
   },
   "parent-child-therapy": {
     title: "Parent Child Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Strengthen the bond between parents and children through guided therapeutic interactions.",
+      "Parent-Child Interaction Therapy (PCIT) in Vaughan helps strengthen parent-child bonds, improve behaviours, and build emotional connection through play-based therapy, including Theraplay.",
     wikiLink:
       "https://en.wikipedia.org/wiki/Parent%E2%80%93child_interaction_therapy",
   },
