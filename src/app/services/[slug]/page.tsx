@@ -94,7 +94,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "behavioral-therapy": {
     title: "Behaviour Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers effective behaviour therapy for children and teens in Vaughan. Our therapists help with challenging behaviours, improving emotional regulation, and social skills.",
+      "Behaviour therapy in Vaughan for kids and teens struggling with emotional regulation, ADHD, anxiety, and social skills. Play-based and evidence-based support.",
     wikiLink: "https://en.wikipedia.org/wiki/Behavior_therapy",
   },
   "depression-therapy": {
@@ -106,7 +106,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "grief-therapy": {
     title: "Grief Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Young Sprouts Therapy offers supportive grief therapy for children and teens in Vaughan. We help kids and teens process their feelings of loss and move forward with strength and resilience.",
+      "Compassionate grief therapy in Vaughan for kids and teens coping with loss. Support through counselling, play, and art to navigate emotions and healing.",
     wikiLink: "https://en.wikipedia.org/wiki/Grief",
   },
   "trauma-therapy": {
