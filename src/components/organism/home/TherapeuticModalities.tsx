@@ -113,7 +113,7 @@ export function TherapeuticModalities() {
             </li>
           ))}
           <Link
-            href={"/services/approach-and-specialties"}
+            href={"/approach-and-specialties"}
             className="block lg:hidden"
             aria-label={"Learn More +"}
           >
@@ -135,53 +135,53 @@ const modalities = [
   {
     icon: "/svg/Cognitive Behavioural Therapy (CBT).svg",
     title: "Cognitive Behavioural Therapy (CBT)",
-    link: "/services/therapy-modalities/cognitive-behavioral-therapy",
+    link: "/cognitive-behavioral-therapy",
   },
   {
     icon: "/svg/Narrative Therapy.svg",
     title: "Narrative Therapy",
-    link: "/services/therapy-modalities/narrative-therapy",
+    link: "/narrative-therapy",
   },
   {
     icon: "/svg/Solution-Focused Therapy.svg",
     title: "Solution-Focused Therapy",
-    link: "/services/therapy-modalities/solution-focused-therapy",
+    link: "/solution-focused-therapy",
   },
   {
     icon: "/svg/Dialectical Behaviour Therapy (DBT).svg",
     title: "Dialectical Behaviour Therapy (DBT)",
-    link: "/services/therapy-modalities/dialectical-behavioral-therapy",
+    link: "/dialectical-behavioral-therapy",
   },
   {
     icon: "/svg/Art Therapy.svg",
     title: "Art Therapy",
-    link: "/services/therapy-modalities/art-therapy",
+    link: "/art-therapy",
   },
   {
     icon: "/svg/Play Therapy.svg",
     title: "Play Therapy",
-    link: "/services/therapy-modalities/play-therapy",
+    link: "/play-therapy",
   },
   {
     icon: "/svg/Acceptance and Commitment.svg",
     title: "Acceptance and Commitment Therapy (ACT)",
-    link: "/services/therapy-modalities/Acceptance-commitment-therapy",
+    link: "/Acceptance-commitment-therapy",
   },
   {
     icon: "/svg/Emotion-Focused.svg",
     title: "Emotion-Focused Therapy (EFT)",
-    link: "/services/therapy-modalities/emotion-focused-therapy",
+    link: "/emotion-focused-therapy",
   },
   {
     icon: "/svg/Parent-Child Interaction Therapy (PCIT).svg",
     title: "Parent-Child Interaction Therapy (PCIT) ",
-    link: "/services/therapy-modalities/parent-child-therapy",
+    link: "/parent-child-therapy",
   },
   { icon: "", title: "", isDummy: true },
   {
     icon: "/svg/Music Therapy.svg",
     title: "Music Therapy",
-    link: "/services/therapy-modalities/music-therapy",
+    link: "/music-therapy",
   },
   // Dummy items for centering
   { icon: "", title: "", isDummy: true },
@@ -221,7 +221,7 @@ const modalitiesMobile = [
   {
     icon: "/svg/Acceptance and Commitment.svg",
     title: "Acceptance and Commitment Therapy (ACT)",
-    link: "/Acceptance-commitment-therapy",
+    link: "/acceptance-commitment-therapy",
   },
   {
     icon: "/svg/Emotion-Focused.svg",

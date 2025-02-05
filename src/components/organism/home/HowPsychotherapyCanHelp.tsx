@@ -38,17 +38,17 @@ const items: PsychotherapyData[] = [
   {
     title: "Anxiety",
     desc: "Empowering children and teens to manage anxiety through personalized strategies, counselling, and resilience-building techniques.",
-    href: "/services/conditions-we-support/anxiety-therapy",
+    href: "/anxiety-therapy",
   },
   {
     title: "ADHD",
     desc: "Helping children and teens harness their ADHD as a strength, improving focus and self-regulation through tailored strategies.",
-    href: "/services/conditions-we-support/adhd-therapy",
+    href: "/adhd-therapy",
   },
   {
     title: "Parenting",
     desc: "Guiding parents to foster strong, healthy relationships with their children, while navigating the challenges and joys of parenthood.",
-    href: "/services/therapy-type/parenting-counselling",
+    href: "/parenting-counselling",
   },
   {
     title: "Self-Esteem",
@@ -57,7 +57,7 @@ const items: PsychotherapyData[] = [
   {
     title: "Behavioural Challenges",
     desc: "Addressing behavioral challenges in children and teens, using evidence-based approaches to promote positive change and improve home and school life.",
-    href: "/services/conditions-we-support/behavioral-therapy",
+    href: "/behavioral-therapy",
   },
   {
     title: "Emotional Regulation",
@@ -66,12 +66,12 @@ const items: PsychotherapyData[] = [
   {
     title: "Trauma",
     desc: "Providing compassionate support for children and teens dealing with trauma, using therapeutic counselling techniques to foster resilience and promote healing.",
-    href: "/services/conditions-we-support/trauma-therapy",
+    href: "/trauma-therapy",
   },
   {
     title: "Grief",
     desc: "Offering supportive therapy and counselling for children and teens navigating grief, helping them process their feelings and move forward with strength and resilience.",
-    href: "/services/conditions-we-support/grief-therapy",
+    href: "/grief-therapy",
   },
   {
     title: "Learning Disabilities",
@@ -80,16 +80,16 @@ const items: PsychotherapyData[] = [
   {
     title: "Depression",
     desc: "Helping children and teens overcome depression, using evidence-based therapies to foster resilience, promote positive thinking, and improve overall mental health.",
-    href: "/services/conditions-we-support/depression-therapy",
+    href: "/depression-therapy",
   },
   {
     title: "Autism Spectrum Disorder (ASD)",
     desc: "Supporting children and teens with autism, using tailored strategies to enhance their confidence, social skills, and overall development.",
-    href: "/services/conditions-we-support/autism-therapy",
+    href: "/autism-therapy",
   },
   {
     title: "Learn More",
     desc: "Dive deeper into our comprehensive range of services and discover how we tailor our therapeutic approaches to meet the unique needs of every child and family.",
-    href: "/services/approach-and-specialties",
+    href: "/approach-and-specialties",
   },
 ];
