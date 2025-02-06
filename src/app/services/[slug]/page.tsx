@@ -157,7 +157,7 @@ const serviceData: Record<string, ServiceConfig> = {
   "emotion-focused-therapy": {
     title: "Emotion Focused Therapy for Kids and Teens | Young Sprouts Therapy",
     description:
-      "Emotion-Focused Therapy (EFT) in Vaughan for teens and young adults to process emotions, build self-awareness, and strengthen relationships through counselling.",
+      "Emotion-Focused Therapy (EFT) in Vaughan for kids, teens and young adults to process emotions, build self-awareness, and strengthen relationships through counselling.",
     wikiLink: "https://en.wikipedia.org/wiki/Emotionally_focused_therapy",
   },
   "narrative-therapy": {
