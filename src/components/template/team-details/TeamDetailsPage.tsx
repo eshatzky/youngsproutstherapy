@@ -43,7 +43,7 @@ export function TeamDetailsPage({ team }: Props) {
             )}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="~text-lg/2xl font-medium"> {team.name}</h2>
+            <h1 className="~text-lg/2xl font-medium"> {team.name}</h1>
             <p className="text-primary font-medium ~text-lg/2xl">
               {team.position}
             </p>

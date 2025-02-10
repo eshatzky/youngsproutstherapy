@@ -64,7 +64,6 @@ export async function GET() {
         priority: 0.6,
       }));
 
-    console.log("teamFields", teamFields);
     // Static pages
     const staticPages = [
       {
@@ -111,20 +110,17 @@ export async function GET() {
 
     // Dynamic service pages
     const servicePages = [
-      // Conditions We Support
-      ...CONDITION_SUPPORT_SLUGS.map((slug) => ({
+      ...CONDITION_SUPPORT_SLUGS.filter((slug) => slug).map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),
 
-      // Therapy Modalities
-      ...THERAPY_MODALITIES_SLUGS.map((slug) => ({
+      ...THERAPY_MODALITIES_SLUGS.filter((slug) => slug).map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),
 
-      // Therapy Types
-      ...THERAPY_TYPES_SLUGS.map((slug) => ({
+      ...THERAPY_TYPES_SLUGS.filter((slug) => slug).map((slug) => ({
         loc: `https://www.youngsproutstherapy.com/${slug}`,
         lastmod: new Date().toISOString(),
       })),

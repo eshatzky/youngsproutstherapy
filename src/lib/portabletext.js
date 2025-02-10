@@ -27,8 +27,7 @@ const ImageComponent = ({ value }) => {
       src={urlForImage(value)}
       alt={value.alt || "Image"}
       loading="lazy"
-      className="object-cover"
-      sizes="(max-width: 800px) 100vw, 800px"
+      className="object-cove aspect-video max-h-[400px]"
     />
   );
 };
