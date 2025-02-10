@@ -44,20 +44,27 @@ export async function GET() {
   try {
     // Blog posts
     const blog = await getAllPosts();
-    const blogFields = blog.map((post) => ({
-      loc: `https://www.youngsproutstherapy.com/blog/${post.slug.current}`,
-      lastmod: new Date().toISOString(),
-      changefreq: "weekly",
-      priority: 0.7,
-    }));
+    const blogFields = blog
+      .filter((post) => post?.slug?.current)
+      .map((post) => ({
+        loc: `https://www.youngsproutstherapy.com/blog/${post.slug.current}`,
+        lastmod: new Date().toISOString(),
+        changefreq: "weekly",
+        priority: 0.7,
+      }));
+
     // Team members
     const teamMembers = await getAllTeamMembers();
-    const teamFields = teamMembers.map((member) => ({
-      loc: `https://www.youngsproutstherapy.com/team/${member.name}`,
-      lastmod: new Date().toISOString(),
-      changefreq: "monthly",
-      priority: 0.6,
-    }));
+    const teamFields = teamMembers
+      .filter((member) => member?.name)
+      .map((member) => ({
+        loc: `https://www.youngsproutstherapy.com/team/${member.name}`,
+        lastmod: new Date().toISOString(),
+        changefreq: "monthly",
+        priority: 0.6,
+      }));
+
+    console.log("teamFields", teamFields);
     // Static pages
     const staticPages = [
       {

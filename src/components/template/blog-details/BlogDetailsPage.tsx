@@ -1,3 +1,5 @@
+"use client";
+
 import { Post } from "@/components/types";
 import { urlForImage } from "@/lib/image";
 import { format, parseISO } from "date-fns";
@@ -24,6 +26,7 @@ export function BlogDetailsPage({ post }: Props) {
     ? urlForImage(post.author.avatar)
     : null;
 
+  console.log("slug", slug, post);
   return (
     <section className="max-w-[1440px] mx-auto w-full ~px-4/10 ~pt-16/28 pb-16 flex flex-col gap-10">
       <article className="">

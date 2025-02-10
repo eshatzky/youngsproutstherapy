@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: BlogPageType) {
     metadataBase: new URL(
       process.env.BASE_URL || "https://www.youngsproutstherapy.com/"
     ),
-    title: title.includes("Young Sprouts Therapy")
+    title: title?.includes("Young Sprouts Therapy")
       ? title
       : `Young Sprouts Therapy | ${title}`,
     description: excerpt,
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: BlogPageType) {
     openGraph: {
       type: "website",
       url,
-      title: title.includes("Young Sprouts Therapy")
+      title: title?.includes("Young Sprouts Therapy")
         ? title
         : `Young Sprouts Therapy | ${title}`,
       description: excerpt,
@@ -47,6 +47,7 @@ export async function generateMetadata({ params }: BlogPageType) {
 
 export default async function page({ params }: BlogPageType) {
   const post = await getPostBySlug(params.slug);
+
   return (
     <Suspense>
       <BlogDetailsPage post={post} />

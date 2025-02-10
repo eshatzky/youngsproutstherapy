@@ -73,8 +73,8 @@ const nextConfig = {
       },
 
       {
-        source: "/couples-counseling",
-        destination: "/couples-therapy",
+        source: "/couples-therapy",
+        destination: "/couples-counseling",
         permanent: true,
       },
       {
