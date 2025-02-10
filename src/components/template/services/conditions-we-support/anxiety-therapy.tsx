@@ -45,7 +45,7 @@ export function AnxietyTherapy() {
       <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~px-4/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
-            Who Benefits from Anxiety Therapy?
+            How Anxiety Therapy Can Help
           </h2>
           <p className="text-center leading-6 max-w-[846px] mx-auto">
             Through anxiety therapy at Young Sprouts Therapy, clients can expect

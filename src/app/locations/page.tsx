@@ -10,10 +10,11 @@ export default function page() {
 }
 
 export const metadata = {
-  title: "Locations for Child, Teen, and Family Therapy in Vaughan",
+  title: "Locations for Child, Teen, and Family Therapy in Ontario",
   description:
-    "Locations for child, teen, and family therapy services in Vaughan. Our registered therapists and social workers are covered by most workplace insurance.",
+    "Find child, teen, and family therapy services across Ontario. Our registered therapists and social workers provide support in Vaughan, Thornhill, Richmond Hill, Markham, and beyond. Covered by most workplace insurance.",
   alternates: {
     canonical: "https://www.youngsproutstherapy.com/locations",
   },
 };
+
