@@ -39,7 +39,10 @@ export function FaqPage() {
   return (
     <>
       <div className="px-5 py-12  mx-auto">
-        <HomepageFaq faqData={FaqData} title={"Frequently Asked Questions"} />
+        <h1 className="text-primary ~text-2xl/3xl font-medium text-center mb-6">
+          Frequently Asked Questions
+        </h1>
+        <HomepageFaq faqData={FaqData} showFaq={false} />
 
         <p className="text-center mt-8 text-muted-foreground">
           Don&apos;t see your question here? Send us a message through our

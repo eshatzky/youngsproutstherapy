@@ -197,15 +197,22 @@ export function Footer() {
             </h3>
             <ul className="flex flex-col gap-2">
               <li className="flex gap-4 leading-6 text-[#77808B] ">
-                Monday - Friday
+                Monday - Thursday
               </li>
               <li className="flex gap-4 leading-6 text-[#77808B] ">
-                11:00am - 7:00pm
+                9:00 am - 9:00 pm
               </li>
-              <li className="flex gap-4 leading-6 text-primary">
-                Saturday & Sunday
+              <li className="flex gap-4 leading-6 text-[#77808B] ">Friday</li>
+              <li className="flex gap-4 leading-6 text-[#77808B] ">
+                9:00 am – 3:00 pm
               </li>
+
+              <li className="flex gap-4 leading-6 text-primary">Saturday</li>
               <li className="flex gap-4 leading-6 text-red-500 ">Closed</li>
+              <li className="flex gap-4 leading-6 text-[#77808B] ">Sunday</li>
+              <li className="flex gap-4 leading-6 text-[#77808B] ">
+                9:00 am - 9:00 pm
+              </li>
             </ul>
           </div>
         </div>

@@ -7,10 +7,9 @@ export const metadata = {
     "Discover our comprehensive approach to therapy for children, teens, and families at Young Sprouts. We specialize in a range of modalities including play therapy, art therapy, CBT, and more.",
 
   alternates: {
-    canonical: `https://www.youngsproutstherapy.com/services/approach-and-specialties`,
+    canonical: `https://www.youngsproutstherapy.com/approach-and-specialties`,
   },
 };
-
 export default function page() {
   return (
     <section>

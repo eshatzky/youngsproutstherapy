@@ -67,7 +67,7 @@ export function HeroSection() {
             priority
             quality={100}
             sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] max-sm:hidden"
+            className="object-cover -z-10  max-md:object-[calc(100%+240px)_0px] max-sm:hidden"
             style={{
               backgroundPosition: "center",
               maxHeight: "100vh",
@@ -83,7 +83,7 @@ export function HeroSection() {
             blurDataURL={"../../../../public/images/homebg.webp"}
             quality={85}
             sizes="(max-width: 768px) 60vw, (min-width: 769px) 100vw"
-            className="object-cover -z-10  max-md:object-[calc(100%+210px)_0px] sm:hidden "
+            className="object-cover -z-10  max-md:object-[calc(100%+290px)_0px] !max-h-[60vh] sm:hidden "
             style={{
               backgroundPosition: "center",
               maxHeight: "100vh",

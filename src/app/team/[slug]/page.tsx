@@ -8,10 +8,9 @@ interface ParemsType {
 }
 
 export async function generateMetadata({ params }: ParemsType) {
-  const team = await getTeamBySlug(params.slug);
-  const url = `https://www.youngsproutstherapy.com/team/${team?.name}`;
+  const url = `https://www.youngsproutstherapy.com/team/${params.slug}`;
   return {
-    title: team.name,
+    title: params.slug.replace("-", " "),
     alternates: {
       canonical: url,
     },

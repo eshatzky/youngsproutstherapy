@@ -154,7 +154,7 @@ export const FAQItem = ({
   );
 };
 
-export function HomepageFaq({ faqData, title = "FAQs" }) {
+export function HomepageFaq({ faqData, title = "FAQs", showFaq = true }) {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const toggleItem = (title: string) => {
@@ -163,9 +163,12 @@ export function HomepageFaq({ faqData, title = "FAQs" }) {
 
   return (
     <div className="w-full max-w-[1180px] mx-auto flex flex-col gap-6">
-      <h2 className="text-primary ~text-2xl/3xl font-medium text-center">
-        {title}
-      </h2>
+      {showFaq && (
+        <h2 className="text-primary ~text-2xl/3xl font-medium text-center">
+          {title}
+        </h2>
+      )}
+
       <ul className="py-10 lg:py-16 p-4 lg:px-8 bg-[#F3F5F6] lg:rounded-[28px]">
         {faqData.map((item, key) => (
           <FAQItem
