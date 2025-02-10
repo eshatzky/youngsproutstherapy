@@ -64,7 +64,6 @@ export async function GET() {
         priority: 0.6,
       }));
 
-    console.log("teamFields", teamFields);
     // Static pages
     const staticPages = [
       {

@@ -71,10 +71,15 @@ const nextConfig = {
         destination: "/adhd-therapy",
         permanent: true,
       },
+      {
+        source: "/anxiety-therapy-for-kids-and-teens",
+        destination: "/anxiety-therapy",
+        permanent: true,
+      },
 
       {
         source: "/couples-therapy",
-        destination: "/couples-counseling",
+        destination: "/couples-counselling",
         permanent: true,
       },
       {

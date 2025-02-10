@@ -12,3 +12,5 @@ export async function LatestBlogPosts() {
     </section>
   );
 }
+
+export const revalidate = 30;
