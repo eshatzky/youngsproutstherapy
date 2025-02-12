@@ -18,7 +18,7 @@ type Props = {
 export function Banner({ data }: Props) {
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -38,7 +38,9 @@ export function Banner({ data }: Props) {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000); // Delays execution by 2 seconds (2000 ms)
+
+    return () => clearTimeout(timer); // Cleanup function to avoid memory leaks
   }, []);
   return (
     <section className="relative lg:min-h-[404px] h-auto rounded-3xl overflow-hidden ">

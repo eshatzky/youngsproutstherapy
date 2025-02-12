@@ -48,6 +48,9 @@ export function TwoGridSection({
           alt="section_image"
           layout="fill"
           objectFit="cover"
+          decoding="async"
+          loading="lazy"
+          quality={85}
           placeholder="blur"
           objectPosition="top"
           className="w-full object-cover object-center "

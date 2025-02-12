@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export function AboutSection() {
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -27,7 +27,9 @@ export function AboutSection() {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000); // Delays execution by 2 seconds (2000 ms)
+
+    return () => clearTimeout(timer); // Cleanup function to avoid memory leaks
   }, []);
   return (
     <article className="flex flex-col gap-4 lg:items-center lg:justify-center lg:min-h-[589px] h-full max-lg:mt-5">

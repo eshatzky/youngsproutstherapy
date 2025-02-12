@@ -22,7 +22,7 @@ type PropType = {
 export function HeroSection({ props }: PropType) {
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -42,7 +42,9 @@ export function HeroSection({ props }: PropType) {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000); // Delays execution by 2 seconds (2000 ms)
+
+    return () => clearTimeout(timer); // Cleanup function to avoid memory leaks
   }, []);
   return (
     <section className="w-full relative rounded-lg lg:rounded-3xl p-4 overflow-hidden h-full min-h-[228px] lg:min-h-[400px] lg:h-full flex items-center justify-center ">
@@ -50,6 +52,8 @@ export function HeroSection({ props }: PropType) {
         src={props?.image ? props.image : HeroImage}
         alt="Parenting Counselling in Vaughan & Thornhill"
         layout="fill"
+        priority
+        quality={85}
         placeholder="blur"
         className="w-full aspect-auto -z-10  object-cover object-top lg:object-center"
       />
