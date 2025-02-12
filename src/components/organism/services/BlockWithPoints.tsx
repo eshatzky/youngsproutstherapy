@@ -25,7 +25,7 @@ type Props = {
 export function BlockWithPoints({ data }: Props) {
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -45,7 +45,9 @@ export function BlockWithPoints({ data }: Props) {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000); // Delays execution by 2 seconds (2000 ms)
+
+    return () => clearTimeout(timer); // Cleanup function to avoid memory leaks
   }, []);
   return (
     <article className="flex flex-col gap-4">
@@ -61,6 +63,9 @@ export function BlockWithPoints({ data }: Props) {
                 src={"/svg/magicicon.svg"}
                 alt="icon"
                 width={48}
+                loading="lazy"
+                decoding="async"
+                quality={85}
                 height={45}
                 className="w-3 h-3 aspect-auto"
               />

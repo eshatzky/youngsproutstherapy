@@ -141,7 +141,7 @@ export function Header() {
 
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -161,7 +161,9 @@ export function Header() {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -169,12 +171,12 @@ export function Header() {
       <div className="flex items-center gap-3.5 max-sm:flex-1 ">
         <Link aria-label={"home"} href={"/"} className="py-2 lg:py-2">
           <img
-            src={"/logo.png"}
+            src={"/logo.webp"}
             className="w-[195px] block lg:hidden"
             alt="Young Sprouts Therapy Logo"
           />
           <img
-            src={"/logo.png"}
+            src={"/logo.webp"}
             className="hidden lg:block lg:w-[265px] h-auto"
             alt="Young Sprouts Therapy Logo"
           />

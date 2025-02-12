@@ -10,7 +10,7 @@ import Image from "next/image";
 export function HeroSection() {
   const [isCalLoaded, setIsCalLoaded] = useState(true);
   useEffect(() => {
-    (async function () {
+    const timer = setTimeout(async () => {
       try {
         const cal = await getCalApi({ namespace: "consult" });
         cal("ui", {
@@ -30,7 +30,9 @@ export function HeroSection() {
       } catch (error) {
         console.error("Failed to load Cal.com API:", error);
       }
-    })();
+    }, 2000); // Delays execution by 2 seconds (2000 ms)
+
+    return () => clearTimeout(timer); // Cleanup function to avoid memory leaks
   }, []);
   return (
     <section className="">
@@ -47,17 +49,8 @@ export function HeroSection() {
           srcSet="/images/homebg.webp"
           type="image/webp"
         />
-        {/* Fallback Image */}
-        {/* <img
-          src='/images/homebg.webp'
-          alt='Young Sprouts Therapy - Child and Family Therapy in Vaughan'
-          fetchPriority='high'
-          className='absolute inset-0 w-full h-full object-cover'
-          aria-hidden='true'
-          loading='eager'
-        /> */}
       </picture>
-      <div className=" max-h-[100vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16">
+      <div className=" max-h-[100vh] max-sm:!max-h-[60vh] bg-no-repeat bg-cover md:bg-center relative h-[52vh] md:h-[80vh] ~px-4/10 z-40 w-full flex flex-col justify-center lg:gap-16">
         <div className="absolute inset-0 z-0 max-sm:max-h-[100svh]">
           <Image
             src="/images/homebg.webp"
@@ -75,15 +68,17 @@ export function HeroSection() {
           />
           <Image
             src="/images/homebg.webp"
-            alt="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
-            fill
-            title="Young Sprouts Therapy - Child and Family Therapy in Vaughan "
+            alt="Young Sprouts Therapy - Child and Family Therapy in Vaughan"
+            width={1024}
+            height={600}
+            title="Young Sprouts Therapy - Child and Family Therapy in Vaughan"
             priority
+            fetchPriority="high"
             placeholder="blur"
-            blurDataURL={"../../../../public/images/homebg.webp"}
+            blurDataURL="/images/homebg.webp"
             quality={85}
             sizes="(max-width: 768px) 60vw, (min-width: 769px) 100vw"
-            className="object-cover -z-10  max-md:object-[calc(100%+290px)_0px] !max-h-[60vh] sm:hidden "
+            className="object-cover -z-10 max-md:object-[calc(100%+290px)_0px] !max-h-[60vh] sm:hidden absolute inset-0 w-full h-full"
             style={{
               backgroundPosition: "center",
               maxHeight: "100vh",

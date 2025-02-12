@@ -21,17 +21,13 @@ export async function generateMetadata({ params }: BlogPageType) {
     metadataBase: new URL(
       process.env.BASE_URL || "https://www.youngsproutstherapy.com/"
     ),
-    title: title?.includes("Young Sprouts Therapy")
-      ? title
-      : `Young Sprouts Therapy | ${title}`,
+    title: title?.includes("Young Sprouts Therapy") ? title : `${title}`,
     description: excerpt,
 
     openGraph: {
       type: "website",
       url,
-      title: title?.includes("Young Sprouts Therapy")
-        ? title
-        : `Young Sprouts Therapy | ${title}`,
+      title: title?.includes("Young Sprouts Therapy") ? title : ` ${title}`,
       description: excerpt,
       images: typeof ogImage === "string" ? ogImage : null,
     },

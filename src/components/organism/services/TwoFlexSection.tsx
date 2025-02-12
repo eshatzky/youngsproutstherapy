@@ -34,6 +34,9 @@ export function TwoFlexSection({
           src={image}
           alt="section_image"
           layout="fill"
+          loading="lazy"
+          decoding="async"
+          quality={85}
           objectFit="cover"
           objectPosition="top"
           placeholder="blur"

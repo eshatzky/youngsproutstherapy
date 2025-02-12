@@ -4,7 +4,6 @@ import MotionWrapper from "@/components/molecules/MotionWrapper";
 import { AlertBar } from "@/components/molecules/AlertBar";
 import { Toaster } from "@/components/ui/sonner";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Lato } from "next/font/google";
 import Script from "next/script";
 
@@ -166,12 +165,20 @@ export default async function RootLayout({
           crossOrigin="anonymous"
         />
         <link rel="preload" href="/images/homebg.webp" as="image" />
-        <SpeedInsights />
+        <Script
+          src="https://vercel.live/_vercel/speed-insights/script.js"
+          strategy="afterInteractive"
+        />
 
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-10834730946"
         />
+        <Script
+          src="https://www.gstatic.com/call-tracking/call-tracking_9.js"
+          strategy="lazyOnload"
+        />
+
         <Script id="google-ads-tracking" strategy="afterInteractive">
           {`
       window.dataLayer = window.dataLayer || [];
